@@ -1,0 +1,43 @@
+@use "./vars";
+
+// @font-face {
+//     font-family: "Raleway-Regular";
+//     font-weight: 400;
+//     src: 
+//     // url("/src/fonts/FONT_NAME.woff2") format(woff2),
+//     // url("/src/fonts/FONT_NAME.woff") format(woff),
+//     url("/src/fonts/Raleway-Regular.ttf")
+// }
+
+// h1 {
+//     font-family:"Raleway-Regular";
+// }
+
+@font-face {
+font-family: "Raleway-Regular";
+font-weight: 400;
+src: url(/src/fonts/Raleway-Regular.ttf);
+}
+
+h1, h2, h3, h4, p, a, button {
+font-family: "Raleway-Regular";
+}
+
+h1 {
+    font-size: vars.$h1Size;
+}
+h2 {
+    font-size: vars.$h2Size;
+}
+h3 {
+    font-size: vars.$h3Size;
+}
+h4 {
+    font-size: vars.$h4Size;
+}
+p, a {
+    font-size: vars.$pSize;
+}
+button{
+    font-size: vars.$pSize;
+}

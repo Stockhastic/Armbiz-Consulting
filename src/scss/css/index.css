@@ -1,0 +1,158 @@
+/*# sourceMappingURL=index.css.map */border-box;
+  cursor: none !important;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 62.5%;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+body::selection {
+  background: #1e2736;
+  color: #fff;
+}
+body::-moz-selection {
+  background: #1e2736;
+  color: #fff;
+}
+body::-ms-selection {
+  background: #1e2736;
+  color: #fff;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  font-weight: 400;
+  src: url(/src/fonts/Raleway-Regular.ttf);
+}
+h1, h2, h3, h4, p, a, button {
+  font-family: "Raleway-Regular";
+}
+
+h1 {
+  font-size: 8.1rem;
+}
+
+h2 {
+  font-size: 5.4rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+p, a {
+  font-size: 1.6rem;
+}
+
+button {
+  font-size: 1.6rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background: none;
+}
+.btn-primary {
+  transition: ease-in-out 0.24s;
+  background-color: #1a6eff;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #0050d9;
+}
+.btn-primary:active {
+  transition: 0.012s;
+  background-color: #fff;
+  color: #1e2736;
+  box-shadow: inset 0 0 4px rgba(119, 156, 211, 0.3);
+}
+.btn-secondary {
+  border: 1px solid #d7deef;
+  color: #1e2736;
+}
+.btn-secondary:hover {
+  color: #1a6eff;
+}
+
+#cursor, #aura {
+  position: absolute;
+  border-radius: 100%;
+  user-select: none;
+  pointer-events: none;
+  z-index: 9999;
+  translate: -50% -50%;
+}
+
+#aura {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(26, 110, 255, 0.2823529412);
+  background-color: rgba(26, 110, 255, 0.0941176471);
+  transition: 0.22s cubic-bezier(0.73, -1.07, 0.15, 1.88) transform, 0.2s cubic-bezier(0.73, -1.07, 0.15, 1.88) opacity;
+}
+
+#aura.hovered {
+  transform: scale(1.5);
+  border: 1px solid rgba(26, 110, 255, 0.5882352941);
+}
+
+#cursor {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(26, 110, 255, 0.4941176471);
+  transition: 0.5s cubic-bezier(0.73, -1.07, 0.15, 1.88) transform, 0.2s cubic-bezier(0.73, -1.07, 0.15, 1.88) opacity;
+}
+
+#cursor.hidden {
+  opacity: 0;
+}/*# sourceMappingURL=index.css.map */
