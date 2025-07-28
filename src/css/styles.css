@@ -64,8 +64,19 @@ a {
 
 @font-face {
   font-family: "Raleway-Regular";
-  font-weight: 400;
   src: url(/src/fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url(/src/fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: "Raleway-Semibold";
+  src: url(/src/fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url(/src/fonts/Raleway-Bold.ttf);
 }
 h1, h2, h3, h4, p, a, button {
   font-family: "Raleway-Regular";
@@ -87,42 +98,68 @@ h4 {
   font-size: 2.4rem;
 }
 
-p, a {
+p, a, button {
   font-size: 1.6rem;
 }
 
-button {
-  font-size: 1.6rem;
+strong, .special-text, .bold-text {
+  font-family: "Raleway-Bold";
+  font-size: 1em;
+}
+
+.medium-text {
+  font-family: "Raleway-Medium";
+  font-size: 1em;
+}
+
+.semibold-text {
+  font-family: "Raleway-Semibold";
+  font-size: 1em;
+}
+
+.special-text {
+  color: #1a6eff;
 }
 
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 3.5rem;
   margin: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 0.7em;
   border: none;
   background: none;
 }
-.btn-primary {
+.btn_primary {
   transition: ease-in-out 0.24s;
   background-color: #1a6eff;
   color: #fff;
+  font-family: "Raleway-Semibold";
 }
-.btn-primary:hover {
+.btn_primary:hover {
   background-color: #0050d9;
+  box-shadow: 0 0 14px rgba(65, 135, 255, 0.4745098039);
 }
-.btn-primary:active {
+.btn_primary:active {
   transition: 0.012s;
   background-color: #fff;
-  color: #1e2736;
+  color: #1a6eff;
   box-shadow: inset 0 0 4px rgba(119, 156, 211, 0.3);
 }
-.btn-secondary {
+.btn_secondary {
+  transition: ease-in-out 0.24s;
   border: 1px solid #d7deef;
   color: #1e2736;
+  font-family: "Raleway-Semibold";
 }
-.btn-secondary:hover {
+.btn_secondary:hover {
   color: #1a6eff;
+  box-shadow: 0 0 14px rgba(65, 135, 255, 0.4745098039);
+}
+.btn_secondary:active {
+  transition: 0.012s;
+  background-color: #1a6eff;
+  color: #fff;
+  border: 1px solid #1a6eff;
 }
 
 #cursor, #aura {
@@ -158,11 +195,40 @@ button {
   opacity: 0;
 }
 
-.wrapper1 {
-  max-width: 600px;
+br {
+  height: 50px;
 }
 
 .uikit-block {
-  max-width: 600px;
+  display: flex;
   padding: 1rem;
+}
+
+.color-block {
+  padding: 1rem 2rem;
+  max-width: 50%;
+  font-family: "Raleway-Regular";
+  font-size: 2.4rem;
+}
+.color-block_primary-color {
+  background-color: #1a6eff;
+  color: #fff;
+}
+.color-block_secondary-color {
+  background-color: #60a2ff;
+  color: #fff;
+}
+.color-block_light-color {
+  background-color: #e7effe;
+}
+.color-block_borders-color {
+  background-color: #d7deef;
+}
+.color-block_dark-color {
+  background-color: #1e2736;
+  color: #fff;
+}
+.color-block_grey-color {
+  background-color: #434c5b;
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */

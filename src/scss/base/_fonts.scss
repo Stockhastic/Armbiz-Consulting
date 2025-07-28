@@ -9,18 +9,25 @@
 //     url("/src/fonts/Raleway-Regular.ttf")
 // }
 
-// h1 {
-//     font-family:"Raleway-Regular";
-// }
-
 @font-face {
 font-family: "Raleway-Regular";
-font-weight: 400;
 src: url(/src/fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url(/src/fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: "Raleway-Semibold";
+    src: url(/src/fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url(/src/fonts/Raleway-Bold.ttf);
 }
 
 h1, h2, h3, h4, p, a, button {
-font-family: "Raleway-Regular";
+font-family: vars.$mainFontRegular;
 }
 
 h1 {
@@ -35,9 +42,22 @@ h3 {
 h4 {
     font-size: vars.$h4Size;
 }
-p, a {
+p, a, button {
     font-size: vars.$pSize;
 }
-button{
-    font-size: vars.$pSize;
+
+strong, .special-text, .bold-text {
+    font-family: vars.$mainFontBold;
+    font-size: 1em;
+}
+.medium-text {
+    font-family: vars.$mainFontMedium;
+    font-size: 1em;
+}
+.semibold-text {
+    font-family: vars.$mainFontSemibold;
+    font-size: 1em;
+}
+.special-text {
+    color: vars.$primaryColor;
 }

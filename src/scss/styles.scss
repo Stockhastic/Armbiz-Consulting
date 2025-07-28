@@ -1,10 +1,37 @@
 @use './base';
 @use "./components";
-
-
-
+@use "./base/vars";
 
 .uikit-block {
-    max-width: 600px;
+    display: flex;
     padding: 1rem;
+}
+
+.color-block {
+    padding: 1rem 2rem;
+    max-width: 50%;
+    font-family: vars.$mainFontRegular;
+    font-size: vars.$h4Size;
+    &_primary-color{
+        background-color: vars.$primaryColor;
+        color: vars.$white;
+    }
+    &_secondary-color{
+        background-color: vars.$secondaryColor;
+                color: vars.$white;
+    }
+    &_light-color{
+        background-color: vars.$lightColor;
+    }
+    &_borders-color{
+        background-color: vars.$borderColor;
+    }
+    &_dark-color{
+        background-color: vars.$darkColor;
+        color: vars.$white;
+    }
+    &_grey-color{
+        background-color: vars.$greyColor;
+        color: vars.$white;
+    }
 }
