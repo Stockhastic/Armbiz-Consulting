@@ -137,7 +137,7 @@ strong, .special-text, .bold-text {
 }
 .btn_primary:hover {
   background-color: #0050d9;
-  box-shadow: 0 0 14px rgba(65, 135, 255, 0.4745098039);
+  box-shadow: 0 0 14px rgba(82, 145, 255, 0.4745098039);
 }
 .btn_primary:active {
   transition: 0.012s;
@@ -153,7 +153,7 @@ strong, .special-text, .bold-text {
 }
 .btn_secondary:hover {
   color: #1a6eff;
-  box-shadow: 0 0 14px rgba(65, 135, 255, 0.4745098039);
+  box-shadow: 0 0 14px rgba(82, 145, 255, 0.4745098039);
 }
 .btn_secondary:active {
   transition: 0.012s;
@@ -193,10 +193,6 @@ strong, .special-text, .bold-text {
 
 #cursor.hidden {
   opacity: 0;
-}
-
-br {
-  height: 50px;
 }
 
 .uikit-block {
