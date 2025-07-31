@@ -4,10 +4,12 @@
 
 .uikit-block {
     display: flex;
+    flex-direction: column;
     padding: 1rem;
-}
 
+}
 .color-block {
+    position: relative;
     padding: 1rem 2rem;
     max-width: 50%;
     font-family: vars.$mainFontRegular;
@@ -15,23 +17,119 @@
     &_primary-color{
         background-color: vars.$primaryColor;
         color: vars.$white;
+        &::after{
+            position: absolute;
+            right: 1rem;
+            font-family: vars.$mainFontBold;
+            text-transform: uppercase;
+            content: "#1a6eff";
+        }
     }
     &_secondary-color{
         background-color: vars.$secondaryColor;
-                color: vars.$white;
+        color: vars.$white;
+        &::after{
+            position: absolute;
+            right: 1rem;
+            font-family: vars.$mainFontBold;
+            text-transform: uppercase;
+            content: "#60a2ff";
+        }
     }
     &_light-color{
         background-color: vars.$lightColor;
+        &::after{
+            position: absolute;
+            right: 1rem;
+            font-family: vars.$mainFontBold;
+            text-transform: uppercase;
+            content: "#e7effe";
+        }
     }
     &_borders-color{
         background-color: vars.$borderColor;
+        &::after{
+            position: absolute;
+            right: 1rem;
+            font-family: vars.$mainFontBold;
+            text-transform: uppercase;
+            content: "#d7deef";
+        }
     }
     &_dark-color{
         background-color: vars.$darkColor;
         color: vars.$white;
+        &::after{
+            position: absolute;
+            right: 1rem;
+            font-family: vars.$mainFontBold;
+            text-transform: uppercase;
+            content: "#1e2736";
+        }
     }
     &_grey-color{
         background-color: vars.$greyColor;
         color: vars.$white;
+        &::after{
+            position: absolute;
+            right: 1rem;
+            font-family: vars.$mainFontBold;
+            text-transform: uppercase;
+            content: "#434c5b";
+        }
+    }
+    &_lightgrey-color{
+        background-color: vars.$lightGreyColor;
+        color: vars.$white;
+        &::after{
+            position: absolute;
+            right: 1rem;
+            font-family: vars.$mainFontBold;
+            text-transform: uppercase;
+            content: "#646d83";
+        }
+    }
+}
+
+.divider {
+    height: 20px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.badge {
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    padding: 1.3rem 3rem;
+    background-color: vars.$lightColor;
+    border-radius: 3em;
+    font-size: vars.$badgeFontSize;
+    font-family: vars.$mainFontBold;
+    color: vars.$primaryColor;
+    text-transform: uppercase;
+}
+
+
+// Services
+.services {
+    padding-block: 20rem;
+    
+    &__title, &__subtitle {text-align: center}
+    &__subtitle {
+        color: vars.$greyColor;
+    }
+    &__header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    &__badge{
+        @extend .badge;
     }
 }

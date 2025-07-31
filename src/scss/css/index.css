@@ -1,8 +1,17 @@
-/*# sourceMappingURL=index.css.map */border-box;
-  cursor: none !important;
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  padding-block: 20rem;
 }
-
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+.hero__title, .hero__subtitle {
+  text-align: center;
+}
+.hero__subtitle {
+  line-height: 1.3;
+  color: #434c5b;
+}/*# sourceMappingURL=index.css.map */ fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -34,7 +43,7 @@ body::-ms-selection {
   color: #fff;
 }
 
-ol, ul {
+ul {
   list-style: none;
 }
 
@@ -77,7 +86,7 @@ a {
   font-family: "Raleway-Bold";
   src: url(/src/fonts/Raleway-Bold.ttf);
 }
-h1, h2, h3, h4, p, a, button {
+h1, h2, h3, h4, h5, p, a, button, ul, ol {
   font-family: "Raleway-Regular";
 }
 
@@ -97,7 +106,11 @@ h4 {
   font-size: 2.4rem;
 }
 
-p, a, button {
+h5 {
+  font-size: 2rem;
+}
+
+p, a, button, ol, ul {
   font-size: 1.6rem;
 }
 
@@ -120,41 +133,57 @@ strong, .special-text, .bold-text {
   color: #1a6eff;
 }
 
+.special-text_inverted {
+  color: #ef9e00;
+}
+
+.underlined-text {
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+.uppercased-text {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
 .btn {
-  display: inline-block;
-  padding: 1rem 3.5rem;
+  display: inline-flex;
+  line-height: 1.2;
+  padding: 1.5rem 3.5rem;
   margin: 0.5rem;
   border-radius: 0.7em;
   border: none;
   background: none;
+  font-size: 1.8rem;
 }
-.btn_primary {
+.btn--primary {
   transition: ease-in-out 0.24s;
   background-color: #1a6eff;
   color: #fff;
   font-family: "Raleway-Semibold";
 }
-.btn_primary:hover {
+.btn--primary:hover {
   background-color: #0050d9;
   box-shadow: 0 0 14px rgba(82, 145, 255, 0.4745098039);
 }
-.btn_primary:active {
+.btn--primary:active {
   transition: 0.012s;
   background-color: #fff;
   color: #1a6eff;
   box-shadow: inset 0 0 4px rgba(119, 156, 211, 0.3);
 }
-.btn_secondary {
+.btn--secondary {
   transition: ease-in-out 0.24s;
   border: 1px solid #d7deef;
   color: #1e2736;
   font-family: "Raleway-Semibold";
 }
-.btn_secondary:hover {
+.btn--secondary:hover {
   color: #1a6eff;
   box-shadow: 0 0 14px rgba(82, 145, 255, 0.4745098039);
 }
-.btn_secondary:active {
+.btn--secondary:active {
   transition: 0.012s;
   background-color: #1a6eff;
   color: #fff;
@@ -192,4 +221,104 @@ strong, .special-text, .bold-text {
 
 #cursor.hidden {
   opacity: 0;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+}
+.service-card--classic {
+  border: 1px solid #d7deef;
+  border-radius: 2rem;
+}
+.service-card--dark {
+  background-color: #1e2736;
+  border: 1px solid #1e2736;
+  border-radius: 1rem;
+  color: #fff;
+}
+.service-card--dark > p, .service-card--dark h4, .service-card--dark h3, .service-card--dark h2, .service-card--dark h1, .service-card--dark a {
+  color: #fff;
+}
+.service-card--dark > .card__benefit::before {
+  content: url(/src/graphics/png/benefit-icon_dark.png);
+}
+.service-card--dark > .card__feature::before {
+  color: #ef9e00;
+}
+.service-card__header {
+  display: grid;
+  gap: 1.2rem;
+}
+.service-card__title {
+  font-family: "Raleway-Medium";
+}
+.service-card__subtitle {
+  font-family: "Raleway-Semibold";
+}
+.service-card__subtitle--grey {
+  font-family: "Raleway-Medium";
+  color: #646d83;
+}
+.service-card__text {
+  color: #434c5b;
+}
+.service-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.service-card__steps {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-position: inside;
+}
+.service-card__steps > li {
+  font-size: 1.6rem;
+  font-family: "Raleway-Semibold";
+  background-color: #e7effe;
+  color: #1a6eff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.8em;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.service-card__features {
+  position: relative;
+}
+.service-card__features > li {
+  margin: 0.5rem 0 0.5rem 1.3rem;
+  font-size: 1.6rem;
+  color: #434c5b;
+  font-family: "Raleway-Medium";
+}
+.service-card__features > li::before {
+  transform: translateY(-20%);
+  left: 0;
+  position: absolute;
+  color: #1a6eff;
+  font-size: 2.8rem;
+  content: "•";
+}
+.service-card__benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-card__benefits > li {
+  position: relative;
+  margin: 0.5rem 3rem;
+  font-size: 1.6rem;
+  font-style: "Raleway-Medium";
+}
+.service-card__benefits > li::before {
+  left: 0;
+  translate: -2.5rem -2px;
+  position: absolute;
+  content: url(/src/graphics/png/benefit-icon.png);
+}
+.service-card__divider {
+  height: 1px;
+  background-color: #d7deef;
 }/*# sourceMappingURL=index.css.map */

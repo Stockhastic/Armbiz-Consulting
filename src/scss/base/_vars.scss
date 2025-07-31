@@ -1,11 +1,14 @@
 // Colors
 $primaryColor: #1a6eff;
 $primaryTransparentColor: #5291ff79;
+$primaryInvertedColor: #ef9e00;
+
 $secondaryColor: #60a2ff;
 $lightColor: #e7effe;
 $borderColor: #d7deef;
-$greyColor: #434c5b;
 $darkColor: #1e2736;
+$greyColor: #434c5b;
+$lightGreyColor: #646d83;
 
 $black: #000;
 $white: #fff;
@@ -17,7 +20,12 @@ $h1Size:8.1rem;
 $h2Size:5.4rem;
 $h3Size:3.6rem;
 $h4Size:2.4rem;
+$h5Size:2rem;
 $pSize:1.6rem;
+
+$smallFontSize:1.4rem;
+$featureMarkSize:2.8rem;
+$badgeFontSize:1.3rem;
 
 // Screens
 $mobile: "min-width: 375px"; 

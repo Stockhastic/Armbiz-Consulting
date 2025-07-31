@@ -1,0 +1,115 @@
+@use "./vars";
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem; 
+    gap: 2rem;
+
+    &--classic {
+        border: 1px solid vars.$borderColor;
+        border-radius: 2rem;
+    }
+    &--dark {
+        background-color: vars.$darkColor;
+        border: 1px solid vars.$darkColor;
+        border-radius: 1rem;
+        color: vars.$white;
+
+        & > p, h4, h3, h2, h1, a {
+            color: #fff;
+        }
+
+        & > .card__benefit {
+            &::before {
+                content: url(/src/graphics/png/benefit-icon_dark.png);
+            }
+        }
+        & > .card__feature {
+            &::before {
+                color: vars.$primaryInvertedColor;
+            }
+        }
+    }
+
+    &__header{
+        display: grid;
+        gap: 1.2rem;
+    }
+
+    &__title{
+        font-family: vars.$mainFontMedium;
+    } 
+    &__subtitle {
+        font-family: vars.$mainFontSemibold;
+        &--grey {
+            font-family: vars.$mainFontMedium;
+            color: vars.$lightGreyColor;
+        }
+    }
+    &__text{
+        color:vars.$greyColor;
+        // font-family: vars.$mainFontMedium;
+    }
+
+    &__details{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__steps{
+        display: flex;
+        flex-wrap: wrap;
+        list-style-position: inside;
+        & > li{
+            font-size: vars.$pSize;
+            font-family: vars.$mainFontSemibold;
+            background-color: vars.$lightColor;
+            color: vars.$primaryColor;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.8em;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+    }
+    &__features{
+        position: relative;
+        & > li {
+            margin: 0.5rem 0 0.5rem 1.3rem;
+            font-size: vars.$pSize;
+            color: vars.$greyColor;
+            font-family: vars.$mainFontMedium;
+            &::before{
+                transform: translateY(-20%);
+                left: 0;
+                position: absolute;
+                color: vars.$primaryColor;
+                font-size: 2.8rem;
+                content: "•";
+            }
+        }
+    }
+    &__benefits{
+        display: flex;
+        flex-wrap: wrap;
+        & > li {
+            position: relative;
+            margin: 0.5rem 3rem;
+            font-size: vars.$pSize;
+            font-style: vars.$mainFontMedium;
+            &::before{
+                left: 0;
+                translate: -2.5rem -2px;
+                position: absolute;
+                content: url(/src/graphics/png/benefit-icon.png);
+            }
+        }
+    }
+
+    &__divider{
+        height: 1px;
+        background-color: vars.$borderColor;
+    }
+
+}
