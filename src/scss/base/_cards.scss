@@ -1,12 +1,15 @@
 @use "./vars";
 
 .service-card {
+    // max-width: 1000px;
     display: flex;
     flex-direction: column;
     padding: 3rem; 
     gap: 2rem;
+    height: 100%;
 
     &--classic {
+        background-color: vars.$white;
         border: 1px solid vars.$borderColor;
         border-radius: 2rem;
     }
@@ -34,6 +37,7 @@
 
     &__header{
         display: grid;
+        position: relative;
         gap: 1.2rem;
     }
 
@@ -43,19 +47,21 @@
     &__subtitle {
         font-family: vars.$mainFontSemibold;
         &--grey {
+            min-height: 2lh;
             font-family: vars.$mainFontMedium;
-            color: vars.$lightGreyColor;
+            color: vars.$greyColor;
         }
     }
     &__text{
-        color:vars.$greyColor;
-        // font-family: vars.$mainFontMedium;
+        min-height: 3lh;
+        color:vars.$lightGreyColor;
+        font-family: vars.$mainFontMedium;
     }
 
     &__details{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     &__steps{
@@ -112,4 +118,23 @@
         background-color: vars.$borderColor;
     }
 
+    &__cta {
+        margin-top: auto;
+    }
+
+    &__price-tag, &__timeline-tag{
+        font-size: vars.$pSize;
+        position: absolute;
+        right: 0;
+    }
+    
+    &__price-tag {
+        font-family: vars.$mainFontBold;
+        color:vars.$primaryColor
+    }
+    &__timeline-tag{
+        translate: 0 100%;
+        font-family: vars.$mainFontRegular;
+        color:vars.$lightGreyColor
+    }
 }

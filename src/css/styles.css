@@ -221,8 +221,10 @@ strong, .special-text, .bold-text {
   flex-direction: column;
   padding: 3rem;
   gap: 2rem;
+  height: 100%;
 }
 .service-card--classic {
+  background-color: #fff;
   border: 1px solid #d7deef;
   border-radius: 2rem;
 }
@@ -243,6 +245,7 @@ strong, .special-text, .bold-text {
 }
 .service-card__header {
   display: grid;
+  position: relative;
   gap: 1.2rem;
 }
 .service-card__title {
@@ -252,16 +255,19 @@ strong, .special-text, .bold-text {
   font-family: "Raleway-Semibold";
 }
 .service-card__subtitle--grey {
+  min-height: 2lh;
   font-family: "Raleway-Medium";
-  color: #646d83;
+  color: #434c5b;
 }
 .service-card__text {
-  color: #434c5b;
+  min-height: 3lh;
+  color: #646d83;
+  font-family: "Raleway-Medium";
 }
 .service-card__details {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 .service-card__steps {
   display: flex;
@@ -314,6 +320,23 @@ strong, .special-text, .bold-text {
 .service-card__divider {
   height: 1px;
   background-color: #d7deef;
+}
+.service-card__cta {
+  margin-top: auto;
+}
+.service-card__price-tag, .service-card__timeline-tag {
+  font-size: 1.6rem;
+  position: absolute;
+  right: 0;
+}
+.service-card__price-tag {
+  font-family: "Raleway-Bold";
+  color: #1a6eff;
+}
+.service-card__timeline-tag {
+  translate: 0 100%;
+  font-family: "Raleway-Regular";
+  color: #646d83;
 }
 
 .hero {
@@ -424,9 +447,16 @@ strong, .special-text, .bold-text {
   height: 20px;
 }
 
+main {
+  background-color: #e7effe;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1280px;
+}
+.wrapper--wided {
+  max-width: 1800px;
 }
 
 .badge, .services__badge {
@@ -444,7 +474,10 @@ strong, .special-text, .bold-text {
 }
 
 .services {
+  display: flex;
+  flex-direction: column;
   padding-block: 20rem;
+  gap: 3rem;
 }
 .services__title, .services__subtitle {
   text-align: center;
@@ -457,4 +490,11 @@ strong, .special-text, .bold-text {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+.services__grid {
+  --min: 800px;
+  display: grid;
+  gap: 2.5rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
+  align-items: stretch;
 }/*# sourceMappingURL=styles.css.map */

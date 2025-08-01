@@ -95,9 +95,16 @@
     height: 20px;
 }
 
+main {
+    background-color: vars.$lightColor;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
+    &--wided{
+        max-width:1800px;
+    }
 }
 
 .badge {
@@ -117,7 +124,10 @@
 
 // Services
 .services {
+    display: flex;
+    flex-direction: column;
     padding-block: 20rem;
+    gap: 3rem;
     
     &__title, &__subtitle {text-align: center}
     &__subtitle {
@@ -131,5 +141,13 @@
     }
     &__badge{
         @extend .badge;
+    }
+
+    &__grid{
+        --min: 800px;
+        display: grid;
+        gap: 2.5rem 3rem;
+        grid-template-columns:  repeat(auto-fit, minmax(var(--min), 1fr));
+        align-items: stretch;
     }
 }

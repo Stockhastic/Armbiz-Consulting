@@ -33,3 +33,17 @@ interactive.forEach(el => {
         cursor.classList.remove('hidden');
     });
 });
+
+
+
+// Цены
+fetch('scripts-js-php/service-prices.json')
+    .then(r => r.json())
+    .then(services => {
+    services.forEach(service => {
+        const priceEl = document.getElementById(`service-price-${service.id}`);
+        const timelineEl = document.getElementById(`service-timeline-${service.id}`);
+        if (priceEl) priceEl.textContent = `Цена начинается от ${service.price}`;
+        if (timelineEl) timelineEl.textContent = `Временные рамки: ${service.timeline}`;
+    });
+});
