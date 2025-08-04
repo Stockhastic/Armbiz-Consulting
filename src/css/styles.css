@@ -223,7 +223,7 @@ strong, .special-text, .bold-text {
   gap: 2rem;
   height: 100%;
 }
-.service-card--classic {
+.service-card--classic, .service-card--mini {
   background-color: #fff;
   border: 1px solid #d7deef;
   border-radius: 2rem;
@@ -242,6 +242,9 @@ strong, .special-text, .bold-text {
 }
 .service-card--dark > .card__feature::before {
   color: #ef9e00;
+}
+.service-card--mini {
+  color: #000;
 }
 .service-card__header {
   display: grid;
@@ -447,10 +450,6 @@ strong, .special-text, .bold-text {
   height: 20px;
 }
 
-main {
-  background-color: #e7effe;
-}
-
 .wrapper {
   margin: 0 auto;
   max-width: 1280px;
@@ -459,7 +458,7 @@ main {
   max-width: 1800px;
 }
 
-.badge, .services__badge {
+.badge, .logistic__badge, .services__badge, .exclusive-offer__badge {
   top: -30%;
   left: 50%;
   transform: translateX(-50%);
@@ -471,6 +470,54 @@ main {
   font-family: "Raleway-Bold";
   color: #1a6eff;
   text-transform: uppercase;
+}
+
+.exclusive-offer {
+  outline: 1px red solid;
+}
+.exclusive-offer__header {
+  position: relative;
+}
+.exclusive-offer__title {
+  text-align: center;
+}
+.exclusive-offer__badge {
+  position: absolute;
+  padding: 0.8 1.5rem;
+}
+.exclusive-offer__badge::before {
+  content: url(/src/graphics/png/exclusive-badge-before.png);
+}
+.exclusive-offer__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "main tax transfer" "main months reports" "main cta cta";
+  gap: 2.4rem;
+}
+
+#main {
+  grid-area: main;
+}
+
+#tax {
+  grid-area: tax;
+}
+
+#transfer {
+  grid-area: transfer;
+}
+
+#months {
+  grid-area: months;
+}
+
+#reports {
+  grid-area: reports;
+}
+
+#cta {
+  grid-area: cta;
 }
 
 .services {
@@ -497,4 +544,9 @@ main {
   gap: 2.5rem 3rem;
   grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
   align-items: stretch;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }/*# sourceMappingURL=styles.css.map */

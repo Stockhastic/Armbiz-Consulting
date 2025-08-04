@@ -95,9 +95,9 @@
     height: 20px;
 }
 
-main {
-    background-color: vars.$lightColor;
-}
+// main {
+//     background-color: vars.$lightColor;
+// }
 
 .wrapper {
     margin: 0 auto;
@@ -120,6 +120,42 @@ main {
     color: vars.$primaryColor;
     text-transform: uppercase;
 }
+
+// Exclusive Offer Badge
+.exclusive-offer{
+    outline: 1px red solid;
+    
+    &__header{
+        position: relative;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__badge{
+        position: absolute;
+        @extend .badge;
+        padding: 0.8 1.5rem;
+        &::before {
+            content: url(/src/graphics/png/exclusive-badge-before.png);
+        }
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "main tax transfer"
+        "main months reports"
+        "main cta cta";
+        gap:2.4rem;
+    }
+}
+#main {grid-area: main;}
+#tax {grid-area: tax;}
+#transfer {grid-area: transfer;}
+#months {grid-area: months;}
+#reports {grid-area: reports;}
+#cta {grid-area: cta;}
 
 
 // Services
@@ -150,4 +186,18 @@ main {
         grid-template-columns:  repeat(auto-fit, minmax(var(--min), 1fr));
         align-items: stretch;
     }
+}
+
+// Logistic
+.logistic {
+    &__badge{
+        @extend .badge;
+    }
+}
+
+// Contact
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }

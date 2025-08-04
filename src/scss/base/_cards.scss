@@ -34,6 +34,10 @@
             }
         }
     }
+    &--mini {
+        @extend .service-card--classic;
+        color: #000;
+    }
 
     &__header{
         display: grid;
