@@ -1,18 +1,17 @@
+// 1) Курсор
 const aura   = document.getElementById('aura');
 const cursor = document.getElementById('cursor');
 
 let mouseX = 0, mouseY = 0;
 let auraX  = 0, auraY  = 0;
 
-// 1) Обновляем координаты курсора
 document.addEventListener('mousemove', e => {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
+    mouseX = e.clientX;
+    mouseY = e.clientY;
     cursor.style.left = mouseX + 'px';
     cursor.style.top  = mouseY + 'px';
 });
 
-// 2) Логика «догонялки» для ауры
 function animateAura() {
     auraX += (mouseX - auraX) * 0.24;
     auraY += (mouseY - auraY) * 0.24;
@@ -22,7 +21,7 @@ function animateAura() {
 }
 animateAura();
 
-const interactive = document.querySelectorAll('button, a, input[type="submit"]');
+const interactive = document.querySelectorAll('button, a, input[type="submit"], .mouse-selectable');
 interactive.forEach(el => {
     el.addEventListener('mouseenter', () => {
         aura.classList.add('hovered');
@@ -32,6 +31,14 @@ interactive.forEach(el => {
         aura.classList.remove('hovered');
         cursor.classList.remove('hidden');
     });
+});
+
+document.addEventListener('mousedown', () => {
+    aura.classList.add('clicked');
+});
+
+document.addEventListener('mouseup', () => {
+    aura.classList.remove('clicked');
 });
 
 

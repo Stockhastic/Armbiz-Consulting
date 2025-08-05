@@ -190,6 +190,38 @@
 
 // Logistic
 .logistic {
+    &__header{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__title, &__lead{
+        text-align: center
+    }
+    &__kpi{
+        display: flex;
+        justify-content: center;
+        &-item{
+            margin: 0 1rem;
+            // outline: 1px solid vars.$borderColor;
+        }
+        &-icon{
+            display: block;
+            margin: 0 auto;
+        }
+        &-score, &-caption {
+            text-align: center;
+        }
+        &-caption{
+            margin-top: 0.2rem;
+            font-family: vars.$mainFontMedium;
+            font-size: vars.$smallFontSize;
+            color: vars.$greyColor;
+        }
+        
+    }
+    
     &__badge{
         @extend .badge;
     }
@@ -199,5 +231,191 @@
 .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    padding-block: 10rem;
+    &__badge{
+        @extend .badge;
+        top: 0;
+        left: 0;
+        translate: 50% 120%;
+    }
+    &__details {
+        position: relative;
+        max-width: 600px;;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        gap:3rem;
+    }
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5rem;
+        // justify-content: space-between;
+        & > ul {
+            margin-bottom: 2.5rem;
+            & > p {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    &__subtitle{
+        font-family: vars.$mainFontSemibold;
+    }
+    &__text{
+        color: vars.$darkColor;
+    }
+
+    &__mails > li, &__phones > li, &__socials > li{
+        font-family: vars.$mainFontRegular;
+        font-size: vars.$pSize;
+    }
+    &__mails {
+        & > li {
+            margin-bottom: 0.5rem;
+            color:vars.$darkColor;
+            text-decoration: underline;
+            &::before{
+                margin-right: 1.5rem;
+                vertical-align: middle;
+                content: url(/src/graphics/png/contact-before-mail-icon.png);
+            }
+        }
+    }
+    &__phones {
+        & > li {
+            margin-bottom: 0.5rem;
+            color:vars.$darkColor;
+            text-decoration: underline;
+            &::before{
+                margin-right: 1.5rem;
+                vertical-align: middle;
+                content: url(/src/graphics/png/contact-before-tel-icon.png);
+            }
+        }
+    }
+    &__socials {
+        & > li{
+            display: inline-block;
+            margin-top: 1rem;
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link{
+        &--arm{
+            &::after{
+                margin-left: 1rem;
+                vertical-align: middle;
+                content: url(/src/graphics/png/contact-after-tel-arm-icon.png);
+            }
+        }
+        &--rus{
+            &::after{
+                right: 0;
+                margin-left: 1rem;
+                vertical-align: middle;
+                content: url(/src/graphics/png/contact-after-tel-rus-icon.png);
+            }
+        }
+    }
+
+
+}
+// Form
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    border: 1px solid vars.$borderColor;
+    border-radius: 2rem;
+    box-shadow: 0 8px 30px #05080d11 ;
+
+    &__title {
+        color: vars.$darkColor;
+        font-size: vars.$smallFontSize;
+        font-family: vars.$mainFontBold;
+        margin: 1rem 0;
+    }
+    &__text {
+        font-size: 1rem;
+        font-family: vars.$mainFontMedium;
+        color: vars.$greyColor;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    &__radio {
+        margin-bottom: 1rem;
+    }
+
+
+    & > input, & > select, & > textarea {
+        font-family: vars.$mainFontRegular;
+    }
+    & > input {
+        padding: 1rem 1.6rem;
+        border: 1px solid vars.$borderColor;
+        border-radius: 1rem;
+    }
+    & > label, &__radio > label {
+        border-color: vars.$borderColor;
+        margin-right: 0.5rem;
+        font-size: vars.$smallFontSize;
+        font-family: vars.$mainFontRegular;
+    }
+    & > select {
+        padding: 1rem 1.6rem;
+        border-radius: 1rem;
+        border: 1px solid vars.$borderColor;
+        font-family: vars.$mainFontMedium;
+    }
+    & > button {
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 1rem;
+        border: 1px solid vars.$primaryColor;
+    }
+
+    &__spacer{
+        height: 2rem;
+    }
+
+    textarea {
+        resize: none;
+        border-radius: 1rem;
+        border: 1px solid vars.$borderColor;
+        padding: 1rem;
+        font-family: vars.$mainFontMedium;
+    }
+}
+
+// Header 
+.header{
+    @extend .wrapper;
+    display: flex;
+    justify-content: space-between;
+    // background-color: red;
+    outline: 2px solid bisque;
+    height: 12rem;
+    &__logo{
+        flex-grow: 1;
+        & > img {
+            max-height: 100%;
+        }
+    }   
+    &__nav-list{
+        height: 100%;
+        outline: 2px solid rgb(255, 199, 131);
+        display: flex;
+        align-content: center;
+    }
+    &__nav-item{
+        outline: 2px solid rgb(255, 180, 87);
+        margin: auto 1rem;
+    }
+    &__lang-switcher{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

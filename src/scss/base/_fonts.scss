@@ -25,6 +25,10 @@ src: url(/src/fonts/Raleway-Regular.ttf);
     font-family: "Raleway-Bold";
     src: url(/src/fonts/Raleway-Bold.ttf);
 }
+@font-face {
+    font-family: "Raleway-Regular-Italic";
+    src: url(/src/fonts/Raleway-Italic.ttf);
+}
 
 h1, h2, h3, h4, h5, p, a, button, ul, ol {
 font-family: vars.$mainFontRegular;
@@ -76,5 +80,10 @@ strong, .special-text, .bold-text {
 }
 .uppercased-text {
     text-transform: uppercase;
+    font-size: 1em;
+}
+
+.italic-text{
+    font-family: vars.$mainFontItalic;
     font-size: 1em;
 }
