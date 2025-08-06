@@ -1,6 +1,5 @@
 *, *:before, *:after{
     box-sizing: border-box;
-
     cursor: none !important;
   }
   
@@ -14,6 +13,10 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
+  }
+
+  html{
+    scroll-behavior: smooth;
   }
   
   footer, header, nav, section, main{

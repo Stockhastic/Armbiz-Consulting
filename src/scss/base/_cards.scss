@@ -13,6 +13,42 @@
         border: 1px solid vars.$borderColor;
         border-radius: 2rem;
     }
+    &--mini {
+        display: block;
+        @extend .service-card--classic;
+        color: #000;
+        padding: 2rem;
+
+        & > .service-card__title{
+            margin-top: 2rem;
+            font-family: vars.$mainFontBold;
+        }
+        & > .service-card__subtitle{
+            font-family: vars.$mainFontMedium;
+            font-size: 1.4rem;
+            color: vars.$greyColor;
+        }
+
+    }
+    &--exclusive {
+        border: 1px solid vars.$borderColor;
+        border-radius: 2rem;
+        & > header {
+            display: grid;
+            grid-template-columns: 72px 1fr;
+            grid-template-rows: 1fr 0.4fr;
+            gap: 0;
+            column-gap: 1.6rem;
+
+            & > .service-card__title, & > .service-card__subtitle{
+                align-self: end;
+            }
+
+            & > .service-card__icon {
+                grid-row: 1 / span 2;
+            }
+        }
+    }
     &--dark {
         background-color: vars.$darkColor;
         border: 1px solid vars.$darkColor;
@@ -34,10 +70,25 @@
             }
         }
     }
-    &--mini {
-        @extend .service-card--classic;
-        color: #000;
+    &--dark-exclusive {
+        @extend .service-card--dark;
+        justify-content: space-between;
+        border-radius: 2rem;
+        & > header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0;
+            column-gap: 1.6rem;
+            & > .service-card__title{
+                align-self: center;
+            }
+        }
+        & > .service-card__text{
+            font-family: vars.$mainFontRegular;
+            min-height: 1lh
+        }
     }
+
 
     &__header{
         display: grid;
@@ -60,6 +111,13 @@
         min-height: 3lh;
         color:vars.$lightGreyColor;
         font-family: vars.$mainFontMedium;
+        &--framed{
+            background-color: vars.$lightColor;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            border: 1px solid #C5D9F5;
+            margin: 2rem 0;
+        }
     }
 
     &__details{
@@ -106,7 +164,7 @@
         & > li {
             position: relative;
             margin: 0.5rem 3rem;
-            font-size: vars.$pSize;
+            font-size: 1.4rem;
             font-style: vars.$mainFontMedium;
             &::before{
                 left: 0;
@@ -120,6 +178,7 @@
     &__divider{
         height: 1px;
         background-color: vars.$borderColor;
+        margin: 2rem 0;
     }
 
     &__cta {

@@ -16,6 +16,10 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   text-size-adjust: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 footer, header, nav, section, main {
   display: block;
 }
@@ -164,6 +168,7 @@ strong, .special-text, .bold-text {
   background-color: #1a6eff;
   color: #fff;
   font-family: "Raleway-Semibold";
+  justify-content: center;
 }
 .btn--primary:hover {
   background-color: #0050d9;
@@ -212,7 +217,10 @@ strong, .special-text, .bold-text {
 #aura.hovered {
   transform: scale(1.5);
   border: 1px solid rgba(26, 110, 255, 0.5882352941);
-  backdrop-filter: invert(1);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 51, 0, 0.1) 0%, transparent 50%), radial-gradient(circle at 70% 70%, rgba(4, 0, 255, 0.1) 0%, transparent 50%);
+  backdrop-filter: contrast(1.2) brightness(1.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(26, 110, 255, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 #cursor {
@@ -246,23 +254,68 @@ strong, .special-text, .bold-text {
   border: 1px solid #d7deef;
   border-radius: 2rem;
 }
-.service-card--dark {
+.service-card--mini {
+  display: block;
+  color: #000;
+  padding: 2rem;
+}
+.service-card--mini > .service-card__title {
+  margin-top: 2rem;
+  font-family: "Raleway-Bold";
+}
+.service-card--mini > .service-card__subtitle {
+  font-family: "Raleway-Medium";
+  font-size: 1.4rem;
+  color: #434c5b;
+}
+.service-card--exclusive {
+  border: 1px solid #d7deef;
+  border-radius: 2rem;
+}
+.service-card--exclusive > header {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  grid-template-rows: 1fr 0.4fr;
+  gap: 0;
+  column-gap: 1.6rem;
+}
+.service-card--exclusive > header > .service-card__title, .service-card--exclusive > header > .service-card__subtitle {
+  align-self: end;
+}
+.service-card--exclusive > header > .service-card__icon {
+  grid-row: 1/span 2;
+}
+.service-card--dark, .service-card--dark-exclusive {
   background-color: #1e2736;
   border: 1px solid #1e2736;
   border-radius: 1rem;
   color: #fff;
 }
-.service-card--dark > p, .service-card--dark h4, .service-card--dark h3, .service-card--dark h2, .service-card--dark h1, .service-card--dark a {
+.service-card--dark > p, .service-card--dark-exclusive > p, .service-card--dark h4, .service-card--dark-exclusive h4, .service-card--dark h3, .service-card--dark-exclusive h3, .service-card--dark h2, .service-card--dark-exclusive h2, .service-card--dark h1, .service-card--dark-exclusive h1, .service-card--dark a, .service-card--dark-exclusive a {
   color: #fff;
 }
-.service-card--dark > .card__benefit::before {
+.service-card--dark > .card__benefit::before, .service-card--dark-exclusive > .card__benefit::before {
   content: url(/src/graphics/png/benefit-icon_dark.png);
 }
-.service-card--dark > .card__feature::before {
+.service-card--dark > .card__feature::before, .service-card--dark-exclusive > .card__feature::before {
   color: #ef9e00;
 }
-.service-card--mini {
-  color: #000;
+.service-card--dark-exclusive {
+  justify-content: space-between;
+  border-radius: 2rem;
+}
+.service-card--dark-exclusive > header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0;
+  column-gap: 1.6rem;
+}
+.service-card--dark-exclusive > header > .service-card__title {
+  align-self: center;
+}
+.service-card--dark-exclusive > .service-card__text {
+  font-family: "Raleway-Regular";
+  min-height: 1lh;
 }
 .service-card__header {
   display: grid;
@@ -284,6 +337,13 @@ strong, .special-text, .bold-text {
   min-height: 3lh;
   color: #646d83;
   font-family: "Raleway-Medium";
+}
+.service-card__text--framed {
+  background-color: #e7effe;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid #C5D9F5;
+  margin: 2rem 0;
 }
 .service-card__details {
   display: flex;
@@ -329,7 +389,7 @@ strong, .special-text, .bold-text {
 .service-card__benefits > li {
   position: relative;
   margin: 0.5rem 3rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-style: "Raleway-Medium";
 }
 .service-card__benefits > li::before {
@@ -341,6 +401,7 @@ strong, .special-text, .bold-text {
 .service-card__divider {
   height: 1px;
   background-color: #d7deef;
+  margin: 2rem 0;
 }
 .service-card__cta {
   margin-top: auto;
@@ -491,7 +552,10 @@ strong, .special-text, .bold-text {
 }
 
 .exclusive-offer {
-  outline: 1px red solid;
+  display: grid;
+  position: relative;
+  padding-block: 15rem;
+  gap: 9rem;
 }
 .exclusive-offer__header {
   position: relative;
@@ -500,11 +564,14 @@ strong, .special-text, .bold-text {
   text-align: center;
 }
 .exclusive-offer__badge {
-  position: absolute;
-  padding: 0.8 1.5rem;
+  top: 0;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
 }
 .exclusive-offer__badge::before {
+  vertical-align: middle;
   content: url(/src/graphics/png/exclusive-badge-before.png);
+  margin-right: 1rem;
 }
 .exclusive-offer__cards {
   display: grid;
@@ -512,10 +579,12 @@ strong, .special-text, .bold-text {
   grid-template-rows: auto auto auto;
   grid-template-areas: "main tax transfer" "main months reports" "main cta cta";
   gap: 2.4rem;
+  column-gap: 4rem;
 }
 
 #main {
   grid-area: main;
+  min-width: 600px;
 }
 
 #tax {
@@ -591,6 +660,14 @@ strong, .special-text, .bold-text {
   font-family: "Raleway-Medium";
   font-size: 1.4rem;
   color: #434c5b;
+}
+.logistic__cards {
+  display: grid;
+  outline: 1px solid red;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 3rem;
+  column-gap: 5rem;
 }
 .contact {
   display: grid;
@@ -694,12 +771,22 @@ strong, .special-text, .bold-text {
   margin-bottom: 1rem;
 }
 .form > input, .form > select, .form > textarea {
+  font-family: "Raleway-Semibold";
+}
+.form > input::placeholder, .form > select::placeholder, .form > textarea::placeholder {
   font-family: "Raleway-Regular";
 }
 .form > input {
   padding: 1rem 1.6rem;
   border: 1px solid #d7deef;
   border-radius: 1rem;
+}
+.form > input:focus {
+  outline-color: #60a2ff;
+}
+.form > input:not(:placeholder-shown) {
+  background-color: #e7effe;
+  border-color: #60a2ff;
 }
 .form > label, .form__radio > label {
   border-color: #d7deef;
@@ -729,6 +816,13 @@ strong, .special-text, .bold-text {
   padding: 1rem;
   font-family: "Raleway-Medium";
 }
+.form textarea:focus {
+  outline-color: #60a2ff;
+}
+.form textarea:not(:placeholder-shown) {
+  background-color: #e7effe;
+  border-color: #60a2ff;
+}
 
 .header {
   display: flex;
@@ -756,4 +850,7 @@ strong, .special-text, .bold-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.header__nav-link {
+  font-family: "Raleway-Semibold";
 }/*# sourceMappingURL=styles.css.map */

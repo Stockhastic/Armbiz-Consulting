@@ -84,24 +84,22 @@
         <div class="wrapper">
             <section class="hero">
                 <h1 class="hero__title">Ваш успех это<br><span class="special-text">наша миссия</span></h1>
-                <h5 class="hero__subtitle">Премиальные цифровые решения для требовательных предпринимателей и индивидуальных клиентов, стремяшихся к совершенству в сфере корпоративных услуг</h5>
+                <h5 class="hero__subtitle">Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг</h5>
                 <div class="hero__cta">
                     <a href="#services" class="btn btn--primary">Изучить наши услуги</a>
                     <a href="#contact-us" class="btn btn--secondary">Запросить консультацию</a>
                 </div>
             </section>
             <section class="exclusive-offer">
-                <header class="exclusive-offer__header">
-                    <span class="exclusive-offer__badge">Эксклюзивное предложение</span>
-                    <h2 class="exclusive-offer__title">Особые условия для <br><span class="special-text">IT предпринимателей</span></h2>
-                </header>
+                <span class="exclusive-offer__badge">Эксклюзивное предложение</span>
+                <h2 class="exclusive-offer__title">Особые условия для <br><span class="special-text">IT предпринимателей</span></h2>
                 <div class="exclusive-offer__cards">
-                    <article id="main" class="service-card service-card--classic">
-                        <div class="service-card__header">
-                            <img class="service-card__icon" src="#" alt="service-card-icon-exclusive">
+                    <article id="main" class="service-card service-card--exclusive">
+                        <header class="service-card__header">
+                            <img class="service-card__icon" src="src/graphics/png/exclusive-it-icon.png" alt="service-card-icon-exclusive">
                             <h4 class="service-card__title"><span class="special-text">Преимущества</span> для IT Сектора</h4>
-                            <p class="service-card__subtitle service-card__subtitle--exclusive">Особые условия для новых бизнесов</p>
-                        </div>
+                            <p class="service-card__subtitle">Особые условия для новых бизнесов</p>
+                        </header>
                         <div class="service-card__description">
                             <p class="service-card__text">Эти условия распространяются на клиентов, которые зарегистрировали у нас ИП и чья деятельность связана с сектором информационных технологий</p>
                             <p class="service-card__text service-card__text--framed">Наши сотрудники переведут ваш бизнес в <span class="special-text">зону льготного налоса с обложением в 1%</span> бесплатно. Бухгалтерия предоставит <span class="special-text">бесплатое обслуживание сроком на полгода!</span></p>
@@ -134,13 +132,13 @@
                         <p class="service-card__subtitle">Полный спектр услуг по ведению бух.учета и декларированию</p>
                     </article>
 
-                    <article id="cta" class="service-card service-card--dark">
-                        <div class="service-card__header">
-                            <img  class="service-card__icon" src="#" alt="service-card-icon">
+                    <article id="cta" class="service-card service-card--dark-exclusive">
+                        <header class="service-card__header">
+                            <img  class="service-card__icon" src="src/graphics/png/exclusive-cta-icon.png" alt="service-card-icon">
                             <h5 class="service-card__title">Готовы приступить к работе?</h5>
-                        </div>
+                        </header>
                         <p class="service-card__text">Воспользуйтесь нашим эксклюзивным предложением и начинте свой бизнес со значительной экономией на налогах и поддержкой</p>
-                        <a href="#" class="btn btn--primary">Начать сейчас</a>
+                        <a href="#contact-us" class="btn btn--primary">Начать сейчас</a>
                     </article>
                 </div>
             </section>
@@ -148,7 +146,7 @@
         <div class="wrapper wrapper--wided">
             <section class="services">
                 <header class="services__header">
-                    <span class="services__badge">Наши услуги</span>
+                    <span id="services" class="services__badge">Наши услуги</span>
                     <h2 class="services__title">Комплексные<br><span class="special-text">Решения для бизнеса</span></h2>
                     <h5 class="services__subtitle">Комплекcные корпоративные услуги, разработанные с учетом сложных бизнес-потребностей, с первоклассным сервисоми экспертным руководством</h5>
                 </header>
@@ -485,13 +483,6 @@
                         </ul>
                     </article>
                     <article class="service-card service-card--classic">
-                        <h3 class="service-card__title">Экспорт <span class="special-text">Товаров</span></h3>
-                        <ul class="service-card__features">
-                            <li>Оформление экспортных деклараций в другие страны</li>
-                            <li>Оформление транзитных деклараций (в ЕАЭС)</li>
-                        </ul>
-                    </article>
-                    <article class="service-card service-card--classic">
                         <h3 class="service-card__title">Дополнительные <span class="special-text">Услуги</span></h3>
                         <ul class="service-card__benefits">
                             <li>Регстрация таможенной папки для всех, от ИП до большой компании</li>
@@ -516,10 +507,17 @@
                             </li>
                         </ul>
                     </article>
+                    <article class="service-card service-card--classic">
+                        <h3 class="service-card__title">Экспорт <span class="special-text">Товаров</span></h3>
+                        <ul class="service-card__features">
+                            <li>Оформление экспортных деклараций в другие страны</li>
+                            <li>Оформление транзитных деклараций (в ЕАЭС)</li>
+                        </ul>
+                    </article>
                     <a href="/services-logistics-and-customs" class="btn btn--primary">Узнать больше</a>
                 </div>
             </section>
-            <section class="contact">
+            <section id="contact-us" class="contact">
                 <div class="contact__details">
                     <span class="contact__badge">Связаться с нами</span>
                     <h2 class="contact__title">Хотите <br><span class="special-text">Работать с нами?</span></h2>

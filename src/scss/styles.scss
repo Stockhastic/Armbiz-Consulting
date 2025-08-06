@@ -123,8 +123,10 @@
 
 // Exclusive Offer Badge
 .exclusive-offer{
-    outline: 1px red solid;
-    
+    display: grid;
+    position: relative;
+    padding-block: 15rem;
+    gap: 9rem;
     &__header{
         position: relative;
     }
@@ -132,11 +134,14 @@
         text-align: center;
     }
     &__badge{
-        position: absolute;
         @extend .badge;
-        padding: 0.8 1.5rem;
+        top: 0;
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
         &::before {
+            vertical-align: middle;
             content: url(/src/graphics/png/exclusive-badge-before.png);
+            margin-right: 1rem;
         }
     }
     &__cards {
@@ -144,13 +149,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas:
-        "main tax transfer"
-        "main months reports"
-        "main cta cta";
+            "main tax transfer"
+            "main months reports"
+            "main cta cta";
         gap:2.4rem;
+        column-gap: 4rem;
     }
 }
-#main {grid-area: main;}
+#main {grid-area: main; min-width: 600px;}
 #tax {grid-area: tax;}
 #transfer {grid-area: transfer;}
 #months {grid-area: months;}
@@ -195,7 +201,6 @@
         flex-direction: column;
         gap: 3rem;
     }
-
     &__title, &__lead{
         text-align: center
     }
@@ -219,9 +224,17 @@
             font-size: vars.$smallFontSize;
             color: vars.$greyColor;
         }
-        
     }
     
+    &__cards{
+        display: grid;
+        outline: 1px solid red;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 3rem;
+        column-gap: 5rem
+    }
+
     &__badge{
         @extend .badge;
     }
@@ -349,13 +362,24 @@
     }
 
 
+
     & > input, & > select, & > textarea {
-        font-family: vars.$mainFontRegular;
+        font-family: vars.$mainFontSemibold;
+        &::placeholder{
+            font-family: vars.$mainFontRegular;
+        }
     }
     & > input {
         padding: 1rem 1.6rem;
         border: 1px solid vars.$borderColor;
         border-radius: 1rem;
+        &:focus{
+            outline-color: vars.$secondaryColor;
+        }
+        &:not(:placeholder-shown) {
+            background-color: vars.$lightColor;
+            border-color: vars.$secondaryColor;
+        }
     }
     & > label, &__radio > label {
         border-color: vars.$borderColor;
@@ -386,6 +410,13 @@
         border: 1px solid vars.$borderColor;
         padding: 1rem;
         font-family: vars.$mainFontMedium;
+        &:focus{
+            outline-color: vars.$secondaryColor;
+        }
+        &:not(:placeholder-shown) {
+            background-color: vars.$lightColor;
+            border-color: vars.$secondaryColor;
+        }
     }
 }
 
@@ -417,5 +448,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    &__nav-link{
+        font-family:vars.$mainFontSemibold;
     }
 }

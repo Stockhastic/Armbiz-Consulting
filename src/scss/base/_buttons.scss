@@ -15,6 +15,7 @@
         background-color: vars.$primaryColor;
         color: vars.$white;
         font-family: vars.$mainFontSemibold;
+        justify-content: center;
         &:hover{
             background-color: vars.$primaryBtnHover;
             box-shadow: 0 0 14px vars.$primaryTransparentColor;
