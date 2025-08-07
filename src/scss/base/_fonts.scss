@@ -29,6 +29,10 @@ src: url(/src/fonts/Raleway-Regular.ttf);
     font-family: "Raleway-Regular-Italic";
     src: url(/src/fonts/Raleway-Italic.ttf);
 }
+@font-face {
+    font-family: "Raleway-Light";
+    src: url(/src/fonts/Raleway-Light.ttf);
+}
 
 h1, h2, h3, h4, h5, p, a, button, ul, ol {
 font-family: vars.$mainFontRegular;

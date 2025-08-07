@@ -16,6 +16,10 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   text-size-adjust: none;
 }
 
+address {
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -64,7 +68,6 @@ input {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 @font-face {
@@ -86,6 +89,10 @@ a {
 @font-face {
   font-family: "Raleway-Regular-Italic";
   src: url(/src/fonts/Raleway-Italic.ttf);
+}
+@font-face {
+  font-family: "Raleway-Light";
+  src: url(/src/fonts/Raleway-Light.ttf);
 }
 h1, h2, h3, h4, h5, p, a, button, ul, ol {
   font-family: "Raleway-Regular";
@@ -699,6 +706,9 @@ strong, .special-text, .bold-text {
 .contact__links > ul > p {
   margin-bottom: 1rem;
 }
+.contact__link {
+  color: #1e2736;
+}
 .contact__subtitle {
   font-family: "Raleway-Semibold";
 }
@@ -827,7 +837,7 @@ strong, .special-text, .bold-text {
 .header {
   display: flex;
   justify-content: space-between;
-  outline: 2px solid bisque;
+  outline: 1spx solid bisque;
   height: 12rem;
 }
 .header__logo {
@@ -838,12 +848,12 @@ strong, .special-text, .bold-text {
 }
 .header__nav-list {
   height: 100%;
-  outline: 2px solid rgb(255, 199, 131);
+  outline: 1px solid rgb(255, 199, 131);
   display: flex;
   align-content: center;
 }
 .header__nav-item {
-  outline: 2px solid rgb(255, 180, 87);
+  outline: 1px solid rgb(255, 180, 87);
   margin: auto 1rem;
 }
 .header__lang-switcher {
@@ -853,4 +863,91 @@ strong, .special-text, .bold-text {
 }
 .header__nav-link {
   font-family: "Raleway-Semibold";
+  color: #1e2736;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  height: 40rem;
+  background-color: #1e2736;
+}
+.footer__grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr;
+  column-gap: 3rem;
+}
+.footer__logo {
+  margin: auto 2rem 5rem 0;
+}
+.footer__logo-caption {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #646d83;
+}
+.footer__title {
+  font-style: normal;
+  font-family: "Raleway-Semibold";
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.footer__brand {
+  max-width: 50rem;
+  align-content: end;
+}
+.footer__list-item::before {
+  content: "•";
+  font-size: 2.3rem;
+  color: #1a6eff;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.footer__list-item--address::before {
+  content: url(/src/graphics/png/footer-map-icon.png);
+  object-fit: contain;
+}
+.footer__list-item--mail::before {
+  content: url(/src/graphics/png/footer-mail-icon.png);
+}
+.footer__list-item--phone::before {
+  content: url(/src/graphics/png/footer-tel-icon.png);
+}
+.footer__list-link {
+  font-size: 1.4rem;
+  vertical-align: middle;
+  color: #fff;
+}
+.footer__list--contacts > li:nth-child(2n) {
+  margin-bottom: 1rem;
+}
+.footer__divider {
+  background-color: #434c5b;
+  height: 1px;
+  width: 1280px;
+  margin: 2rem auto;
+}
+.footer__afterline {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+.footer__copyright {
+  font-family: "Raleway-Medium";
+  color: #fff;
+}
+.footer__policy {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: underline;
+  color: #fff;
+  font-family: "Raleway-Medium";
+}
+.footer__messengers {
+  display: flex;
+  gap: 1rem;
 }/*# sourceMappingURL=styles.css.map */
