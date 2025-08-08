@@ -271,9 +271,6 @@
             }
         }
     }
-    &__link{
-        color: vars.$darkColor;
-    }
     &__subtitle{
         font-family: vars.$mainFontSemibold;
     }
@@ -318,6 +315,7 @@
     }
 
     &__link{
+    color: vars.$darkColor;
         &--arm{
             &::after{
                 margin-left: 1rem;
@@ -331,6 +329,14 @@
                 margin-left: 1rem;
                 vertical-align: middle;
                 content: url(/src/graphics/png/contact-after-tel-rus-icon.png);
+            }
+        }
+        &--map{
+            font-family: vars.$mainFontMedium;
+            &::before{
+                content: url(/src/graphics/png/footer-map-icon.png);                    object-fit: contain;
+                margin-right: 1rem;
+                vertical-align: middle;
             }
         }
     }

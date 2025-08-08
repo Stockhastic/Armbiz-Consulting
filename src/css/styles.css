@@ -706,9 +706,6 @@ strong, .special-text, .bold-text {
 .contact__links > ul > p {
   margin-bottom: 1rem;
 }
-.contact__link {
-  color: #1e2736;
-}
 .contact__subtitle {
   font-family: "Raleway-Semibold";
 }
@@ -744,6 +741,9 @@ strong, .special-text, .bold-text {
   margin-top: 1rem;
   margin-right: 1.5rem;
 }
+.contact__link {
+  color: #1e2736;
+}
 .contact__link--arm::after {
   margin-left: 1rem;
   vertical-align: middle;
@@ -754,6 +754,15 @@ strong, .special-text, .bold-text {
   margin-left: 1rem;
   vertical-align: middle;
   content: url(/src/graphics/png/contact-after-tel-rus-icon.png);
+}
+.contact__link--map {
+  font-family: "Raleway-Medium";
+}
+.contact__link--map::before {
+  content: url(/src/graphics/png/footer-map-icon.png);
+  object-fit: contain;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .form {
