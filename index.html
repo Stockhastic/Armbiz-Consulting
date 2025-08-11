@@ -54,29 +54,33 @@
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Услуги</a>
+                    <a href="#" class="header__nav-link" data-i18n="header-services">Услуги</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Контакты</a>
+                    <a href="#" class="header__nav-link" data-i18n="header-contacts">Контакты</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">О нас</a>
+                    <a href="#" class="header__nav-link"data-i18n="header-aboutus">О нас</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Логистика и таможня</a>
+                    <a href="#" class="header__nav-link" data-i18n="header-logistics">Логистика и таможня</a>
                 </li>
             </ul>
         </nav>
-        <div class="header__lang-switcher">
-            <button class="header__lang-switcher-item header__lang-switcher-item--selected">
-                <img class="header__lang-switcher-icon" src="#" alt="lang-switcher-item-rus">
-                <p class="header__lang-switcher-text">Русский</p>
-            </button>
-            <button class="header__lang-switcher-item">
-                <img class="header__lang-switcher-icon" src="#" alt="lang-switcher-item-en">
-                <p class="header__lang-switcher-text">Английский</p>
-            </button>
+        <div class="header__lang mouse-selectable">
+            <img src="/src/graphics/png/header-lang-ru.png" alt="#">
+            <div class="header__lang-switcher">
+                <button class="header__lang-switcher-item header__lang-switcher-item--selected" data-lang="ru">
+                    <img class="header__lang-switcher-icon" src="/src/graphics/png/header-lang-ru.png" alt="lang-switcher-item-rus">
+                    <p class="header__lang-switcher-text">Русский</p>
+                </button>
+                <button class="header__lang-switcher-item" data-lang="en">
+                    <img class="header__lang-switcher-icon" src="/src/graphics/png/header-lang-en.png" alt="lang-switcher-item-en">
+                    <p class="header__lang-switcher-text">Английский</p>
+                </button>
+            </div>
         </div>
+
     </header>
 
     <main>
@@ -455,7 +459,7 @@
                     </ul>
                 </header>
                 <div class="logistic__cards">
-                    <article class="service-card service-card--classic">
+                    <article class="service-card service-card--logistics">
                         <h3 class="service-card__title">Импорт <span class="special-text">Товаров</span></h3>
                         <ul class="service-card__features">
                             <li>Полное сопровождение</li>
@@ -465,7 +469,14 @@
                             <li>Предварительная проверка документов</li>
                         </ul>
                     </article>
-                    <article class="service-card service-card--classic">
+                    <article class="service-card service-card--logistics">
+                        <h3 class="service-card__title">Экспорт <span class="special-text">Товаров</span></h3>
+                        <ul class="service-card__features">
+                            <li>Оформление экспортных деклараций в другие страны</li>
+                            <li>Оформление транзитных деклараций (в ЕАЭС)</li>
+                        </ul>
+                    </article>
+                    <article class="service-card service-card--logistics service-card--unique">
                         <h3 class="service-card__title">Дополнительные <span class="special-text">Услуги</span></h3>
                         <ul class="service-card__benefits">
                             <li>Регстрация таможенной папки для всех, от ИП до большой компании</li>
@@ -473,28 +484,21 @@
                         </ul>
                         <ul class="service-card__extras">
                             <li>
-                                <img src="src/graphics/png/#" alt="logistic-extras-delivery-icon">
+                                <img src="/src/graphics/svg/logistic-services-delivery.svg" alt="logistic-extras-delivery-icon">
                                 <p>Международная доставка</p>
                             </li>
                             <li>
-                                <img src="src/graphics/png/#" alt="logistic-extras-agent-icon">
+                                <img src="/src/graphics/svg/logistic-services-support.svg" alt="logistic-extras-agent-icon">
                                 <p>Агнетское сопровождение</p>
                             </li>
                             <li>
-                                <img src="src/graphics/png/#" alt="logistic-extras-licenses-icon">
+                                <img src="/src/graphics/svg/logistic-services-documents.svg" alt="logistic-extras-licenses-icon">
                                 <p>Документация и Лицензии</p>
                             </li>
                             <li>
-                                <img src="src/graphics/png/#" alt="logistic-extras-customs-ico">
+                                <img src="/src/graphics/png/logistic-custom-services.png" alt="logistic-extras-customs-ico">
                                 <p>Таможенное оформление и Логистика</p>
                             </li>
-                        </ul>
-                    </article>
-                    <article class="service-card service-card--classic">
-                        <h3 class="service-card__title">Экспорт <span class="special-text">Товаров</span></h3>
-                        <ul class="service-card__features">
-                            <li>Оформление экспортных деклараций в другие страны</li>
-                            <li>Оформление транзитных деклараций (в ЕАЭС)</li>
                         </ul>
                     </article>
                     <a href="/services-logistics-and-customs" class="btn btn--primary">Узнать больше</a>
@@ -573,7 +577,7 @@
             <nav class="footer__services">
                 <p class="footer__title">Услуги</p>
                 <ul class="footer__list">
-                    <li class="footer__list-item"><a href="/pages/services/llc-ie-registration.html" class="footer__list-link">Регистрация ООО или ИП</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/llc-ie-registration/index.html" class="footer__list-link">Регистрация ООО или ИП</a></li>
                     <li class="footer__list-item"><a href="/pages/services/ready-companies.html" class="footer__list-link">Готовые компании</a></li>
                     <li class="footer__list-item"><a href="/pages/services/residence-permit.html" class="footer__list-link">ВНЖ</a></li>
                     <li class="footer__list-item"><a href="/pages/services/citizenship/index.html" class="footer__list-link">Гражданство</a></li>
@@ -604,9 +608,9 @@
         <div class="footer__divider"></div>
         <div class="footer__afterline">
             <p class="footer__copyright">© 2025 Armbiz Consulting. Все права защищены</p>        
-            <a href="/pages/privacy-policy/privacy-policy.pdf" class="footer__policy">Политика конфиденциальности</a>
+            <a href="/pages/privacy-policy/privacy-policy.pdf" target="_blank" rel="nooperner noreferrer" class="footer__policy">Политика конфиденциальности</a>
         </div>    
     </footer>
-    <script src="scripts-js-php/script.js"></script>
+    <script src="/scripts-js-php/script.js"></script>
 </body>
 </html>

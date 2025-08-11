@@ -1,0 +1,14 @@
+{
+    "ru": {
+        "header-services": "Услуги",
+        "header-contacts": "Контакты",
+        "header-aboutus": "О нас",
+        "header-logistics": "Логистика и Таможня"
+    },
+    "en": {
+        "header-services": "Sevices",
+        "header-contacts": "Contacts",
+        "header-aboutus": "About us",
+        "header-logistics": "Logistics & Customs"
+    }
+}

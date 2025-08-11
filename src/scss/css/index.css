@@ -331,6 +331,15 @@ strong, .special-text, .bold-text {
   font-family: "Raleway-Regular";
   min-height: 1lh;
 }
+.service-card--logistics {
+  border: 1px solid #d7deef;
+  height: auto;
+  border-radius: 2rem;
+  margin: 2rem;
+}
+.service-card--unique {
+  width: 100%;
+}
 .service-card__header {
   display: grid;
   position: relative;
@@ -433,4 +442,27 @@ strong, .special-text, .bold-text {
   translate: 0 100%;
   font-family: "Raleway-Regular";
   color: #646d83;
+}
+.service-card__extras {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.service-card__extras > li {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.service-card__extras > li > img {
+  border-radius: 1rem;
+  padding: 0.7rem;
+  background-color: #e7effe;
+  width: 6rem;
+  height: 6rem;
+}
+.service-card__extras > li > p {
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  font-family: "Raleway-Semibold";
 }/*# sourceMappingURL=index.css.map */

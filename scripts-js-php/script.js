@@ -54,3 +54,51 @@ fetch('scripts-js-php/service-prices.json')
         if (timelineEl) timelineEl.textContent = `Временные рамки: ${service.timeline}`;
     });
 });
+
+
+
+
+
+
+
+//LANGUAGE
+let translations = {};
+let currentLang = 'ru';
+
+fetch('/scripts-js-php/lang.json')
+    .then(r => r.json())
+    .then(data => {
+    translations = data;
+});
+
+function setLang(lang) {
+    currentLang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+        el.textContent = translations[lang][key];
+    }
+    });
+}
+
+document.querySelectorAll('.header__lang-switcher-item').forEach(btn => {
+    btn.addEventListener('click', () => {
+    const lang = btn.getAttribute('data-lang');
+    setLang(lang);
+    });
+});
+
+document.querySelectorAll('.header__lang-switcher-item').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Получаем выбранный язык
+    const lang = btn.getAttribute('data-lang');
+    setLang(lang);
+
+    // Снимаем выделение со всех кнопок
+    document.querySelectorAll('.header__lang-switcher-item')
+      .forEach(b => b.classList.remove('header__lang-switcher-item--selected'));
+
+    // Добавляем выделение к выбранной кнопке
+    btn.classList.add('header__lang-switcher-item--selected');
+  });
+});
