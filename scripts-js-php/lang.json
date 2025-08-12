@@ -3,12 +3,396 @@
         "header-services": "Услуги",
         "header-contacts": "Контакты",
         "header-aboutus": "О нас",
-        "header-logistics": "Логистика и Таможня"
+        "header-logistics": "Логистика и Таможня",
+        "hero-title": "Ваш успех это<br><span class=\"special-text\">наша миссия</span>",
+        "hero-subtitle": "Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг",
+        "hero-button-services": "Изучить наши услуги",
+        "hero-button-consultation": "Запросить консультацию",
+        "exclusive-offer-badge": "Эксклюзивное предложение",
+        "exclusive-offer-title": "Особые условия для <br><span class=\"special-text\">IT предпринимателей</span>",
+        "exclusive-offer-card1-title": "<span class=\"special-text\">Преимущества</span> для IT Сектора",
+        "exclusive-offer-card1-subtitle": "Особые условия для новых бизнесов",
+        "exclusive-offer-card1-text": "Эти условия распространяются на клиентов, которые зарегистрировали у нас ИП и чья деятельность связана с сектором информационных технологий",
+        "exclusive-offer-card1-special-text": "Наши сотрудники переведут ваш бизнес в <span class=\"special-text\">зону льготного налоса с обложением в 1%</span> бесплатно. Бухгалтерия предоставит <span class=\"special-text\">бесплатое обслуживание сроком на полгода!</span>",
+        "exclusive-offer-card1-conditions-title": "Условия бухгалтерии включают:",
+        "exclusive-offer-card1-condition1": "Финансовую отчетность и документы",
+        "exclusive-offer-card1-condition2": "Административную работу",
+        "exclusive-offer-card1-condition3": "Предоставление налоговых деклараций",
+        "exclusive-offer-card1-condition4": "Оптимизацию налоговых нагрузок",
+        "exclusive-offer-minicard1-title": "Налоговая ставка в 1%",
+        "exclusive-offer-minicard1-subtitle": "Зона льготного налогообложения с минимальной нагрузкой",
+        "exclusive-offer-minicard2-title": "Бесплатный перенос",
+        "exclusive-offer-minicard2-subtitle": "Переход в зону льготного налогообложения не оплачивается",
+        "exclusive-offer-minicard3-title": "Первые 6 месяцев",
+        "exclusive-offer-minicard3-subtitle": "Период бесплатного бухгалтерского обслуживания",
+        "exclusive-offer-minicard4-title": "Полная отчетность",
+        "exclusive-offer-minicard4-subtitle": "Полный спектр услуг по ведению бух.учета и декларированию",
+        "exclusive-offer-cta-title": "Готовы приступить к работе?",
+        "exclusive-offer-cta-text": "Воспользуйтесь нашим эксклюзивным предложением и начинте свой бизнес со значительной экономией на налогах и поддержкой",
+        "exclusive-offer-cta-button": "Начать сейчас",
+
+        "services-badge": "Наши услуги",
+        "services-title": "Комплексные<br><span class=\"special-text\">Решения для бизнеса</span>",
+        "services-subtitle": "Комплекcные корпоративные услуги, разработанные с учетом сложных бизнес-потребностей, с первоклассным сервисоми экспертным руководством",
+        
+        "service-card-llc-ie-title": "Регистрация ООО или ИП",
+        "service-card-llc-ie-subtitle": "Открываем на месте или удаленно.<br> Возможно открытие под ключ с банковскими счетами.",
+        "service-card-llc-ie-text": "Наша команда экспертов займется всеми аспектами создания компании, от первичной консультации до регистрации. Мы оказываем всестороннюю поддержку.",
+        
+        "service-card-llc-ie-steps": "Этапы процесса:",
+        "service-card-llc-ie-step1": "Консультация",
+        "service-card-llc-ie-step2": "Подготовка документов",
+        "service-card-llc-ie-step3": "Регистрация",
+        "service-card-llc-ie-step4": "Открытие счетов",
+        
+        "service-card-llc-ie-features": "Ключевые особености:",
+        "service-card-llc-ie-feature1": "Наша команда подготовит для вас все необходимые документы",
+        "service-card-llc-ie-feature2": "Юридический адрес на территории Еревана",
+        "service-card-llc-ie-feature3": "Регистрация компании в государственном реестре Республики Армения",
+        "service-card-llc-ie-feature4": "Полная поддержка при работе с банками, от консультаций до помощи в открытии расчетных счетов",
+        "service-card-llc-ie-feature5": "Получение социального номера",
+
+        "service-card-llc-ie-benefits": "Преимущества",
+        "service-card-llc-ie-benefit1": "Представим ваши интересы",
+        "service-card-llc-ie-benefit2": "Гибкий подход к вашим требованиям",
+        "service-card-llc-ie-benefit3": "Доступ на международный рынок",
+        "service-card-llc-ie-benefit4": "Возможность полной удаленной регистрации",
+    
+        "service-card-llc-ie-cta-button": "Хочу знать больше",
+
+        "service-card-to-go-companies-title": "Готовые компании и Филиалы",
+        "service-card-to-go-companies-subtitle": "Предварительно созданные предприятия с чистой корпоративной историей для немедленного ведения бизнеса",
+        "service-card-to-go-companies-text": "Получите доступ к нашему портфелю предварительо зарегистрированных компаний в юрисдикциях премиум-класса. Эти компании предлагают немедленные операционные возможности с установленной корпоративной историей и чистыми документами о соответствии",
+        
+        "service-card-to-go-companies-steps": "Этапы процесса:",
+        "service-card-to-go-companies-step1": "Консультация",
+        "service-card-to-go-companies-step2": "Подбор необходимой компании",
+        "service-card-to-go-companies-step3": "Подбор Учредителя/Директора",
+        
+        "service-card-to-go-companies-features": "Ключевые особенности:",
+        "service-card-to-go-companies-feature1": "Директор - Резидент",
+        "service-card-to-go-companies-feature2": "Учредитель - Резидент",
+        "service-card-to-go-companies-feature3": "Юридический адрес",
+        "service-card-to-go-companies-feature4": "Открытие расчетных счетов",
+        "service-card-to-go-companies-feature5": "Предлагаемые компании имеют опыт работы от 1 до 10 лет",
+    
+        "service-card-to-go-companies-benefits": "Преимущества:",
+        "service-card-to-go-companies-benefit1": "Банковские отношения",
+        "service-card-to-go-companies-benefit2": "Сокращенное время начала работы",
+        "service-card-to-go-companies-benefit3": "Мгновенный выход на рынок",
+        
+        "service-card-to-go-companies-cta-button": "Хочу знать больше",
+
+        "service-card-residence-title": "ВНЖ",
+        "service-card-residence-subtitle": "Предоставляем комплексный подход в получении ВНЖ для иностранных граждан.",
+        "service-card-residence-text": "Пройдите сложный путь релокации с нашей командой. Мы оказываем комплексную поддержку в вопросах резиденства в Армении",
+
+        "service-card-residence-steps": "Этапы процесса:",
+        "service-card-residence-step1": "Консультация",
+        "service-card-residence-step2": "Выбор подхода",
+        "service-card-residence-step3": "Подача всех требуемых документов",
+        "service-card-residence-step4": "Назначание даты",
+
+        "service-card-residence-features": "Ключевые особенности:",
+        "service-card-residence-feature1": "Вы можете подобрать самый удобный для себя метод получения",
+        "service-card-residence-feature2": "В комплект входит получение социальной карты",
+        "service-card-residence-feature3": "Полная документационна поддержка",
+        "service-card-residence-feature4": "Берем на себя нотариальное заверение и перевод всех необходимых документов",
+        "service-card-residence-feature5": "Предоставляем помощь в получении медицинской справки",
+        "service-card-residence-feature6": "Отправим вашу заявку за неделю и начнем подготовку всех документов",
+    
+        "service-card-residence-benefits": "Преимущества:",
+        "service-card-residence-benefit1": "Все что вам потребуется - паспорт",
+        "service-card-residence-benefit2": "Есть возможность оформления через бизнесс",
+        
+        "service-card-residence-cta-button": "Хочу знать больше",
+
+        "service-card-citizenship-title": "Гражданство",
+        "service-card-citizenship-subtitle": "Поможем вам получить Армянский паспорт",
+        "service-card-citizenship-text": "Условия сильно варьируются от случая к случаю, но мы готовые предложить несколько вариантов получения",
+
+        "service-card-citizenship-steps": "Этапы процесса:",
+        "service-card-citizenship-step1": "Консультация",
+        "service-card-citizenship-step2": "Определяемся с подходом",
+        "service-card-citizenship-step3": "Подготовка документов",
+        "service-card-citizenship-step4": "Подача",
+
+        "service-card-citizenship-features": "Ключевы особенности:",
+        "service-card-citizenship-feature1": "Полное сопровождение во всех вопросах от получения необходимых документов до представлениях ваших интересов в различных инстанциях",
+        "service-card-citizenship-feature2": "Гибкий подход. На гражданство может претендовать каждый",
+        "service-card-citizenship-feature3": "Возможность ускоренного получения",
+
+        "service-card-citizenship-cta-button": "Хочу знать больше",
+
+        "service-card-accounting-title": "Бухгалтерские услуги",
+        "service-card-accounting-subtitle": "Продвинутое управление с оптимизацией налогообложения и комплексной поддержкой нормативных требований",
+        "service-card-accounting-text": "Профессиональные бухгалтерские и налоговые услуги, разработанные для международных деловых операций. Наши сертифицированные бухгалтеры обеспечивают постоянное финансовое управление, налоговое планирование и соблюдение нормативных требований в различных юрисдикциях",
+
+        "service-card-accounting-steps": "Этапы процесса:",
+        "service-card-accounting-step1": "Консультация",
+        "service-card-accounting-step2": "Интеграция",
+        "service-card-accounting-step3": "Ежемесяная отчетность",
+
+        "service-card-accounting-features": "Ключевы особенности:",
+        "service-card-accounting-feature1": "Наши специалисты будут составлять для вас ежемесячные, ежеквартальные и годовые отчеты",
+        "service-card-accounting-feature2": "Займемся текущей офисной работой",
+        "service-card-accounting-feature3": "Возьмем на себя отправку деклараций",
+        "service-card-accounting-feature4": "Перевод в зону льготного налогообложения",
+        "service-card-accounting-feature5": "Финансовая прозрачность",
+
+        "service-card-accounting-benefits": "Преимущества:",
+        "service-card-accounting-benefit1": "Снижение налогового бремени",
+        "service-card-accounting-benefit2": "Обеспечение соответствия",
+        "service-card-accounting-benefit3": "Поддержка стратегического планирования",
+        
+        "service-card-accounting-cta-button": "Хочу знать больше",
+
+        "service-card-bank-card-title": "Банковская карта физ. лицам",
+        "service-card-bank-card-subtitle": "Удаленное открытие банковского счета с пластиковой картой и доступ к банковским услугам в одном из наших банков-партнеров",
+        "service-card-bank-card-text": "Это отличная возможность получить карту иностранного банка в платежной системе Master Card и Visa. Пластиковая карточка будет отправлена вам сразу после выпуска, где бы вы не находились.",
+
+        "service-card-bank-card-steps": "Этапы процесса:",
+        "service-card-bank-card-step1": "Консультация",
+        "service-card-bank-card-step2": "Выбор банка",
+        "service-card-bank-card-step3": "Подготовка документов",
+        "service-card-bank-card-step4": "Прохождение опросника",
+
+        "service-card-bank-card-features": "Ключевы особенности:",
+        "service-card-bank-card-feature1": "Открытие сразу четырех расчетных счетов в валютах: RUB, AMD, USD, EUR",
+        "service-card-bank-card-feature2": "Доступ к международной платежной системе",
+        "service-card-bank-card-feature3": "Международная доставка карты за пределы Армении",
+
+        "service-card-bank-card-benefits": "Преимущества работы с нами",
+        "service-card-bank-card-benefit1": "Широкий выбор валют и возможность открыть дополнительные счета",
+        "service-card-bank-card-benefit2": "Международные переводы",
+        "service-card-bank-card-benefit3": "Возможность полностью удаленного оформления",
+
+        "service-card-bank-card-cta-button": "Хочу знать больше",
+
+        "service-card-social-card-title": "Социальная карта",
+        "service-card-social-card-subtitle": "Быстрое получение в кратчайшие сроки. Доступ к вазимодействию с гос.органами",
+        "service-card-social-card-text": "Социальная карта в Армении предоставляет множество преимуществ иностранным гражданам, которые планируют остаться в стране на длительный срок. Зачастую это первый документ, который вам нужно будет получить для начала своей деятельности в стране.",
+
+        "service-card-social-card-steps": "Этапы процесса:",
+        "service-card-social-card-step1": "Консультация",
+        "service-card-social-card-step2": "Подготовка документов",
+        "service-card-social-card-step3": "Получение карты",
+
+        "service-card-social-card-benefits": "Преимущества",
+        "service-card-social-card-benefit1": "Упрощенное взаимодействие с государственными органами и банками",
+
+        "service-card-social-card-cta-button": "Хочу знать больше",
+
+        "service-card-registration-title": "Прописка",
+        "service-card-registration-subtitle": "Получите прописку на территории Армении",
+        "service-card-registration-text": "Все что вам потребуется - это социальная карта и нотариально заверенная копия вашего паспорта. Мы можем зареистрировать вас в разных местах Еревана, включая районы. Есть возможность экспресс-регистрации за дополнительную плату.",
+
+        "service-card-registration-steps": "Этапы процесса:",
+        "service-card-registration-step1": "Консультация",
+        "service-card-registration-step2": "Приезд для проставки штампа",
+
+        "service-card-registration-benefits": "Преимущества работы с нами",
+        "service-card-registration-benefit1": "Упрощение взаимодействия с банками",
+        "service-card-registration-benefit2": "Возможность бессрочно находится в Армении",
+
+        "service-card-registration-cta-button": "Хочу знать больше"
     },
     "en": {
         "header-services": "Sevices",
         "header-contacts": "Contacts",
         "header-aboutus": "About us",
-        "header-logistics": "Logistics & Customs"
+        "header-logistics": "Logistics & Customs",
+        "hero-title": "Your success is<br><span class=\"special-text\">our mission</span>",
+        "hero-subtitle": "Premium digital solutions for individual clients and demanding entrepreneurs who strive for excellence in corporate services",
+        "hero-button-services": "Discover our Services",
+        "hero-button-consultation": "Schedule Consultation",
+        "exclusive-offer-badge": "Exclusive offer",
+        "exclusive-offer-title": "Special Terms for<br><span class=\"special-text\">IT Enterpreneurs</span>",
+        "exclusive-offer-card1-title": "IT Sector <span class=\"special-text\">Benefits</span>",
+        "exclusive-offer-card1-subtitle": "Exclusive advantages for tech enterpreneurs",
+        "exclusive-offer-card1-text": "These conditions apply to clients who have registered sole proprietors with us and whose activities are related to the information technology sector.",
+        "exclusive-offer-card1-special-text": "Our team will transfer your activities to the <span class=\"special-text\">preferential tax zone of 1%</span> free of charge. Our accounters will provide <span class=\"special-text\">free service for a period of six months!</span>",
+        "exclusive-offer-card1-conditions-title": "Accounting Terms include",
+        "exclusive-offer-card1-condition1": "Financial reporting and documentation",
+        "exclusive-offer-card1-condition2": "Administrative office work",
+        "exclusive-offer-card1-condition3": "Tax declaration submissions",
+        "exclusive-offer-card1-condition4": "Tax burden optimization",
+        "exclusive-offer-minicard1-title": "1% Tax Rate",
+        "exclusive-offer-minicard1-subtitle": "Preferential tax zone with minimal tax burden",
+        "exclusive-offer-minicard2-title": "Free Transfer",
+        "exclusive-offer-minicard2-subtitle": "No charge for moving to preferential tax zone",
+        "exclusive-offer-minicard3-title": "6 Months Free",
+        "exclusive-offer-minicard3-subtitle": "Complimentary accounting service period",
+        "exclusive-offer-minicard4-title": "Full Reporting",
+        "exclusive-offer-minicard4-subtitle": "Complete accounting and declaration services",
+        "exclusive-offer-cta-title": "Ready to get Started?",
+        "exclusive-offer-cta-text": "Take advantage of our exclusive IT enterpreneur and start your business with significant tax savings and professional support",
+        "exclusive-offer-cta-button": "Start Now!",
+
+        "services-badge": "Our services",
+        "services-title": "Comperhensive<br><span class=\"special-text\">business solutions</span>",
+        "services-subtitle": "Complex corporate services designed for sophisticated business requirements with white-glove service and expert guidance",
+        
+        "service-card-llc-ie-title": "LLC & IE Registration",
+        "service-card-llc-ie-subtitle": "Open on-site and remotely.<br> With the possibility of opening on a turnkey basis with bank accounts.",
+        "service-card-llc-ie-text": "Our team of experts handles all aspects of company formation, from initial consultation to final registration. We provide comprehensive support.",
+        
+        "service-card-llc-ie-steps": "Process Steps:",
+        "service-card-llc-ie-step1": "Consultation",
+        "service-card-llc-ie-step2": "Documentation",
+        "service-card-llc-ie-step3": "Registration",
+        "service-card-llc-ie-step4": "Bank account opening",
+        
+        "service-card-llc-ie-features": "Key Features:",
+        "service-card-llc-ie-feature1": "Our team will prepare all the necessary documents for you",
+        "service-card-llc-ie-feature2": "Obtaining a legal address in Yerevan",
+        "service-card-llc-ie-feature3": "Registration of the company in the state register og the Republic of Armenia",
+        "service-card-llc-ie-feature4": "Full support when working with banks, from consultations to assistance in opening current accounts",
+        "service-card-llc-ie-feature5": "Obtaining a social number for an enterpreneur",
+
+        "service-card-llc-ie-benefits": "Benefits:",
+        "service-card-llc-ie-benefit1": "Represent of your interests",
+        "service-card-llc-ie-benefit2": "Flexible approach to your requirements",
+        "service-card-llc-ie-benefit3": "International market access",
+        "service-card-llc-ie-benefit4": "Possibility of full remote registration",
+    
+        "service-card-llc-ie-cta-button": "Learn More",
+
+        "service-card-to-go-companies-title": "Ready-made Companies & Branches",
+        "service-card-to-go-companies-subtitle": "Pre-established entities with clean corporate history for immediate business operations ",
+        "service-card-to-go-companies-text": "Access our portfolio of pre-registered companies across premium jurisdictions. These shelf companies offer immediate operational capability with established corporate history and clean compliance records",
+        
+        "service-card-to-go-companies-steps": "Process Steps:",
+        "service-card-to-go-companies-step1": "Consultation",
+        "service-card-to-go-companies-step2": "Choosing of company",
+        "service-card-to-go-companies-step3": "Choosing of Founder/Director",
+        
+        "service-card-to-go-companies-features": "Key Features:",
+        "service-card-to-go-companies-feature1": "Director - Resident",
+        "service-card-to-go-companies-feature2": "Founder - Resident",
+        "service-card-to-go-companies-feature3": "Legal Address",
+        "service-card-to-go-companies-feature4": "Opening a current account",
+        "service-card-to-go-companies-feature5": "Offered Companies have expirience from 1 to 10 years",
+    
+        "service-card-to-go-companies-benefits": "Benefits:",
+        "service-card-to-go-companies-benefit1": "Banking relationships",
+        "service-card-to-go-companies-benefit2": "Reduced setup time",
+        "service-card-to-go-companies-benefit3": "Immidiate market entry",
+        
+        "service-card-to-go-companies-cta-button": "Learn More",
+
+        "service-card-residence-title": "Residence Permit",
+        "service-card-residence-subtitle": "We provide a comprehensive approach to obtaining a residence permit for foreign citizens.",
+        "service-card-residence-text": "Go through the difficult relocation path with our team. We provide comprehensive support in matters of residency in Armenia.",
+
+        "service-card-residence-steps": "Process Steps:",
+        "service-card-residence-step1": "Consultation",
+        "service-card-residence-step2": "Choosing approach",
+        "service-card-residence-step3": "Submission of all applications & documents",
+        "service-card-residence-step4": "Passing on the appointed date",
+
+        "service-card-residence-features": "Key Features:",
+        "service-card-residence-feature1": "You can choose the most convenient method for obtaining",
+        "service-card-residence-feature2": "Social card obtaining",
+        "service-card-residence-feature3": "Full documentation support",
+        "service-card-residence-feature4": "Notarized translation of all necessary documents",
+        "service-card-residence-feature5": "Assistance in obtaining a medical certifiacte",
+        "service-card-residence-feature6": "We will send your application a week in advance and begin preparing all the documents",
+    
+        "service-card-residence-benefits": "Benefits:",
+        "service-card-residence-benefit1": "All you need is passport",
+        "service-card-residence-benefit2": "Business options",
+        
+        "service-card-residence-cta-button": "Learn More",
+
+        "service-card-citizenship-title": "Citizenship",
+        "service-card-citizenship-subtitle": "We will help you get an Armenian passport.",
+        "service-card-citizenship-text": "The conditions vary greatly from case to case, but we are ready to offer several options for obtaining",
+
+        "service-card-citizenship-steps": "Process Steps:",
+        "service-card-citizenship-step1": "Consultations",
+        "service-card-citizenship-step2": "Choosing approach",
+        "service-card-citizenship-step3": "Full documentation support",
+        "service-card-citizenship-step4": "Submission",
+
+        "service-card-citizenship-features": "Key Features:",
+        "service-card-citizenship-feature1": "Full support in all matters from obtaining the necessary documents to representing your interests in various instances",
+        "service-card-citizenship-feature2": "A flexible methods. Anyone can apply for citizenship.",
+        "service-card-citizenship-feature3": "The possibility of fast receipt",
+
+        "service-card-citizenship-cta-button": "Learn More",
+
+        "service-card-accounting-title": "Accounting Services",
+        "service-card-accounting-subtitle": "Sophisticated financial management with tax optimization and comprehensive compliance support",
+        "service-card-accounting-text": "Professional accounting and tax services designed for international business operations. Our certified accountants provide ongoing financial management, tax planning, and regulatory compliance across multiple jurisdictions",
+
+        "service-card-accounting-steps": "Process Steps:",
+        "service-card-accounting-step1": "Consultation",
+        "service-card-accounting-step2": "Integration",
+        "service-card-accounting-step3": "Monthly Reporting",
+
+        "service-card-accounting-features": "Key Features:",
+        "service-card-accounting-feature1": "Our professionals will keep monthly, quarterly and annual reports for you",
+        "service-card-accounting-feature2": "Will handle current office work",
+        "service-card-accounting-feature3": "We take care of sending the declarations",
+        "service-card-accounting-feature4": "Transfer to a preferential tax zone",
+        "service-card-accounting-feature5": "Financial transparency",
+
+        "service-card-accounting-benefits": "Benefits",
+        "service-card-accounting-benefit1": "Reduction of tax burden",
+        "service-card-accounting-benefit2": "Compliance assurance",
+        "service-card-accounting-benefit3": "Strategic planning support",
+        
+        "service-card-accounting-cta-button": "Learn More",
+
+        "service-card-bank-card-title": "Individual Bank card",
+        "service-card-bank-card-subtitle": "Remote opening of a bank account with plastic card and access banking services at one of our trusted partner banks ",
+        "service-card-bank-card-text": "This is a great opportunity to get a foreign bank card in the Master Card and Visa payment systems. A plastic card will be sent to you immediately after graduation, wherever you are.",
+
+        "service-card-bank-card-steps": "Process Steps:",
+        "service-card-bank-card-step1": "Consulation",
+        "service-card-bank-card-step2": "Choosing Bank",
+        "service-card-bank-card-step3": "Document preparation",
+        "service-card-bank-card-step4": "Completing the questionary",
+
+        "service-card-bank-card-features": "Key Features:",
+        "service-card-bank-card-feature1": "Open up to four current accounts in four currencies: RUB, AMD, USD, EUR",
+        "service-card-bank-card-feature2": "International payment system access",
+        "service-card-bank-card-feature3": "Delivery of the card to you even if you are in another country ",
+
+        "service-card-bank-card-benefits": "Benefits",
+        "service-card-bank-card-benefit1": "A wide range of currencies and the ability to open additional accounts",
+        "service-card-bank-card-benefit2": "Worldwide transfer",
+        "service-card-bank-card-benefit3": "The possibility of completely remote registration",
+
+        "service-card-bank-card-cta-button": "Learn More",
+
+        "service-card-social-card-title": "Social Card",
+        "service-card-social-card-subtitle": "Quick receipt in the shortest possible time. Access to interaction with government agencies",
+        "service-card-social-card-text": "A social card in Armenia provides many advantages to foreign citizens who plan to stay in the country for a long time. This is often the first document that you will need to receive in order to start your business in the country.",
+
+        "service-card-social-card-steps": "Process Steps:",
+        "service-card-social-card-step1": "Consultation",
+        "service-card-social-card-step2": "Document preparation",
+        "service-card-social-card-step3": "Card obtaining",
+
+        "service-card-social-card-benefits": "Benefits:",
+        "service-card-social-card-benefit1": "Simplified interaction with government agencies and banks",
+
+        "service-card-social-card-cta-button": "Learn More",
+
+        "service-card-registration-title": "Registration",
+        "service-card-registration-subtitle": "Get a registration in Armenia",
+        "service-card-registration-text": "All you will need is a social card and a notarized copy of your passport. We can register you in different places of Yerevan, including districts. There is a possibility of express registration for an additional fee.",
+
+        "service-card-registration-steps": "Process Steps:",
+        "service-card-registration-step1": "Consultation",
+        "service-card-registration-step2": "Arrival for the stamp affixing",
+
+        "service-card-registration-benefits": "Benefits:",
+        "service-card-registration-benefit1": "Simplification of interaction with banks",
+        "service-card-registration-benefit2": "The opportunity to stay in Armenia indefinitely",
+
+        "service-card-registration-cta-button": "Learn More"
     }
 }

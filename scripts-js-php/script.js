@@ -65,40 +65,37 @@ fetch('scripts-js-php/service-prices.json')
 let translations = {};
 let currentLang = 'ru';
 
+// Загружаем переводы
 fetch('/scripts-js-php/lang.json')
-    .then(r => r.json())
-    .then(data => {
+  .then(r => r.json())
+  .then(data => {
     translations = data;
-});
+    setLang(currentLang); // Инициализация на дефолтном языке
+  });
 
 function setLang(lang) {
-    currentLang = lang;
-    document.querySelectorAll('[data-i18n]').forEach(el => {
+  currentLang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang] && translations[lang][key]) {
-        el.textContent = translations[lang][key];
+      el.innerHTML = translations[lang][key]; // сохраняет HTML-теги!
     }
+  });
+
+  // Обновляем выделение кнопки
+  document.querySelectorAll('.header__lang-switcher-item')
+    .forEach(btn => {
+      btn.classList.toggle(
+        'header__lang-switcher-item--selected',
+        btn.getAttribute('data-lang') === lang
+      );
     });
 }
 
-document.querySelectorAll('.header__lang-switcher-item').forEach(btn => {
-    btn.addEventListener('click', () => {
-    const lang = btn.getAttribute('data-lang');
-    setLang(lang);
-    });
-});
-
+// Обработчик клика по кнопкам языка
 document.querySelectorAll('.header__lang-switcher-item').forEach(btn => {
   btn.addEventListener('click', () => {
-    // Получаем выбранный язык
     const lang = btn.getAttribute('data-lang');
     setLang(lang);
-
-    // Снимаем выделение со всех кнопок
-    document.querySelectorAll('.header__lang-switcher-item')
-      .forEach(b => b.classList.remove('header__lang-switcher-item--selected'));
-
-    // Добавляем выделение к выбранной кнопке
-    btn.classList.add('header__lang-switcher-item--selected');
   });
 });

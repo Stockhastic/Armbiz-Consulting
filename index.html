@@ -68,7 +68,7 @@
             </ul>
         </nav>
         <div class="header__lang mouse-selectable">
-            <img src="/src/graphics/png/header-lang-ru.png" alt="#">
+            <img src="/src/graphics/png/header-lang-ru.png" alt="lang-icon">
             <div class="header__lang-switcher">
                 <button class="header__lang-switcher-item header__lang-switcher-item--selected" data-lang="ru">
                     <img class="header__lang-switcher-icon" src="/src/graphics/png/header-lang-ru.png" alt="lang-switcher-item-rus">
@@ -76,7 +76,7 @@
                 </button>
                 <button class="header__lang-switcher-item" data-lang="en">
                     <img class="header__lang-switcher-icon" src="/src/graphics/png/header-lang-en.png" alt="lang-switcher-item-en">
-                    <p class="header__lang-switcher-text">Английский</p>
+                    <p class="header__lang-switcher-text">English</p>
                 </button>
             </div>
         </div>
@@ -86,62 +86,61 @@
     <main>
         <div class="wrapper">
             <section class="hero">
-                <h1 class="hero__title">Ваш успех это<br><span class="special-text">наша миссия</span></h1>
-                <h5 class="hero__subtitle">Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг</h5>
+                <h1 class="hero__title" data-i18n="hero-title">Ваш успех это<br><span class="special-text">наша миссия</span></h1>
+                <h5 class="hero__subtitle" data-i18n="hero-subtitle">Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг</h5>
                 <div class="hero__cta">
-                    <a href="#services" class="btn btn--primary">Изучить наши услуги</a>
-                    <a href="#contact-us" class="btn btn--secondary">Запросить консультацию</a>
+                    <a href="#services" class="btn btn--primary" data-i18n="hero-button-services">Изучить наши услуги</a>
+                    <a href="#contact-us" class="btn btn--secondary" data-i18n="hero-button-consultation">Запросить консультацию</a>
                 </div>
             </section>
             <section class="exclusive-offer">
-                <span class="exclusive-offer__badge">Эксклюзивное предложение</span>
-                <h2 class="exclusive-offer__title">Особые условия для <br><span class="special-text">IT предпринимателей</span></h2>
+                <span class="exclusive-offer__badge" data-i18n="exclusive-offer-badge">Эксклюзивное предложение</span>
+                <h2 class="exclusive-offer__title" data-i18n="exclusive-offer-title">Особые условия для <br><span class="special-text">IT предпринимателей</span></h2>
                 <div class="exclusive-offer__cards">
                     <article id="main" class="service-card service-card--exclusive">
                         <header class="service-card__header">
                             <img class="service-card__icon" src="src/graphics/png/exclusive-it-icon.png" alt="service-card-icon-exclusive">
-                            <h4 class="service-card__title"><span class="special-text">Преимущества</span> для IT Сектора</h4>
-                            <p class="service-card__subtitle">Особые условия для новых бизнесов</p>
+                            <h4 class="service-card__title" data-i18n="exclusive-offer-card1-title"><span class="special-text">Преимущества</span> для IT Сектора</h4>
+                            <p class="service-card__subtitle" data-i18n="exclusive-offer-card1-subtitle">Особые условия для новых бизнесов</p>
                         </header>
                         <div class="service-card__description">
-                            <p class="service-card__text">Эти условия распространяются на клиентов, которые зарегистрировали у нас ИП и чья деятельность связана с сектором информационных технологий</p>
-                            <p class="service-card__text service-card__text--framed">Наши сотрудники переведут ваш бизнес в <span class="special-text">зону льготного налоса с обложением в 1%</span> бесплатно. Бухгалтерия предоставит <span class="special-text">бесплатое обслуживание сроком на полгода!</span></p>
+                            <p class="service-card__text" data-i18n="exclusive-offer-card1-text">Эти условия распространяются на клиентов, которые зарегистрировали у нас ИП и чья деятельность связана с сектором информационных технологий</p>
+                            <p class="service-card__text service-card__text--framed" data-i18n="exclusive-offer-card1-special-text">Наши сотрудники переведут ваш бизнес в <span class="special-text">зону льготного налоса с обложением в 1%</span> бесплатно. Бухгалтерия предоставит <span class="special-text">бесплатое обслуживание сроком на полгода!</span></p>
                             <div class="service-card__divider"></div>
-                            <h4 class="service-card__subtitle service-card__subtitle--grey">Условия бухгалтерии включают:</h4>
+                            <h4 class="service-card__subtitle service-card__subtitle--grey" data-i18n="exclusive-offer-card1-conditions-title">Условия бухгалтерии включают:</h4>
                             <ul class="service-card__benefits">
-                                <li>Финансовую отчетность и документы</li>
-                                <li>Административную работу</li>
-                                <li>Предоставление налоговых деклараций</li>
-                                <li>Оптимизацию налоговых нагрузок</li>
+                                <li data-i18n="exclusive-offer-card1-condition1">Финансовую отчетность и документы</li>
+                                <li data-i18n="exclusive-offer-card1-condition2">Административную работу</li>
+                                <li data-i18n="exclusive-offer-card1-condition3">Предоставление налоговых деклараций</li>
+                                <li data-i18n="exclusive-offer-card1-condition4">Оптимизацию налоговых нагрузок</li>
                             </ul>
-
                         </div>
                     </article>
 
                     <article id="tax" class="service-card service-card--mini">
-                        <p class="service-card__title">Налоговая ставка в 1%</p>
-                        <p class="service-card__subtitle">Зона льготного анлогообложения с минимальной нагрузкой</p>
+                        <p class="service-card__title" data-i18n="exclusive-offer-minicard1-title">Налоговая ставка в 1%</p>
+                        <p class="service-card__subtitle" data-i18n="exclusive-offer-minicard1-subtitle">Зона льготного налогообложения с минимальной нагрузкой</p>
                     </article>
                     <article id="transfer" class="service-card service-card--mini">
-                        <p class="service-card__title">Бесплатный перенос</p>
-                        <p class="service-card__subtitle">Переход в зону льготного налогообложения не оплачивается</p>
+                        <p class="service-card__title" data-i18n="exclusive-offer-minicard2-title">Бесплатный перенос</p>
+                        <p class="service-card__subtitle" data-i18n="exclusive-offer-minicard2-subtitle">Переход в зону льготного налогообложения не оплачивается</p>
                     </article>
                     <article id="months" class="service-card service-card--mini">
-                        <p class="service-card__title">Первые 6 месяцев</p>
-                        <p class="service-card__subtitle">Период бесплатного бухгалтерского обслуживания</p>
+                        <p class="service-card__title" data-i18n="exclusive-offer-minicard3-title">Первые 6 месяцев</p>
+                        <p class="service-card__subtitle" data-i18n="exclusive-offer-minicard3-subtitle">Период бесплатного бухгалтерского обслуживания</p>
                     </article>
                     <article id="reports" class="service-card service-card--mini">
-                        <p class="service-card__title">Полная отчетность</p>
-                        <p class="service-card__subtitle">Полный спектр услуг по ведению бух.учета и декларированию</p>
+                        <p class="service-card__title" data-i18n="exclusive-offer-minicard4-title">Полная отчетность</p>
+                        <p class="service-card__subtitle" data-i18n="exclusive-offer-minicard4-subtitle">Полный спектр услуг по ведению бух.учета и декларированию</p>
                     </article>
 
                     <article id="cta" class="service-card service-card--dark-exclusive">
                         <header class="service-card__header">
                             <img  class="service-card__icon" src="src/graphics/png/exclusive-cta-icon.png" alt="service-card-icon">
-                            <h5 class="service-card__title">Готовы приступить к работе?</h5>
+                            <h5 class="service-card__title" data-i18n="exclusive-offer-cta-title">Готовы приступить к работе?</h5>
                         </header>
-                        <p class="service-card__text">Воспользуйтесь нашим эксклюзивным предложением и начинте свой бизнес со значительной экономией на налогах и поддержкой</p>
-                        <a href="#contact-us" class="btn btn--primary">Начать сейчас</a>
+                        <p class="service-card__text" data-i18n="exclusive-offer-cta-text">Воспользуйтесь нашим эксклюзивным предложением и начинте свой бизнес со значительной экономией на налогах и поддержкой</p>
+                        <a href="#contact-us" class="btn btn--primary" data-i18n="exclusive-offer-cta-button">Начать сейчас</a>
                     </article>
                 </div>
             </section>
@@ -149,9 +148,9 @@
         <div class="wrapper wrapper--wided">
             <section class="services">
                 <header class="services__header">
-                    <span id="services" class="services__badge">Наши услуги</span>
-                    <h2 class="services__title">Комплексные<br><span class="special-text">Решения для бизнеса</span></h2>
-                    <h5 class="services__subtitle">Комплекcные корпоративные услуги, разработанные с учетом сложных бизнес-потребностей, с первоклассным сервисоми экспертным руководством</h5>
+                    <span id="services" class="services__badge" data-i18n="services-badge">Наши услуги</span>
+                    <h2 class="services__title" data-i18n="services-title">Комплексные<br><span class="special-text">Решения для бизнеса</span></h2>
+                    <h5 class="services__subtitle" data-i18n="services-subtitle">Комплекcные корпоративные услуги, разработанные с учетом сложных бизнес-потребностей, с первоклассным сервисоми экспертным руководством</h5>
                 </header>
                 <ul class="services__grid">
                     <li class="services__item">
@@ -160,36 +159,36 @@
                                 <span id="service-price-llc-ie" class="service-card__price-tag">Текст задается JS 🙊</span>
                                 <span id="service-timeline-llc-ie" class="service-card__timeline-tag">Текст задается JS 🙊</span>
                                 <img class="service-card__icon" src="src/graphics/png/LLC & IE Icon.png" alt="service-card__icon" >
-                                <h3 class="service-card__title">Регистрация ООО или ИП</h3>
-                                <h5 class="service-card__subtitle service-card__subtitle--grey">Открываем на месте или удаленно.<br> Возможно открытие под ключ с банковскими счетами.</h5>
-                                <p class="service-card__text">Наша команда экспертов займется всеми аспектами создания компании, от первичной консультации до регистрации. Мы оказываем всестороннюю поддержку.</p>
+                                <h3 class="service-card__title" data-i18n="service-card-llc-ie-title">Регистрация ООО или ИП</h3>
+                                <h5 class="service-card__subtitle service-card__subtitle--grey" data-i18n="service-card-llc-ie-subtitle">Открываем на месте или удаленно.<br> Возможно открытие под ключ с банковскими счетами.</h5>
+                                <p class="service-card__text" data-i18n="service-card-llc-ie-text">Наша команда экспертов займется всеми аспектами создания компании, от первичной консультации до регистрации. Мы оказываем всестороннюю поддержку.</p>
                             </header>
                             <section class="service-card__details">
-                                <h5 class="service-card__subtitle">Этапы процесса:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-llc-ie-steps">Этапы процесса:</h5>
                                 <ol class="service-card__steps">
-                                    <li>Консультация</li>
-                                    <li>Подготовка документов</li>
-                                    <li>Регистрация</li>
-                                    <li>Открытие счетов</li>
+                                    <li data-i18n="service-card-llc-ie-step1">Консультация</li>
+                                    <li data-i18n="service-card-llc-ie-step2">Подготовка документов</li>
+                                    <li data-i18n="service-card-llc-ie-step3">Регистрация</li>
+                                    <li data-i18n="service-card-llc-ie-step4">Открытие счетов</li>
                                 </ol>
-                                <h5 class="service-card__subtitle">Ключевые особенности:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-llc-ie-features">Ключевые особенности:</h5>
                                 <ul class="service-card__features">
-                                    <li>Наша команда подготовит для вас все необходимые документы</li>
-                                    <li>Юридический адрес на территории Еревана</li>
-                                    <li>Регистрация компании в государственном реестре Республики Армения</li>
-                                    <li>Полная поддержка при работе с банками, от консультаций до помощи в открытии расчетных счетов</li>
-                                    <li>Получение социального номера</li>
+                                    <li data-i18n="service-card-llc-ie-feature1">Наша команда подготовит для вас все необходимые документы</li>
+                                    <li data-i18n="service-card-llc-ie-feature2">Юридический адрес на территории Еревана</li>
+                                    <li data-i18n="service-card-llc-ie-feature3">Регистрация компании в государственном реестре Республики Армения</li>
+                                    <li data-i18n="service-card-llc-ie-feature4">Полная поддержка при работе с банками, от консультаций до помощи в открытии расчетных счетов</li>
+                                    <li data-i18n="service-card-llc-ie-feature5">Получение социального номера</li>
                                 </ul>                                
-                                <h5 class="service-card__subtitle">Преимущества:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-llc-ie-benefits">Преимущества:</h5>
                                 <ul class="service-card__benefits">
-                                    <li>Представим ваши интересы</li>
-                                    <li>Гибкий подход к вашим требованиям</li>
-                                    <li>Доступ на международный рынок</li>
-                                    <li>Возможность полной удаленной регистрации</li>
+                                    <li data-i18n="service-card-llc-ie-benefit1">Представим ваши интересы</li>
+                                    <li data-i18n="service-card-llc-ie-benefit2">Гибкий подход к вашим требованиям</li>
+                                    <li data-i18n="service-card-llc-ie-benefit3">Доступ на международный рынок</li>
+                                    <li data-i18n="service-card-llc-ie-benefit4">Возможность полной удаленной регистрации</li>
                                 </ul>
                             </section>
                             <footer class="service-card__cta">
-                                <a href="#" class="btn btn--primary">Хочу знать больше</a>
+                                <a href="#" class="btn btn--primary" data-i18n="service-card-llc-ie-cta-button">Хочу знать больше</a>
                             </footer>
                         </article>
                     </li>
@@ -199,34 +198,34 @@
                                 <span id="service-price-ready-company" class="service-card__price-tag">Текст задается JS 🙊</span>
                                 <span id="service-timeline-ready-company" class="service-card__timeline-tag">Текст задается JS 🙊</span>
                                 <img class="service-card__icon" src="src/graphics/png/to-go-companies-icon.png" alt="service-card-icon__to-go-companies" >
-                                <h3 class="service-card__title">Готовые компании и Филиалы</h3>
-                                <h5 class="service-card__subtitle service-card__subtitle--grey">Предварительно созданные предприятия с чистой корпоративной историей для немедленного ведения бизнеса</h5>
-                                <p class="service-card__text">Получите доступ к нашему портфелю предварительо зарегистрированных компаний в юрисдикциях премиум-класса. Эти компании предлагают немедленные операционные возможности с установленной корпоративной историей и чистыми документами о соответствии</p>
+                                <h3 class="service-card__title" data-i18n="service-card-to-go-companies-title">Готовые компании и Филиалы</h3>
+                                <h5 class="service-card__subtitle service-card__subtitle--grey" data-i18n="service-card-to-go-companies-subtitle">Предварительно созданные предприятия с чистой корпоративной историей для немедленного ведения бизнеса</h5>
+                                <p class="service-card__text" data-i18n="service-card-to-go-companies-text">Получите доступ к нашему портфелю предварительо зарегистрированных компаний в юрисдикциях премиум-класса. Эти компании предлагают немедленные операционные возможности с установленной корпоративной историей и чистыми документами о соответствии</p>
                             </header>
                             <section class="service-card__details">
-                                <h5 class="service-card__subtitle">Этапы процесса:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-to-go-companies-steps">Этапы процесса:</h5>
                                 <ol class="service-card__steps">
-                                    <li>Консультация</li>
-                                    <li>Подбор необходимой компании</li>
-                                    <li>Подбор Учредителя/Директора</li>
+                                    <li data-i18n="service-card-to-go-companies-step1">Консультация</li>
+                                    <li data-i18n="service-card-to-go-companies-step2">Подбор необходимой компании</li>
+                                    <li data-i18n="service-card-to-go-companies-step3">Подбор Учредителя/Директора</li>
                                 </ol>
-                                <h5 class="service-card__subtitle">Ключевые особенности:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-to-go-companies-features">Ключевые особенности:</h5>
                                 <ul class="service-card__features">
-                                    <li>Директор - Резидент</li>
-                                    <li>Учредитель - Резидент</li>
-                                    <li>Юридический адрес</li>
-                                    <li>Открытие расчетных счетов</li>
-                                    <li>Предлагаемые компании имеют опыт работы от 1 до 10 лет</li>
+                                    <li data-i18n="service-card-to-go-companies-feature1">Директор - Резидент</li>
+                                    <li data-i18n="service-card-to-go-companies-feature2">Учредитель - Резидент</li>
+                                    <li data-i18n="service-card-to-go-companies-feature3">Юридический адрес</li>
+                                    <li data-i18n="service-card-to-go-companies-feature4">Открытие расчетных счетов</li>
+                                    <li data-i18n="service-card-to-go-companies-feature5">Предлагаемые компании имеют опыт работы от 1 до 10 лет</li>
                                 </ul>
-                                <h5 class="service-card__subtitle">Преимущества:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-to-go-companies-benefits">Преимущества:</h5>
                                 <ul class="service-card__benefits">
-                                    <li>Банковские отношения</li>
-                                    <li>Сокращенное время начала работы</li>
-                                    <li>Мгновенный выход на рынок</li>
+                                    <li data-i18n="service-card-to-go-companies-benefit1">Банковские отношения</li>
+                                    <li data-i18n="service-card-to-go-companies-benefit2">Сокращенное время начала работы</li>
+                                    <li data-i18n="service-card-to-go-companies-benefit3">Мгновенный выход на рынок</li>
                                 </ul>
                             </section>
                             <footer class="service-card__cta">
-                                <a href="#" class="btn btn--primary">Хочу знать больше</a>
+                                <a href="#" class="btn btn--primary" data-i18n="service-card-to-go-companies-cta-button">Хочу знать больше</a>
                             </footer>
                         </article>
                     </li>
@@ -236,31 +235,31 @@
                                 <span id="service-price-residence" class="service-card__price-tag">Текст задается JS 🙊</span>
                                 <span id="service-timeline-residence" class="service-card__timeline-tag">Текст задается JS 🙊</span>
                                 <img class="service-card__icon" src="src/graphics/png/residency-icon.png" alt="service-card__icon" >
-                                <h3 class="service-card__title">ВНЖ</h3>
-                                <h5 class="service-card__subtitle service-card__subtitle--grey">Предоставляем комплексный подход в полчении ВНЖ для иностранных граждан.  </h5>
-                                <p class="service-card__text">Пройдите сложные пути или релокации с нашей командой. Мы оказываем комплексную поддержку в вопросах резиденства в Армении</p>
+                                <h3 class="service-card__title" data-i18n="service-card-residence-title">ВНЖ</h3>
+                                <h5 class="service-card__subtitle service-card__subtitle--grey" data-i18n="service-card-residence-subtitle">Предоставляем комплексный подход в полчении ВНЖ для иностранных граждан.</h5>
+                                <p class="service-card__text" data-i18n="service-card-residence-text">Пройдите сложный путь релокации с нашей командой. Мы оказываем комплексную поддержку в вопросах резиденства в Армении</p>
                             </header>
                             <section class="service-card__details">
-                                <h5 class="service-card__subtitle">Этапы процесса:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-residence-steps">Этапы процесса:</h5>
                                 <ol class="service-card__steps">
-                                    <li>Консультация</li>
-                                    <li>Выбор подхода</li>
-                                    <li>Подача всех требуемых документов</li>
-                                    <li>Назначание даты</li>
+                                    <li data-i18n="service-card-residence-step1">Консультация</li>
+                                    <li data-i18n="service-card-residence-step2">Выбор подхода</li>
+                                    <li data-i18n="service-card-residence-step3">Подача всех требуемых документов</li>
+                                    <li data-i18n="service-card-residence-step">Назначание даты</li>
                                 </ol>
-                                <h5 class="service-card__subtitle">Ключевые особенности:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-residence-features">Ключевые особенности:</h5>
                                 <ul class="service-card__features">
-                                    <li>Вы можете подобрать самый удобный для себя метод получения</li>
-                                    <li>В комплект входит получение социальной карты</li>
-                                    <li>Полная документационна поддержка</li>
-                                    <li>Берем на себя нотариальное заверение и перевод всех необходимых документов</li>
-                                    <li>Предоставляем помощь в получении медицинской справки</li>
-                                    <li>Отправим вашу заявку за неделю и начнем подготовку всех документов</li>
+                                    <li data-i18n="service-card-residence-feature1">Вы можете подобрать самый удобный для себя метод получения</li>
+                                    <li data-i18n="service-card-residence-feature2">В комплект входит получение социальной карты</li>
+                                    <li data-i18n="service-card-residence-feature3">Полная документационна поддержка</li>
+                                    <li data-i18n="service-card-residence-feature4">Берем на себя нотариальное заверение и перевод всех необходимых документов</li>
+                                    <li data-i18n="service-card-residence-feature5">Предоставляем помощь в получении медицинской справки</li>
+                                    <li data-i18n="service-card-residence-feature6">Отправим вашу заявку за неделю и начнем подготовку всех документов</li>
                                 </ul>
-                                <h5 class="service-card__subtitle">Преимущества:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-residence-benefits">Преимущества:</h5>
                                 <ul class="service-card__benefits">
-                                    <li>Все что вам потребуется - паспорт</li>
-                                    <li>Есть возможность оформления через бизнесс</li>
+                                    <li data-i18n="service-card-residence-benefit1">Все что вам потребуется - паспорт</li>
+                                    <li data-i18n="service-card-residence-benefit2">Есть возможность оформления через бизнесс</li>
                                 </ul>
                             </section>
                             <footer class="service-card__cta">
@@ -274,28 +273,28 @@
                                 <span id="service-price-citizenship" class="service-card__price-tag">Текст задается JS 🙊</span>
                                 <span id="service-timeline-citizenship" class="service-card__timeline-tag">Текст задается JS 🙊</span>
                                 <img class="service-card__icon" src="src/graphics/png/residency-icon.png" alt="service-card__icon" >
-                                <h3 class="service-card__title">Гражданство</h3>
-                                <h5 class="service-card__subtitle service-card__subtitle--grey">Поможем вам получить Армянский паспорт</h5>
-                                <p class="service-card__text">Условия сильно варьируются от случая к случаю, но мы готовые предложить несколько вариантов получения</p>
+                                <h3 class="service-card__title" data-i18n="service-card-citizenship-title">Гражданство</h3>
+                                <h5 class="service-card__subtitle service-card__subtitle--grey" data-i18n="service-card-citizenship-subtitle">Поможем вам получить Армянский паспорт</h5>
+                                <p class="service-card__text" data-i18n="service-card-citizenship-text">Условия сильно варьируются от случая к случаю, но мы готовые предложить несколько вариантов получения</p>
                             </header>
                             <section class="service-card__details">
-                                <h5 class="service-card__subtitle">Этапы процесса:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-citizenship-steps">Этапы процесса:</h5>
                                 <ol class="service-card__steps">
-                                    <li>Консультация</li>
-                                    <li>Определяемся с подходом</li>
-                                    <li>Подготовка документов</li>
-                                    <li>Подача</li>
+                                    <li data-i18n="service-card-citizenship-step1">Консультация</li>
+                                    <li data-i18n="service-card-citizenship-step2">Определяемся с подходом</li>
+                                    <li data-i18n="service-card-citizenship-step3">Подготовка документов</li>
+                                    <li data-i18n="service-card-citizenship-step4">Подача</li>
                                 </ol>
 
-                                <h5 class="service-card__subtitle">Ключевые особенности:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-citizenship-features">Ключевые особенности:</h5>
                                 <ul class="service-card__features">
-                                    <li>Полное сопровождение во всех вопросах от получения необходимых документов до представлениях ваших интересов в различных инстанциях</li>
-                                    <li>Гибкий подход. На гражданство может претендовать каждый</li>
-                                    <li>Возможность ускоренного получения</li>
+                                    <li data-i18n="service-card-citizenship-feature1">Полное сопровождение во всех вопросах от получения необходимых документов до представлениях ваших интересов в различных инстанциях</li>
+                                    <li data-i18n="service-card-citizenship-feature2">Гибкий подход. На гражданство может претендовать каждый</li>
+                                    <li data-i18n="service-card-citizenship-feature3">Возможность ускоренного получения</li>
                                 </ul>                                  
                             </section>
                             <footer class="service-card__cta">
-                                <a href="pages/services-citizenship.html" class="btn btn--primary">Хочу знать больше</a>
+                                <a href="pages/services-citizenship.html" class="btn btn--primary" data-i18n="service-card-citizenship-cta-button">Хочу знать больше</a>
                             </footer>
                         </article>
                     </li>
@@ -305,34 +304,34 @@
                                 <span id="service-price-accounting" class="service-card__price-tag">Текст задается JS 🙊</span>
                                 <span id="service-timeline-accounting" class="service-card__timeline-tag">Текст задается JS 🙊</span>
                                 <img class="service-card__icon" src="src/graphics/png/accounting-services-icon.png" alt="service-card__icon" >
-                                <h3 class="service-card__title">Бухгалтерские услуги</h3>
-                                <h5 class="service-card__subtitle service-card__subtitle--grey">Продвинутое управление с оптимизацией налогообложения и комплексной поддержкой нормативных требований</h5>
-                                <p class="service-card__text">Профессиональные бухгалтерские и налоговые услуги, разработанные для международных деловых операций. Наши сертифицированные бухгалтеры обеспечивают постоянное финансовое управление, налоговое планирование и соблюдение нормативных требований в различных юрисдикциях</p>
+                                <h3 class="service-card__title" data-i18n="service-card-accounting-title">Бухгалтерские услуги</h3>
+                                <h5 class="service-card__subtitle service-card__subtitle--grey" data-i18n="service-card-accounting-subtitle">Продвинутое управление с оптимизацией налогообложения и комплексной поддержкой нормативных требований</h5>
+                                <p class="service-card__text" data-i18n="service-card-accounting-text">Профессиональные бухгалтерские и налоговые услуги, разработанные для международных деловых операций. Наши сертифицированные бухгалтеры обеспечивают постоянное финансовое управление, налоговое планирование и соблюдение нормативных требований в различных юрисдикциях</p>
                             </header>
                             <section class="service-card__details">
-                                <h5 class="service-card__subtitle">Этапы процесса:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-accounting-steps">Этапы процесса:</h5>
                                 <ol class="service-card__steps">
-                                    <li>Консультация</li>
-                                    <li>Интеграция</li>
-                                    <li>Ежемесяная отчетность</li>
+                                    <li data-i18n="service-card-accounting-step1">Консультация</li>
+                                    <li data-i18n="service-card-accounting-step2">Интеграция</li>
+                                    <li data-i18n="service-card-accounting-step3">Ежемесяная отчетность</li>
                                 </ol>
-                                <h5 class="service-card__subtitle">Ключевые особенности:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-accounting-features">Ключевые особенности:</h5>
                                 <ul class="service-card__features">
-                                    <li>Наши специалисты будут составлять для вас ежемесячные, ежеквартальные и годовые отчеты</li>
-                                    <li>Займемся текущей офисной работой</li>
-                                    <li>Возьмем на себя отправку деклараций</li>
-                                    <li>Перевод в зону льготного налогообложения </li>
-                                    <li>Финансовая прозрачность</li>
+                                    <li data-i18n="service-card-accounting-feature1">Наши специалисты будут составлять для вас ежемесячные, ежеквартальные и годовые отчеты</li>
+                                    <li data-i18n="service-card-accounting-feature2">Займемся текущей офисной работой</li>
+                                    <li data-i18n="service-card-accounting-feature3">Возьмем на себя отправку деклараций</li>
+                                    <li data-i18n="service-card-accounting-feature4">Перевод в зону льготного налогообложения</li>
+                                    <li data-i18n="service-card-accounting-feature5">Финансовая прозрачность</li>
                                 </ul>                                
-                                <h5 class="service-card__subtitle">Преимущества работы с нами</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-accounting-benefits">Преимущества:</h5>
                                 <ul class="service-card__benefits">
-                                    <li>Снижение налогового бремени</li>
-                                    <li>Обеспечение соответствия</li>
-                                    <li>Поддержка стратегического планирования</li>
+                                    <li data-i18n="service-card-accounting-benefit1">Снижение налогового бремени</li>
+                                    <li data-i18n="service-card-accounting-benefit2">Обеспечение соответствия</li>
+                                    <li data-i18n="service-card-accounting-benefit3">Поддержка стратегического планирования</li>
                                 </ul>
                             </section>
                             <footer class="service-card__cta">
-                                <a href="#" class="btn btn--primary">Хочу знать больше</a>
+                                <a href="#" class="btn btn--primary" data-i18n="service-card-accounting-cta-button">Хочу знать больше</a>
                             </footer>
                         </article>
                     </li>
@@ -342,33 +341,33 @@
                                 <span id="service-price-bank-card" class="service-card__price-tag">Текст задается JS 🙊</span>
                                 <span id="service-timeline-bank-card" class="service-card__timeline-tag">Текст задается JS 🙊</span>
                                 <img class="service-card__icon" src="src/graphics/png/bank-card-icon.png" alt="service-card__icon" >
-                                <h3 class="service-card__title">Банковская карта физ. лицам</h3>
-                                <h5 class="service-card__subtitle service-card__subtitle--grey">Удаленное открытие банковского счета с пластиковой картой и доступ к банковским услугам в одном из наших банков-партнеров</h5>
-                                <p class="service-card__text">Это отличная возможность получить карту иностранного банка в платежной системе Master Card и Visa. Пластиковая карточка будет отправлена вам сразу после выпуска, где бы вы не находились.</p>
+                                <h3 class="service-card__title" data-i18n="service-card-bank-card-title">Банковская карта физ. лицам</h3>
+                                <h5 class="service-card__subtitle service-card__subtitle--grey" data-i18n="service-card-bank-card-subtitle">Удаленное открытие банковского счета с пластиковой картой и доступ к банковским услугам в одном из наших банков-партнеров</h5>
+                                <p class="service-card__text" data-i18n="service-card-bank-card-text">Это отличная возможность получить карту иностранного банка в платежной системе Master Card и Visa. Пластиковая карточка будет отправлена вам сразу после выпуска, где бы вы не находились.</p>
                             </header>
                             <section class="service-card__details">
-                                <h5 class="service-card__subtitle">Этапы процесса:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-bank-card-steps">Этапы процесса:</h5>
                                 <ol class="service-card__steps">
-                                    <li>Консультация</li>
-                                    <li>Выбор банка</li>
-                                    <li>Подготовка документов</li>
-                                    <li>Прохождение опросника</li>
+                                    <li data-i18n="service-card-bank-card-step1">Консультация</li>
+                                    <li data-i18n="service-card-bank-card-step2">Выбор банка</li>
+                                    <li data-i18n="service-card-bank-card-step3">Подготовка документов</li>
+                                    <li data-i18n="service-card-bank-card-step4">Прохождение опросника</li>
                                 </ol>
-                                <h5 class="service-card__subtitle">Ключевые особенности:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-bank-card-features">Ключевые особенности:</h5>
                                 <ul class="service-card__features">
-                                    <li>Открытие сразу четырех расчетных счетов в валютах: RUB, AMD, USD, EUR</li>
-                                    <li>Доступ к международной платежной системе</li>
-                                    <li>Международная доставка карты за пределы Армении</li>
+                                    <li data-i18n="service-card-bank-card-feature1">Открытие сразу четырех расчетных счетов в валютах: RUB, AMD, USD, EUR</li>
+                                    <li data-i18n="service-card-bank-card-feature2">Доступ к международной платежной системе</li>
+                                    <li data-i18n="service-card-bank-card-feature3">Международная доставка карты за пределы Армении</li>
                                 </ul>                                
-                                <h5 class="service-card__subtitle">Преимущества работы с нами</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-bank-card-benefits">Преимущества работы с нами</h5>
                                 <ul class="service-card__benefits">
-                                    <li>Широкий выбор валют и возможность открыть дополнительные счета</li>
-                                    <li>Международные переводы</li>
-                                    <li>Возможность полностью удаленного оформления</li>
+                                    <li data-i18n="service-card-bank-card-benefit1">Широкий выбор валют и возможность открыть дополнительные счета</li>
+                                    <li data-i18n="service-card-bank-card-benefit2">Международные переводы</li>
+                                    <li data-i18n="service-card-bank-card-benefit3">Возможность полностью удаленного оформления</li>
                                 </ul>
                             </section>
                             <footer class="service-card__cta">
-                                <a href="#" class="btn btn--primary">Хочу знать больше</a>
+                                <a href="#" class="btn btn--primary" data-i18n="service-card-bank-card-cta-button">Хочу знать больше</a>
                             </footer>
                         </article>
                     </li>
@@ -378,24 +377,24 @@
                                 <span id="service-price-social-card" class="service-card__price-tag">Текст задается JS 🙊</span>
                                 <span id="service-timeline-social-card" class="service-card__timeline-tag">Текст задается JS 🙊</span>
                                 <img class="service-card__icon" src="src/graphics/png/social-card-icon.png" alt="service-card__icon" >
-                                <h3 class="service-card__title">Социальная карта</h3>
-                                <h5 class="service-card__subtitle service-card__subtitle--grey">Быстрое получение в кратчайшие сроки. Доступ к вазимодействию с гос органами</h5>
-                                <p class="service-card__text">Социальная карта в Армении предоставляет множество преимуществ иностранным гражданам, которые планируют остаться в стране на длительный срок. Зачастую это первый документ, который вам нужно будет получить для начала своей деятельности в стране.</p>
+                                <h3 class="service-card__title" data-i18n="service-card-social-card-title">Социальная карта</h3>
+                                <h5 class="service-card__subtitle service-card__subtitle--grey" data-i18n="service-card-social-card-subtitle">Быстрое получение в кратчайшие сроки. Доступ к вазимодействию с гос.органами</h5>
+                                <p class="service-card__text" data-i18n="service-card-social-card-text">Социальная карта в Армении предоставляет множество преимуществ иностранным гражданам, которые планируют остаться в стране на длительный срок. Зачастую это первый документ, который вам нужно будет получить для начала своей деятельности в стране.</p>
                             </header>
                             <section class="service-card__details">
-                                <h5 class="service-card__subtitle">Этапы процесса:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-social-card-steps">Этапы процесса:</h5>
                                 <ol class="service-card__steps">
-                                    <li>Консультация</li>
-                                    <li>Подготовка документов</li>
-                                    <li>Получение карты</li>
+                                    <li data-i18n="service-card-social-card-step1">Консультация</li>
+                                    <li data-i18n="service-card-social-card-step2">Подготовка документов</li>
+                                    <li data-i18n="service-card-social-card-step3">Получение карты</li>
                                 </ol>
-                                <h5 class="service-card__subtitle">Преимущества:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-social-card-benefits">Преимущества:</h5>
                                 <ul class="service-card__benefits">
-                                    <li>Упрощенное взаимодействие с государственными органами и банками</li>
+                                    <li data-i18n="service-card-social-card-benefit1">Упрощенное взаимодействие с государственными органами и банками</li>
                                 </ul>
                             </section>
                             <footer class="service-card__cta">
-                                <a href="#" class="btn btn--primary">Хочу знать больше</a>
+                                <a href="#" class="btn btn--primary" data-i18n="service-card-social-card-cta-button">Хочу знать больше</a>
                             </footer>
                         </article>
                     </li>
@@ -405,24 +404,24 @@
                                 <span id="service-price-registration" class="service-card__price-tag">Текст задается JS 🙊</span>
                                 <span id="service-timeline-registration" class="service-card__timeline-tag">Текст задается JS 🙊</span>
                                 <img class="service-card__icon" src="src/graphics/png/registration-icon.png" alt="service-card__icon" >
-                                <h3 class="service-card__title">Прописка</h3>
-                                <h5 class="service-card__subtitle service-card__subtitle--grey">Получите прописку на территории Армении</h5>
-                                <p class="service-card__text">Все что вам потребуется - это социальная карта и нотариально заверенная копия вашего паспорта. Мы можем зареистрировать вас в разных местах Еревана, включая районы. Есть возможность экспресс-регистрации за дополнительную плату.</p>
+                                <h3 class="service-card__title" data-i18n="service-card-registration-title">Прописка</h3>
+                                <h5 class="service-card__subtitle service-card__subtitle--grey" data-i18n="service-card-registration-subtitle">Получите прописку на территории Армении</h5>
+                                <p class="service-card__text" data-i18n="service-card-registration-text">Все что вам потребуется - это социальная карта и нотариально заверенная копия вашего паспорта. Мы можем зареистрировать вас в разных местах Еревана, включая районы. Есть возможность экспресс-регистрации за дополнительную плату.</p>
                             </header>
                             <section class="service-card__details">
-                                <h5 class="service-card__subtitle">Этапы процесса:</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-registration-steps">Этапы процесса:</h5>
                                 <ol class="service-card__steps">
-                                    <li>Консультация</li>
-                                    <li>Приезд для получения штампа</li>
+                                    <li data-i18n="service-card-registration-step1">Консультация</li>
+                                    <li data-i18n="service-card-registration-step2">Приезд для проставки штампа</li>
                                 </ol>
-                                <h5 class="service-card__subtitle">Преимущества работы с нами</h5>
+                                <h5 class="service-card__subtitle" data-i18n="service-card-registration-benefits">Преимущества работы с нами</h5>
                                 <ul class="service-card__benefits">
-                                    <li>Упрощение взаимодействия с банками</li>
-                                    <li>Возможность бессрочно находится в Армении</li>
+                                    <li data-i18n="service-card-registration-benefit1">Упрощение взаимодействия с банками</li>
+                                    <li data-i18n="service-card-registration-benefit2">Возможность бессрочно находится в Армении</li>
                                 </ul>
                             </section>
                             <footer class="service-card__cta">
-                                <a href="#" class="btn btn--primary">Хочу знать больше</a>
+                                <a href="#" class="btn btn--primary" data-i18n="service-card-registration-cta-button">Хочу знать больше</a>
                             </footer>
                         </article>
                     </li>
