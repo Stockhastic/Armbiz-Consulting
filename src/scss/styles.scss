@@ -168,7 +168,7 @@
 .services {
     display: flex;
     flex-direction: column;
-    padding-block: 20rem;
+    padding-block: 10rem;
     gap: 3rem;
     
     &__title, &__subtitle {text-align: center}
@@ -197,7 +197,7 @@
 // Logistic
 .logistic {
     display: grid;
-    padding-block: 7rem;
+    padding-block: 10rem;
     gap: 4rem;
     &__header{
         display: flex;
@@ -230,19 +230,9 @@
     }
     
     &__cards{
-        display: flex;
-        flex-flow: row wrap;
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
     }
-    // &__card{
-    //     &__extras{
-    //         display: flex;
-    //         flex-flow: row wrap;
-    //         & > li {
-    //             display: flex;
-    //             max-width: 40%
-    //         }
-    //     }
-    // }
 
     &__badge{
         @extend .badge;
@@ -436,7 +426,6 @@
         }
     }
 }
-
 // Header 
 .header{
     position: relative;
@@ -453,22 +442,58 @@
     }   
     &__nav-list{
         height: 100%;
-        // outline: 1px solid rgb(255, 199, 131);
         display: flex;
         align-content: center;
+        &-services{
+            display: none;
+            position: absolute;
+            right: 0;
+            transform: translateY(5%);
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            border: 1px solid vars.$borderColor;
+            & > li{
+                padding: 0.3rem 0;
+                text-align: right;
+                width: 300px;
+                & > a{
+                    transition: 0.33s;
+                    padding: 0.3rem 0;
+                    color: vars.$darkColor;
+                    font-family: vars.$mainFontMedium;
+                    white-space: nowrap;
+                    &:hover{
+                        color: vars.$primaryColor;
+                        font-family: vars.$mainFontSemibold;
+                    }
+                }
+
+            }
+        }
     }
     &__nav-item{
-        // outline: 1px solid rgb(255, 180, 87);
-        margin: auto 1rem;
+        margin: auto 0.5rem;
+        position: relative;
+        &-services{
+            &:hover{
+                & > .header__nav-list-services{
+                    display: block;
+                }
+            }
+        }
+    }
+    &__nav-link{
+        padding: 1.8rem 0.5rem;
+        font-family:vars.$mainFontSemibold;
+        color: vars.$darkColor;
     }
     &__lang{
-        outline: 1px solid red;
-        // position: relative;
         background: none;
         border: none;
         margin: auto 0 auto 3rem;
+        // outline: 1px solid red;
         & > img{
-            padding: 2rem 0;
+            padding: 2rem 1rem;
             padding-left: 2rem;
         }
         &:hover{
@@ -481,12 +506,12 @@
         position: absolute;
         display: none;
         right: 0;
-        bottom: -80%;
+        bottom: -60%;
         flex-direction: column;
         justify-content: center;
         background-color: #fff;
         border: 1px solid vars.$borderColor;
-        padding: 1rem;
+        padding: 0.5rem;
         border-radius: 1rem;
         &-item{
             margin: 0.1rem 0;
@@ -494,8 +519,12 @@
             display: flex;
             align-items: center;
             padding: 1rem;
+            background-color: vars.$lightColor;
+            border: none;
+            border-radius: 1rem;
             & > img {
-                margin-right: 1rem;;
+                margin-right: 1rem;
+                filter: drop-shadow(0 0 4px #36363671);
             }
             & > p{
                 font-size: vars.$smallFontSize;
@@ -506,12 +535,7 @@
             }
         }
     }
-    &__nav-link{
-        font-family:vars.$mainFontSemibold;
-        color: vars.$darkColor;
-    }
 }
-
 // Footer
 .footer {
     display: flex;

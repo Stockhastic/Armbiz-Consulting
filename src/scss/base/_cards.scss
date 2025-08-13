@@ -95,9 +95,8 @@
         margin: 2rem;
     }
     &--unique{
-        width: 100%;
+        padding: 2rem;
     }
-
 
     &__header{
         display: grid;
@@ -154,7 +153,7 @@
         position: relative;
         & > li {
             margin: 0.5rem 0 0.5rem 1.3rem;
-            font-size: vars.$pSize;
+            font-size: vars.$smallFontSize;
             color: vars.$greyColor;
             font-family: vars.$mainFontMedium;
             &::before{

@@ -22,25 +22,25 @@
     <!-- Android -->
     <link rel="manifest" href="/src/graphics/site.webmanifest">
 
-    <!-- <title>PAGENAME | Main Page</title> -->
+    <title>Armbiz Consulting | Main Page</title>
     
     <!-- OpenGraphics for Thumbnails -->
-    <!-- <meta property="og:title" content="TITLE_PAGE" />
-    <meta property="og:site_name" content="SITE_NAME" />
-    <meta property="og:description" content="DESCRIPTION_OF_PAGE" />
-    <meta property="og:url" content="URL_ADRESS" />
+    <meta property="og:title" content="Main Page" />
+    <meta property="og:site_name" content="Armbiz Consulting" />
+    <meta property="og:description" content="Comperhensive consulting services" />
+    <!-- <meta property="og:url" content="URL_ADRESS" /> -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="PATH_TO_IMAGE" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="IMAGE_DESCRIPTION" />
-    <meta property="og:locale" content="ru_RU, en_EN" /> -->
+    <!-- <meta property="og:image" content="PATH_TO_IMAGE" /> -->
+    <!-- <meta property="og:image:width" content="1200" /> -->
+    <!-- <meta property="og:image:height" content="630" /> -->
+    <!-- <meta property="og:image:alt" content="Armbiz Consulting logo" /> -->
+    <meta property="og:locale" content="ru_RU, en_EN" />
 
     <!-- Twitter Cards  -->
-    <!-- <meta name="twitter:title" content="Заголовок страницы или статьи" />
-    <meta name="twitter:description" content="Краткое описание страницы, до 200 символов" />
-    <meta name="twitter:image" content="https://yourwebsite.com/path-to-image.jpg" />
-    <meta name="twitter:image:alt" content="Описание изображения" /> -->
+    <meta name="twitter:title" content="Armbiz Consulting" />
+    <meta name="twitter:description" content="Comperhensive consulting services" />
+    <!-- <meta name="twitter:image" content="https://yourwebsite.com/path-to-image.jpg" /> -->
+    <meta name="twitter:image:alt" content="Описание изображения" />
 </head>
 
 <body>
@@ -48,27 +48,38 @@
     <div id="aura"></div>
     
     <header class="header">
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="/index.html">
             <img src="/src/graphics/png/header-logo.png" alt="logosvgs">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item">
+                <li class="header__nav-item header__nav-item-services">
                     <a href="#" class="header__nav-link" data-i18n="header-services">Услуги</a>
+                    <ul class="header__nav-list-services mouse-selectable">
+                        <li class="mouse-selectable"><a href="/pages/services/llc-ie-registration/index.html" data-i18n="header-service-llc-ie">Регистрация ООО и ИП</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/ready-made-companies/index.html" data-i18n="header-service-ready-made-companies">Готовые компании</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/citizenship/index.html" data-i18n="header-service-citizenship">Гражданство</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/residence-permit/index.html" data-i18n="header-service-residence-permit">ВНЖ</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/registration/index.html" data-i18n="header-service-registration">Прописка</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/accounting/index.html" data-i18n="header-service-accounting">Бухгалтерские услуги</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/bank-card/index.html" data-i18n="header-service-bank-card">Банковская карта для физ. лиц</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/social-card/index.html" data-i18n="header-service-social-card">Социальная карта</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/logistics/index.html" data-i18n="header-service-logistic">Логистика и Таможня</a></li>
+                    </ul>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link" data-i18n="header-contacts">Контакты</a>
+                    <a href="/pages/contacts/index.html" class="header__nav-link" data-i18n="header-contacts">Контакты</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link"data-i18n="header-aboutus">О нас</a>
+                    <a href="/pages/about-us/index.html" class="header__nav-link"data-i18n="header-aboutus">О нас</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link" data-i18n="header-logistics">Логистика и таможня</a>
+                    <a href="/pages/services/logistics/index.html" class="header__nav-link" data-i18n="header-logistics">Логистика и таможня</a>
                 </li>
             </ul>
         </nav>
         <div class="header__lang mouse-selectable">
-            <img src="/src/graphics/png/header-lang-ru.png" alt="lang-icon">
+            <img id="header-lang-icon"  src="/src/graphics/png/header-lang-ru.png" alt="lang-icon">
             <div class="header__lang-switcher">
                 <button class="header__lang-switcher-item header__lang-switcher-item--selected" data-lang="ru">
                     <img class="header__lang-switcher-icon" src="/src/graphics/png/header-lang-ru.png" alt="lang-switcher-item-rus">
@@ -80,7 +91,6 @@
                 </button>
             </div>
         </div>
-
     </header>
 
     <main>
@@ -458,27 +468,30 @@
                     </ul>
                 </header>
                 <div class="logistic__cards">
-                    <article class="service-card service-card--logistics">
-                        <h3 class="service-card__title">Импорт <span class="special-text">Товаров</span></h3>
-                        <ul class="service-card__features">
-                            <li>Полное сопровождение</li>
-                            <li>Оформление импортных деклараций из третьих стран</li>
-                            <li>Получение разрешений и сертификации</li>
-                            <li>Расчет таможенной и государственной пошлин и НДС по ТН ВЭД кодам</li>
-                            <li>Предварительная проверка документов</li>
-                        </ul>
-                    </article>
-                    <article class="service-card service-card--logistics">
-                        <h3 class="service-card__title">Экспорт <span class="special-text">Товаров</span></h3>
-                        <ul class="service-card__features">
-                            <li>Оформление экспортных деклараций в другие страны</li>
-                            <li>Оформление транзитных деклараций (в ЕАЭС)</li>
-                        </ul>
-                    </article>
+                    <div class="logistic__container">
+                        <article class="service-card service-card--logistics">
+                            <h3 class="service-card__title">Импорт <span class="special-text">Товаров</span></h3>
+                            <ul class="service-card__features">
+                                <li>Полное сопровождение</li>
+                                <li>Оформление импортных деклараций из третьих стран</li>
+                                <li>Получение разрешений и сертификации</li>
+                                <li>Расчет таможенной и государственной пошлин и НДС по ТН ВЭД кодам</li>
+                                <li>Предварительная проверка документов</li>
+                            </ul>
+                        </article>
+                        <article class="service-card service-card--logistics">
+                            <h3 class="service-card__title">Экспорт <span class="special-text">Товаров</span></h3>
+                            <ul class="service-card__features">
+                                <li>Оформление экспортных деклараций в другие страны</li>
+                                <li>Оформление транзитных деклараций (в ЕАЭС)</li>
+                            </ul>
+                        </article>
+                    </div>
+                    
                     <article class="service-card service-card--logistics service-card--unique">
                         <h3 class="service-card__title">Дополнительные <span class="special-text">Услуги</span></h3>
                         <ul class="service-card__benefits">
-                            <li>Регстрация таможенной папки для всех, от ИП до большой компании</li>
+                            <li>Регистрация таможенной папки для всех, от ИП до большой компании</li>
                             <li>Поиск ТН ВЭД кодов по наименованию товаров</li>
                         </ul>
                         <ul class="service-card__extras">
@@ -499,8 +512,8 @@
                                 <p>Таможенное оформление и Логистика</p>
                             </li>
                         </ul>
+                        <a href="/pages/services/logistics/index.html" class="btn btn--primary">Узнать больше</a>
                     </article>
-                    <a href="/services-logistics-and-customs" class="btn btn--primary">Узнать больше</a>
                 </div>
             </section>
             <section id="contact-us" class="contact">
@@ -577,14 +590,14 @@
                 <p class="footer__title">Услуги</p>
                 <ul class="footer__list">
                     <li class="footer__list-item"><a href="/pages/services/llc-ie-registration/index.html" class="footer__list-link">Регистрация ООО или ИП</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/ready-companies.html" class="footer__list-link">Готовые компании</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/residence-permit.html" class="footer__list-link">ВНЖ</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/ready-made-companies/index.html" class="footer__list-link">Готовые компании</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/residence-permit/index.html" class="footer__list-link">ВНЖ</a></li>
                     <li class="footer__list-item"><a href="/pages/services/citizenship/index.html" class="footer__list-link">Гражданство</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/registration.html" class="footer__list-link">Прописка</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/accounting.html" class="footer__list-link">Бухгалтерские услуги</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/bank-card.html" class="footer__list-link">Банковская карта для физ.лиц</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/social-card.html" class="footer__list-link">Социальная карта</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/logistics-and-customs.html" class="footer__list-link">Логистика и Таможня</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/registration/index.html" class="footer__list-link">Прописка</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/accounting/index.html" class="footer__list-link">Бухгалтерские услуги</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/bank-card/index.html" class="footer__list-link">Банковская карта для физ.лиц</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/social-card/index.html" class="footer__list-link">Социальная карта</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/logistics/index.html" class="footer__list-link">Логистика и Таможня</a></li>
                 </ul>
             </nav>
             <address class="footer__contacts">

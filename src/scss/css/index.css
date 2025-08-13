@@ -338,7 +338,7 @@ strong, .special-text, .bold-text {
   margin: 2rem;
 }
 .service-card--unique {
-  width: 100%;
+  padding: 2rem;
 }
 .service-card__header {
   display: grid;
@@ -393,7 +393,7 @@ strong, .special-text, .bold-text {
 }
 .service-card__features > li {
   margin: 0.5rem 0 0.5rem 1.3rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #434c5b;
   font-family: "Raleway-Medium";
 }

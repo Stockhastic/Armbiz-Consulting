@@ -4,10 +4,22 @@
         "header-contacts": "Контакты",
         "header-aboutus": "О нас",
         "header-logistics": "Логистика и Таможня",
+
+        "header-service-llc-ie": "Регистрация ООО и ИП",
+        "header-service-ready-made-companies": "Готовые компании",
+        "header-service-citizenship": "Гражданство",
+        "header-service-residence-permit": "ВНЖ",
+        "header-service-registration": "Прописка",
+        "header-service-accounting": "Бухгалтерские услуги",
+        "header-service-bank-card": "Банковская карта для физ. лиц",
+        "header-service-social-card": "Социальная карта",
+        "header-service-logistic": "Логистика и Таможня",
+
         "hero-title": "Ваш успех это<br><span class=\"special-text\">наша миссия</span>",
         "hero-subtitle": "Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг",
         "hero-button-services": "Изучить наши услуги",
         "hero-button-consultation": "Запросить консультацию",
+        
         "exclusive-offer-badge": "Эксклюзивное предложение",
         "exclusive-offer-title": "Особые условия для <br><span class=\"special-text\">IT предпринимателей</span>",
         "exclusive-offer-card1-title": "<span class=\"special-text\">Преимущества</span> для IT Сектора",
@@ -195,17 +207,33 @@
         "service-card-registration-benefit1": "Упрощение взаимодействия с банками",
         "service-card-registration-benefit2": "Возможность бессрочно находится в Армении",
 
-        "service-card-registration-cta-button": "Хочу знать больше"
+        "service-card-registration-cta-button": "Хочу знать больше",
+
+        "residence-permit-hero-title": "<span class=\"special-text\">ВНЖ</span> для иностранных граждан",
+        "residence-permit-hero-subtitle": "Выберите наиболее удобный для вас способ получения ВНЖ исходя из стоимости подхода и сроков получения, а мы возьмем на себя всю бюрократию"
+        
     },
     "en": {
         "header-services": "Sevices",
         "header-contacts": "Contacts",
         "header-aboutus": "About us",
         "header-logistics": "Logistics & Customs",
+
+        "header-service-llc-ie": "LLC & IE Registration",
+        "header-service-ready-made-companies": "Ready-made companies",
+        "header-service-citizenship": "Citizenship",
+        "header-service-residence-permit": "Residence permit",
+        "header-service-registration": "Registration",
+        "header-service-accounting": "Accounting services",
+        "header-service-bank-card": "Bank card for individuals",
+        "header-service-social-card": "Social card",
+        "header-service-logistic": "Logistics & Customs",
+
         "hero-title": "Your success is<br><span class=\"special-text\">our mission</span>",
         "hero-subtitle": "Premium digital solutions for individual clients and demanding entrepreneurs who strive for excellence in corporate services",
         "hero-button-services": "Discover our Services",
         "hero-button-consultation": "Schedule Consultation",
+
         "exclusive-offer-badge": "Exclusive offer",
         "exclusive-offer-title": "Special Terms for<br><span class=\"special-text\">IT Enterpreneurs</span>",
         "exclusive-offer-card1-title": "IT Sector <span class=\"special-text\">Benefits</span>",

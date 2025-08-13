@@ -12,4 +12,10 @@
         line-height: 1.3;
         color: vars.$greyColor;
     }
+    &--service{
+        & > .hero__subtitle{
+            font-family: vars.$mainFontMedium;
+            color: #000;
+        }
+    }
 }
