@@ -15,4 +15,14 @@
 .hero--service > .hero__subtitle {
   font-family: "Raleway-Medium";
   color: #000;
+}
+.hero--service > .hero__details {
+  max-width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  text-align: left;
+}
+.hero--service > .hero__details > h2, .hero--service > .hero__details > p {
+  text-align: left;
 }/*# sourceMappingURL=hero.css.map */

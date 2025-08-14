@@ -1,5 +1,9 @@
 {
     "ru": {
+
+        "service-price-label": "Цена начинается от",
+        "service-timeline-label": "Временные рамки:",
+
         "header-services": "Услуги",
         "header-contacts": "Контакты",
         "header-aboutus": "О нас",
@@ -210,10 +214,16 @@
         "service-card-registration-cta-button": "Хочу знать больше",
 
         "residence-permit-hero-title": "<span class=\"special-text\">ВНЖ</span> для иностранных граждан",
-        "residence-permit-hero-subtitle": "Выберите наиболее удобный для вас способ получения ВНЖ исходя из стоимости подхода и сроков получения, а мы возьмем на себя всю бюрократию"
-        
+        "residence-permit-hero-subtitle": "Выберите наиболее удобный для вас способ получения ВНЖ исходя из стоимости подхода и сроков получения, а мы возьмем на себя всю бюрократию",
+        "residence-permit-hero-cta-button": "Запросить консультацию",
+
+        "residence-permit-hero-afterlead": "Путь получения <span class=\"special-text\">ВНЖ</span> меняется в зависимости от различных факторов"
     },
     "en": {
+
+        "service-price-label": "Price starts with",
+        "service-timeline-label": "Timeline:",
+
         "header-services": "Sevices",
         "header-contacts": "Contacts",
         "header-aboutus": "About us",
@@ -421,6 +431,12 @@
         "service-card-registration-benefit1": "Simplification of interaction with banks",
         "service-card-registration-benefit2": "The opportunity to stay in Armenia indefinitely",
 
-        "service-card-registration-cta-button": "Learn More"
+        "service-card-registration-cta-button": "Learn More",
+
+        "residence-permit-hero-title": "<span class=\"special-text\">Residence Permit</span> for foreign individuals",
+        "residence-permit-hero-subtitle": "Choose the most convenient way for you to obtain a residence permit based on the cost of the approach and the time of receipt, and we will take over all the bureaucracy.",
+        "residence-permit-hero-cta-button": "Schedule Consultation",
+
+        "residence-permit-hero-afterlead": "The way to obtain <span class=\"special-text\">Residence Permit</span> varies depending on various factors"
     }
 }

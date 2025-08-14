@@ -1,10 +1,10 @@
 [
-    { "id": "llc-ie", "price": "200$", "timeline": "1-5 рабочих дней" }, 
-    { "id": "ready-company", "price": "1000$", "timeline": "от 3 рабочих дней" },
-    { "id": "residence", "price": "300$", "timeline": "Зависят от метода получения" },
-    { "id": "accounting", "price": "100$", "timeline": "Ежемесячное обслуживание" },
-    { "id": "bank-card", "price": "335$", "timeline": "от 7 до 14 дней" },
-    { "id": "social-card", "price": "75$", "timeline": "1 рабочий день" },
-    { "id": "registration", "price": "300$", "timeline": "от 1 до 5 рабочих дней" },
-    { "id": "citizenship", "price": "300$", "timeline": "от 90 дней" }
+    { "id": "llc-ie", "price": "200$", "timeline": { "ru": "1-5 рабочих дней", "en": "1-5 business days" } },
+    { "id": "ready-company", "price": "1000$", "timeline": { "ru": "от 3 рабочих дней", "en": "from 3 business days" } },
+    { "id": "residence", "price": "300$", "timeline": { "ru": "Зависят от метода получения", "en": "Depends on the method" } },
+    { "id": "accounting", "price": "100$", "timeline": { "ru": "Ежемесячное обслуживание", "en": "Monthly service" } },
+    { "id": "bank-card", "price": "335$", "timeline": { "ru": "от 7 до 14 дней", "en": "from 7 to 14 days" } },
+    { "id": "social-card", "price": "75$", "timeline": { "ru": "1 рабочий день", "en": "1 business day" } },
+    { "id": "registration", "price": "300$", "timeline": { "ru": "от 1 до 5 рабочих дней", "en": "from 1 to 5 business days" } },
+    { "id": "citizenship", "price": "300$", "timeline": { "ru": "от 90 дней", "en": "from 90 days" } }
 ]
