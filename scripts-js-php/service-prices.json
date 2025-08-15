@@ -1,7 +1,8 @@
 [
     { "id": "llc-ie", "price": "200$", "timeline": { "ru": "1-5 рабочих дней", "en": "1-5 business days" } },
     { "id": "ready-company", "price": "1000$", "timeline": { "ru": "от 3 рабочих дней", "en": "from 3 business days" } },
-    { "id": "residence", "price": "300$", "timeline": { "ru": "Зависят от метода получения", "en": "Depends on the method" } },
+    { "id": "residence-work", "price": "300$", "timeline": { "ru": "Зависят от метода получения", "en": "Depends on the method" } },
+    { "id": "residence-business", "price": "800$", "timeline": { "ru": "Зависят от метода получения", "en": "Depends on the method" } },
     { "id": "accounting", "price": "100$", "timeline": { "ru": "Ежемесячное обслуживание", "en": "Monthly service" } },
     { "id": "bank-card", "price": "335$", "timeline": { "ru": "от 7 до 14 дней", "en": "from 7 to 14 days" } },
     { "id": "social-card", "price": "75$", "timeline": { "ru": "1 рабочий день", "en": "1 business day" } },

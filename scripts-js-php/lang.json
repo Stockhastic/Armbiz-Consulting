@@ -217,7 +217,21 @@
         "residence-permit-hero-subtitle": "Выберите наиболее удобный для вас способ получения ВНЖ исходя из стоимости подхода и сроков получения, а мы возьмем на себя всю бюрократию",
         "residence-permit-hero-cta-button": "Запросить консультацию",
 
-        "residence-permit-hero-afterlead": "Путь получения <span class=\"special-text\">ВНЖ</span> меняется в зависимости от различных факторов"
+        "residence-permit-hero-afterlead": "Путь получения <span class=\"special-text\">ВНЖ</span> меняется в зависимости от различных факторов",
+        
+        "residence-permit-business-title": "<span class=\"special-text\">ВНЖ через бизнес</span>",
+        "residence-permit-business-benefit1": "Оформление социальной карты",
+        "residence-permit-business-benefit2": "Полная помощь в подготовке всех необходимых документов для подачи и получения ВНЖ",
+        "residence-permit-business-benefit3": "Нотариальный перевод документов",
+        "residence-permit-business-benefit4": "Помощь в получении медицинской справки",
+        "residence-permit-business-benefit5": "Сопровождение по банкам",
+    
+        "residence-permit-work-title": "<span class=\"special-text\">ВНЖ трудовое</span>",
+    
+        "residence-permit-work-benefit1": "",
+        "residence-permit-work-benefit2": "",
+        "residence-permit-work-benefit3": ""
+
     },
     "en": {
 

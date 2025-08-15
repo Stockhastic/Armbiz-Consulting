@@ -42,7 +42,6 @@ document.addEventListener('mouseup', () => {
 });
 
 
-
 // Цены
 fetch('scripts-js-php/service-prices.json')
     .then(r => r.json())
@@ -55,55 +54,10 @@ fetch('scripts-js-php/service-prices.json')
     });
 });
 
-// let translations = {};
-// let currentLang = localStorage.getItem('siteLang') || 'ru';
-// // Загружаем переводы и инициализируем язык
-// fetch('/scripts-js-php/lang.json')
-//   .then(r => r.json())
-//   .then(data => {
-//     translations = data;
-//     setLang(currentLang);
-//   });
-
-// function setLang(lang) {
-//   currentLang = lang;
-//   localStorage.setItem('siteLang', lang);
-
-//   // Переводим все элементы с data-i18n
-//   document.querySelectorAll('[data-i18n]').forEach(el => {
-//     const key = el.getAttribute('data-i18n');
-//     if (translations[lang] && translations[lang][key]) {
-//       el.innerHTML = translations[lang][key];
-//     }
-//   });
-
-// const langIcon = document.getElementById('header-lang-icon');
-// if (langIcon) {
-//     langIcon.src = lang === 'ru'
-//       ? '/src/graphics/png/header-lang-ru.png'
-//       : '/src/graphics/png/header-lang-en.png';
-// }
-
-// document.querySelectorAll('.header__lang-switcher-item')
-//   .forEach(btn => {
-//     btn.classList.toggle(
-//       'header__lang-switcher-item--selected',
-//       btn.getAttribute('data-lang') === lang
-//     );
-//   });
-// }
-
-// document.querySelectorAll('.header__lang-switcher-item').forEach(btn => {
-//   btn.addEventListener('click', () => {
-//     setLang(btn.getAttribute('data-lang'));
-//   });
-// });
-
 let translations = {};
 let currentLang = localStorage.getItem('siteLang') || 'ru';
 let servicePrices = [];
 
-// Загружаем переводы
 fetch('/scripts-js-php/lang.json')
   .then(r => r.json())
   .then(data => {
@@ -112,7 +66,6 @@ fetch('/scripts-js-php/lang.json')
     updateServicePrices(currentLang);
   });
 
-// Загружаем цены
 fetch('/scripts-js-php/service-prices.json')
   .then(r => r.json())
   .then(services => {
@@ -125,7 +78,13 @@ function updateServicePrices(lang) {
   servicePrices.forEach(service => {
     const priceEl = document.getElementById(`service-price-${service.id}`);
     const timelineEl = document.getElementById(`service-timeline-${service.id}`);
-    if (priceEl) priceEl.textContent = `${translations[lang]["service-price-label"]} ${service.price}`;
+    if (priceEl) {
+      if (priceEl.dataset.priceLabel === "false") {
+        priceEl.textContent = service.price;
+      } else {
+        priceEl.textContent = `${translations[lang]["service-price-label"]} ${service.price}`;
+      }
+    }
     if (timelineEl && service.timeline && service.timeline[lang]) {
       timelineEl.textContent = `${translations[lang]["service-timeline-label"]} ${service.timeline[lang]}`;
     }
@@ -161,7 +120,7 @@ function setLang(lang) {
       );
     });
 
-  updateServicePrices(lang); // обновляем ценники при смене языка
+  updateServicePrices(lang);
 }
 
 document.querySelectorAll('.header__lang-switcher-item').forEach(btn => {
