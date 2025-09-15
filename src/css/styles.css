@@ -568,6 +568,23 @@ strong, .special-text, .bold-text {
   position: absolute;
   content: url(/src/graphics/png/benefit-icon.png);
 }
+.service-card__benefits--residence {
+  max-width: 40%;
+  flex-direction: column;
+  margin-right: 6rem;
+  padding-block: 2rem;
+}
+.service-card__benefits--residence > li {
+  text-align: end;
+}
+.service-card__benefits--residence > li::before {
+  content: "  ";
+}
+.service-card__benefits--residence > li::after {
+  position: absolute;
+  translate: 1rem -2px;
+  content: url(/src/graphics/png/benefit-icon.png);
+}
 .service-card__divider {
   height: 1px;
   background-color: #d7deef;
@@ -1316,4 +1333,33 @@ strong, .special-text, .bold-text {
 }
 .hero--service > .hero__details > h2, .hero--service > .hero__details > p {
   text-align: left;
+}
+
+.method-title, .work-method__title, .business-method__title {
+  padding: 2rem;
+  background-color: #e7effe;
+  border-radius: 1.5rem;
+  border: 1px solid #d7deef;
+  text-align: center;
+}
+
+.method-spacing, .business-method {
+  padding-block: 3rem;
+}
+
+.methods {
+  outline: 1px solid red;
+}
+
+.business-method__benefits {
+  display: flex;
+  justify-content: center;
+  outline: 1px dotted greenyellow;
+}
+.business-method__benefits-header {
+  font-family: "Raleway-Semibold";
+  text-align: end;
+}
+.business-method__details {
+  width: 560px;
 }/*# sourceMappingURL=styles.css.map */

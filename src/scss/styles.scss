@@ -680,3 +680,43 @@
     }
 }
 
+// RESIDENCE PERMIT PAGE //
+.method-title{
+    padding: 2rem;
+    background-color: vars.$lightColor;
+    border-radius: 1.5rem;
+    border: 1px solid vars.$borderColor;
+    text-align: center;
+}
+.method-spacing{
+    padding-block: 3rem;
+}
+
+
+.methods{
+    outline: 1px solid red;
+}
+.business-method{
+    @extend .method-spacing;
+    &__title{
+        @extend .method-title;
+    }
+    &__benefits{
+        display: flex;
+        justify-content: center;
+        outline: 1px dotted greenyellow;
+        &-header{
+            font-family: vars.$mainFontSemibold;
+            text-align: end;
+        }
+    }
+    &__details{
+        width: 560px;
+    }
+
+}
+.work-method{
+    &__title{
+        @extend .method-title;
+    }
+}

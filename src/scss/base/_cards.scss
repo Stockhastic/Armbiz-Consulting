@@ -181,6 +181,23 @@
                 content: url(/src/graphics/png/benefit-icon.png);
             }
         }
+        &--residence{
+            max-width: 40%;
+            flex-direction: column;
+            margin-right: 6rem;
+            padding-block: 2rem;
+            & > li {
+                text-align: end;
+                &::before{
+                    content: '  ';
+                }
+                &::after{
+                    position: absolute;
+                    translate: 1rem -2px;
+                    content: url(/src/graphics/png/benefit-icon.png);
+                }
+            }
+        }
     }
 
     &__divider{
