@@ -128,3 +128,10 @@ document.querySelectorAll('.header__lang-switcher-item').forEach(btn => {
     setLang(btn.getAttribute('data-lang'));
   });
 });
+
+  const acc = new Accordion(".accordion-container", {
+    duration: 300,
+    showMultiple: false,
+    collapse: true,
+    openOnInit: [0],  // открываем первую секцию сразу
+  });

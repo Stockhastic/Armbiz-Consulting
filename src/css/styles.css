@@ -569,7 +569,6 @@ strong, .special-text, .bold-text {
   content: url(/src/graphics/png/benefit-icon.png);
 }
 .service-card__benefits--residence {
-  max-width: 40%;
   flex-direction: column;
   margin-right: 6rem;
   padding-block: 2rem;
@@ -1347,19 +1346,81 @@ strong, .special-text, .bold-text {
   padding-block: 3rem;
 }
 
-.methods {
-  outline: 1px solid red;
-}
-
-.business-method__benefits {
+.business-method__benefits, .work-method__benefits {
+  padding-block: 3rem;
   display: flex;
   justify-content: center;
-  outline: 1px dotted greenyellow;
 }
 .business-method__benefits-header {
   font-family: "Raleway-Semibold";
   text-align: end;
+  margin-bottom: 2rem;
 }
 .business-method__details {
   width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.business-method__details > h5 {
+  margin-bottom: 2.6rem;
+}
+.business-method__details > p {
+  margin-bottom: 2.5rem;
+}
+.business-method__price {
+  font-family: "Raleway-Bold";
+}
+
+.work-method__benefits {
+  justify-content: end;
+}
+.work-method__details {
+  display: flex;
+  justify-content: end;
+}
+.work-method__spacer {
+  margin: 3rem;
+  width: 50%;
+}
+.work-method__spacer > p {
+  margin-bottom: 2rem;
+}
+.work-method__spacer--right {
+  max-width: 560px;
+  margin-right: 0;
+}
+.work-method__spacer > h5 {
+  text-align: end;
+}
+
+.accordion-container {
+  padding-block: 5rem;
+}
+
+.ac {
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 2rem;
+  border-color: #d7deef;
+}
+.ac-divider {
+  height: 1px;
+  background-color: #d7deef;
+  margin: 1rem 0;
+}
+.ac-trigger:active {
+  color: #1a6eff;
+}
+
+.ac.is-active > .ac-header .ac-trigger {
+  color: #1a6eff;
+}
+
+.faq {
+  padding-block: 7rem;
+}
+.faq-header {
+  font-family: "Raleway-Regular";
+  font-size: 2rem;
 }/*# sourceMappingURL=styles.css.map */

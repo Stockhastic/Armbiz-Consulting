@@ -220,6 +220,7 @@
         "residence-permit-hero-afterlead": "Путь получения <span class=\"special-text\">ВНЖ</span> меняется в зависимости от различных факторов",
         
         "residence-permit-business-title": "<span class=\"special-text\">ВНЖ через бизнес</span>",
+        "residence-permit-business-benefit0" : "В услугу <span class=\"special-text\">входит:</span>",
         "residence-permit-business-benefit1": "Оформление социальной карты",
         "residence-permit-business-benefit2": "Полная помощь в подготовке всех необходимых документов для подачи и получения ВНЖ",
         "residence-permit-business-benefit3": "Нотариальный перевод документов",
@@ -227,11 +228,9 @@
         "residence-permit-business-benefit5": "Сопровождение по банкам",
     
         "residence-permit-work-title": "<span class=\"special-text\">ВНЖ трудовое</span>",
-    
-        "residence-permit-work-benefit1": "",
-        "residence-permit-work-benefit2": "",
-        "residence-permit-work-benefit3": ""
-
+        "residence-permit-business-detail1": "На сегодняшний день - <span class=\"bold-text\">самый популярный</span> способ получения <span class=\"special-text\">ВНЖ</span> для иностранного гражданина в РА",
+        "residence-permit-business-detail2": "Процесс получения через ведение своего бизнеса(ИП или ООО) является самым дорогим подходом, но в то же время самым быстрым и доступным большинству",
+        "residence-permit-business-price": "Стоимость услуги: <span class=\"special-text\" id=\"service-price-residence-business\" data-price-label=\"false\"></span>"
     },
     "en": {
 
@@ -451,6 +450,19 @@
         "residence-permit-hero-subtitle": "Choose the most convenient way for you to obtain a residence permit based on the cost of the approach and the time of receipt, and we will take over all the bureaucracy.",
         "residence-permit-hero-cta-button": "Schedule Consultation",
 
-        "residence-permit-hero-afterlead": "The way to obtain <span class=\"special-text\">Residence Permit</span> varies depending on various factors"
+        "residence-permit-hero-afterlead": "The way to obtain <span class=\"special-text\">Residence Permit</span> varies depending on various factors",
+
+        "residence-permit-business-title" : "<span class=\"special-text\">Residence Permit by business</span>",
+        "residence-permit-business-benefit0" : "Service <span class=\"special-text\">includes:</span>",
+        "residence-permit-business-benefit1": "Social card obtaining",
+        "residence-permit-business-benefit2": "Full assistance in preparing all necessary documents for applying and obtaining a residence permit",
+        "residence-permit-business-benefit3": "Notarization of documents",
+        "residence-permit-business-benefit4": "Assistance in obtaining a medical certificate",
+        "residence-permit-business-benefit5": "Banking support",
+    
+        "residence-permit-work-title": "<span class=\"special-text\">Residence Permit by work</span>",
+        "residence-permit-business-detail1": "Today - <span class=\"bold-text\">most popular</span> way of obtain <span class=\"special-text\">Residence Permit</span> for foreign citizen in RA",
+        "residence-permit-business-detail2": "The process of obtaining by running your own business (IE or LLC) is the most expensive approach, but at the same time the fastest and most accessible to majority",
+        "residence-permit-business-price": "Price: <span class=\"special-text\" id=\"service-price-residence-business\" data-price-label=\"false\"></span>"
     }
 }

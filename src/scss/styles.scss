@@ -692,31 +692,91 @@
     padding-block: 3rem;
 }
 
-
-.methods{
-    outline: 1px solid red;
-}
 .business-method{
     @extend .method-spacing;
     &__title{
         @extend .method-title;
     }
     &__benefits{
+        padding-block: 3rem;
         display: flex;
         justify-content: center;
-        outline: 1px dotted greenyellow;
         &-header{
             font-family: vars.$mainFontSemibold;
             text-align: end;
+            margin-bottom: 2rem;
         }
     }
     &__details{
         width: 560px;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & > h5 {
+            margin-bottom: 2.6rem;
+        }
+        & > p {
+            margin-bottom: 2.5rem;
+        }
 
+    }
+    &__price{ 
+        font-family: vars.$mainFontBold;
+    }
 }
 .work-method{
     &__title{
         @extend .method-title;
     }
+    &__benefits{
+        @extend .business-method__benefits;
+        justify-content: end;
+    }
+    &__details{
+        display: flex;
+        justify-content: end;
+    }
+    &__spacer{
+        margin: 3rem;
+        width: 50%;
+        & > p {
+            margin-bottom: 2rem;
+        }
+        &--right{
+            max-width: 560px;
+            margin-right: 0;
+        }
+        & > h5 {
+            text-align: end;
+        }
+    }
 }
+
+.accordion-container{
+    padding-block: 5rem;
+}
+.ac{
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 2rem;
+    border-color: vars.$borderColor;
+    &-divider{
+        height: 1px;
+        background-color: vars.$borderColor;
+        margin: 1rem 0;
+    }
+    &-trigger:active{
+        color: vars.$primaryColor;
+    }
+}
+.ac.is-active > .ac-header .ac-trigger {
+    color: vars.$primaryColor;           
+}
+
+.faq{
+    padding-block: 7rem    ;
+    &-header{
+    font-family: vars.$mainFontRegular;
+    font-size: 2rem;}
+}
+
