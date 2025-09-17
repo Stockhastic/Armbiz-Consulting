@@ -681,6 +681,11 @@
 }
 
 // RESIDENCE PERMIT PAGE //
+
+.hero__title--residence{
+    font-family: vars.$mainFontSemibold;
+}
+
 .method-title{
     padding: 2rem;
     background-color: vars.$lightColor;
@@ -750,6 +755,9 @@
             text-align: end;
         }
     }
+    &__price{ 
+        font-family: vars.$mainFontBold;
+    }
 }
 
 .accordion-container{
@@ -778,5 +786,8 @@
     &-header{
     font-family: vars.$mainFontRegular;
     font-size: 2rem;}
+    &__title{
+        font-family: vars.$mainFontSemibold ;
+    }
 }
 

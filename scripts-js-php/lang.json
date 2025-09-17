@@ -230,7 +230,13 @@
         "residence-permit-work-title": "<span class=\"special-text\">ВНЖ трудовое</span>",
         "residence-permit-business-detail1": "На сегодняшний день - <span class=\"bold-text\">самый популярный</span> способ получения <span class=\"special-text\">ВНЖ</span> для иностранного гражданина в РА",
         "residence-permit-business-detail2": "Процесс получения через ведение своего бизнеса(ИП или ООО) является самым дорогим подходом, но в то же время самым быстрым и доступным большинству",
-        "residence-permit-business-price": "Стоимость услуги: <span class=\"special-text\" id=\"service-price-residence-business\" data-price-label=\"false\"></span>"
+        "residence-permit-business-price": "Стоимость услуги: <span class=\"special-text\" id=\"service-price-residence-business\" data-price-label=\"false\"></span>",
+
+        "residence-permit-work-thesis0": "Более затратный по срокам способ, но вместе с тем более дешевый",
+        "residence-permit-work-thesis1": "Условия индивидуальны для каждого клиента. Чтобы ознакомится с ними воспользуйтесь нашей бесплатной консультацией. Наши специалисты с радостью помогут вам разобраться во всех особенностях процесса",
+        "residence-permit-work-price": "Стоимость услуги: <span class=\"special-text\" id=\"service-price-residence-work\" data-price-label=\"false\"></span>",
+    
+        "residence-permit-faq-title": "<span class=\"special-text\">Ча</span>сто задаваемые <span class=\"special-text\">Во</span>просы"
     },
     "en": {
 
@@ -463,6 +469,12 @@
         "residence-permit-work-title": "<span class=\"special-text\">Residence Permit by work</span>",
         "residence-permit-business-detail1": "Today - <span class=\"bold-text\">most popular</span> way of obtain <span class=\"special-text\">Residence Permit</span> for foreign citizen in RA",
         "residence-permit-business-detail2": "The process of obtaining by running your own business (IE or LLC) is the most expensive approach, but at the same time the fastest and most accessible to majority",
-        "residence-permit-business-price": "Price: <span class=\"special-text\" id=\"service-price-residence-business\" data-price-label=\"false\"></span>"
+        "residence-permit-business-price": "Price: <span class=\"special-text\" id=\"service-price-residence-business\" data-price-label=\"false\"></span>",
+    
+        "residence-permit-work-thesis0": "A more time-consuming method, but at the same time more cost-effective",
+        "residence-permit-work-thesis1": "The conditions are tailored individually for each client. To learn more, take advantage of our free consultation. Our specialists will be happy to help you understand all the details of the process",
+        "residence-permit-work-price": "Price:<span class=\"special-text\" id=\"service-price-residence-work\" data-price-label=\"false\"></span>",
+    
+        "residence-permit-faq-title": "<span class=\"special-text\">F</span>requently <span class=\"special-text\">A</span>sked <span class=\"special-text\">Q</span>uestions "
     }
 }

@@ -1334,6 +1334,14 @@ strong, .special-text, .bold-text {
   text-align: left;
 }
 
+.hero__title--residence {
+  font-family: "Raleway-Semibold";
+}
+
+.hero__subtitle--residence {
+  font-family: "Raleway-Regular";
+}
+
 .method-title, .work-method__title, .business-method__title {
   padding: 2rem;
   background-color: #e7effe;
@@ -1393,6 +1401,9 @@ strong, .special-text, .bold-text {
 .work-method__spacer > h5 {
   text-align: end;
 }
+.work-method__price {
+  font-family: "Raleway-Bold";
+}
 
 .accordion-container {
   padding-block: 5rem;
@@ -1423,4 +1434,7 @@ strong, .special-text, .bold-text {
 .faq-header {
   font-family: "Raleway-Regular";
   font-size: 2rem;
+}
+.faq__title {
+  font-family: "Raleway-Semibold";
 }/*# sourceMappingURL=styles.css.map */
