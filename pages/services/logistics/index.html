@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.css" />
+    <script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
+
     <link rel="stylesheet" href="/src/css/styles.css">
     <!-- FAVICON -->
     <!-- Favicon Standart -->
@@ -22,7 +26,7 @@
     <!-- Android -->
     <link rel="manifest" href="/src/graphics/site.webmanifest">
 
-    <!-- <title>PAGENAME | Main Page</title> -->
+    <title>Услуга | Логистика и Таможня</title>
     
     <!-- OpenGraphics for Thumbnails -->
     <!-- <meta property="og:title" content="TITLE_PAGE" />
@@ -53,34 +57,224 @@
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Услуги</a>
+                <li class="header__nav-item header__nav-item-services">
+                    <a href="#" class="header__nav-link" data-i18n="header-services">Услуги</a>
+                    <ul class="header__nav-list-services mouse-selectable">
+                        <li class="mouse-selectable"><a href="/pages/services/llc-ie-registration/index.html" data-i18n="header-service-llc-ie">Регистрация ООО и ИП</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/ready-made-companies/index.html" data-i18n="header-service-ready-made-companies">Готовые компании</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/citizenship/index.html" data-i18n="header-service-citizenship">Гражданство</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/residence-permit/index.html" data-i18n="header-service-residence-permit">ВНЖ</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/registration/index.html" data-i18n="header-service-registration">Прописка</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/accounting/index.html" data-i18n="header-service-accounting">Бухгалтерские услуги</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/bank-card/index.html" data-i18n="header-service-bank-card">Банковская карта для физ. лиц</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/social-card/index.html" data-i18n="header-service-social-card">Социальная карта</a></li>
+                        <li class="mouse-selectable"><a href="/pages/services/logistics/index.html" data-i18n="header-service-logistic">Логистика и Таможня</a></li>
+                    </ul>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Контакты</a>
+                    <a href="/pages/contacts/index.html" class="header__nav-link" data-i18n="header-contacts">Контакты</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">О нас</a>
+                    <a href="/pages/about-us/index.html" class="header__nav-link"data-i18n="header-aboutus">О нас</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Логистика и таможня</a>
+                    <a href="/pages/services/logistics/index.html" class="header__nav-link" data-i18n="header-logistics">Логистика и таможня</a>
                 </li>
             </ul>
         </nav>
-        <div class="header__lang-switcher">
-            <button class="header__lang-switcher-item header__lang-switcher-item--selected">
-                <img class="header__lang-switcher-icon" src="#" alt="lang-switcher-item-rus">
-                <p class="header__lang-switcher-text">Русский</p>
-            </button>
-            <button class="header__lang-switcher-item">
-                <img class="header__lang-switcher-icon" src="#" alt="lang-switcher-item-en">
-                <p class="header__lang-switcher-text">Английский</p>
-            </button>
+        <div class="header__lang mouse-selectable">
+            <img id="header-lang-icon"  src="/src/graphics/png/header-lang-ru.png" alt="lang-icon">
+            <div class="header__lang-switcher">
+                <button class="header__lang-switcher-item header__lang-switcher-item--selected" data-lang="ru">
+                    <img class="header__lang-switcher-icon" src="/src/graphics/png/header-lang-ru.png" alt="lang-switcher-item-rus">
+                    <p class="header__lang-switcher-text">Русский</p>
+                </button>
+                <button class="header__lang-switcher-item" data-lang="en">
+                    <img class="header__lang-switcher-icon" src="/src/graphics/png/header-lang-en.png" alt="lang-switcher-item-en">
+                    <p class="header__lang-switcher-text">English</p>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
-        <h1 style="text-align: center; margin: 1rem;">HELLO I AM LOGISTICS & CUSTOMS PAGE</h1>
+        <div class="wrapper">
+            <section class="hero hero--service">
+                <div class="hero__details">
+                    <h2 class="hero__title" data-i18n="logistics-customs-hero-title"><span class="special-text">Логистика</span> и Таможня</h2>
+                    <p class="hero__subtitle" data-i18n="logistics-customs-hero-subtitle">В условиях текущей мировой обстановки компании вынуждены искать альтернативные пути ввоза и вывоза товаров. Многие сталкиваются со сложностями при проведении платежей за приобретаемый товар.</p>
+                    <a href="#contact-us" class="btn btn--primary" data-i18n="logistics-customs-hero-cta-button">Запросить консультацию</a>
+                </div>
+                <div class="hero__image">
+                    <img src="/src/graphics/png/logistics-customs-illustration.png" alt="logistics-customs-illustration">
+                </div>
+            </section>
+
+            <section class="workstyle">
+                <h3 class="workstyle__title">Как мы работаем?</h3>
+                <h4 class="workstyle__lead">Гибкий подход - один из ключевых аспектов нашей идеологии. 
+                    Мы готовы предложить разные решения</h4>
+                <div class="workstyle__approaches">
+
+                    <div class="scheme-container">
+                        <h4 class="scheme-container__title">Выступи <span class="special-text">промежуточным звеном</span> в поставке</h4>
+                        <ul class="scheme">
+                            <div class="scheme__line"></div>
+                            <li class="scheme__item scheme__item--special">
+                                <h4 class="scheme__item-title">Консультация</h4>
+                            </li>
+                            <li class="scheme__item">
+                                <h4 class="scheme__item-title">Заключение договора</h4>
+                                <p class="scheme__item-text">Вы заключаете договор купли-продажи с поставщиком. 
+                                    Договор может быть заключен с нашей стороны, если есть сложности с заключением прямого контракта 
+                                    или поставщик не готов продавать/отгружать грузы напрямую в вашу страну</p>
+                            </li>
+                            <li class="scheme__item">
+                                <h4 class="scheme__item-title">Оплата груза</h4>
+                                <p class="scheme__item-text">Аналогично договору, мыожем выступить в качестве платежного агента. 
+                                    На основе договора мы производим оплату за груз. 
+                                    Наличие открытых счетов в различных банках позволяет нам проводить платежи с минимальной задержкой.</p>
+                            </li>
+                            <li class="scheme__item">
+                                <h4 class="scheme__item-title">Отправление</h4>
+                                <p class="scheme__item-text">Продавец отправляет вам груз как при обычной поставке или мы организуем забор груза</p>
+                            </li>
+                            <li class="scheme__item">
+                                <h4 class="scheme__item-title">Оформление</h4>
+                                <p class="scheme__item-text">По прибытию товара на склад временного хранения(СВХ) вы или мы, как таможенный представитель, проводим таможенное оформление и выпускаем груз в свободное обращение.</p>
+                            </li>
+                            <li class="scheme__item scheme__item--special">
+                                <h4 class="scheme__item-title">Счаcтливый клиент</h4>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="scheme-container">
+                        <h4 class="scheme-container__title">Полная реализация <span class="special-text">под ключ</span></h4>
+                        <p class="scheme-container__text">При полной реализации под ключ мы полностью берем на себя все процессы по закупке и доставке, включая валютные платежи и валютный контроль</p>
+                        <p class="scheme-container__text">На выходе вы получаете товар, полностью выпущенный в свободное обращение на территории ЕАЭС</p>
+                        <ul class="scheme">
+                            <div class="scheme__line"></div>
+                            <li class="scheme__item scheme__item--special">
+                                <h4 class="scheme__item-title">Консультация</h4>
+                            </li>
+                            <li class="scheme__item">
+                                <h4 class="scheme__item-title">Организация</h4>
+                                <p class="scheme__item-text">Мы можем предложить гибкие ставки, подходящие конкретно под Ваш запрос, на доставку различными видами транспорта из Китая или Европы, в том числе сборную и мультимодальную перевозки</p>
+                            </li>
+                            <li class="scheme__item">
+                                <h4 class="scheme__item-title">Оформление разрешительных документов</h4>
+                                <p class="scheme__item-text">Оформим все требуемые сертификаты и декларации о соответствии, нотификации всех необходимых органов, лицензии, заключения и многое другое.</p>
+                            </li>
+                            <li class="scheme__item">
+                                <h4 class="scheme__item-title">Прохождение таможни</h4>
+                                <p class="scheme__item-text">Берем на себя весь процесс таможенного оформления начиная от размещения груза на таможенном терминале - СВХ и заканчивая непосредственно выпуском и выдачей груза с СВХ или доставкой до конечного адреса</p>
+                            </li>
+                            <li class="scheme__item scheme__item--special">
+                                <h4 class="scheme__item-title">Счастливый клиент</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq">
+                <h3 data-i18n="faq-title" class="faq__title"><span class="special-text">Ча</span>сто задаваемые <span class="special-text">Во</span>просы</h3>
+            
+                <div class="accordion-container">
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button class="ac-trigger"><span class="faq-header">Вопрос 1</span></button>
+                        </h2>
+                        <div class="ac-panel">
+                            <div class="ac-divider"></div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim commodi perferendis ipsa ducimus neque alias iste sint, ratione, ipsam nisi eaque aliquid fugit nobis animi id eligendi, aut nemo velit.</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button class="ac-trigger"><span class="faq-header">Вопрос 2</span></button>
+                        </h2>
+                        <div class="ac-panel">
+                            <div class="ac-divider"></div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim commodi perferendis ipsa ducimus neque alias iste sint, ratione, ipsam nisi eaque aliquid fugit nobis animi id eligendi, aut nemo velit.</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button class="ac-trigger"><span class="faq-header">Вопрос 3</span></button>
+                        </h2>
+                        <div class="ac-panel">
+                            <div class="ac-divider"></div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim commodi perferendis ipsa ducimus neque alias iste sint, ratione, ipsam nisi eaque aliquid fugit nobis animi id eligendi, aut nemo velit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact-us" class="contact">
+                <div class="contact__details">
+                    <span class="contact__badge">Связаться с нами</span>
+                    <h2 class="contact__title">Хотите <br><span class="special-text">работать с нами?</span></h2>
+                    <p class="contact__text">Запишитесь на консультацию к нашим специалистам, чтобы узнать, как мы можем вам помочь. Или свяжитесь с нами напрямую через:</p>
+                    <div class="contact__links">
+                        <ul class="contact__mails">
+                            <p class="contact__subtitle">Наши почты</p>
+                            <li><a class="contact__link" href="mailto:co@armbizconsulting.com">co@armbizconsulting.com</a></li>
+                            <li><a class="contact__link" href="mailto:armbiz@armbiz.ru">armbiz@armbiz.ru</a></li>
+                        </ul>
+                        <ul class="contact__phones">
+                            <p class="contact__subtitle">Наши телефоны</p>
+                            <li><a class="contact__link contact__link--arm" href="tel:+374470702">+(374) 44 470702</a></li>
+                            <li><a class="contact__link contact__link--rus" href="tel:+79645377228">+7 (964) 5377228</a></li>
+                        </ul>
+                        <!-- <ul class="contact__addresses">
+                            <p class="contact__subtitle">Наши офисы</p>
+                            <li><a class="contact__link contact__link--map" href="https://yandex.com/profile/-/CHhabX0W">Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1</a></li>
+                            <li><a class="contact__link contact__link--map" href="https://yandex.com/maps/-/CHhafJ~T">Россия, Москва, Сибирский проезд 2с2</a></li>
+                        </ul> -->
+                        <ul class="contact__socials">
+                            <p class="contact__subtitle">Наши мессенджеры и соц сети</p>
+                            <li><a class="contact__link" href="https://t.me/armbiz_consulting"><img src="/src/graphics/png/contact-telegram.png" alt="telegram-image"></a></li>
+                            <li><a class="contact__link" href="https://api.whatsapp.com/send/?app_absent=0&phone=79645377228&text=Здраствуйте%21&type=phone_number"><img src="/src/graphics/png/contact-whatsapp.png" alt="whatsapp-image"></a></li>
+                            <li><a class="contact__link" href="https://www.instagram.com/armbizconsulting_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=ig_web_button_share_sheet"><img src="/src/graphics/png/contact-instagram.png" alt="instagram-image"></a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <form action="POST" class="form">
+                    <p class="form__title">Ваше ФИО</p>
+                    <input type="text" name="name" placeholder="Иванов Иван Иванович" required>
+                    <div class="form__spacer"></div>
+                    <p class="form__title">Как вам будет удобно получить обратную связь?</p>
+                    <div class="form__radio">
+                        <label><input type="radio" name="feedback" value="mail">Почта</label>
+                        <label><input type="radio" name="feedback" value="messanger">Telegram / WhatsApp</label>
+                        <label><input type="radio" name="feedback" value="phone"> Прямой звонок</label><br>
+                    </div>
+                    <input type="text" name="feedback-credentials" required placeholder="Почта, номер телефона или ник в мессенджере">
+                    <div class="form__spacer"></div>
+                    <p class="form__title">В чем вы заинтересованы?</p>
+                    <select name="service">
+                        <option value="logistics">Логистика и Таможня</option>
+                        <option value="residence">ВНЖ</option>
+                        <option value="llc-ie">Регистрация ООО или ИП</option>
+                        <option value="ready-company">Готовые компании</option>
+                        <option value="citizenship">Гражданство</option>
+                        <option value="accounting">Бухгалтерские услуги</option>
+                        <option value="social-card">Социальная Карта</option>
+                        <option value="bank-card">Банковские карты для физ.лиц</option>
+                        <option value="registration">Прописка</option>
+                        <option value="other">Другое</option>
+                    </select>
+                    <div class="form__spacer"></div>
+                    <p class="form__title">Сообщение <span class="italic-text">(не обязательно)</span></p>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Здравствуйте! Я хотел бы узнать больше о..."></textarea>
+                
+                    <button type="submit" class="btn--primary">Запросить консультацию</button>
+                    <p class="form__text">Заполняя форму, вы соглашаетесь с нашими условиями конфиденциальности. Обычно, мы отвечаем на запросы в течении 24 часов.</p>
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">

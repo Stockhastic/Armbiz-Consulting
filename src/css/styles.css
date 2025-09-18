@@ -630,6 +630,63 @@ strong, .special-text, .bold-text {
   font-family: "Raleway-Semibold";
 }
 
+.scheme {
+  position: relative;
+  counter-reset: item 0;
+  outline: 1px solid bisque;
+  padding-block: 2rem;
+}
+.scheme-container {
+  outline: 1px dashed pink;
+  max-width: 45%;
+}
+.scheme__item {
+  position: relative;
+  margin-left: 9rem;
+  counter-increment: item;
+  border: 1px solid #d7deef;
+  border-radius: 1.5em;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+.scheme__item-title {
+  font-family: "Raleway-Semibold";
+}
+.scheme__item-title::before {
+  position: absolute;
+  content: url(/src/graphics/svg/scheme-point.png);
+  left: 0;
+  translate: -84% 0;
+}
+.scheme__item-text {
+  font-family: "Raleway-Medium";
+  margin-top: 1.5rem;
+}
+.scheme__item::before {
+  background-color: #1a6eff;
+  font-size: 2.4rem;
+  font-family: "Raleway-Semibold";
+  content: counter(item);
+  translate: -170% -30%;
+  color: #fff;
+  padding: 1.5rem 2.1rem;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+}
+.scheme__item--special {
+  background-color: #1e2736;
+  color: #fff;
+}
+.scheme__line {
+  position: absolute;
+  width: 3px;
+  height: 85%;
+  background-color: #1a6eff;
+  left: 24px;
+  translate: 0 10px;
+}
+
 .sphere {
   position: absolute;
   border-radius: 50%;
@@ -805,6 +862,7 @@ strong, .special-text, .bold-text {
 }
 
 .wrapper, .header {
+  outline: 1px solid red;
   margin: 0 auto;
   max-width: 1280px;
 }
@@ -1319,10 +1377,6 @@ strong, .special-text, .bold-text {
   display: flex;
   flex-direction: row;
 }
-.hero--service > .hero__subtitle {
-  font-family: "Raleway-Medium";
-  color: #000;
-}
 .hero--service > .hero__details {
   max-width: 48%;
   display: flex;
@@ -1333,13 +1387,13 @@ strong, .special-text, .bold-text {
 .hero--service > .hero__details > h2, .hero--service > .hero__details > p {
   text-align: left;
 }
+.hero--service > .hero__details > .hero__subtitle {
+  font-family: "Raleway-Medium";
+  color: #000;
+}
 
 .hero__title--residence {
   font-family: "Raleway-Semibold";
-}
-
-.hero__subtitle--residence {
-  font-family: "Raleway-Regular";
 }
 
 .method-title, .work-method__title, .business-method__title {
@@ -1437,4 +1491,13 @@ strong, .special-text, .bold-text {
 }
 .faq__title {
   font-family: "Raleway-Semibold";
+}
+
+.workstyle {
+  padding-block: 4rem;
+}
+.workstyle__approaches {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
 }/*# sourceMappingURL=styles.css.map */

@@ -236,7 +236,7 @@
         "residence-permit-work-thesis1": "Условия индивидуальны для каждого клиента. Чтобы ознакомится с ними воспользуйтесь нашей бесплатной консультацией. Наши специалисты с радостью помогут вам разобраться во всех особенностях процесса",
         "residence-permit-work-price": "Стоимость услуги: <span class=\"special-text\" id=\"service-price-residence-work\" data-price-label=\"false\"></span>",
     
-        "residence-permit-faq-title": "<span class=\"special-text\">Ча</span>сто задаваемые <span class=\"special-text\">Во</span>просы"
+        "faq-title": "<span class=\"special-text\">Ча</span>сто задаваемые <span class=\"special-text\">Во</span>просы"
     },
     "en": {
 
@@ -475,6 +475,6 @@
         "residence-permit-work-thesis1": "The conditions are tailored individually for each client. To learn more, take advantage of our free consultation. Our specialists will be happy to help you understand all the details of the process",
         "residence-permit-work-price": "Price:<span class=\"special-text\" id=\"service-price-residence-work\" data-price-label=\"false\"></span>",
     
-        "residence-permit-faq-title": "<span class=\"special-text\">F</span>requently <span class=\"special-text\">A</span>sked <span class=\"special-text\">Q</span>uestions "
+        "faq-title": "<span class=\"special-text\">F</span>requently <span class=\"special-text\">A</span>sked <span class=\"special-text\">Q</span>uestions "
     }
 }

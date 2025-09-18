@@ -1,0 +1,65 @@
+@use "./vars";
+
+
+.scheme{
+    position: relative;
+    counter-reset: item 0;
+    outline: 1px solid bisque;
+    padding-block: 2rem;
+
+    &-container{
+        outline: 1px dashed pink;
+        max-width: 45%;
+    }
+
+    &__item{
+        position: relative;
+        margin-left: 9rem;
+        counter-increment: item;
+
+        border: 1px solid vars.$borderColor;
+        border-radius: 1.5em;
+        padding: 2rem;
+        margin-bottom: 2.5rem;
+        &-title{
+            font-family: vars.$mainFontSemibold;
+            &::before{
+                position: absolute;
+                content: url(/src/graphics/svg/scheme-point.png);
+                left: 0;
+                translate:-84% 0;
+            }
+        }
+        &-text{
+            font-family: vars.$mainFontMedium;
+            margin-top: 1.5rem;
+        }
+
+        &::before{
+            background-color: vars.$primaryColor;
+            font-size: vars.$h4Size;
+            font-family: vars.$mainFontSemibold;
+            content: counter(item);
+            translate: -170% -30%;
+            color: #fff;
+            padding: 1.5rem 2.1rem;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+        }
+
+        &--special{
+            background-color: vars.$darkColor;
+            color: #fff;
+        }
+    }
+    &__line{
+        position: absolute;
+        width: 3px;
+        height: 85%;
+        background-color: vars.$primaryColor;
+        left: 24px;
+        translate: 0 10px;
+    }
+
+}
