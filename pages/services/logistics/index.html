@@ -225,17 +225,17 @@
 
             <section id="contact-us" class="contact">
                 <div class="contact__details">
-                    <span class="contact__badge">Связаться с нами</span>
-                    <h2 class="contact__title">Хотите <br><span class="special-text">работать с нами?</span></h2>
-                    <p class="contact__text">Запишитесь на консультацию к нашим специалистам, чтобы узнать, как мы можем вам помочь. Или свяжитесь с нами напрямую через:</p>
+                    <span class="contact__badge" data-i18n="contact-us-badge">Связаться с нами</span>
+                    <h2 class="contact__title" data-i18n="contact-us-title-mainpage">Хотите <br><span class="special-text">Работать с нами?</span></h2>
+                    <p class="contact__text" data-i18n="contact-us-lead">Запишитесь на консультацию к нашим специалистам, чтобы узнать, как мы можем вам помочь. Или свяжитесь с нами напрямую через:</p>
                     <div class="contact__links">
                         <ul class="contact__mails">
-                            <p class="contact__subtitle">Наши почты</p>
+                            <p class="contact__subtitle" data-i18n="contact-us-mails">Наши почты</p>
                             <li><a class="contact__link" href="mailto:co@armbizconsulting.com">co@armbizconsulting.com</a></li>
                             <li><a class="contact__link" href="mailto:armbiz@armbiz.ru">armbiz@armbiz.ru</a></li>
                         </ul>
                         <ul class="contact__phones">
-                            <p class="contact__subtitle">Наши телефоны</p>
+                            <p class="contact__subtitle" data-i18n="contact-us-phones">Наши телефоны</p>
                             <li><a class="contact__link contact__link--arm" href="tel:+374470702">+(374) 44 470702</a></li>
                             <li><a class="contact__link contact__link--rus" href="tel:+79645377228">+7 (964) 5377228</a></li>
                         </ul>
@@ -245,7 +245,7 @@
                             <li><a class="contact__link contact__link--map" href="https://yandex.com/maps/-/CHhafJ~T">Россия, Москва, Сибирский проезд 2с2</a></li>
                         </ul> -->
                         <ul class="contact__socials">
-                            <p class="contact__subtitle">Наши мессенджеры и соц сети</p>
+                            <p class="contact__subtitle" data-i18n="contact-us-socials">Наши мессенджеры и соц сети</p>
                             <li><a class="contact__link" href="https://t.me/armbiz_consulting"><img src="/src/graphics/png/contact-telegram.png" alt="telegram-image"></a></li>
                             <li><a class="contact__link" href="https://api.whatsapp.com/send/?app_absent=0&phone=79645377228&text=Здраствуйте%21&type=phone_number"><img src="/src/graphics/png/contact-whatsapp.png" alt="whatsapp-image"></a></li>
                             <li><a class="contact__link" href="https://www.instagram.com/armbizconsulting_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=ig_web_button_share_sheet"><img src="/src/graphics/png/contact-instagram.png" alt="instagram-image"></a></li>
@@ -253,66 +253,66 @@
                     </div>    
                 </div>
                 <form action="POST" class="form">
-                    <p class="form__title">Ваше ФИО</p>
-                    <input type="text" name="name" placeholder="Иванов Иван Иванович" required>
+                    <p class="form__title" data-i18n="contact-us-form-name">Ваше ФИО</p>
+                    <input type="text" name="name" data-i18n="[placeholder]contact-us-form-name-placeholder" placeholder="Иванов Иван Иванович" required>
                     <div class="form__spacer"></div>
-                    <p class="form__title">Как вам будет удобно получить обратную связь?</p>
+                    <p class="form__title" data-i18n="contact-us-form-feedback">Как вам будет удобно получить обратную связь?</p>
                     <div class="form__radio">
-                        <label><input type="radio" name="feedback" value="mail">Почта</label>
-                        <label><input type="radio" name="feedback" value="messanger">Telegram / WhatsApp</label>
-                        <label><input type="radio" name="feedback" value="phone"> Прямой звонок</label><br>
+                        <label data-i18n="contact-us-form-feedback-radio1"><input type="radio" name="feedback" value="mail">Почта</label>
+                        <label data-i18n="contact-us-form-feedback-radio2"><input type="radio" name="feedback" value="messanger">Telegram / WhatsApp</label>
+                        <label data-i18n="contact-us-form-feedback-radio3"><input type="radio" name="feedback" value="phone"> Прямой звонок</label><br>
                     </div>
-                    <input type="text" name="feedback-credentials" required placeholder="Почта, номер телефона или ник в мессенджере">
+                    <input type="text" name="feedback-credentials" required data-i18n="[placeholder]contact-us-form-feedback-placeholder" placeholder="Почта, номер телефона или ник в мессенджере">
                     <div class="form__spacer"></div>
-                    <p class="form__title">В чем вы заинтересованы?</p>
+                    <p class="form__title" data-i18n="contact-us-form-service-title">В чем вы заинтересованы?</p>
                     <select name="service">
-                        <option value="logistics">Логистика и Таможня</option>
-                        <option value="residence">ВНЖ</option>
-                        <option value="llc-ie">Регистрация ООО или ИП</option>
-                        <option value="ready-company">Готовые компании</option>
-                        <option value="citizenship">Гражданство</option>
-                        <option value="accounting">Бухгалтерские услуги</option>
-                        <option value="social-card">Социальная Карта</option>
-                        <option value="bank-card">Банковские карты для физ.лиц</option>
-                        <option value="registration">Прописка</option>
-                        <option value="other">Другое</option>
+                        <option value="logistics" data-i18n="contact-us-form-service-option-logistics">Логистика и Таможня</option>
+                        <option value="llc-ie" data-i18n="contact-us-form-service-option-ie">Регистрация ООО или ИП</option>
+                        <option value="ready-company" data-i18n="contact-us-form-service-option-readycompany">Готовые компании</option>
+                        <option value="residence" data-i18n="contact-us-form-service-option-residence">ВНЖ</option>
+                        <option value="citizenship" data-i18n="contact-us-form-service-option-citizenship">Гражданство</option>
+                        <option value="accounting" data-i18n="contact-us-form-service-option-accounting">Бухгалтерские услуги</option>
+                        <option value="social-card" data-i18n="contact-us-form-service-option-socialcard">Социальная Карта</option>
+                        <option value="bank-card" data-i18n="contact-us-form-service-option-bankcard">Банковские карты для физ.лиц</option>
+                        <option value="registration" data-i18n="contact-us-form-service-option-registration">Прописка</option>
+                        <option value="other" data-i18n="contact-us-form-service-option-other">Другое</option>
                     </select>
                     <div class="form__spacer"></div>
-                    <p class="form__title">Сообщение <span class="italic-text">(не обязательно)</span></p>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Здравствуйте! Я хотел бы узнать больше о..."></textarea>
+                    <p class="form__title" data-i18n="contact-us-form-message-title">Сообщение <span class="italic-text">(не обязательно)</span></p>
+                    <textarea name="message" id="message" cols="30" rows="10" data-i18n="[placeholder]contact-us-form-message-placeholder" placeholder="Здравствуйте! Я хотел бы узнать больше о..."></textarea>
                 
-                    <button type="submit" class="btn--primary">Запросить консультацию</button>
-                    <p class="form__text">Заполняя форму, вы соглашаетесь с нашими условиями конфиденциальности. Обычно, мы отвечаем на запросы в течении 24 часов.</p>
+                    <button type="submit" class="btn--primary" data-i18n="contact-us-form-cta">Запросить консультацию</button>
+                    <p class="form__text" data-i18n="contact-us-form-policy">Заполняя форму, вы соглашаетесь с нашими условиями конфиденциальности. Обычно, мы отвечаем на запросы в течении 24 часов.</p>
                 </form>
             </section>
         </div>
     </main>
-
+    
     <footer class="footer">
         <div class="footer__grid">
             <section class="footer__brand">
                 <img class="footer__logo" src="/src/graphics/png/footer-logo.png" alt="Footer Logo Image" max-width="280px" height="110px">
-                <p class="footer__logo-caption">Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг</p>
+                <p class="footer__logo-caption" data-i18n="footer-underlogo-text">Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг</p>
             </section>
             <nav class="footer__services">
-                <p class="footer__title">Услуги</p>
+                <p class="footer__title" data-i18n="footer-service-tite">Услуги</p>
                 <ul class="footer__list">
-                    <li class="footer__list-item"><a href="/pages/services/llc-ie-registration/index.html" class="footer__list-link">Регистрация ООО или ИП</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/ready-made-companies/index.html" class="footer__list-link">Готовые компании</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/residence-permit/index.html" class="footer__list-link">ВНЖ</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/citizenship/index.html" class="footer__list-link">Гражданство</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/registration/index.html" class="footer__list-link">Прописка</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/accounting/index.html" class="footer__list-link">Бухгалтерские услуги</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/bank-card/index.html" class="footer__list-link">Банковская карта для физ.лиц</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/social-card/index.html" class="footer__list-link">Социальная карта</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/logistics/index.html" class="footer__list-link">Логистика и Таможня</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/llc-ie-registration/index.html" class="footer__list-link" data-i18n="footer-service-iellc">Регистрация ООО или ИП</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/ready-made-companies/index.html" class="footer__list-link" data-i18n="footer-service-readycompany">Готовые компании</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/residence-permit/index.html" class="footer__list-link" data-i18n="footer-service-residence">ВНЖ</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/citizenship/index.html" class="footer__list-link" data-i18n="footer-service-citizenship">Гражданство</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/registration/index.html" class="footer__list-link" data-i18n="footer-service-registration">Прописка</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/accounting/index.html" class="footer__list-link" data-i18n="footer-service-accounting">Бухгалтерские услуги</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/bank-card/index.html" class="footer__list-link" data-i18n="footer-service-bankcard">Банковская карта для физ.лиц</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/social-card/index.html" class="footer__list-link" data-i18n="footer-service-socialcard">Социальная карта</a></li>
+                    <li class="footer__list-item"><a href="/pages/services/logistics/index.html" class="footer__list-link" data-i18n="footer-service-logistics">Логистика и Таможня</a></li>
                 </ul>
             </nav>
             <address class="footer__contacts">
-                <p class="footer__title">Контакты</p>
+                <p class="footer__title" data-i18n="footer-contacts-title">Контакты</p>
                 <ul class="footer__list footer__list--contacts">
-                    <li class="footer__list-item footer__list-item--address"><a class="footer__list-link" href="https://yandex.com/profile/-/CHhabX0W">Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1</a></li>
-                    <li class="footer__list-item footer__list-item--address"><a class="footer__list-link" href="https://yandex.com/maps/-/CHhafJ~T">Россия, Москва, Сибирский проезд 2с2</a></li>
+                    <li class="footer__list-item footer__list-item--address"><a class="footer__list-link" href="https://yandex.com/profile/-/CHhabX0W" data-i18n="footer-contacts-address1">Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1</a></li>
+                    <li class="footer__list-item footer__list-item--address"><a class="footer__list-link" href="https://yandex.com/maps/-/CHhafJ~T" data-i18n="footer-contacts-address2">Россия, Москва, Сибирский проезд 2с2</a></li>
                     <li class="footer__list-item footer__list-item--mail"><a class="footer__list-link" href="mailto:co@armbizconsulting.com">co@armbizconsulting.com</a></li>
                     <li class="footer__list-item footer__list-item--mail"><a class="footer__list-link" href="mailto:armbiz@armbiz.ru">armbiz@armbiz.ru</a></li>
                     <li class="footer__list-item footer__list-item--phone"><a class="footer__list-link" href="tel:+37444470702" >+ (374) 44 470702</a></li>
@@ -327,8 +327,8 @@
         </div>
         <div class="footer__divider"></div>
         <div class="footer__afterline">
-            <p class="footer__copyright">© 2025 Armbiz Consulting. Все права защищены</p>        
-            <a href="/pages/privacy-policy/privacy-policy.pdf" target="_blank" rel="nooperner noreferrer" class="footer__policy">Политика конфиденциальности</a>
+            <p class="footer__copyright" data-i18n="footer-rights">© 2025 Armbiz Consulting. Все права защищены</p>        
+            <a href="/pages/privacy-policy/privacy-policy.pdf" target="_blank" rel="nooperner noreferrer" class="footer__policy" data-i18n="footer-privacy-policy">Политика конфиденциальности</a>
         </div>    
     </footer>
     <script src="/scripts-js-php/script.js"></script>
