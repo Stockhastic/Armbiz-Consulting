@@ -96,12 +96,36 @@ function setLang(lang) {
   localStorage.setItem('siteLang', lang);
 
   // Переводим все элементы с data-i18n
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (translations[lang] && translations[lang][key]) {
-      el.innerHTML = translations[lang][key];
-    }
-  });
+  // Translate elements with data-i18n (supports [attr]key syntax)
+  const applyI18n = (el) => {
+    const specRaw = el.getAttribute('data-i18n');
+    if (!specRaw) return;
+    const specs = specRaw.split(';').map(s => s.trim()).filter(Boolean);
+    const t = translations[lang];
+    if (!t) return;
+    specs.forEach(spec => {
+      const m = spec.match(/^\[([^\]]+)\](.+)$/);
+      if (m) {
+        const attr = m[1].trim();
+        const key = m[2].trim();
+        const val = t[key];
+        if (val == null) return;
+        if (attr.toLowerCase() === 'html') {
+          el.innerHTML = val;
+        } else if (attr.toLowerCase() === 'text') {
+          el.textContent = val;
+        } else {
+          el.setAttribute(attr, val);
+        }
+      } else {
+        const key = spec;
+        const val = t[key];
+        if (val == null) return;
+        el.innerHTML = val;
+      }
+    });
+  };
+  document.querySelectorAll('[data-i18n]').forEach(el => applyI18n(el));
 
   // Меняем иконку языка
   const langIcon = document.getElementById('header-lang-icon');

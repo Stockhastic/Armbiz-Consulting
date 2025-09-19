@@ -4,12 +4,19 @@
 .scheme{
     position: relative;
     counter-reset: item 0;
-    outline: 1px solid bisque;
-    padding-block: 2rem;
+    // outline: 1px solid bisque;
 
     &-container{
-        outline: 1px dashed pink;
+        // outline: 1px dashed pink;
         max-width: 45%;
+        &__title{
+            text-align: center;
+            font-family: vars.$mainFontSemibold;
+            margin-bottom: 5rem;
+        }
+        &__text{
+            margin: 3.4rem 0;
+        }
     }
 
     &__item{
@@ -56,7 +63,7 @@
     &__line{
         position: absolute;
         width: 3px;
-        height: 85%;
+        height: 95%;
         background-color: vars.$primaryColor;
         left: 24px;
         translate: 0 10px;

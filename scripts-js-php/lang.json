@@ -236,7 +236,161 @@
         "residence-permit-work-thesis1": "Условия индивидуальны для каждого клиента. Чтобы ознакомится с ними воспользуйтесь нашей бесплатной консультацией. Наши специалисты с радостью помогут вам разобраться во всех особенностях процесса",
         "residence-permit-work-price": "Стоимость услуги: <span class=\"special-text\" id=\"service-price-residence-work\" data-price-label=\"false\"></span>",
     
-        "faq-title": "<span class=\"special-text\">Ча</span>сто задаваемые <span class=\"special-text\">Во</span>просы"
+        "faq-title": "<span class=\"special-text\">Ча</span>сто задаваемые <span class=\"special-text\">Во</span>просы",
+    
+        "logistic-badge": "логистика и таможня",
+
+        "logistics-customs-main-title": "Логистика и <br><span class=\"special-text\">Таможенные услуги</span>",
+        "logistics-customs-main-lead": "Импорт, Экспорт и платежи зарубеж в современных реалиях",
+
+        "logistics-customs-main-kpi1": "Клиентов по всему миру<",
+        "logistics-customs-main-kpi2": "Стран с которыми мы<br> работаем",
+        "logistics-customs-main-kpi3": "Оформленных документов",
+        "logistics-customs-main-kpi4": "Подготовленных<br> таможенных оформлений",
+
+        "logistics-customs-main-card1-title": "Импорт <span class=\"special-text\">Товаров</span>",
+        "logistics-customs-main-card1-text1": "Полное сопровождение",
+        "logistics-customs-main-card1-text2": "Оформление импортных деклараций из третьих стран",
+        "logistics-customs-main-card1-text3": "Получение разрешений и сертификации",
+        "logistics-customs-main-card1-text4": "Расчет таможенной и государственной пошлин и НДС по ТН ВЭД кодам",
+        "logistics-customs-main-card1-text5": "Предварительная проверка документов",
+        
+        "logistics-customs-main-card2-title": "Экспорт <span class=\"special-text\">Товаров</span>",
+        "logistics-customs-main-card2-text1": "Оформление экспортных деклараций в другие страны",
+        "logistics-customs-main-card2-text2": "Оформление транзитных деклараций (в ЕАЭС)",
+
+        "logistics-customs-main-card3-title": "Дополнительные <span class=\"special-text\">Услуги</span>",
+        "logistics-customs-card3-text1": "Регистрация таможенной папки для всех, от ИП до большой компании",
+        "logistics-customs-card3-text2": "Поиск ТН ВЭД кодов по наименованию товаров",
+        "logistics-customs-card3-text3": "Международная доставка",
+        "logistics-customs-card3-text4": "Агнетское сопровождение",
+        "logistics-customs-card3-text5": "Документация и Лицензии",
+        "logistics-customs-card3-text6": "Таможенное оформление и Логистика",
+        "logistic-custom-main-card3-cta": "Узнать больше",
+
+
+
+
+
+
+
+
+
+
+
+        "contact-us-badge": "Связаться с нами",
+        "contact-us-title-mainpage": "Хотите <br><span class=\"special-text\">Работать с нами?</span>",
+        "contact-us-lead": "Запишитесь на консультацию к нашим специалистам, чтобы узнать, как мы можем вам помочь. Или свяжитесь с нами напрямую через:",
+
+        "contact-us-mails": "Наши почты",
+        "contact-us-phones": "Наши телефоны",
+        "contact-us-socials": "Наши мессенджеры и соц сети",
+
+        "contact-us-form-name": "Ваше ФИО",
+        "contact-us-form-name-placeholder": "Иванов Иван Иванович",
+
+        "contact-us-form-feedback": "Как вам будет удобно получить обратную связь?",
+        "contact-us-form-feedback-radio1": "<input type=\"radio\" name=\"feedback\" value=\"mail\">Почта",
+        "contact-us-form-feedback-radio2": "<input type=\"radio\" name=\"feedback\" value=\"messanger\">Telegram / WhatsApp",
+        "contact-us-form-feedback-radio3": "<input type=\"radio\" name=\"feedback\" value=\"phone\"> Прямой звонок</label>",
+        "contact-us-form-feedback-placeholder": "Почта, номер телефона или ник в мессенджере",
+
+        "contact-us-form-service-title": "В чем вы заинтересованы?",
+        "contact-us-form-service-option-ie": "Регистрация ООО или ИП",
+        "contact-us-form-service-option-readycompany": "Готовые компании",
+        "contact-us-form-service-option-residence": "ВНЖ",
+        "contact-us-form-service-option-citizenship": "Гражданство",
+        "contact-us-form-service-option-accounting": "Бухгалтерские услуги",
+        "contact-us-form-service-option-socialcard": "Социальная карта",
+        "contact-us-form-service-option-bankcard": "Банковские карты для физ.лиц",
+        "contact-us-form-service-option-registration": "Прописка",
+        "contact-us-form-service-option-logistics": "Логистика и Таможня",
+        "contact-us-form-service-option-other": "Другое",
+
+        "contact-us-form-message-title": "Сообщение <span class=\"italic-text\">(не обязательно)</span>",
+        "contact-us-form-message-placeholder": "Здравствуйте! Я хотел бы узнать больше о...",
+
+        "contact-us-form-cta": "Запросить консультацию",
+        "contact-us-form-policy": "Заполняя форму, вы соглашаетесь с нашими условиями конфиденциальности. Обычно, мы отвечаем на запросы в течении 24 часов.",
+
+        "footer-underlogo-text": "Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг",
+        
+        "footer-service-tite": "Услуги",
+
+        "footer-service-iellc": "Регистрация ООО или ИП",
+        "footer-service-readycompany": "Готовые компании",
+        "footer-service-residence": "ВНЖ",
+        "footer-service-citizenship": "Гражданство",
+        "footer-service-registration": "Прописка",
+        "footer-service-accounting": "Бухгалтерские услуги",
+        "footer-service-bankcard": "Банковская карта для физ.лиц",
+        "footer-service-socialcard": "Социальная карта",
+        "footer-service-logistics": "Логистика и Таможня",
+
+        "footer-contacts-title": "Контакты",
+
+        "footer-contacts-address1": "Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1",
+        "footer-contacts-address2": "Россия, Москва, Сибирский проезд 2с2",
+
+        "footer-rights": "© 2025 Armbiz Consulting. Все права защищены",
+        "footer-privacy-policy": "Политика конфиденциальности",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "logistics-customs-hero-title": "<span class=\"special-text\">Логистика</span> и Таможня",
+        "logistics-customs-hero-subtitle": "В условиях текущей мировой обстановки компании вынуждены искать альтернативные пути ввоза и вывоза товаров. Многие сталкиваются со сложностями при проведении платежей за приобретаемый товар.",
+        "logistics-customs-hero-cta-button": "Запросить консультацию",
+
+        "logistics-customs-workstyle-title": "Как мы работаем?",
+        "logistics-customs-workstyle-lead": "Гибкий подход - один из ключевых аспектов нашей идеологии. Мы готовы предложить разные решения",
+    
+        "logistics-customs-scheme-chain-title": "Выступим <span class=\"special-text\">промежуточным звеном</span> в поставке",
+
+        "logistics-customs-scheme-chain-item1-title":"Консультация",
+
+        "logistics-customs-scheme-chain-item2-title": "Заключение договора",
+        "logistics-customs-scheme-chain-item2-text": "Вы заключаете договор купли-продажи с поставщиком. Договор может быть заключен с нашей стороны, если есть сложности с заключением прямого контракта или поставщик не готов продавать/отгружать грузы напрямую в вашу страну",
+        
+        "logistics-customs-scheme-chain-item3-title": "Оплата груза",
+        "logistics-customs-scheme-chain-item3-text": "Аналогично договору, мыожем выступить в качестве платежного агента. На основе договора мы производим оплату за груз. Наличие открытых счетов в различных банках позволяет нам проводить платежи с минимальной задержкой.",
+
+        "logistics-customs-scheme-chain-item4-title": "Отправление",
+        "logistics-customs-scheme-chain-item4-text": "Продавец отправляет вам груз как при обычной поставке или мы организуем забор груза",
+
+        "logistics-customs-scheme-chain-item5-title": "Оформление",
+        "logistics-customs-scheme-chain-item5-text": "По прибытию товара на склад временного хранения(СВХ) вы или мы, как таможенный представитель, проводим таможенное оформление и выпускаем груз в свободное обращение.",
+        
+        "logistics-customs-scheme-chain-item6-title": "Счастливый клиент",
+
+        "logistics-customs-scheme-full-title": "Полная реализация <span class=\"special-text\">под ключ</span>",
+        "logistics-customs-scheme-full-text1": "При полной реализации под ключ мы полностью берем на себя все процессы по закупке и доставке, включая валютные платежи и валютный контроль",
+        "logistics-customs-scheme-full-text2": "На выходе вы получаете товар, полностью выпущенный в свободное обращение на территории ЕАЭС",
+    
+        "logistics-customs-scheme-full-item1-title": "Консультация",
+
+        "logistics-customs-scheme-full-item2-title": "Организация",
+        "logistics-customs-scheme-full-item2-text": "Мы можем предложить гибкие ставки, подходящие конкретно под Ваш запрос, на доставку различными видами транспорта из Китая или Европы, в том числе сборную и мультимодальную перевозки",
+        
+        "logistics-customs-scheme-full-item3-title": "Оформление разрешительных документов",
+        "logistics-customs-scheme-full-item3-text": "Оформим все требуемые сертификаты и декларации о соответствии, нотификации всех необходимых органов, лицензии, заключения и многое другое.",
+        
+        "logistics-customs-scheme-full-item4-title": "Прохождение таможни",
+        "logistics-customs-scheme-full-item4-text": "Берем на себя весь процесс таможенного оформления начиная от размещения груза на таможенном терминале - СВХ и заканчивая непосредственно выпуском и выдачей груза с СВХ или доставкой до конечного адреса",
+
+
+        "logistics-customs-scheme-full-item5-title": "Счастливый клиент"
     },
     "en": {
 
@@ -452,6 +606,63 @@
 
         "service-card-registration-cta-button": "Learn More",
 
+        "contact-us-badge": "Contact Us",
+        "contact-us-title-mainpage": "Want to <br><span class=\"special-text\">work with us?</span>",
+        "contact-us-lead": "Schedule a consultation with our specialists to learn how we can assist you. Or contact us directly via:",
+
+        "contact-us-mails": "Our mails",
+        "contact-us-phones": "Our phones",
+        "contact-us-socials": "Our messengers & socials",
+
+        "contact-us-form-name": "Your Full Name",
+        "contact-us-form-name-placeholder": "John Doe",
+
+        "contact-us-form-feedback": "How would it be most convenient for you to receive feedback?",
+        "contact-us-form-feedback-radio1": "<input type=\"radio\" name=\"feedback\" value=\"mail\">Mail",
+        "contact-us-form-feedback-radio2": "<input type=\"radio\" name=\"feedback\" value=\"messanger\">Telegram / WhatsApp",
+        "contact-us-form-feedback-radio3": "<input type=\"radio\" name=\"feedback\" value=\"phone\"> Direct Call</label>",
+        "contact-us-form-feedback-placeholder": "Email, phone number, or messenger ID",
+
+        "contact-us-form-service-title": "What are you interested in?",
+        "contact-us-form-service-option-ie": "IE or LLC registration",
+        "contact-us-form-service-option-readycompany": "Ready-made companies",
+        "contact-us-form-service-option-residence": "Residence Permit",
+        "contact-us-form-service-option-citizenship": "Citizenship",
+        "contact-us-form-service-option-accounting": "Accounting services",
+        "contact-us-form-service-option-socialcard": "Social card",
+        "contact-us-form-service-option-bankcard": "Bank Card for individuals",
+        "contact-us-form-service-option-registration": "Registration",
+        "contact-us-form-service-option-logistics": "Logistics & Customs",
+        "contact-us-form-service-option-other": "Other",
+
+        "contact-us-form-message-title": "Message <span class=\"italic-text\">(тot necessarily)</span>",
+        "contact-us-form-message-placeholder": "Hello, I would like to learn more about…",
+
+        "contact-us-form-cta": "Book a Consultation",
+        "contact-us-form-policy": "By filling out the form, you agree to our privacy policy. We usually respond to requests within 24 hours.",
+
+        "footer-underlogo-text": "Premium digital solutions for individual clients and demanding entrepreneurs striving for excellence in corporate services.",
+        
+        "footer-service-tite": "Services",
+
+        "footer-service-iellc": "IE or LLC registration",
+        "footer-service-readycompany": "Ready-made companies",
+        "footer-service-residence": "Residence Permit",
+        "footer-service-citizenship": "Citizenship",
+        "footer-service-registration": "Registration",
+        "footer-service-accounting": "Accounting services",
+        "footer-service-bankcard": "Bank card for individuals",
+        "footer-service-socialcard": "Social card",
+        "footer-service-logistics": "Logistics & Customs",
+
+        "footer-contacts-title": "Contacts",
+
+        "footer-contacts-address1": "Armenia, Yerevan, Arabkir, Vagharsh Vagharshyan 12/1",
+        "footer-contacts-address2": "Russia, Moscow, Sibirski Proezd 2b2",
+
+        "footer-rights": "© 2025 Armbiz Consulting. All rights reserved",
+        "footer-privacy-policy": "Privacy Policy",
+
         "residence-permit-hero-title": "<span class=\"special-text\">Residence Permit</span> for foreign individuals",
         "residence-permit-hero-subtitle": "Choose the most convenient way for you to obtain a residence permit based on the cost of the approach and the time of receipt, and we will take over all the bureaucracy.",
         "residence-permit-hero-cta-button": "Schedule Consultation",
@@ -474,7 +685,81 @@
         "residence-permit-work-thesis0": "A more time-consuming method, but at the same time more cost-effective",
         "residence-permit-work-thesis1": "The conditions are tailored individually for each client. To learn more, take advantage of our free consultation. Our specialists will be happy to help you understand all the details of the process",
         "residence-permit-work-price": "Price:<span class=\"special-text\" id=\"service-price-residence-work\" data-price-label=\"false\"></span>",
+
+        "faq-title": "<span class=\"special-text\">F</span>requently <span class=\"special-text\">A</span>sked <span class=\"special-text\">Q</span>uestions ",
     
-        "faq-title": "<span class=\"special-text\">F</span>requently <span class=\"special-text\">A</span>sked <span class=\"special-text\">Q</span>uestions "
+        "logistic-badge": "logistics & customs",
+
+        "logistics-customs-main-title": "Logistics and<br><span class=\"special-text\">Customs</span>",
+        "logistics-customs-main-lead": "Import, Export and payments abroad in modern realities",
+
+        "logistics-customs-main-kpi1": "Client all over the world",
+        "logistics-customs-main-kpi2": "Countires we work<br> with",
+        "logistics-customs-main-kpi3": "Processed documents",
+        "logistics-customs-main-kpi4": "Processed<br> Customs shipments",
+
+        "logistics-customs-main-card1-title": "Import of <span class=\"special-text\">Goods</span>",
+        "logistics-customs-main-card1-text1": "Full assistance",
+        "logistics-customs-main-card1-text2": "Filling of import decalarations from third countries",
+        "logistics-customs-main-card1-text3": "Obtaining permits and certifications",
+        "logistics-customs-main-card1-text4": "Calculation of customs and State Duties and VAT based on HS Codes",
+        "logistics-customs-main-card1-text5": "Preliminary Verification of documents",
+        
+        "logistics-customs-main-card2-title": "Export of <span class=\"special-text\">Goods</span>",
+        "logistics-customs-main-card2-text1": "Filling of export declarations to other countries",
+        "logistics-customs-main-card2-text2": "Filling of transit declarations (within the EAEU)",
+
+        "logistics-customs-main-card3-title": "Additional <span class=\"special-text\">Services</span>",
+        "logistics-customs-card3-text1": "Customs File Registration for All — from Small Businesses to Large Companies",
+        "logistics-customs-card3-text2": "Search for HS Codes by Product Name",
+        "logistics-customs-card3-text3": "International Shipping",
+        "logistics-customs-card3-text4": "Agency Support",
+        "logistics-customs-card3-text5": "Documentation & Certification",
+        "logistics-customs-card3-text6": "Customs Clearance and Logistics",
+        "logistic-custom-main-card3-cta": "Learn More",
+
+        "contact-us-form-badge": "Связаться с нами",
+
+        "logistics-customs-hero-title": "<span class=\"special-text\">Logistics</span> & Customs",
+        "logistics-customs-hero-subtitle": "Given's today's global circumstances, companies are looking for alternative ways to handle imports and exports. However, many face challenges whhen processing payments for their purchases",
+        "logistics-customs-hero-cta-button": "Schedule Consultation",
+
+        "logistics-customs-workstyle-title": "How do we work?",
+        "logistics-customs-workstyle-lead": "A flexible approach - is one of the key aspects of our ideology. We are ready to offer a variety of solutions",
+    
+        "logistics-customs-scheme-chain-title": "We will act as an <span class=\"special-text\">intermediary</span> in your supply chain",
+
+        "logistics-customs-scheme-chain-item1-title":"Consultation",
+
+        "logistics-customs-scheme-chain-item2-title": "Contract Signing",
+        "logistics-customs-scheme-chain-item2-text": "You sign a sales contract with the supplier. If direct contracting is complicared, or if the supplier is unwilling to sell or ship goods directly to your country, we can step in and handle the agreement on your behalf",
+        
+        "logistics-customs-scheme-chain-item3-title": "Payment for Goods",
+        "logistics-customs-scheme-chain-item3-text": "Similar to the contracts, we can act as a payment agent. Based on the agreement, we make the payment for the cargo. Having open accounts in various banks enables us to process payments with minimal delay",
+
+        "logistics-customs-scheme-chain-item4-title": "Shipping",
+        "logistics-customs-scheme-chain-item4-text": "The Seller ships the cargo to you as in a regular delivery, or we arrange the pickup of the goods",
+
+        "logistics-customs-scheme-chain-item5-title": "Documentation",
+        "logistics-customs-scheme-chain-item5-text": "Upon the arrival of the goods at the temporary storage warehouse (TWS), either you or we, acting as the customs representative, carry out the customs clearance and release the cargo for free citculation",
+        
+        "logistics-customs-scheme-chain-item6-title": "Satisfied Customer",
+
+        "logistics-customs-scheme-full-title": "Full <span class=\"special-text\">Turnkey</span> implementation",
+        "logistics-customs-scheme-full-text1": "With a full turnkey solution, we assume complete responsibility for all procurement and delivery processes, including foreign currency and currency control",
+        "logistics-customs-scheme-full-text2": "As a result, you recieve goods fully released for free circulation within the EAEU territory",
+    
+        "logistics-customs-scheme-full-item1-title": "Consultation",
+
+        "logistics-customs-scheme-full-item2-title": "Organization",
+        "logistics-customs-scheme-full-item2-text": "We offer flexible rates tailored specifically to your request for deliveries by various modes of transport from China or Europe, including consolidated and multimodal shipments of goods",
+        
+        "logistics-customs-scheme-full-item3-title": "Permit Documentation",
+        "logistics-customs-scheme-full-item3-text": "We take care of all the required certificates and declarations of conformity, notify the relevant authorities, and arrange licenses, approvals, and more",
+        
+        "logistics-customs-scheme-full-item4-title": "Customs Clearance",
+        "logistics-customs-scheme-full-item4-text": "We take full responsibility for the entire customs clearance process - from placing the cargo at the customs terminal (temporary storage warehouse, TSW) to the final release and handover of the goods from the TSW, or delivery to the end destination",
+
+        "logistics-customs-scheme-full-item5-title": "Satisfied Customer"
     }
 }

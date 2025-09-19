@@ -633,12 +633,17 @@ strong, .special-text, .bold-text {
 .scheme {
   position: relative;
   counter-reset: item 0;
-  outline: 1px solid bisque;
-  padding-block: 2rem;
 }
 .scheme-container {
-  outline: 1px dashed pink;
   max-width: 45%;
+}
+.scheme-container__title {
+  text-align: center;
+  font-family: "Raleway-Semibold";
+  margin-bottom: 5rem;
+}
+.scheme-container__text {
+  margin: 3.4rem 0;
 }
 .scheme__item {
   position: relative;
@@ -681,7 +686,7 @@ strong, .special-text, .bold-text {
 .scheme__line {
   position: absolute;
   width: 3px;
-  height: 85%;
+  height: 95%;
   background-color: #1a6eff;
   left: 24px;
   translate: 0 10px;
@@ -862,7 +867,6 @@ strong, .special-text, .bold-text {
 }
 
 .wrapper, .header {
-  outline: 1px solid red;
   margin: 0 auto;
   max-width: 1280px;
 }
@@ -968,6 +972,7 @@ strong, .special-text, .bold-text {
 
 .logistic {
   display: grid;
+  position: relative;
   padding-block: 10rem;
   gap: 4rem;
 }
@@ -1003,10 +1008,14 @@ strong, .special-text, .bold-text {
   display: grid;
   grid-template-columns: 0.8fr 1fr;
 }
+.logistic__badge {
+  top: 0;
+}
+
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-block: 10rem;
+  padding-block-end: 10rem;
 }
 .contact__badge {
   top: 0;
@@ -1376,6 +1385,7 @@ strong, .special-text, .bold-text {
   padding-block: 5rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .hero--service > .hero__details {
   max-width: 48%;
@@ -1390,6 +1400,9 @@ strong, .special-text, .bold-text {
 .hero--service > .hero__details > .hero__subtitle {
   font-family: "Raleway-Medium";
   color: #000;
+}
+.hero--service > .hero__details > .hero__title {
+  font-family: "Raleway-Semibold";
 }
 
 .hero__title--residence {
@@ -1496,8 +1509,17 @@ strong, .special-text, .bold-text {
 .workstyle {
   padding-block: 4rem;
 }
+.workstyle__title {
+  font-family: "Raleway-Semibold";
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.workstyle__lead {
+  text-align: center;
+  margin-bottom: 9rem;
+}
 .workstyle__approaches {
   display: flex;
-  justify-content: space-around;
-  align-items: end;
+  justify-content: space-between;
+  align-items: start;
 }/*# sourceMappingURL=styles.css.map */

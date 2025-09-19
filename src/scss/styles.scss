@@ -100,7 +100,7 @@
 // }
 
 .wrapper {
-    outline: 1px solid red;
+    // outline: 1px solid red;
     margin: 0 auto;
     max-width: 1280px;
     &--wided{
@@ -198,6 +198,7 @@
 // Logistic
 .logistic {
     display: grid;
+    position: relative;
     padding-block: 10rem;
     gap: 4rem;
     &__header{
@@ -237,6 +238,7 @@
 
     &__badge{
         @extend .badge;
+        top: 0;
     }
 }
 
@@ -244,7 +246,7 @@
 .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-block: 10rem;
+    padding-block-end: 10rem;
     &__badge{
         @extend .badge;
         top: 0;
@@ -656,11 +658,10 @@
         color: vars.$greyColor;
     }
     &--service{
-        // overflow: hidden;
-        // position: relative;
         padding-block: 5rem;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         & > .hero {
             &__details{
                 max-width: 48%;
@@ -677,6 +678,10 @@
                 & > .hero__subtitle {
                     font-family: vars.$mainFontMedium;
                     color: #000;
+                }
+                
+                & > .hero__title {
+                    font-family: vars.$mainFontSemibold;
                 }
             }
         }
@@ -798,9 +803,18 @@
 // LOGISTICS & CUSTOMS
 .workstyle{
     padding-block: 4rem;
+    &__title{
+        font-family: vars.$mainFontSemibold;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    &__lead{
+        text-align: center;
+        margin-bottom: 9rem;
+    }
     &__approaches{
         display: flex;
-        justify-content: space-around;
-        align-items: end;
+        justify-content: space-between;
+        align-items: start;
     }
 }

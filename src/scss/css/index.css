@@ -597,12 +597,17 @@ strong, .special-text, .bold-text {
 .scheme {
   position: relative;
   counter-reset: item 0;
-  outline: 1px solid bisque;
-  padding-block: 2rem;
 }
 .scheme-container {
-  outline: 1px dashed pink;
   max-width: 45%;
+}
+.scheme-container__title {
+  text-align: center;
+  font-family: "Raleway-Semibold";
+  margin-bottom: 5rem;
+}
+.scheme-container__text {
+  margin: 3.4rem 0;
 }
 .scheme__item {
   position: relative;
@@ -645,7 +650,7 @@ strong, .special-text, .bold-text {
 .scheme__line {
   position: absolute;
   width: 3px;
-  height: 85%;
+  height: 95%;
   background-color: #1a6eff;
   left: 24px;
   translate: 0 10px;
