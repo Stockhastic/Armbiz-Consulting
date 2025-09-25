@@ -548,6 +548,9 @@ strong, .special-text, .bold-text {
   translate: 1rem -2px;
   content: url(/src/graphics/png/benefit-icon.png);
 }
+.service-card__benefits--vertical {
+  flex-direction: column;
+}
 .service-card__divider {
   height: 1px;
   background-color: #d7deef;

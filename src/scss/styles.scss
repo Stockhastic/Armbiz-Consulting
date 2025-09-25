@@ -657,6 +657,15 @@
         line-height: 1.3;
         color: vars.$greyColor;
     }
+
+    &__image{
+        margin: auto;
+        & > img{
+            width: 500px;
+
+        }
+    }
+
     &--service{
         padding-block: 5rem;
         display: flex;
@@ -686,6 +695,7 @@
             }
         }
     }
+
 }
 
 // RESIDENCE PERMIT PAGE //

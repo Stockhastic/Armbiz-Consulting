@@ -198,6 +198,9 @@
                 }
             }
         }
+        &--vertical{
+            flex-direction: column;
+        }
     }
 
     &__divider{

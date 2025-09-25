@@ -389,8 +389,22 @@
         "logistics-customs-scheme-full-item4-title": "Прохождение таможни",
         "logistics-customs-scheme-full-item4-text": "Берем на себя весь процесс таможенного оформления начиная от размещения груза на таможенном терминале - СВХ и заканчивая непосредственно выпуском и выдачей груза с СВХ или доставкой до конечного адреса",
 
+        "logistics-customs-scheme-full-item5-title": "Счастливый клиент",
 
-        "logistics-customs-scheme-full-item5-title": "Счастливый клиент"
+
+
+
+
+
+
+
+
+
+
+
+
+        "llc-ie-hero-title": "Откроем вам <span class=\"special-text\">ООО</span> или <span class=\"special-text\">ИП</span>за <span class=\"special-text\">1 день</span>",
+        "llc-ie-hero-subtitle": "Поможем подобрать оптимальный налоговый режим и возьмем на себя все ваши заботы по юридическому консалтингу и ведению бухгалтерии"
     },
     "en": {
 
@@ -760,6 +774,19 @@
         "logistics-customs-scheme-full-item4-title": "Customs Clearance",
         "logistics-customs-scheme-full-item4-text": "We take full responsibility for the entire customs clearance process - from placing the cargo at the customs terminal (temporary storage warehouse, TSW) to the final release and handover of the goods from the TSW, or delivery to the end destination",
 
-        "logistics-customs-scheme-full-item5-title": "Satisfied Customer"
+        "logistics-customs-scheme-full-item5-title": "Satisfied Customer",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        "llc-ie-hero-title": "Open <span class=\"special-text\">LLC</span> or <span class=\"special-text\">IE</span> for you in just <span class=\"special-text\">1 day</span>",
+        "llc-ie-hero-subtitle": "We help you select the most suitable tax system and handle all aspects of legal consulting and accounting on your behalf."
+        
     }
 }
