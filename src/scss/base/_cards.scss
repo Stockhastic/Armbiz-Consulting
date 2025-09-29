@@ -97,13 +97,20 @@
     &--unique{
         padding: 2rem;
     }
+    &--glow{
+        @extend .service-card--logistics;
+        box-shadow: 0 0 20px vars.$primaryTransparentColor;
+        border: none;
+        margin-left: 0;
+        margin-right: 4rem;
+
+    }
 
     &__header{
         display: grid;
         position: relative;
         gap: 1.2rem;
     }
-
     &__title{
         font-family: vars.$mainFontMedium;
     } 
@@ -133,7 +140,6 @@
         flex-direction: column;
         gap: 2rem;
     }
-
     &__steps{
         display: flex;
         flex-wrap: wrap;

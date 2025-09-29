@@ -828,3 +828,72 @@
         align-items: start;
     }
 }
+
+// IE & LLC 
+.ie-details{
+    display: flex;
+    justify-content: space-between;
+    &__cards{
+        // outline: 1px solid green;
+        width: 50%;
+    }
+    &__description{
+        padding: 2.5rem 2rem;
+        max-width: 50%;
+        // outline: 1px dashed pink;
+        &-title{
+            // outline: 1px dashed peachpuff; 
+            margin-bottom: 3rem;
+            font-family: vars.$mainFontMedium;
+        }
+    }
+
+    &__benefits{
+        & > li {
+            & > h4{ 
+                font-family: vars.$mainFontMedium;
+                margin-bottom: 0.5rem;
+            }
+            & > p{
+                margin-bottom: 2rem;
+                color: vars.$greyColor;
+            }
+        }
+    }
+}
+.ie-scheme{
+    padding-block: 7rem;
+    & > .scheme-container__title{
+        text-align: center;
+    }
+}
+
+.llc-details{
+    &__cards{
+        display: flex;
+    }
+    &__description{
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-around;
+        &-text{
+            // outline: 1px solid blue;
+            text-align: end;
+            padding: 1.5rem 3rem;
+            width: 50%;
+        }
+        &-wrapper{
+            width: 50%;
+            padding: 1rem;
+            // outline: 1px solid peachpuff;
+        }
+        &-title{
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+.llc-scheme{
+    padding-block-end: 7rem;
+    width: 100%;
+}

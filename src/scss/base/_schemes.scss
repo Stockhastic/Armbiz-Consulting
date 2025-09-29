@@ -4,11 +4,15 @@
 .scheme{
     position: relative;
     counter-reset: item 0;
-    // outline: 1px solid bisque;
 
     &-container{
-        // outline: 1px dashed pink;
         max-width: 45%;
+        &--horizontal {
+            width: 100%;
+            & > .scheme-container__title{
+                margin: 4rem 0 8rem;
+            }
+        }
         &__title{
             text-align: center;
             font-family: vars.$mainFontSemibold;
@@ -20,10 +24,11 @@
     }
 
     &__item{
-        position: relative;
-        margin-left: 9rem;
         counter-increment: item;
 
+        position: relative;
+        margin-left: 9rem;
+        
         border: 1px solid vars.$borderColor;
         border-radius: 1.5em;
         padding: 2rem;
@@ -32,7 +37,8 @@
             font-family: vars.$mainFontSemibold;
             &::before{
                 position: absolute;
-                content: url(/src/graphics/svg/scheme-point.png);
+                content: url(/src/graphics/svg/scheme-point.svg);
+                width: 50px;
                 left: 0;
                 translate:-84% 0;
             }
@@ -69,4 +75,44 @@
         translate: 0 10px;
     }
 
+    &--horizontal{
+        display: flex;
+        justify-content: space-between;
+        & > li{
+            position: relative;
+            background-color: vars.$lightColor;
+            margin: 1rem;
+            padding: 1rem;
+            // max-width: 40%;
+            &::before {
+                z-index: 2;
+                position: absolute;
+                left: 50%;
+                translate: -50% -80px;
+            }
+            & > p{
+                font-size: 14px;
+                vertical-align: middle;
+                text-align: center;
+                &::before{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    rotate: 90deg;
+                    translate: -50% -25px;
+                }
+            }
+        }
+        & > .scheme__line{
+            height: 3px;
+            width: 75%;
+            translate: 0 0;
+            &--position1{
+                translate: 10% -30px;
+            }
+            &--position2{
+                translate: 12% -30px;
+            }
+        }
+    }
 }

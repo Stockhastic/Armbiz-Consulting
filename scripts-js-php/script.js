@@ -125,6 +125,7 @@ function setLang(lang) {
       }
     });
   };
+  
   document.querySelectorAll('[data-i18n]').forEach(el => applyI18n(el));
 
   // Меняем иконку языка
