@@ -33,12 +33,13 @@
         left: 70%;
     }
     &:nth-child(3) {
-        width: 340px;
-        height: 340px;
+        width: 40px;
+        height: 40px;
         background: radial-gradient(circle, rgba(26, 110, 255, 0.35) 0%, rgba(26, 110, 255, 0.15) 100%);
         animation: float3 15s infinite;
-        top: 80%;
+        top: 65%;
         left: 20%;
+        z-index: -999999;
     }
     &:nth-child(4) {
         width: 150px;

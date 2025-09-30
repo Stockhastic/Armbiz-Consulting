@@ -98,12 +98,17 @@
         padding: 2rem;
     }
     &--glow{
+        position: relative;
+        z-index:50;
         @extend .service-card--logistics;
         box-shadow: 0 0 20px vars.$primaryTransparentColor;
         border: none;
         margin-left: 0;
         margin-right: 4rem;
-
+        & > h4{
+            font-size: 18px;
+            font-family: vars.$mainFontMedium;
+        }
     }
 
     &__header{

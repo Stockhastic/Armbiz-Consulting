@@ -404,7 +404,87 @@
 
 
         "llc-ie-hero-title": "Откроем вам <span class=\"special-text\">ООО</span> или <span class=\"special-text\">ИП</span>за <span class=\"special-text\">1 день</span>",
-        "llc-ie-hero-subtitle": "Поможем подобрать оптимальный налоговый режим и возьмем на себя все ваши заботы по юридическому консалтингу и ведению бухгалтерии"
+        "llc-ie-hero-subtitle": "Поможем подобрать оптимальный налоговый режим и возьмем на себя все ваши заботы по юридическому консалтингу и ведению бухгалтерии",
+        
+        "llc-ie-card1-title": "<span class=\"special-text\">ИП</span> на месте",
+        "llc-ie-card1-subtitle1": "От вас потребуется:",
+        "llc-ie-card1-feature1": "Паспорт (внутренний или заграничный)",
+        "llc-ie-card1-subtitle2": "В ходе открытия ИП нам потребуется",
+        "llc-ie-card1-feature2": "Утвердить название",
+        "llc-ie-card1-feature3": "Определить направление деятельности",
+
+        "llc-ie-card2-title": "<span class=\"special-text\">ИП</span> удаленно",
+        "llc-ie-card2-subtitle1": "От вас потребуется:",
+        "llc-ie-card2-feature1": "Паспорт (внутренний или заграничный)",
+        "llc-ie-card2-feature2": "Нотариально-заверенная копия паспорта",
+        "llc-ie-card2-subtitle2": "В ходе открытия ИП нам потребуется",
+        "llc-ie-card2-feature3": "Утвердить название",
+        "llc-ie-card2-feature4": "Определить направление деятельности",
+
+
+        "llc-ie-reasons-title": "Причины <span class=\"special-text\">выбрать нас:</span>",
+        "llc-ie-reason1-title": "Удобство работы",
+        "llc-ie-reason1-text" : "С нами процесс открытия не вызовет трудностей. Мы работаем максимально розрачно и понятно. Процесс остается предсказуемым на всех этапах нашей деятельности. Наша цель позволить клиенту заниматься другими важными делами, пока мы занимаемся операционной частью.",
+        "llc-ie-reason2-title": "Гибкость",
+        "llc-ie-reason2-text" : "Мы всегда стремимcя найти индивидуальный подход к каждому нашему партнеру. Максимальное удобство и продуктивность давно стали нашим стандартом работы.",
+        "llc-ie-reason3-title": "Коммуникация",
+        "llc-ie-reason3-text" : "Объясним все максимально простым языком и будем поддерживать связь на всех этапах работы. При появлении любого рода затруднений достаточно просто написать нам.",
+        "llc-ie-reason4-title": "Безопасность",
+        "llc-ie-reason4-text" : "Работаем на результат. Полная оплата по факту открытия.",
+        
+        "llc-ie-benefit1-title": "На выходе <span class=\"special-text\">вы получите:</span>",
+        "llc-ie-benefit1-item1": "Свидетельство об открытии ИП",
+        "llc-ie-benefit1-item2": "Юридический адрес на год",
+        "llc-ie-benefit1-item3": "Регистрацию в налоговой",
+        "llc-ie-benefit1-item4": "Сопровождение по банкам",
+
+        "llc-ie-scheme1-title":"Этапы <span class=\"special-text\">открытия ИП</span>",
+        "llc-ie-scheme1-step1":"Оформление доверенности",
+        "llc-ie-scheme1-step2":"Регистрация в госреестре",
+        "llc-ie-scheme1-step3":"Постановка на налоговый учет",
+        "llc-ie-scheme1-step4":"Полное сопровождение по открытию расчетных счетов",
+    
+        "llc-ie-card3-title": "<span class=\"special-text\">ООО</span> удаленно",
+        "llc-ie-card3-subtitle1": "От вас потребуется:",
+        "llc-ie-card3-feature1": "Паспорт (внутренний или заграничный)",
+        "llc-ie-card3-subtitle2": "В ходе открытия ООО нам понадобится дополнительная информация",    
+        "llc-ie-card3-feature2": "Название компании",
+        "llc-ie-card3-feature3": "Направление деятельности ООО",
+        "llc-ie-card3-feature4": "Размер уставного капитала",
+        "llc-ie-card3-feature5": "Скан паспортов всех учредителей и размер их долей",
+        "llc-ie-card3-feature6": "Кто будет Директором",
+    
+        "llc-ie-card4-title": "<span class=\"special-text\">ООО</span> на месте",
+        "llc-ie-card4-subtitle1": "От вас потребуется:",
+        "llc-ie-card4-feature1": "Паспорт (внутренний или заграничный)",
+        "llc-ie-card4-feature2": "Личное присутствие (на определенном этапе)",
+        "llc-ie-card4-subtitle2": "В ходе открытия ООО нам понадобится дополнительная информация",    
+        "llc-ie-card4-feature3": "Название компании",
+        "llc-ie-card4-feature4": "Направление деятельности ООО",
+        "llc-ie-card4-feature5": "Размер уставного капитала",
+        "llc-ie-card4-feature6": "Скан паспортов всех учредителей и размер их долей",
+        "llc-ie-card4-feature7": "Кто будет Директором",
+
+        "llc-ie-description-llc-text": "Открытие на месте больше всего подойдт тем, кто хочет открыть компанию как можно скорее. Удаленное открытие требует больше времени. Вне зависимости от метода получения, требуемые документы не отличаются. Изменениям подвергается сам процесс открытия и сроки.",
+    
+        "llc-ie-benefit2-title": "На выходе <span class=\"special-text\">вы получите:</span>",
+        
+        "llc-ie-benefit2-item1": "Свидетельство об открытии ООО с уставом юридического лица",
+        "llc-ie-benefit2-item2": "Юридический адрес на год",
+        "llc-ie-benefit2-item3": "Регистрацию в налоговой",
+        "llc-ie-benefit2-item4": "Сопровождение по банкам",
+    
+        "llc-ie-scheme2-title": "Этапы <span class=\"special-text\">открытия ООО на месте</span>",
+        "llc-ie-scheme2-step1": "Мы делаем нотариальный перевод документов",
+        "llc-ie-scheme2-step2": "Вы посещаете госреестр с нашим сотрудником",
+        "llc-ie-scheme2-step3": "Мы производим постановку на налоговый учет",
+        "llc-ie-scheme2-step4": "Полное сопровождение по открытию расчетных счетов",
+    
+        "llc-ie-scheme3-title": "Этапы <span class=\"special-text\">открытия ООО удаленно</span>",
+        "llc-ie-scheme3-step1": "Мы направляем вам на подпись все необходимые документы",
+        "llc-ie-scheme3-step2": "Вы высылаете подписанные документы обратно нам",
+        "llc-ie-scheme3-step3": "По факту получения документов мы открываем вам ООО в течении 24 часов",
+        "llc-ie-scheme3-step4": "Полное сопровождение вас по открытию банковских расчетных счетов"
     },
     "en": {
 
@@ -786,7 +866,86 @@
     
     
         "llc-ie-hero-title": "Open <span class=\"special-text\">LLC</span> or <span class=\"special-text\">IE</span> for you in just <span class=\"special-text\">1 day</span>",
-        "llc-ie-hero-subtitle": "We help you select the most suitable tax system and handle all aspects of legal consulting and accounting on your behalf."
+        "llc-ie-hero-subtitle": "We help you select the most suitable tax system and handle all aspects of legal consulting and accounting on your behalf.",
+
+        "llc-ie-card1-title": "<span class=\"special-text\">IE</span> on-site ",
+        "llc-ie-card1-subtitle1": "You will need:",
+        "llc-ie-card1-feature1": "Passport (domestic or international)",
+        "llc-ie-card1-subtitle2": "During the process of establishing, we require",
+        "llc-ie-card1-feature2": "Register the business name",
+        "llc-ie-card1-feature3": "Specify the business activity",
+
+        "llc-ie-card2-title": "<span class=\"special-text\">IE</span> remotely",
+        "llc-ie-card2-subtitle1": "You will need:",
+        "llc-ie-card2-feature1": "Passport (domestic or international)",
+        "llc-ie-card2-feature2": "A notarized copy of the ID/passport",
+        "llc-ie-card2-subtitle2": "During the process of establishing, we require",
+        "llc-ie-card2-feature3": "Register the business name",
+        "llc-ie-card2-feature4": "Specify the business activity",
+
+        "llc-ie-reasons-title": "Reasons to <span class=\"special-text\">choose us:</span>",
+        "llc-ie-reason1-title": "Convenience of work",
+        "llc-ie-reason1-text" : "With us, the process of registration will not cause any difficulties. We work in a fully transparent and straightforward manner, ensuring that the process remains predictable at every stage. Our goal is to allow the client to focus on other important matters while we handle the operational side.",
+        "llc-ie-reason2-title": "Flexibility",
+        "llc-ie-reason2-text" : "We always strive to take an individual approach to each of our partners. Providing maximum convenience and productivity has long been our standard of service.",
+        "llc-ie-reason3-title": "Communication",
+        "llc-ie-reason3-text" : "We explain everything in clear, simple terms and remain in touch at every stage of the process. Should any difficulties arise, just drop us a message.",
+        "llc-ie-reason4-title": "Security",
+        "llc-ie-reason4-text" : "We are result-driven. Full payment is due only after the registration is successfully completed.",
+        
+        "llc-ie-benefit1-title": "As a result <span class=\"special-text\">you will get:</span>",
+        "llc-ie-benefit1-item1": "Certificate of sole proprietorship registration",
+        "llc-ie-benefit1-item2": "Legal address for one year",
+        "llc-ie-benefit1-item3": "Tax authority registration",
+        "llc-ie-benefit1-item4": "Banking support",
+
+        "llc-ie-scheme1-title":"Stages of <span class=\"special-text\">IE registration</span>",
+        "llc-ie-scheme1-step1":"Issuance of a notarized power of attorney",
+        "llc-ie-scheme1-step2":"Registration in the state register of Armenia",
+        "llc-ie-scheme1-step3":"Registration in local tax authority",
+        "llc-ie-scheme1-step4":"Comprehensive support for opening business bank accounts",
+    
+        "llc-ie-card3-title": "<span class=\"special-text\">LLC</span> remotely",
+        "llc-ie-card3-subtitle1": "You will need:",
+        "llc-ie-card3-feature1": "Passport (domestic or international)",
+        "llc-ie-card3-subtitle2": "During the process of establishing, we require",    
+        "llc-ie-card3-feature2": "Company Name",
+        "llc-ie-card3-feature3": "LLC business activity",
+        "llc-ie-card3-feature4": "Size of the charter capital",
+        "llc-ie-card3-feature5": "Scanned copies of all founders’ passports and the size of their shares",
+        "llc-ie-card3-feature6": "Who will be appointed as Director",
+    
+        "llc-ie-card4-title": "<span class=\"special-text\">LLC</span> on-site",
+        "llc-ie-card4-subtitle1": "You will need:",
+        "llc-ie-card4-feature1": "Passport (domestic or international)",
+        "llc-ie-card4-feature2": "In-person presence (required at a certain stage)",
+        "llc-ie-card4-subtitle2": "During the process of establishing, we require",    
+        "llc-ie-card4-feature3": "Company Name",
+        "llc-ie-card4-feature4": "LLC business activity",
+        "llc-ie-card4-feature5": "Size of the charter capital",
+        "llc-ie-card4-feature6": "Scanned copies of all founders’ passports and the size of their shares",
+        "llc-ie-card4-feature7": "Who will be appointed as Director",
+
+        "llc-ie-description-llc-text": "On-site registration is best suited for those who want to establish a company as quickly as possible. Remote registration takes more time. Regardless of the method, the required documents remain the same — only the process and the timeframes differ.я сам процесс открытия и сроки.",
+    
+        "llc-ie-benefit2-title": "As a result <span class=\"special-text\">you will get:</span>",
+        
+        "llc-ie-benefit2-item1": "Certificate of LLC incorporation with the company’s charter",
+        "llc-ie-benefit2-item2": "Legal address for one year",
+        "llc-ie-benefit2-item3": "Registration in local tax authority",
+        "llc-ie-benefit2-item4": "Comprehensive support for opening business bank accounts",
+    
+        "llc-ie-scheme2-title": "Stages of <span class=\"special-text\">LLC registration on-site</span>",
+        "llc-ie-scheme2-step1": "We provide notarized translation of documents",
+        "llc-ie-scheme2-step2": "You visit the state register accompanied by our staff member",
+        "llc-ie-scheme2-step3": "We handle tax registration",
+        "llc-ie-scheme2-step4": "Full support for opening business bank accounts",
+    
+        "llc-ie-scheme3-title": "Stages of <span class=\"special-text\">LLC registration remotely</span>",
+        "llc-ie-scheme3-step1": "We send you all the required documents for signature",
+        "llc-ie-scheme3-step2": "You send the signed documents back to us",
+        "llc-ie-scheme3-step3": "Upon receiving the documents, we register your LLC within 24 hours",
+        "llc-ie-scheme3-step4": "Comprehensive support for opening business bank accounts"
         
     }
 }

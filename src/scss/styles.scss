@@ -871,6 +871,10 @@
 .llc-details{
     &__cards{
         display: flex;
+        & > .service-card--glow{
+            width: 100%;
+            margin: 0 1rem;
+        } 
     }
     &__description{
         padding: 2rem 0;

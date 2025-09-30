@@ -488,10 +488,16 @@ strong, .special-text, .bold-text {
   padding: 2rem;
 }
 .service-card--glow {
+  position: relative;
+  z-index: 50;
   box-shadow: 0 0 20px rgba(82, 146, 255, 0.3568627451);
   border: none;
   margin-left: 0;
   margin-right: 4rem;
+}
+.service-card--glow > h4 {
+  font-size: 18px;
+  font-family: "Raleway-Medium";
 }
 .service-card__header {
   display: grid;
@@ -741,7 +747,7 @@ strong, .special-text, .bold-text {
   translate: 0 0;
 }
 .scheme--horizontal > .scheme__line--position1 {
-  translate: 10% -30px;
+  translate: 11% -30px;
 }
 .scheme--horizontal > .scheme__line--position2 {
   translate: 12% -30px;
@@ -780,12 +786,13 @@ strong, .special-text, .bold-text {
   left: 70%;
 }
 .sphere:nth-child(3) {
-  width: 340px;
-  height: 340px;
+  width: 40px;
+  height: 40px;
   background: radial-gradient(circle, rgba(26, 110, 255, 0.35) 0%, rgba(26, 110, 255, 0.15) 100%);
   animation: float3 15s infinite;
-  top: 80%;
+  top: 65%;
   left: 20%;
+  z-index: -999999;
 }
 .sphere:nth-child(4) {
   width: 150px;
@@ -1618,6 +1625,10 @@ strong, .special-text, .bold-text {
 
 .llc-details__cards {
   display: flex;
+}
+.llc-details__cards > .service-card--glow {
+  width: 100%;
+  margin: 0 1rem;
 }
 .llc-details__description {
   padding: 2rem 0;
