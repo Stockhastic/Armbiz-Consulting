@@ -415,6 +415,24 @@ strong, .special-text, .bold-text {
   border: 1px solid #d7deef;
   border-radius: 2rem;
 }
+.service-card--alternative {
+  background: linear-gradient(180deg, #1a6eff, #104299);
+  color: #fff;
+  border-radius: 1.5rem;
+}
+.service-card--alternative > header > span, .service-card--alternative > header > h3 {
+  color: #fff;
+}
+.service-card--alternative > header > .service-card__title {
+  text-decoration: underline;
+}
+.service-card--alternative > header > .service-card__icon {
+  background-color: #60a2ff;
+}
+.service-card--alternative > p {
+  font-family: "Raleway-Light";
+  color: #fff;
+}
 .service-card--mini {
   display: block;
   color: #000;
@@ -498,6 +516,12 @@ strong, .special-text, .bold-text {
 .service-card--glow > h4 {
   font-size: 18px;
   font-family: "Raleway-Medium";
+}
+.service-card__icon {
+  width: 80px;
+  padding: 1.8rem;
+  background-color: #e7effe;
+  border-radius: 1.5rem;
 }
 .service-card__header {
   display: grid;
@@ -1651,4 +1675,8 @@ strong, .special-text, .bold-text {
 .llc-scheme {
   padding-block-end: 7rem;
   width: 100%;
+}
+
+.citizenship-approaches__cards {
+  max-width: 50%;
 }/*# sourceMappingURL=styles.css.map */

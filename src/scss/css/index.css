@@ -35,7 +35,7 @@
   height: 40px;
   background: radial-gradient(circle, rgba(26, 110, 255, 0.35) 0%, rgba(26, 110, 255, 0.15) 100%);
   animation: float3 15s infinite;
-  top: 80%;
+  top: 65%;
   left: 20%;
   z-index: -999999;
 }
@@ -379,6 +379,24 @@ strong, .special-text, .bold-text {
   border: 1px solid #d7deef;
   border-radius: 2rem;
 }
+.service-card--alternative {
+  background: linear-gradient(180deg, #1a6eff, #104299);
+  color: #fff;
+  border-radius: 1.5rem;
+}
+.service-card--alternative > header > span, .service-card--alternative > header > h3 {
+  color: #fff;
+}
+.service-card--alternative > header > .service-card__title {
+  text-decoration: underline;
+}
+.service-card--alternative > header > .service-card__icon {
+  background-color: #60a2ff;
+}
+.service-card--alternative > p {
+  font-family: "Raleway-Light";
+  color: #fff;
+}
 .service-card--mini {
   display: block;
   color: #000;
@@ -462,6 +480,12 @@ strong, .special-text, .bold-text {
 .service-card--glow > h4 {
   font-size: 18px;
   font-family: "Raleway-Medium";
+}
+.service-card__icon {
+  width: 80px;
+  padding: 1.8rem;
+  background-color: #e7effe;
+  border-radius: 1.5rem;
 }
 .service-card__header {
   display: grid;

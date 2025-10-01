@@ -13,6 +13,27 @@
         border: 1px solid vars.$borderColor;
         border-radius: 2rem;
     }
+    &--alternative{
+        background: linear-gradient(
+            180deg, vars.$primaryColor, #104299);
+        color: #fff;
+        border-radius: 1.5rem;
+        & > header{
+            & > span, & > h3{
+                color: #fff;
+            }
+            & > .service-card__title{
+                text-decoration: underline;
+            }
+            & > .service-card__icon{
+                background-color: vars.$secondaryColor;
+            }
+        }
+        & > p {
+            font-family: vars.$mainFontLight;
+            color: #fff;
+        }
+    }
     &--mini {
         display: block;
         @extend .service-card--classic;
@@ -109,6 +130,14 @@
             font-size: 18px;
             font-family: vars.$mainFontMedium;
         }
+    }
+
+
+    &__icon{
+        width: 80px;
+        padding: 1.8rem;
+        background-color: vars.$lightColor;
+        border-radius: 1.5rem;
     }
 
     &__header{
@@ -219,17 +248,14 @@
         background-color: vars.$borderColor;
         margin: 2rem 0;
     }
-
     &__cta {
         margin-top: auto;
     }
-
     &__price-tag, &__timeline-tag{
         font-size: vars.$pSize;
         position: absolute;
         right: 0;
     }
-    
     &__price-tag {
         font-family: vars.$mainFontBold;
         color:vars.$primaryColor
@@ -263,4 +289,5 @@
             }
         }
     }
+
 }
