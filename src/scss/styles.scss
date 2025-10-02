@@ -905,7 +905,21 @@
 //CITIZENSHIP
 
 .citizenship-approaches{
+    // outline: 1px solid red;
+    padding-block-end: 8rem;
+    display: flex;
+
     &__cards{
         max-width: 50%;
+        & > .service-card{
+            margin: 1rem;
+            height: auto;
+        }
+        &--fullheight{
+            & > .service-card{
+                justify-content: space-around;
+                height: 97%;
+            }
+        }
     }
 }

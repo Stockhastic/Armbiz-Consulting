@@ -7,6 +7,15 @@
     padding: 3rem; 
     gap: 2rem;
     height: 100%;
+    &__numlist{
+        & > li{
+            color:vars.$greyColor;
+            font-family: vars.$mainFontMedium;
+            margin-top: 0;
+            font-size: 1.6rem;
+            margin-left: 2rem;
+        }
+    }
 
     &--classic {
         background-color: vars.$white;
@@ -144,6 +153,12 @@
         display: grid;
         position: relative;
         gap: 1.2rem;
+        &--mini{
+            display: flex;
+            & > .service-card__title{
+                align-self: flex-end;
+            }
+        }
     }
     &__title{
         font-family: vars.$mainFontMedium;
