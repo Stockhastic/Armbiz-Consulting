@@ -485,7 +485,31 @@
         "llc-ie-scheme3-step1": "Мы направляем вам на подпись все необходимые документы",
         "llc-ie-scheme3-step2": "Вы высылаете подписанные документы обратно нам",
         "llc-ie-scheme3-step3": "По факту получения документов мы открываем вам ООО в течении 24 часов",
-        "llc-ie-scheme3-step4": "Полное сопровождение вас по открытию банковских расчетных счетов"
+        "llc-ie-scheme3-step4": "Полное сопровождение вас по открытию банковских расчетных счетов",
+    
+        "citizenship-hero-title": "<span class=\"special-text\">Гражданство</span> Армении",
+        "citizenship-hero-subtitle": "Армянский паспорт обеспечивает безвизовый въезд в более 60 стран и упрощает доступ к банкам и инвестициям. Наши специалисты оценят шансы, подготовят документы и сопроводят процесс под ключ, минимизируя риски и сроки.",
+        
+        "citizenship-approach1-title": "По происхождению",
+        "citizenship-approach1-text1": "Самый удобный и надежный вариант для тех у кого есть армянские корни и родственники с гражданством Армении. Сроки и стоимости разнятся от случая к случаю.",
+        "citizenship-approach1-text2": "Потребуется лишь предоставить документ подтверждающий вашу принадлежность. Например свидетельство о рождении",
+
+        "citizenship-approach2-title": "Ускоренная программа",
+        "citizenship-approach2-price": "Стоимость уточняйте на консультации",
+        "citizenship-approach2-text": "Экспресс получение, особые условия и индивидуальный подход. Подробнее об условиях на нашей консультации.",
+
+        "citizenship-approach3-title": "Через ВНЖ и Бизнесс",
+        "citizenship-approach3-text1": "Более долгий и затратный процесс, но он доступен тем у кого нет армянских корней. Процесс многоступенчатый и состоит из нескольких этапов:",
+
+        "citizenship-approach3-step1": "Консультируемся и выясняем вашу ситуацию",
+        "citizenship-approach3-step2": "Регистрируем вам бизнес (ИП и ООО)",
+        "citizenship-approach3-step3": "Оформляем первое ВНЖ",
+        "citizenship-approach3-step4": "Ежегодно продляем ВНЖ в течении 3 лет",
+        "citizenship-approach3-step5": "Подача на гражданство",
+
+        "citizenship-approach3-text2": "На каждом этапы мы предоставляем: юридическую поддержку, документы и подачу под ключ. Процесс имеет свои тонкости и здесь изложена лишь его краткая суть. Советуем вам воспользоваться нашей бесплатной консультацией.",
+        "citizenship-approach3-text3": "Самый сбалансированный спопоб получения их тех трех, что мы готовы вам предложить. Большие временные рамки компенсируются относительно не большими вложениями."
+
     },
     "en": {
 
@@ -539,7 +563,7 @@
         "services-title": "Comperhensive<br><span class=\"special-text\">business solutions</span>",
         "services-subtitle": "Complex corporate services designed for sophisticated business requirements with white-glove service and expert guidance",
         
-        "service-card-llc-ie-title": "LLC & IE Registration",
+        "service-card-llc-ie-title": "LLC & SP Registration",
         "service-card-llc-ie-subtitle": "Open on-site and remotely.<br> With the possibility of opening on a turnkey basis with bank accounts.",
         "service-card-llc-ie-text": "Our team of experts handles all aspects of company formation, from initial consultation to final registration. We provide comprehensive support.",
         
@@ -720,7 +744,7 @@
         "contact-us-form-feedback-placeholder": "Email, phone number, or messenger ID",
 
         "contact-us-form-service-title": "What are you interested in?",
-        "contact-us-form-service-option-ie": "IE or LLC registration",
+        "contact-us-form-service-option-ie": "SP or LLC registration",
         "contact-us-form-service-option-readycompany": "Ready-made companies",
         "contact-us-form-service-option-residence": "Residence Permit",
         "contact-us-form-service-option-citizenship": "Citizenship",
@@ -741,7 +765,7 @@
         
         "footer-service-tite": "Services",
 
-        "footer-service-iellc": "IE or LLC registration",
+        "footer-service-iellc": "SP or LLC registration",
         "footer-service-readycompany": "Ready-made companies",
         "footer-service-residence": "Residence Permit",
         "footer-service-citizenship": "Citizenship",
@@ -775,7 +799,7 @@
     
         "residence-permit-work-title": "<span class=\"special-text\">Residence Permit by work</span>",
         "residence-permit-business-detail1": "Today - <span class=\"bold-text\">most popular</span> way of obtain <span class=\"special-text\">Residence Permit</span> for foreign citizen in RA",
-        "residence-permit-business-detail2": "The process of obtaining by running your own business (IE or LLC) is the most expensive approach, but at the same time the fastest and most accessible to majority",
+        "residence-permit-business-detail2": "The process of obtaining by running your own business (SP or LLC) is the most expensive approach, but at the same time the fastest and most accessible to majority",
         "residence-permit-business-price": "Price: <span class=\"special-text\" id=\"service-price-residence-business\" data-price-label=\"false\"></span>",
     
         "residence-permit-work-thesis0": "A more time-consuming method, but at the same time more cost-effective",
@@ -901,7 +925,7 @@
         "llc-ie-benefit1-item3": "Tax authority registration",
         "llc-ie-benefit1-item4": "Banking support",
 
-        "llc-ie-scheme1-title":"Stages of <span class=\"special-text\">IE registration</span>",
+        "llc-ie-scheme1-title":"Stages of <span class=\"special-text\">SP registration</span>",
         "llc-ie-scheme1-step1":"Issuance of a notarized power of attorney",
         "llc-ie-scheme1-step2":"Registration in the state register of Armenia",
         "llc-ie-scheme1-step3":"Registration in local tax authority",
@@ -959,8 +983,31 @@
 
 
 
-        "citizenship-hero-title": "<span class=\"special-text\">Гражданство</span> Армении",
-        "citizenship-hero-subtitle1": "Армянский паспорт обеспечивает безвизовый въезд в более 60 стран и упрощает доступ к банкам и инвестициям. Наши специалисты оценят шансы, подготовят документы и сопроводят процесс под ключ, минимизируя риски и сроки."
 
+
+
+        
+        "citizenship-hero-title": "Armenian <span class=\"special-text\">Citizenship</span>",
+        "citizenship-hero-subtitle": "An Armenian passport provides visa-free entry to more than 60 countries and facilitates access to banks and investments. Our specialists will assess your eligibility, prepare the documents, and guide you through the entire process, minimizing risks and timeframes.",
+
+        "citizenship-approach1-title": "Obtaining by descent",
+        "citizenship-approach1-text1": "The most convenient and reliable option for those who have Armenian roots and relatives with Armenian citizenship. The timeframes and costs vary from case to case.",
+        "citizenship-approach1-text2": "You will only need to provide a document confirming your origin — for example, a birth certificate.",
+
+        "citizenship-approach2-title": "Fast Option",
+        "citizenship-approach2-price": "Please confirm the cost during the consultation",
+        "citizenship-approach2-text": "Fast-track acquisition, special conditions, and an individual approach. More details available during our consultation.",
+
+        "citizenship-approach3-title": "With Residence & Business",
+        "citizenship-approach3-text1": "A longer and more costly process, but available to those without Armenian roots. The process is multi-stage and consists of several steps:",
+
+        "citizenship-approach3-step1": "We provide a consultation and assess your situation",
+        "citizenship-approach3-step2": "We register a business for you (SP or LLC)",
+        "citizenship-approach3-step3": "We arrange your first residence permit",
+        "citizenship-approach3-step4": "We renew the residence permit annually for 3 years",
+        "citizenship-approach3-step5": "We submit the citizenship application",
+
+        "citizenship-approach3-text2": "At each stage, we provide legal support, documentation, and full turnkey submission. The process has its own specifics, and here we present only a brief outline. We recommend that you take advantage of our free consultation.",
+        "citizenship-approach3-text3": "The most balanced option among the three we offer. The longer timeframes are offset by relatively modest investments."
     }
 }
