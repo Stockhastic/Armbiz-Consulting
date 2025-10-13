@@ -521,7 +521,7 @@
         "header-aboutus": "About us",
         "header-logistics": "Logistics & Customs",
 
-        "header-service-llc-ie": "LLC & IE Registration",
+        "header-service-llc-ie": "LLC & SP Registration",
         "header-service-ready-made-companies": "Ready-made companies",
         "header-service-citizenship": "Citizenship",
         "header-service-residence-permit": "Residence permit",
@@ -891,17 +891,17 @@
     
     
     
-        "llc-ie-hero-title": "Open <span class=\"special-text\">LLC</span> or <span class=\"special-text\">IE</span> for you in just <span class=\"special-text\">1 day</span>",
+        "llc-ie-hero-title": "Open <span class=\"special-text\">LLC</span> or <span class=\"special-text\">SP</span> for you in just <span class=\"special-text\">1 day</span>",
         "llc-ie-hero-subtitle": "We help you select the most suitable tax system and handle all aspects of legal consulting and accounting on your behalf.",
 
-        "llc-ie-card1-title": "<span class=\"special-text\">IE</span> on-site ",
+        "llc-ie-card1-title": "<span class=\"special-text\">SP</span> on-site ",
         "llc-ie-card1-subtitle1": "You will need:",
         "llc-ie-card1-feature1": "Passport (domestic or international)",
         "llc-ie-card1-subtitle2": "During the process of establishing, we require",
         "llc-ie-card1-feature2": "Register the business name",
         "llc-ie-card1-feature3": "Specify the business activity",
 
-        "llc-ie-card2-title": "<span class=\"special-text\">IE</span> remotely",
+        "llc-ie-card2-title": "<span class=\"special-text\">SP</span> remotely",
         "llc-ie-card2-subtitle1": "You will need:",
         "llc-ie-card2-feature1": "Passport (domestic or international)",
         "llc-ie-card2-feature2": "A notarized copy of the ID/passport",
