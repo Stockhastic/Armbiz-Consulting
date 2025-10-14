@@ -112,6 +112,9 @@
             & > .service-card__title{
                 align-self: center;
             }
+            & > img{
+                background-color: #104299;
+            }
         }
         & > .service-card__text{
             font-family: vars.$mainFontRegular;
@@ -139,6 +142,9 @@
             font-size: 18px;
             font-family: vars.$mainFontMedium;
         }
+    }
+    &--autoheight{
+        height: auto;
     }
 
 

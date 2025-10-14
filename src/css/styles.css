@@ -314,6 +314,11 @@ strong, .special-text, .bold-text {
   font-size: 1em;
 }
 
+.bold-text {
+  font-family: "Raleway-Bold";
+  font-size: 1em;
+}
+
 .btn {
   display: inline-flex;
   line-height: 1.2;
@@ -499,6 +504,9 @@ strong, .special-text, .bold-text {
 .service-card--dark-exclusive > header > .service-card__title {
   align-self: center;
 }
+.service-card--dark-exclusive > header > img {
+  background-color: #104299;
+}
 .service-card--dark-exclusive > .service-card__text {
   font-family: "Raleway-Regular";
   min-height: 1lh;
@@ -523,6 +531,9 @@ strong, .special-text, .bold-text {
 .service-card--glow > h4 {
   font-size: 18px;
   font-family: "Raleway-Medium";
+}
+.service-card--autoheight {
+  height: auto;
 }
 .service-card__icon {
   width: 80px;
@@ -1704,4 +1715,39 @@ strong, .special-text, .bold-text {
 .citizenship-approaches__cards--fullheight > .service-card {
   justify-content: space-around;
   height: 97%;
+}
+
+.companies-approaches {
+  padding-block: 5rem;
+  display: flex;
+  gap: 3rem;
+}
+.companies-approaches__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 50%;
+  gap: 3rem;
+  padding-block: 3rem;
+}
+.companies-approaches__info-title {
+  font-family: "Raleway-Semibold";
+}
+.companies-approaches__features {
+  margin: 0rem 2rem;
+}
+.companies-approaches__features > li {
+  margin: 1rem 0;
+}
+.companies-approaches__features > li::marker {
+  font-family: "Raleway-Bold";
+  font-size: 1.6rem;
+}
+.companies-approaches__features > li > p {
+  font-family: "Raleway-Medium";
+}
+.companies-approaches__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }/*# sourceMappingURL=styles.css.map */

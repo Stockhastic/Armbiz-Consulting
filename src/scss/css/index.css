@@ -278,6 +278,11 @@ strong, .special-text, .bold-text {
   font-size: 1em;
 }
 
+.bold-text {
+  font-family: "Raleway-Bold";
+  font-size: 1em;
+}
+
 .btn {
   display: inline-flex;
   line-height: 1.2;
@@ -463,6 +468,9 @@ strong, .special-text, .bold-text {
 .service-card--dark-exclusive > header > .service-card__title {
   align-self: center;
 }
+.service-card--dark-exclusive > header > img {
+  background-color: #104299;
+}
 .service-card--dark-exclusive > .service-card__text {
   font-family: "Raleway-Regular";
   min-height: 1lh;
@@ -487,6 +495,9 @@ strong, .special-text, .bold-text {
 .service-card--glow > h4 {
   font-size: 18px;
   font-family: "Raleway-Medium";
+}
+.service-card--autoheight {
+  height: auto;
 }
 .service-card__icon {
   width: 80px;

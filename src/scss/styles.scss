@@ -923,3 +923,41 @@
         }
     }
 }
+
+//ReadyMade Companies
+
+.companies-approaches{
+    padding-block: 5rem;
+    display: flex;
+    gap: 3rem;
+    // flex-flow: row wrap;
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 50%;
+        gap: 3rem;
+        padding-block: 3rem;
+        &-title{
+            font-family: vars.$mainFontSemibold;
+        }
+    }
+    &__features{
+        margin: 0rem 2rem;
+        & > li{
+            margin: 1rem 0;
+            &::marker {
+                font-family: vars.$mainFontBold;
+                font-size: 1.6rem;
+            }
+            & > p {
+                font-family: vars.$mainFontMedium;
+            }
+        }
+    }
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
