@@ -329,68 +329,70 @@
         </section>
         
         <section id="contact-us" class="contact">
-                        <div class="contact__details">
-                            <span class="contact__badge" data-i18n="contact-us-badge">Связаться с нами</span>
-                            <h2 class="contact__title" data-i18n="contact-us-title-mainpage">Хотите <br><span class="special-text">Работать с нами?</span></h2>
-                            <p class="contact__text" data-i18n="contact-us-lead">Запишитесь на консультацию к нашим специалистам, чтобы узнать, как мы можем вам помочь. Или свяжитесь с нами напрямую через:</p>
-                            <div class="contact__links">
-                                <ul class="contact__mails">
-                                    <p class="contact__subtitle" data-i18n="contact-us-mails">Наши почты</p>
-                                    <li><a class="contact__link" href="mailto:co@armbizconsulting.com">co@armbizconsulting.com</a></li>
-                                    <li><a class="contact__link" href="mailto:armbiz@armbiz.ru">armbiz@armbiz.ru</a></li>
-                                </ul>
-                                <ul class="contact__phones">
-                                    <p class="contact__subtitle" data-i18n="contact-us-phones">Наши телефоны</p>
-                                    <li><a class="contact__link contact__link--arm" href="tel:+374470702">+(374) 44 470702</a></li>
-                                    <li><a class="contact__link contact__link--rus" href="tel:+79645377228">+7 (964) 5377228</a></li>
-                                </ul>
-                                <!-- <ul class="contact__addresses">
-                                    <p class="contact__subtitle">Наши офисы</p>
-                                    <li><a class="contact__link contact__link--map" href="https://yandex.com/profile/-/CHhabX0W">Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1</a></li>
-                                    <li><a class="contact__link contact__link--map" href="https://yandex.com/maps/-/CHhafJ~T">Россия, Москва, Сибирский проезд 2с2</a></li>
-                                </ul> -->
-                                <ul class="contact__socials">
-                                    <p class="contact__subtitle" data-i18n="contact-us-socials">Наши мессенджеры и соц сети</p>
-                                    <li><a class="contact__link" href="https://t.me/armbiz_consulting"><img src="/src/graphics/png/contact-telegram.png" alt="telegram-image"></a></li>
-                                    <li><a class="contact__link" href="https://api.whatsapp.com/send/?app_absent=0&phone=79645377228&text=Здраствуйте%21&type=phone_number"><img src="/src/graphics/png/contact-whatsapp.png" alt="whatsapp-image"></a></li>
-                                    <li><a class="contact__link" href="https://www.instagram.com/armbizconsulting_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=ig_web_button_share_sheet"><img src="/src/graphics/png/contact-instagram.png" alt="instagram-image"></a></li>
-                                </ul>
-                            </div>    
-                        </div>
-                        <form action="POST" class="form">
-                            <p class="form__title" data-i18n="contact-us-form-name">Ваше ФИО</p>
-                            <input type="text" name="name" data-i18n="[placeholder]contact-us-form-name-placeholder" placeholder="Иванов Иван Иванович" required>
-                            <div class="form__spacer"></div>
-                            <p class="form__title" data-i18n="contact-us-form-feedback">Как вам будет удобно получить обратную связь?</p>
-                            <div class="form__radio">
-                                <label data-i18n="contact-us-form-feedback-radio1"><input type="radio" name="feedback" value="mail">Почта</label>
-                                <label data-i18n="contact-us-form-feedback-radio2"><input type="radio" name="feedback" value="messanger">Telegram / WhatsApp</label>
-                                <label data-i18n="contact-us-form-feedback-radio3"><input type="radio" name="feedback" value="phone"> Прямой звонок</label><br>
-                            </div>
-                            <input type="text" name="feedback-credentials" required data-i18n="[placeholder]contact-us-form-feedback-placeholder" placeholder="Почта, номер телефона или ник в мессенджере">
-                            <div class="form__spacer"></div>
-                            <p class="form__title" data-i18n="contact-us-form-service-title">В чем вы заинтересованы?</p>
-                            <select name="service">
-                                <option value="llc-ie" data-i18n="contact-us-form-service-option-ie">Регистрация ООО или ИП</option>
-                                <option value="logistics" data-i18n="contact-us-form-service-option-logistics">Логистика и Таможня</option>
-                                <option value="ready-company" data-i18n="contact-us-form-service-option-readycompany">Готовые компании</option>
-                                <option value="residence" data-i18n="contact-us-form-service-option-residence">ВНЖ</option>
-                                <option value="citizenship" data-i18n="contact-us-form-service-option-citizenship">Гражданство</option>
-                                <option value="accounting" data-i18n="contact-us-form-service-option-accounting">Бухгалтерские услуги</option>
-                                <option value="social-card" data-i18n="contact-us-form-service-option-socialcard">Социальная Карта</option>
-                                <option value="bank-card" data-i18n="contact-us-form-service-option-bankcard">Банковские карты для физ.лиц</option>
-                                <option value="registration" data-i18n="contact-us-form-service-option-registration">Прописка</option>
-                                <option value="other" data-i18n="contact-us-form-service-option-other">Другое</option>
-                            </select>
-                            <div class="form__spacer"></div>
-                            <p class="form__title" data-i18n="contact-us-form-message-title">Сообщение <span class="italic-text">(не обязательно)</span></p>
-                            <textarea name="message" id="message" cols="30" rows="10" data-i18n="[placeholder]contact-us-form-message-placeholder" placeholder="Здравствуйте! Я хотел бы узнать больше о..."></textarea>
-                        
-                            <button type="submit" class="btn--primary" data-i18n="contact-us-form-cta">Запросить консультацию</button>
-                            <p class="form__text" data-i18n="contact-us-form-policy">Заполняя форму, вы соглашаетесь с нашими условиями конфиденциальности. Обычно, мы отвечаем на запросы в течении 24 часов.</p>
-                        </form>
+                <div class="contact__details">
+                    <span class="contact__badge" data-i18n="contact-us-badge">Связаться с нами</span>
+                    <h2 class="contact__title" data-i18n="contact-us-title-mainpage">Хотите <br><span class="special-text">Работать с нами?</span></h2>
+                    <p class="contact__text" data-i18n="contact-us-lead">Запишитесь на консультацию к нашим специалистам, чтобы узнать, как мы можем вам помочь. Или свяжитесь с нами напрямую через:</p>
+                    <div class="contact__links">
+                        <ul class="contact__mails">
+                            <p class="contact__subtitle" data-i18n="contact-us-mails">Наши почты</p>
+                            <li><a class="contact__link" href="mailto:co@armbizconsulting.com">co@armbizconsulting.com</a></li>
+                            <li><a class="contact__link" href="mailto:armbiz@armbiz.ru">armbiz@armbiz.ru</a></li>
+                        </ul>
+                        <ul class="contact__phones">
+                            <p class="contact__subtitle" data-i18n="contact-us-phones">Наши телефоны</p>
+                            <li><a class="contact__link contact__link--arm" href="tel:+374470702">+(374) 44 470702</a></li>
+                            <li><a class="contact__link contact__link--rus" href="tel:+79645377228">+7 (964) 5377228</a></li>
+                        </ul>
+                        <!-- <ul class="contact__addresses">
+                            <p class="contact__subtitle">Наши офисы</p>
+                            <li><a class="contact__link contact__link--map" href="https://yandex.com/profile/-/CHhabX0W">Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1</a></li>
+                            <li><a class="contact__link contact__link--map" href="https://yandex.com/maps/-/CHhafJ~T">Россия, Москва, Сибирский проезд 2с2</a></li>
+                        </ul> -->
+                        <ul class="contact__socials">
+                            <p class="contact__subtitle" data-i18n="contact-us-socials">Наши мессенджеры и соц сети</p>
+                            <li><a class="contact__link" href="https://t.me/armbiz_consulting"><img src="/src/graphics/svg/telegram-icon.svg" alt="telegram-image"></a></li>
+                            <li><a class="contact__link" href="https://api.whatsapp.com/send/?app_absent=0&phone=79645377228&text=Здраствуйте%21&type=phone_number"><img src="/src/graphics/svg/whatsapp-icon-colored.svg" alt="whatsapp-image"></a></li>
+                            <li><a class="contact__link" href="https://www.instagram.com/armbizconsulting_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=ig_web_button_share_sheet"><img src="/src/graphics/svg/instagram-icon-colored.svg" alt="instagram-image"></a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <form action="POST" class="form">
+                    <p class="form__title" data-i18n="contact-us-form-name">Ваше ФИО</p>
+                    <input type="text" name="name" data-i18n="[placeholder]contact-us-form-name-placeholder" placeholder="Иванов Иван Иванович" required>
+                    <div class="form__spacer"></div>
+                    <p class="form__title" data-i18n="contact-us-form-feedback">Как вам будет удобно получить обратную связь?</p>
+                    <div class="form__radio">
+                        <label data-i18n="contact-us-form-feedback-radio1"><input type="radio" name="feedback" value="mail">Почта</label>
+                        <label data-i18n="contact-us-form-feedback-radio2"><input type="radio" name="feedback" value="messanger">Telegram / WhatsApp</label>
+                        <label data-i18n="contact-us-form-feedback-radio3"><input type="radio" name="feedback" value="phone"> Прямой звонок</label><br>
+                    </div>
+                    <input type="text" name="feedback-credentials" required data-i18n="[placeholder]contact-us-form-feedback-placeholder" placeholder="Почта, номер телефона или ник в мессенджере">
+                    <div class="form__spacer"></div>
+                    <p class="form__title" data-i18n="contact-us-form-service-title">В чем вы заинтересованы?</p>
+                    <select name="service">
+                        <option value="llc-ie" data-i18n="contact-us-form-service-option-ie">Регистрация ООО или ИП</option>
+                        <option value="ready-company" data-i18n="contact-us-form-service-option-readycompany">Готовые компании</option>
+                        <option value="residence" data-i18n="contact-us-form-service-option-residence">ВНЖ</option>
+                        <option value="citizenship" data-i18n="contact-us-form-service-option-citizenship">Гражданство</option>
+                        <option value="accounting" data-i18n="contact-us-form-service-option-accounting">Бухгалтерские услуги</option>
+                        <option value="social-card" data-i18n="contact-us-form-service-option-socialcard">Социальная Карта</option>
+                        <option value="bank-card" data-i18n="contact-us-form-service-option-bankcard">Банковские карты для физ.лиц</option>
+                        <option value="registration" data-i18n="contact-us-form-service-option-registration">Прописка</option>
+                        <option value="logistics" data-i18n="contact-us-form-service-option-logistics">Логистика и Таможня</option>
+                        <option value="other" data-i18n="contact-us-form-service-option-other">Другое</option>
+                    </select>
+                    <div class="form__spacer"></div>
+                    <p class="form__title" data-i18n="contact-us-form-message-title">Сообщение <span class="italic-text">(не обязательно)</span></p>
+                    <textarea name="message" id="message" cols="30" rows="10" data-i18n="[placeholder]contact-us-form-message-placeholder" placeholder="Здравствуйте! Я хотел бы узнать больше о..."></textarea>
+                
+                    <button type="submit" class="btn--primary" data-i18n="contact-us-form-cta">Запросить консультацию</button>
+                    <p class="form__text" data-i18n="contact-us-form-policy">Заполняя форму, вы соглашаетесь с нашими условиями конфиденциальности. Обычно, мы отвечаем на запросы в течении 24 часов.</p>
+                </form>
         </section>
-    </div>
+        </div>
+    </main>
+
     <footer class="footer">
         <div class="footer__grid">
             <section class="footer__brand">
@@ -422,9 +424,9 @@
                     <li class="footer__list-item footer__list-item--phone"><a class="footer__list-link" href="tel:+79645377228" >+7 (964) 537 7228</a></li>
                 </ul>
                 <div class="footer__messengers">
-                    <a class="footer__messenger-link" href="https://t.me/armbiz_consulting" ><img src="/src/graphics/png/contact-telegram.png" alt="footer-messengers"></a>
-                    <a class="footer__messenger-link" href="https://api.whatsapp.com/send/?app_absent=0&phone=79645377228&text=Здраствуйте%21&type=phone_number" ><img src="/src/graphics/png/contact-whatsapp.png" alt="footer-messengers"></a>
-                    <a class="footer__messenger-link" href="https://www.instagram.com/armbizconsulting_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=ig_web_button_share_sheet" ><img src="/src/graphics/png/contact-instagram.png" alt="footer-messengers"></a>
+                    <a class="footer__messenger-link" href="https://t.me/armbiz_consulting" ><img src="/src/graphics/svg/telegram-icon.svg" alt="footer-messengers"></a>
+                    <a class="footer__messenger-link" href="https://api.whatsapp.com/send/?app_absent=0&phone=79645377228&text=Здраствуйте%21&type=phone_number" ><img src="/src/graphics/svg/whatsapp-icon.svg" alt="footer-messengers"></a>
+                    <a class="footer__messenger-link" href="https://www.instagram.com/armbizconsulting_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=ig_web_button_share_sheet" ><img src="/src/graphics/svg/instagram-icon.svg" alt="footer-messengers"></a>
                 </div>
             </address>
         </div>

@@ -590,7 +590,8 @@ strong, .special-text, .bold-text {
   left: 0;
   translate: -2.5rem -2px;
   position: absolute;
-  content: url(/src/graphics/png/benefit-icon.png);
+  content: url(/src/graphics/svg/benefit-icon.svg);
+  width: 18px;
 }
 .service-card__benefits--residence {
   flex-direction: column;
