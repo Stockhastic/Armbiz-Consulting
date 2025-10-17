@@ -508,8 +508,44 @@
         "citizenship-approach3-step5": "Подача на гражданство",
 
         "citizenship-approach3-text2": "На каждом этапы мы предоставляем: юридическую поддержку, документы и подачу под ключ. Процесс имеет свои тонкости и здесь изложена лишь его краткая суть. Советуем вам воспользоваться нашей бесплатной консультацией.",
-        "citizenship-approach3-text3": "Самый сбалансированный спопоб получения их тех трех, что мы готовы вам предложить. Большие временные рамки компенсируются относительно не большими вложениями."
+        "citizenship-approach3-text3": "Самый сбалансированный спопоб получения их тех трех, что мы готовы вам предложить. Большие временные рамки компенсируются относительно не большими вложениями.",
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "rmcompanies-hero-title": "<span class=\"special-text\">Готовые компании</span> и Филиалы",
+        "rmcompanies-hero-subtitle": "Покупая компанию с нами вы получаете ООО с положительной историей и без скрытых долгов. Ознакомится с каталогом предлагаемых компаний вы можете на нашей бесплатной консультации",
+        "rmcompanies-hero-cta-button": "Запросить консультацию",
+        "rmcompanies-approaches-title": "Условия и <span class=\"special-text\">Преимущества</span> готовых компаний",
+        "rmcompanies-approaches-text1": "Мы стремимся к прозрачности в работе с нашими клиентами. Мы гарантируем вам отсутствие скрытых задолженностей и положительную историю компании.",
+        
+
+        "rmcompanies-approaches-feature1": "<span class=\"bold-text\">Вы сможете моментально начать работу.</span> Ведь для быстрого старта бизнеса с готовым ООО потребуется лишь несколько дней",
+        "rmcompanies-approaches-feature2": "<span class=\"bold-text\">Отсутствие бюрократической нагрузки.</span> Нет никакой необходимости в сборе многочисленных документов для регистрации - это уже пройденный этап.",
+        "rmcompanies-approaches-feature3": "<span class=\"bold-text\">Есть интеллектуальная собственность.</span> За любой нашей готовой организацией уже закреплено юридическое название.",
+        "rmcompanies-approaches-feature4": "<span class=\"bold-text\">Перспективы развития.</span> У готовой компании с оборотом, заметно упрощается задача участия в тендерах.",
+
+        "rmcompanies-approaches-text2": "Предлагаемые нами компании имеют опыт деятельности от 1 до 10 лет. Готовые компании включают в себя полый комплект услуг для быстрого запуска вашего бизнеса в Армении.",
+        
+        "rmcompanies-approach1-title": "Стандартное предложение",
+        "rmcompanies-approach1-feature1": "Директор - Резидент",
+        "rmcompanies-approach1-feature2": "Учредитель - Резидент",
+        "rmcompanies-approach1-feature3": "Юридический адрес",
+        "rmcompanies-approach1-feature4": "Открытие дополнительных расчетных счетов",
+    
+        "rmcompanies-approach2-title": "Филиал",
+        "rmcompanies-approach2-text": "Условия индивидуальны и сильно рознятся от случая к случаю. Все подробности открытия вы можете узнать на нашей бесплатной консультации."
+    
     },
     "en": {
 
@@ -1008,6 +1044,40 @@
         "citizenship-approach3-step5": "We submit the citizenship application",
 
         "citizenship-approach3-text2": "At each stage, we provide legal support, documentation, and full turnkey submission. The process has its own specifics, and here we present only a brief outline. We recommend that you take advantage of our free consultation.",
-        "citizenship-approach3-text3": "The most balanced option among the three we offer. The longer timeframes are offset by relatively modest investments."
+        "citizenship-approach3-text3": "The most balanced option among the three we offer. The longer timeframes are offset by relatively modest investments.",
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+        "rmcompanies-hero-title": "<span class=\"special-text\">Ready-Made</span> companies & Branches",
+        "rmcompanies-hero-subtitle": "When purchasing a ready-made company with us, you receive an LLC with a positive history and no hidden debts. You can review the catalog of available companies during our free consultation.",
+        "rmcompanies-hero-cta-button": "Request a Consultation",
+        "rmcompanies-approaches-title": "Terms and <span class=\"special-text\">Benefits</span> of Ready-Made Companies",
+        "rmcompanies-approaches-text1": "We are committed to transparency in our work with clients. We guarantee that there are no hidden debts and that the company has a positive history.",
+        
+
+        "rmcompanies-approaches-feature1": "<span class=\"bold-text\">You will be able to start operating immediately.</span> After all, launching a business with a ready-made LLC takes only a few days.",
+        "rmcompanies-approaches-feature2": "<span class=\"bold-text\">No bureaucratic burden.</span> There is no need to gather numerous documents for registration — that step has already been completed.",
+        "rmcompanies-approaches-feature3": "<span class=\"bold-text\">There is intellectual property.</span> Each of our ready-made companies already has a legally registered name.",
+        "rmcompanies-approaches-feature4": "<span class=\"bold-text\">Development prospects.</span> A ready-made company with existing turnover makes it significantly easier to participate in tenders.",
+
+        "rmcompanies-approaches-text2": "The companies we offer have an operational history ranging from 1 to 10 years. Each ready-made company includes a full package of services for the quick launch of your business in Armenia.",
+        
+        "rmcompanies-approach1-title": "Standard Offer",
+        "rmcompanies-approach1-feature1": "Resident Director",
+        "rmcompanies-approach1-feature2": "Resident Founder",
+        "rmcompanies-approach1-feature3": "Legal Address",
+        "rmcompanies-approach1-feature4": "Opening if Additional Bank Accounts",
+    
+        "rmcompanies-approach2-title": "Branch",
+        "rmcompanies-approach2-text": "Conditions are individual and vary significantly from case to case. All the details of the setup can be clarified during our free consultation."
     }
 }
