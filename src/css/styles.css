@@ -973,6 +973,10 @@ strong, .special-text, .bold-text {
   content: "#646d83";
 }
 
+.alert-text {
+  color: red !important;
+}
+
 .divider {
   height: 20px;
 }
@@ -1784,4 +1788,155 @@ strong, .special-text, .bold-text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.bankcards-advantages {
+  display: flex;
+  justify-content: space-around;
+}
+
+.advantage-card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid #d7deef;
+}
+.advantage-card__icon {
+  width: 6rem;
+}
+.advantage-card__title {
+  font-family: "Raleway-Semibold";
+}
+.advantage-card__text {
+  color: #434c5b;
+  font-size: 1.5rem;
+}
+
+.cards-services {
+  background: #e7effe;
+  padding-block: 5rem;
+}
+.cards-services > .wrapper, .cards-services > .header {
+  display: flex;
+  justify-content: space-around;
+}
+.cards-services__title {
+  text-align: center;
+  font-family: "Raleway-Medium";
+  font-size: 5.5rem;
+  margin-bottom: 5rem;
+  color: #1e2736;
+}
+.cards-services__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid #d7deef;
+  border-radius: 2rem;
+  max-width: 33%;
+  margin: 1rem;
+  background-color: #fff;
+  width: auto;
+  box-shadow: 4px 4px 20px #d7deef;
+}
+.cards-services__card-header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2rem 2rem 0 0;
+  padding: 3rem 1rem;
+  background: linear-gradient(45deg, #1a6eff, #185beb);
+  z-index: 1;
+}
+.cards-services__card-header--idbank {
+  background: linear-gradient(45deg, #f5821e, #f8ab67);
+}
+.cards-services__card-header--amiobank {
+  background: linear-gradient(45deg, #76e4f7, #73b4ff);
+}
+.cards-services__card-header > img {
+  width: 15rem;
+  margin-left: 2rem;
+}
+.cards-services__card-header > .payment-systems {
+  display: flex;
+  flex-direction: column;
+}
+.cards-services__card-header > .payment-systems > img {
+  width: 10rem;
+  margin-right: 1rem;
+}
+.cards-services__card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.4rem;
+  padding: 1rem 2rem;
+}
+.cards-services__card-list > h4 {
+  font-size: 1.6rem;
+  font-family: "Raleway-Semibold";
+  margin-bottom: 0.5rem;
+}
+.cards-services__card-list > li {
+  display: inline-flex;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2em;
+  margin: 0.4rem 0.2em;
+  background-color: #e7effe;
+  font-family: "Raleway-Medium";
+}
+.cards-services__card-text {
+  color: #434c5b;
+  text-align: justify;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.cards-services__card > .btn {
+  margin: 2rem 2rem;
+}
+.cards-services__card--popular {
+  position: relative;
+}
+.cards-services__card--popular::before {
+  text-align: center;
+  vertical-align: middle;
+  width: 80%;
+  font-family: "Raleway-Bold";
+  color: #60a2ff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  translate: 50% -90%;
+  background-color: #fff;
+  padding: 1rem 0;
+  border-radius: 1em 1em 0 0;
+  border: 1px solid #d7deef;
+  z-index: 0;
+  content: "• КЛИЕНТЫ ВЫБИРАЮТ •";
+}
+
+.sandbox {
+  height: 600vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  padding: 10rem;
+  border: 1px dashed rgb(141, 176, 216);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.playground-box {
+  width: 85px;
+  height: 85px;
+  background: radial-gradient(#1596d1, #4740aa);
+  border-radius: 2em;
+  margin: 1rem 0.5rem;
 }/*# sourceMappingURL=styles.css.map */

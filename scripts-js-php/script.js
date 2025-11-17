@@ -160,3 +160,13 @@ const acc = new Accordion(".accordion-container", {
     collapse: true,
     openOnInit: [0],  
   });
+
+
+
+// GSAP
+
+// TEST
+gsap.to(".exclusive-offer__badge", {
+  rotation: 360,
+  duration: 2,
+})

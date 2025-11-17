@@ -91,6 +91,10 @@
     }
 }
 
+.alert-text{
+    color: red !important;
+}
+
 .divider {
     height: 20px;
 }
@@ -100,7 +104,7 @@
 // }
 
 .wrapper {
-    // outline: 1px solid red;
+    // outline: 1px dashed darksalmon;
     margin: 0 auto;
     max-width: 1280px;
     &--wided{
@@ -989,4 +993,189 @@
         flex-direction: column;
         gap: 2rem;
     }
+}
+
+//Bank Cards
+
+.bankcards-advantages{
+    display: flex;
+    justify-content: space-around;
+}
+.advantage-card{
+    // outline: 1px dashed red;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid vars.$borderColor;
+
+    &__icon{
+        width: 6rem;
+    }
+
+    &__title{
+        font-family: vars.$mainFontSemibold;
+    }
+    &__text{
+        color: vars.$greyColor;
+        font-size: 1.5rem;
+
+    }
+}
+
+.cards {
+    &-services{
+        background: vars.$lightColor;
+        padding-block: 5rem;
+
+        & > .wrapper{ 
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__title{
+            text-align: center;
+            font-family: vars.$mainFontMedium;
+            font-size: 5.5rem;
+            margin-bottom: 5rem;
+            color: vars.$darkColor;
+        }
+        &__card{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            border: 1px solid vars.$borderColor;
+            border-radius: 2rem;
+            max-width: 33%;
+            margin: 1rem;
+            background-color: #fff;
+            width: auto;
+            box-shadow: 4px 4px 20px vars.$borderColor ;
+            &-header{
+                display: flex;
+                justify-content: space-between;
+                border-radius: 2rem 2rem 0 0;
+                padding: 3rem 1rem;
+                background: linear-gradient(
+                    45deg,
+                    vars.$primaryColor,
+                    #185beb
+                );
+                z-index: 1;
+                
+                &--idbank{
+                    background: linear-gradient(
+                        45deg,
+                        #f5821e,
+                        #f8ab67
+                    );
+                }
+                &--amiobank{
+                    background: linear-gradient(
+                        45deg,
+                        #76e4f7,
+                        #73b4ff
+                    );
+                }
+                
+                & > img {
+                    width: 15rem;
+                    margin-left: 2rem;
+                }
+                & > .payment-systems{
+                    display: flex;
+                    flex-direction: column;
+                    & > img{
+                        width: 10rem;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            &-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 1.4rem;
+                padding: 1rem 2rem;
+            }
+            &-list{
+                & > h4{
+                    font-size: 1.6rem;
+                    font-family: vars.$mainFontSemibold;
+                    margin-bottom: 0.5rem;
+                }
+                & > li{
+                    display: inline-flex;
+                    font-size: 1.4rem;
+                    // outline: 1px dashed red;
+                    padding: 0.5rem 1rem;
+                    border-radius: 2em;
+                    margin: 0.4rem 0.2em;
+                    background-color: vars.$lightColor;
+                    font-family: vars.$mainFontMedium;
+                }
+            }
+            &-text{
+                color: vars.$greyColor;
+                text-align: justify;
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+            & > .btn{
+                margin: 2rem 2rem;
+            }
+
+
+
+            &--popular{
+                position: relative;
+                &::before{
+                    text-align: center;
+                    vertical-align: middle;
+                    width: 80%;
+                    font-family: vars.$mainFontBold;
+                    color: vars.$secondaryColor;
+                    font-size: 1.5rem;
+                    position: absolute;
+                    top: 0;
+                    right: 50%;
+                    translate: 50% -90%;
+                    background-color: #fff;
+                    padding: 1rem 0;
+                    border-radius: 1em 1em 0 0;
+                    border: 1px solid vars.$borderColor;
+                    z-index: 0;
+                    content: '• КЛИЕНТЫ ВЫБИРАЮТ •'
+                }
+            }
+        }
+    }
+}
+
+
+
+//playground
+.sandbox{
+    height: 600vh; 
+    display: flex; flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding: 10rem; 
+    border: 1px dashed rgb(141, 176, 216); 
+    border-radius: 2rem; 
+    margin-bottom: 2rem;
+}
+.playground-box{
+    width: 85px;
+    height: 85px;
+    background: radial-gradient(
+        #1596d1,
+        #4740aa
+    );
+    border-radius: 2em;
+    margin: 1rem 0.5rem;
+
 }
