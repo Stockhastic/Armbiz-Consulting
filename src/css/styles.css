@@ -14,6 +14,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   text-size-adjust: none;
+  color: #1e2736;
 }
 
 address {
@@ -224,6 +225,19 @@ a {
     transform: translate(0, 0) rotate(180deg) scale(1);
   }
 }
+.residence-permit__illustration-part-1 {
+  outline: 1px dashed pink;
+}
+.residence-permit__illustration-part-2 {
+  outline: 1px dashed peachpuff;
+}
+.residence-permit__illustration-part-3 {
+  outline: 1px dashed darkseagreen;
+}
+.residence-permit__illustration-part-4 {
+  outline: 1px dashed salmon;
+}
+
 @font-face {
   font-family: "Raleway-Regular";
   src: url(/src/fonts/Raleway-Regular.ttf);
@@ -801,6 +815,16 @@ strong, .special-text, .bold-text {
 .scheme--horizontal > .scheme__line--position2 {
   translate: 12% -30px;
 }
+.scheme--bank > .scheme__line {
+  height: 90%;
+}
+.scheme--bank > .scheme__item > .scheme__item-title {
+  font-size: 2rem;
+}
+.scheme--bank > .scheme__item > .scheme__item-text {
+  font-family: "Raleway-Regular";
+  color: #434c5b;
+}
 
 .sphere {
   position: absolute;
@@ -1359,7 +1383,7 @@ strong, .special-text, .bold-text {
 }
 .header__nav-link {
   padding: 1.8rem 0.5rem;
-  font-family: "Raleway-Semibold";
+  font-family: "Raleway-Medium";
   color: #1e2736;
 }
 .header__lang {
@@ -1530,13 +1554,19 @@ strong, .special-text, .bold-text {
   color: #434c5b;
 }
 .hero__image {
+  position: relative;
   margin: auto;
+  width: 500px;
+  height: 400px;
+  z-index: -1;
 }
 .hero__image > img {
+  position: absolute;
+  top: 0;
   width: 500px;
 }
 .hero--service {
-  padding-block: 5rem;
+  padding-block: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1553,10 +1583,11 @@ strong, .special-text, .bold-text {
 }
 .hero--service > .hero__details > .hero__subtitle {
   font-family: "Raleway-Medium";
-  color: #000;
+  color: #1e2736;
 }
 .hero--service > .hero__details > .hero__title {
   font-family: "Raleway-Semibold";
+  color: #1e2736;
 }
 
 .hero__title--residence {
@@ -1643,6 +1674,10 @@ strong, .special-text, .bold-text {
 }
 .ac-trigger:active {
   color: #1a6eff;
+}
+.ac-panel > p {
+  color: #434c5b;
+  line-height: 1.2;
 }
 
 .ac.is-active > .ac-header .ac-trigger {
@@ -1791,42 +1826,45 @@ strong, .special-text, .bold-text {
 }
 
 .bankcards-advantages {
+  padding-block: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
 .advantage-card {
-  width: 33%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  margin: 2rem 1rem;
+  margin: 0.5rem 1rem;
   border-radius: 2rem;
-  border: 1px solid #d7deef;
+  background-color: #e7effe;
 }
 .advantage-card__icon {
   width: 6rem;
 }
 .advantage-card__title {
   font-family: "Raleway-Semibold";
+  font-size: 2rem;
 }
 .advantage-card__text {
   color: #434c5b;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .cards-services {
-  background: #e7effe;
+  background: radial-gradient(#e7effe, #ffffff);
   padding-block: 5rem;
 }
 .cards-services > .wrapper, .cards-services > .header {
+  padding-block: 5rem;
   display: flex;
   justify-content: space-around;
 }
 .cards-services__title {
   text-align: center;
-  font-family: "Raleway-Medium";
+  font-family: "Raleway-Semibold";
   font-size: 5.5rem;
   margin-bottom: 5rem;
   color: #1e2736;
@@ -1837,7 +1875,8 @@ strong, .special-text, .bold-text {
   justify-content: flex-end;
   border: 1px solid #d7deef;
   border-radius: 2rem;
-  max-width: 33%;
+  min-width: 30%;
+  max-width: 32%;
   margin: 1rem;
   background-color: #fff;
   width: auto;
@@ -1850,6 +1889,7 @@ strong, .special-text, .bold-text {
   padding: 3rem 1rem;
   background: linear-gradient(45deg, #1a6eff, #185beb);
   z-index: 1;
+  flex-grow: 1;
 }
 .cards-services__card-header--idbank {
   background: linear-gradient(45deg, #f5821e, #f8ab67);
@@ -1919,6 +1959,24 @@ strong, .special-text, .bold-text {
   border: 1px solid #d7deef;
   z-index: 0;
   content: "• КЛИЕНТЫ ВЫБИРАЮТ •";
+}
+.cards-process {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.cards-process__info {
+  max-width: 50%;
+}
+.cards-process__title {
+  font-family: "Raleway-Semibold";
+  margin: 8rem auto;
+  color: #1e2736;
+}
+.cards-process__subtitle {
+  font-size: 2rem;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .sandbox {

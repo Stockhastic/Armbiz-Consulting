@@ -99,36 +99,30 @@
     </header>
     <main>
         <div class="wrapper">
+            <div class="sphere-container">
+                <div class="sphere"></div>
+                <div class="sphere"></div>
+                <div class="sphere"></div>
+                <div class="sphere"></div>
+                <div class="sphere"></div>
+                <div class="sphere"></div>
+                <div class="sphere"></div>
+                <div class="sphere"></div>
+            </div>
             <section class="hero hero--service">
                 <div class="hero__details">
                     <h2 class="hero__title" data-i18n="bankcards-hero-title">Оформление карты <span class="special-text">иностранного банка</span> в России</h2>
-                    <p class="hero__subtitle" data-i18n="bankcards-hero-subtitle">Наша команда поможет оформить вам карту в одном из армянских банков для операций в валюте. Удаленное оформление с минимумом докуменотв!</p>
+                    <p class="hero__subtitle" data-i18n="bankcards-hero-subtitle">Наша команда поможет оформить вам карту в одном из армянских банков для операций в валюте. Удаленное оформление, минимум документов и возможность доставки до вас!</p>
                     <a href="#contact-us" class="btn btn--primary" data-i18n="bankcards-hero-cta-button">Оформить сейчас</a>
                 </div>
                 <div class="hero__image">
-                    <img src="/src/graphics/png/bankcards-illustration.png" alt="Ready-made companies illustration here">
+                    <img src="/src/graphics/svg/bank-card-illustration.svg" alt="Ready-made companies illustration here">
                 </div>
-            </section>
-            <section class="bankcards-advantages">
-                <article class="advantage-card">
-                    <img src="/src/graphics/svg/no-docs-icon.svg" alt="icon-here" class="advantage-card__icon">
-                    <h4 class="advantage-card__title">Оформление без доверенности</h4>
-                    <p class="advantage-card__text">Есть возможность оформления всего процесса без лишних хлопот с документами</p>
-                </article>
-                <article class="advantage-card">
-                    <img src="/src/graphics/svg/citizenship-icon3.svg" alt="icon-here" class="advantage-card__icon">
-                    <h4 class="advantage-card__title">Гарантия конфиденциальности</h4>
-                    <p class="advantage-card__text">Мы гарантируем полную безопасность ваших персональных данных</p>
-                </article>
-                <article class="advantage-card">
-                    <img src="/src/graphics/svg/door-icon.svg" alt="icon-here" class="advantage-card__icon">
-                    <h4 class="advantage-card__title">Доставка до двери</h4>
-                    <p class="advantage-card__text">При оформлении в определенных банках присутствует опция доставки до двери</p>
-                </article>
             </section>
         </div>
         <section class="cards-services">
-            <h1 class="cards-services__title">Актуальные сегодня предложения</h1>
+            <h1 class="cards-services__title">Актуальные предложения</h1>
+
             <div class="wrapper">
                 <article class="cards-services__card cards-services__card--popular">
                     <header class="cards-services__card-header cards-services__card-header--idbank">
@@ -140,7 +134,7 @@
                     </header>
                     <div class="cards-services__card-info">
                         <!-- <h2 class="cards-services__card-title">ID Bank</h2> -->
-                        <p class="cards-services__card-text">Карта самого популярного банка Армении. Возможно оформление в разных валютах. Доступ к системам ID Pay</p>
+                        <p class="cards-services__card-text">Карта самого популярного банка Армении. Полный доступ к системе ID Pay. <br> <a href="/src/files/idbank-tariff.pdf"><span class="special-text">Тарифы банка</span></a></p>
                             
                         <ul class="cards-services__card-list">
                             <h4>Тип оформления</h4>
@@ -250,13 +244,119 @@
                     <!-- <p class="cards-services__card-price">Здесь стоимость услуги. Задается из JS</p> -->
                     <a href="#contact-us" class="btn btn--primary">Оформить</a>
                 </article>
-
             </div>
+
         </section>
         <div class="wrapper">
-            <section class="card-process">
-                <h1 class="card-process__title">Как происходит оформление?</h1>
-                <h2 class="card-process__subtitle">Процесс изменяется в зависимости от банка, но суть остается одна</h2>
+            <section class="cards-process">
+                <h2 class="cards-process__title">Как происходит оформление?</h2>
+                <div class="cards-process__info">
+                    <h4 class="cards-process__subtitle">Процесс оформления видоизменяется в зависимости от банка, но всегда идет по одному основному сценарию.</h4>
+                    <div class="bankcards-advantages">
+                        <article class="advantage-card">
+                            <img src="/src/graphics/svg/no-docs-icon.svg" alt="icon-here" class="advantage-card__icon">
+                            <h4 class="advantage-card__title">Оформление без доверенности</h4>
+                            <p class="advantage-card__text">Есть возможность оформления всего процесса без лишних хлопот с документами</p>
+                        </article>
+                        <article class="advantage-card">
+                            <img src="/src/graphics/svg/citizenship-icon3.svg" alt="icon-here" class="advantage-card__icon">
+                            <h4 class="advantage-card__title">Гарантия конфиденциальности</h4>
+                            <p class="advantage-card__text">Мы гарантируем полную безопасность ваших персональных данных</p>
+                        </article>
+                        <article class="advantage-card">
+                            <img src="/src/graphics/svg/door-icon.svg" alt="icon-here" class="advantage-card__icon">
+                            <h4 class="advantage-card__title">Доставка до двери</h4>
+                            <p class="advantage-card__text">При оформлении в определенных банках присутствует опция доставки до двери</p>
+                        </article>
+                        <article class="advantage-card">
+                            <img src="/src/graphics/svg/citizenship-icon1.svg" alt="icon-here" class="advantage-card__icon">
+                            <h4 class="advantage-card__title">Гарантия результата</h4>
+                            <p class="advantage-card__text">Всем нашим клиентам банк одобрял получение карт и открытие счетов. Можете не беспокоится за реализацию</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="cards-process__container scheme-container">
+                    <ul class="scheme scheme--bank">
+                        <div class="scheme__line"></div>
+                        <li class="scheme__item">
+                            <h4 class="scheme__item-title">Оставьте заявку</h4>
+                            <p class="scheme__item-text">Ознакомьтесь с основной информацией и заполните форму, оставив свои данные, чтобы мы могли связаться с Вами для обсуждения всех подробностей и дальнейших шагов</p>
+                        </li>
+                        <li class="scheme__item">
+                            <h4 class="scheme__item-title">Пришлите необходимые документы и информацию</h4>
+                            <p class="scheme__item-text">Обычно для оформления требуются как минимум: скан разворота паспорта и прописки, заполненная анкета по форме банка(мы присылаем шаблон), справка о доходах(можно запросить в Госуслугах)</p>
+                        </li>
+                        <li class="scheme__item">
+                            <h4 class="scheme__item-title">Оплатите комиссию нашего сервиса</h4>
+                            <p class="scheme__item-text">Внесите предоплату в размере 50%. Удобный для вас способ оплаты выбираем на консультации</p>
+                        </li>
+                        <li class="scheme__item">
+                            <h4 class="scheme__item-title">Пройдите идентификацию с сотрудником банка</h4>
+                            <p class="scheme__item-text">Не обязательный этап. Обычно требуется при получении карты IDBank или Ardshin Bank. С вами связывается сотрудник банка и проводит индентификацию. На данном этапе банк может запросить у вас дополнительные документы по своему усмотрению.</p>
+                        </li>
+                        <li class="scheme__item">
+                            <h4 class="scheme__item-title">Оплата комиссий банка</h4>
+                            <p class="scheme__item-text">К ним оносятся: Комиссии за открытие платежной карты, годовая плата за обслуживание</p>
+                        </li>
+                        <li class="scheme__item">
+                            <h4 class="scheme__item-title">Получение</h4>
+                            <p class="scheme__item-text">Готово! На этом этап остается ждать выпуск карты. Тут вы можете запросить доставку своей карты в РФ, а можете приехать забрать лично.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="faq">
+                <h3 data-i18n="faq-title" class="faq__title"><span class="special-text">Ча</span>сто задаваемые <span class="special-text">Во</span>просы</h3>
+            
+                <div class="accordion-container">
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button class="ac-trigger"><span class="faq-header">Какие гарантии вы даете?</span></button>
+                        </h2>
+                        <div class="ac-panel">
+                            <div class="ac-divider"></div>
+                            <p>Для наибольшей прозрачности и гарантий исполнений наших обязательств по оформлению карты, мы заключаем с каждым клиентом официальный договор. Мы на рынке более 3 лет и за это время успели поработать с многими клиентами. Можете увидеть результат наших трудов <a href="https://yandex.com/maps/org/armbiz_consulting/207483357362/?indoorLevel=1&ll=44.501263%2C40.199378&source=serp_navig&utm_source=share&z=17"><span class="special-text">здесь</span></a></p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button class="ac-trigger"><span class="faq-header">Счет будет оформлен на меня?</span></button>
+                        </h2>
+                        <div class="ac-panel">
+                            <div class="ac-divider"></div>
+                            <p>Да, конечно. Не смотря на то, что весь процесс проходит через нас - вы владелец всех счетов и карт.</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button class="ac-trigger"><span class="faq-header">У вас будет доступ к моему счету?</span></button>
+                        </h2>
+                        <div class="ac-panel">
+                            <div class="ac-divider"></div>
+                            <p>Нет. Доступ к счету и приложению будете иметь только вы, поскольку регистрация будет производиться Вами, на Ваш смартфон и номер телефона.</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button class="ac-trigger"><span class="faq-header">Можно ли пополнять свою карту из России?</span></button>
+                        </h2>
+                        <div class="ac-panel">
+                            <div class="ac-divider"></div>
+                            <p>Да, конечно. Вы можете воспользоваться одним из методов, указанных в информации к определенной карте. Обычно всегда доступен межбанковский перевод из любого Российского банка.</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button class="ac-trigger"><span class="faq-header">Как долго открывается счет?</span></button>
+                        </h2>
+                        <div class="ac-panel">
+                            <div class="ac-divider"></div>
+                            <p>Вся процедура с момента обращения к нам занимает от 1 рабочего дня и более. Сроки оформления указанны в информации к определенной карте</p>
+                        </div>
+                    </div>
+                </div>
+                
             </section>
 
             <section id="contact-us" class="contact">

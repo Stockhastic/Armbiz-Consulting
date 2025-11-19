@@ -60,3 +60,19 @@
     80% { transform: translate(0, 80px) rotate(150deg) scale(1); }
     100% { transform: translate(0, 0) rotate(180deg) scale(1); }
 }
+
+
+.residence-permit__illustration-part{
+    &-1{
+        outline: 1px dashed pink;
+    };
+    &-2{
+        outline: 1px dashed peachpuff;
+    };
+    &-3{
+        outline:1px dashed darkseagreen;
+    };
+    &-4{
+        outline:1px dashed salmon;
+    };  
+}

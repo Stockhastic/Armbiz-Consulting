@@ -22,7 +22,6 @@
             margin: 3.4rem 0;
         }
     }
-
     &__item{
         counter-increment: item;
 
@@ -112,6 +111,21 @@
             }
             &--position2{
                 translate: 12% -30px;
+            }
+        }
+    }
+    &--bank{
+        // outline: 1px dashed salmon;
+        & > .scheme__line{
+            height: 90%;
+        }
+        & > .scheme__item{
+            & > .scheme__item-title{
+                font-size: 2rem;
+            }
+            & > .scheme__item-text{
+                font-family: vars.$mainFontRegular;
+                color: vars.$greyColor
             }
         }
     }

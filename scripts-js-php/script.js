@@ -163,10 +163,53 @@ const acc = new Accordion(".accordion-container", {
 
 
 
-// GSAP
+/////////////////////////////////////////////////////////////
+// GSAP //
+////////////////////////////////////////////////////////////
 
-// TEST
-gsap.to(".exclusive-offer__badge", {
-  rotation: 360,
-  duration: 2,
-})
+
+
+//RESIDENCE-PERMIT ANIMATION
+
+let rpDoc = document.querySelector(".residence-permit__illustration-part-1");
+let rpPrint = document.querySelector(".residence-permit__illustration-part-2");
+let rpStampLowBack = document.querySelector(".residence-permit__illustration-part-3-back");
+let rpStampLowFront = document.querySelector(".residence-permit__illustration-part-3-front");
+let rpStampHighBack = document.querySelector(".residence-permit__illustration-part-4-back");
+let rpStampHighFront = document.querySelector(".residence-permit__illustration-part-4-front");
+
+let stampTween = gsap.from(rpPrint, {opacity: 0, paused: true});
+
+let tlRP = gsap.timeline({repeat: -1, defaults: {duration: 2}});
+
+tlRP.to(rpStampHighBack, {x:-145,y: -20, ease: "expo.inOut"}, 1);
+tlRP.to(rpStampLowBack, {x:-145,y: -20, ease: "expo.inOut"}, 1);
+tlRP.to(rpStampHighFront, {x:-145,y: -20, ease: "expo.inOut"}, 1);
+tlRP.to(rpStampLowFront, {x:-145,y: -20, ease: "expo.inOut"}, 1);
+
+tlRP.to(rpStampHighBack, {y:58, ease: "expo.inOut", duration: 1.3});
+tlRP.to(rpStampLowBack, {y:58, ease: "expo.inOut", duration: 1.3}, "<");
+tlRP.to(rpStampHighFront, {y:58, ease: "expo.inOut", duration: 1.3}, "<");
+tlRP.to(rpStampLowFront, {y:58, ease: "expo.inOut", duration: 1.3}, "<");
+
+tlRP.to(rpStampHighBack, {y:120, ease: "back.in", duration: .6});
+tlRP.to(rpStampHighFront, {y:110, ease: "back.in", duration: .6}, "<");
+
+tlRP.to(rpStampHighBack, {y:55, ease: "elastic.out", duration: .8 });
+tlRP.to(rpStampHighFront, {y:55, ease: "elastic.out", duration: .8 }, "<");
+tlRP.to(rpPrint, {opacity:1, duration: 0}, "<");
+
+tlRP.to(rpStampHighBack, {x:-145,y: -20, ease: "expo.out", duration: 1.6});
+tlRP.to(rpStampLowBack, {x:-145,y: -20, ease: "expo.out", duration: 1.6}, "<");
+tlRP.to(rpStampHighFront, {x:-145,y: -20, ease: "expo.out", duration: 1.6}, "<");
+tlRP.to(rpStampLowFront, {x:-145,y: -20, ease: "expo.out", duration: 1.6}, "<");
+
+tlRP.to(rpStampHighBack, {x:0,y:0, ease: "expo.inOut"}, "-=35%");
+tlRP.to(rpStampLowBack, {x:0,y:0, ease: "expo.inOut"}, "<");
+tlRP.to(rpStampHighFront, {x:0,y:0, ease: "expo.inOut"}, "<");
+tlRP.to(rpStampLowFront, {x:0,y:0, ease: "expo.inOut"}, "<");
+
+tlRP.to(rpPrint, {opacity:0, duration: 2})
+
+
+
