@@ -225,19 +225,6 @@ a {
     transform: translate(0, 0) rotate(180deg) scale(1);
   }
 }
-.residence-permit__illustration-part-1 {
-  outline: 1px dashed pink;
-}
-.residence-permit__illustration-part-2 {
-  outline: 1px dashed peachpuff;
-}
-.residence-permit__illustration-part-3 {
-  outline: 1px dashed darkseagreen;
-}
-.residence-permit__illustration-part-4 {
-  outline: 1px dashed salmon;
-}
-
 @font-face {
   font-family: "Raleway-Regular";
   src: url(/src/fonts/Raleway-Regular.ttf);
