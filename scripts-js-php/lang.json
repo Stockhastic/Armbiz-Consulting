@@ -544,7 +544,177 @@
         "rmcompanies-approach1-feature4": "Открытие дополнительных расчетных счетов",
     
         "rmcompanies-approach2-title": "Филиал",
-        "rmcompanies-approach2-text": "Условия индивидуальны и сильно рознятся от случая к случаю. Все подробности открытия вы можете узнать на нашей бесплатной консультации."
+        "rmcompanies-approach2-text": "Условия индивидуальны и сильно рознятся от случая к случаю. Все подробности открытия вы можете узнать на нашей бесплатной консультации.",
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "bankcards-hero-title":"Оформление карты <span class=\"special-text\">иностранного банка</span> в России",
+        "bankcards-hero-subtitle":"Наша команда поможет оформить вам карту в одном из армянских банков для операций в валюте. Удаленное оформление, минимум документов и возможность доставки до вас!",
+        "bankcards-hero-cta-button":"Оформить сейчас!",
+
+        "bankcards-services-title": "Актуальные предложения",
+
+        "bankcards-idbank-intro":"Карта самого популярного банка Армении. Полный доступ к системе ID Pay. <br> <a href=\"/src/files/idbank-tariff.pdf\"><span class=\"special-text\">Тарифы банка</span></a>",
+
+        "bankcards-idbank-type-title":"Тип оформления",
+        "bankcards-idbank-type-item1":"Удаленный",
+        "bankcards-idbank-type-item2":"Без доверенности",
+
+        "bankcards-idbank-timeline-title":"Срок оформления",
+        "bankcards-idbank-timeline-item1":"14 дней",
+
+        "bankcards-idbank-pays-title":"Оплаты",
+        "bankcards-idbank-pays-item1":"Apple Pay",
+        "bankcards-idbank-pays-item2":"Google Pay",
+        "bankcards-idbank-pays-item3":"Покупки в интернет магазинах",
+    
+        "bankcards-idbank-deposit-title":"Как пополнять?",
+        "bankcards-idbank-deposit-item1":"ID Pay",
+        "bankcards-idbank-deposit-item2":"Межбанковский перевод",
+        "bankcards-idbank-deposit-item3":"Входящие SWIFT переводы",
+    
+        "bankcards-idbank-cta-button": "Оформить",
+
+
+
+
+        "bankcards-amio-intro":"Помимо пластиковой карточки в базовую услугу входит оформление сразу 4-ех валютных счетов в EUR, USD, AMD и RUB.",
+
+        "bankcards-amio-type-title":"Тип оформления",
+        "bankcards-amio-type-item1":"Удаленный",
+        "bankcards-amio-type-item2":"Без доверенности",
+
+        "bankcards-amio-timeline-title":"Срок оформления",
+        "bankcards-amio-timeline-item1":"от 7 до 14 дней",
+
+        "bankcards-amio-pays-title":"Оплаты",
+        "bankcards-amio-pays-item1":"Apple Pay",
+        "bankcards-amio-pays-item2":"Google Pay",
+        "bankcards-amio-pays-item3":"Покупки в интернет магазинах",
+    
+        "bankcards-amio-deposit-title":"Как пополнять?",
+        "bankcards-amio-deposit-item1":"Межбанковский перевод",
+        "bankcards-amio-deposit-item2":"Входящие SWIFT переводы",
+    
+        "bankcards-amio-cta-button": "Оформить",
+
+
+
+
+        "bankcards-ardshin-intro":"Проверенный временем, надежный банк. Больше подходит тем, кто планирует получать прямые платежи из США",
+
+        "bankcards-ardshin-type-title":"Тип оформления",
+        "bankcards-ardshin-type-item1":"Удаленный",
+        "bankcards-ardshin-type-item2":"Без доверенности",
+
+        "bankcards-ardshin-timeline-title":"Срок оформления",
+        "bankcards-ardshin-timeline-item1":"от 2 до 4 недель",
+
+        "bankcards-ardshin-pays-title":"Оплаты",
+        "bankcards-ardshin-pays-item1":"Apple Pay",
+        "bankcards-ardshin-pays-item2":"Google Pay",
+        "bankcards-ardshin-pays-item3":"Покупки в интернет магазинах",
+    
+        "bankcards-ardshin-deposit-title":"Как пополнять?",
+        "bankcards-ardshin-deposit-item1":"Межбанковский перевод",
+        "bankcards-ardshin-deposit-item2":"Входящие SWIFT переводы",
+    
+        "bankcards-ardshin-cta-button": "Оформить",
+
+
+
+
+        "bankcards-process-title":"Как происходит оформление?",
+
+        "bankcards-process-subtitle":"Процесс оформления видоизменяется в зависимости от банка, но всегда идет по одному основному сценарию.",
+    
+        "bankcards-process-card1-title":"Оформление без доверенности",
+        "bankcards-process-card2-title":"Гарантия конфиденциальности",
+        "bankcards-process-card3-title":"Доставка до двери",
+        "bankcards-process-card4-title":"Гарантия результата",
+
+        "bankcards-process-card1-subtitle":"Есть возможность оформления всего процесса без лишних хлопот с документами",
+        "bankcards-process-card2-subtitle":"Мы гарантируем полную безопасность ваших персональных данных",
+        "bankcards-process-card3-subtitle":"При оформлении в определенных банках присутствует опция доставки до двери",
+        "bankcards-process-card4-subtitle":"Всем нашим клиентам банк одобрял получение карт и открытие счетов. Можете не беспокоится за реализацию",
+    
+        "bankcards-scheme-item1-title":"Оставьте заявку",
+        "bankcards-scheme-item2-title":"Пришлите необходимые документы и информацию",
+        "bankcards-scheme-item3-title":"Оплатите комиссию нашего сервиса",
+        "bankcards-scheme-item4-title":"Пройдите идентификацию с сотрудником банка",
+        "bankcards-scheme-item5-title":"Оплата комиссий банка",
+        "bankcards-scheme-item6-title":"Получение",
+    
+        "bankcards-scheme-item1-subtitle":"Ознакомьтесь с основной информацией и заполните форму, оставив свои данные, чтобы мы могли связаться с Вами для обсуждения всех подробностей и дальнейших шагов.",
+        "bankcards-scheme-item2-subtitle":"Обычно для оформления требуются как минимум: скан разворота паспорта и прописки, заполненная анкета по форме банка(мы присылаем шаблон), справка о доходах(можно запросить в Госуслугах).",
+        "bankcards-scheme-item3-subtitle":"Внесите предоплату в размере 50%. Удобный для вас способ оплаты выбираем на консультации.",
+        "bankcards-scheme-item4-subtitle":"Не обязательный этап. Обычно требуется при получении карты IDBank или Ardshin Bank. С вами связывается сотрудник банка и проводит индентификацию. На данном этапе банк может запросить у вас дополнительные документы по своему усмотрению.",
+        "bankcards-scheme-item5-subtitle":"К ним оносятся: Комиссии за открытие платежной карты, годовая плата за обслуживание.",
+        "bankcards-scheme-item6-subtitle":"Готово! На этом этап остается ждать выпуск карты. Тут вы можете запросить доставку своей карты в РФ, а можете приехать забрать лично.",
+    
+        "bankcards-faq-question1-title":"Какие гарантии вы даете?",
+        "bankcards-faq-question2-title":"Счет будет оформлен на меня?",
+        "bankcards-faq-question3-title":"У вас будет доступ к моему счету?",
+        "bankcards-faq-question4-title":"Можно ли пополнять свою карту из России?",
+        "bankcards-faq-question5-title":"Как долго открывается счет?",
+    
+        "bankcards-faq-question1-subtitle":"Для наибольшей прозрачности и гарантий исполнений наших обязательств по оформлению карты, мы заключаем с каждым клиентом официальный договор. Мы на рынке более 3 лет и за это время успели поработать с многими клиентами. Можете увидеть результат наших трудов <a href=\"https://yandex.com/maps/org/armbiz_consulting/207483357362/?indoorLevel=1&ll=44.501263%2C40.199378&source=serp_navig&utm_source=share&z=17\"><span class=\"special-text\">здесь</span></a>",
+        "bankcards-faq-question2-subtitle":"Да, конечно. Не смотря на то, что весь процесс проходит через нас - вы владелец всех счетов и карт.",
+        "bankcards-faq-question3-subtitle":"Нет. Доступ к счету и приложению будете иметь только вы, поскольку регистрация будет производиться Вами, на Ваш смартфон и номер телефона.",
+        "bankcards-faq-question4-subtitle":"Да, конечно. Вы можете воспользоваться одним из методов, указанных в информации к определенной карте. Обычно всегда доступен межбанковский перевод из любого Российского банка.",
+        "bankcards-faq-question5-subtitle":"Вся процедура с момента обращения к нам занимает от 1 рабочего дня и более. Сроки оформления указанны в информации к определенной карте",
+    
+        "contact-us-title-bankcards": "Не знаете <br><span class=\"special-text\">Какой банк выбрать?</span>"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     },
     "en": {
@@ -1078,6 +1248,176 @@
         "rmcompanies-approach1-feature4": "Opening if Additional Bank Accounts",
     
         "rmcompanies-approach2-title": "Branch",
-        "rmcompanies-approach2-text": "Conditions are individual and vary significantly from case to case. All the details of the setup can be clarified during our free consultation."
+        "rmcompanies-approach2-text": "Conditions are individual and vary significantly from case to case. All the details of the setup can be clarified during our free consultation.",
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "bankcards-hero-title":"Issuance of a <span class=\"special-text\">foreign bank card</span> in Russia",
+        "bankcards-hero-subtitle":"Our team will help you obtain a card from one of the Armenian banks for foreign currency transactions. Remote application, minimal paperwork, and delivery right to your doorstep!",
+        "bankcards-hero-cta-button":"Apply now!",
+
+        "bankcards-services-title": "Current offers",
+
+        "bankcards-idbank-intro":"The card of the most popular bank in Armenia — IDBank. Full access to the ID Pay system. <br> <a href=\"/src/files/idbank-tariff.pdf\"><span class=\"special-text\">Bank tariffs</span></a>",
+
+        "bankcards-idbank-type-title":"Type of issuance",
+        "bankcards-idbank-type-item1":"Remote",
+        "bankcards-idbank-type-item2":"Without a power of attorney",
+
+        "bankcards-idbank-timeline-title":"Processing time",
+        "bankcards-idbank-timeline-item1":"14 days",
+
+        "bankcards-idbank-pays-title":"Payments",
+        "bankcards-idbank-pays-item1":"Apple Pay",
+        "bankcards-idbank-pays-item2":"Google Pay",
+        "bankcards-idbank-pays-item3":"Online shopping",
+    
+        "bankcards-idbank-deposit-title":"How to top up?",
+        "bankcards-idbank-deposit-item1":"ID Pay",
+        "bankcards-idbank-deposit-item2":"Interbank transfer",
+        "bankcards-idbank-deposit-item3":"Incoming SWIFT",
+    
+        "bankcards-idbank-cta-button": "Apply",
+
+
+
+
+        "bankcards-amio-intro":"In addition to the plastic card, the basic service includes the opening of four currency accounts at once — in EUR, USD, AMD, and RUB.",
+
+        "bankcards-amio-type-title":"Type of issuance",
+        "bankcards-amio-type-item1":"Remote",
+        "bankcards-amio-type-item2":"Without a power of attorney",
+
+        "bankcards-amio-timeline-title":"Processing time",
+        "bankcards-amio-timeline-item1":"from 7 to 14 days",
+
+        "bankcards-amio-pays-title":"Payments",
+        "bankcards-amio-pays-item1":"Apple Pay",
+        "bankcards-amio-pays-item2":"Google Pay",
+        "bankcards-amio-pays-item3":"Online shopping",
+    
+        "bankcards-amio-deposit-title":"How to top up?",
+        "bankcards-amio-deposit-item1":"Interbank transfer",
+        "bankcards-amio-deposit-item2":"Incoming SWIFT transfer",
+    
+        "bankcards-amio-cta-button": "Apply",
+
+
+
+
+        "bankcards-ardshin-intro":"A time-tested, reliable bank. Best suited for those planning to receive direct payments from the United States.",
+
+        "bankcards-ardshin-type-title":"Type of issuance",
+        "bankcards-ardshin-type-item1":"Remote",
+        "bankcards-ardshin-type-item2":"Without a power of attorney",
+
+        "bankcards-ardshin-timeline-title":"Processing timeline",
+        "bankcards-ardshin-timeline-item1":"from 2 to 4 weeks",
+
+        "bankcards-ardshin-pays-title":"Payments",
+        "bankcards-ardshin-pays-item1":"Apple Pay",
+        "bankcards-ardshin-pays-item2":"Google Pay",
+        "bankcards-ardshin-pays-item3":"Online shopping",
+    
+        "bankcards-ardshin-deposit-title":"How to top up?",
+        "bankcards-ardshin-deposit-item1":"Interbank transfers",
+        "bankcards-ardshin-deposit-item2":"Incoming SWIFT transfer",
+    
+        "bankcards-ardshin-cta-button": "Apply",
+
+
+
+
+        "bankcards-process-title":"How does the application process work?",
+
+        "bankcards-process-subtitle":"The application process varies depending on the bank but always follows the same main scenario",
+    
+        "bankcards-process-card1-title":"Application without a power of attorney",
+        "bankcards-process-card2-title":"Confidentiality guaranteed",
+        "bankcards-process-card3-title":"Deliver to your door",
+        "bankcards-process-card4-title":"Result guaranteed",
+
+        "bankcards-process-card1-subtitle":"It is possible to complete the entire process without unnecessary paperwork.",
+        "bankcards-process-card2-subtitle":"We guarantee the complete security of your personal data.",
+        "bankcards-process-card3-subtitle":"When applying through certain banks, there is an option for door-to-door delivery.",
+        "bankcards-process-card4-subtitle":"All our clients have been approved by the bank for card issuance and account opening - you can be confident in the outcome",
+    
+        "bankcards-scheme-item1-title":"Submit an application",
+        "bankcards-scheme-item2-title":"Send the required documents and information",
+        "bankcards-scheme-item3-title":"Pay our service fee",
+        "bankcards-scheme-item4-title":"Complete identification with a bank representative",
+        "bankcards-scheme-item5-title":"Pay Bank Fees",
+        "bankcards-scheme-item6-title":"Recieve the card",
+    
+        "bankcards-scheme-item1-subtitle":"Review the basic information and fill out the form, leaving your contact details so we can reach out to discuss all the details and next steps.",
+        "bankcards-scheme-item2-subtitle":"Usually, the following are required for the application: a scan of the passport main page and registration, a completed bank application form (we provide a template), and proof of income.",
+        "bankcards-scheme-item3-subtitle":"Make a 50% prepayment. The most convenient payment method for you will be chosen during the consultation.",
+        "bankcards-scheme-item4-subtitle":"This step is optional. It’s usually required when obtaining a card from IDBank or Ardshin Bank. A bank representative will contact you to conduct identification. At this stage, the bank may request additional documents at its discretion.",
+        "bankcards-scheme-item5-subtitle":"These include fees for issuing the payment card and the annual service fee.",
+        "bankcards-scheme-item6-subtitle":"Done! At this point, you just need to wait for the card to be issued. You can request delivery of your card to Russia or choose to pick it up in person.",
+    
+        "bankcards-faq-question1-title": "What guarantees do you provide?",
+        "bankcards-faq-question2-title": "Will the account be opened in my name?",
+        "bankcards-faq-question3-title": "Will you have access to my account?",
+        "bankcards-faq-question4-title": "Can I top up my card from Russia?",
+        "bankcards-faq-question5-title": "How long does it take to open an account?",
+
+        "bankcards-faq-question1-subtitle": "For maximum transparency and assurance of our obligations regarding card issuance, we sign an official agreement with each client. We have been on the market for over 3 years and have worked with many clients during this time. You can see the results of our work <a href=\"https://yandex.com/maps/org/armbiz_consulting/207483357362/?indoorLevel=1&ll=44.501263%2C40.199378&source=serp_navig&utm_source=share&z=17\"><span class=\"special-text\">here</span></a>",
+        "bankcards-faq-question2-subtitle": "Yes, of course. Even though the entire process goes through us, you are the owner of all accounts and cards.",
+        "bankcards-faq-question3-subtitle": "No. Only you will have access to your account and the application, as registration will be done by you, on your smartphone and phone number.",
+        "bankcards-faq-question4-subtitle": "Yes, of course. You can use one of the methods listed in the information for a specific card. An interbank transfer from any Russian bank is usually available.",
+        "bankcards-faq-question5-subtitle": "The entire procedure, from the moment you contact us, takes from 1 business day or more. The processing times are indicated in the information for each specific card.",
+
+        "contact-us-title-bankcards": "Don’t know <br><span class=\"special-text\">Which bank to choose?</span>"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
     }
 }
