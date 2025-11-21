@@ -1550,7 +1550,8 @@ strong, .special-text, .bold-text {
 .hero__image > img {
   position: absolute;
   top: 0;
-  width: 500px;
+  width: 100%;
+  height: 100%;
 }
 .hero--service {
   padding-block: 10rem;
@@ -1964,6 +1965,18 @@ strong, .special-text, .bold-text {
 .cards-process__subtitle {
   font-size: 2rem;
   padding: 1rem 1rem 0 1rem;
+}
+
+.accounting-details {
+  display: flex;
+  flex-flow: row wrap;
+  padding-block: 5rem;
+}
+.accounting-details__title {
+  width: 100%;
+  font-family: "Raleway-Medium";
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .sandbox {
