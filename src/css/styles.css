@@ -536,6 +536,14 @@ strong, .special-text, .bold-text {
 .service-card--autoheight {
   height: auto;
 }
+.service-card--base {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #e7effe;
+  border-radius: 2rem;
+}
 .service-card__icon {
   width: 80px;
   padding: 1.8rem;
@@ -601,7 +609,7 @@ strong, .special-text, .bold-text {
 }
 .service-card__features > li {
   margin: 0.5rem 0 0.5rem 1.3rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #434c5b;
   font-family: "Raleway-Medium";
 }
@@ -801,6 +809,10 @@ strong, .special-text, .bold-text {
 }
 .scheme--horizontal > .scheme__line--position2 {
   translate: 12% -30px;
+}
+.scheme--horizontal > .scheme__line--position3 {
+  translate: 22% -30px;
+  width: 65%;
 }
 .scheme--bank > .scheme__line {
   height: 90%;
@@ -1970,13 +1982,37 @@ strong, .special-text, .bold-text {
 .accounting-details {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   padding-block: 5rem;
+  gap: 4rem;
+}
+.accounting-details > ul > li {
+  font-size: 5rem;
 }
 .accounting-details__title {
   width: 100%;
   font-family: "Raleway-Medium";
   text-align: center;
   margin-bottom: 3rem;
+}
+.accounting-details > .service-card--base {
+  max-width: 48%;
+}
+.accounting-process {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding-block: 5rem;
+}
+.accounting-process__title {
+  text-align: center;
+}
+.accounting-process > .scheme-container {
+  max-width: 100%;
+}
+.accounting__price-tag {
+  width: 100%;
+  text-align: start;
 }
 
 .sandbox {

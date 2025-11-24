@@ -212,4 +212,15 @@ tlRP.to(rpStampLowFront, {x:0,y:0, ease: "expo.inOut"}, "<");
 tlRP.to(rpPrint, {opacity:0, duration: 2})
 
 
+// LLC & SP ANIMATION
+
+let tlLLCSP = gsap.timeline({repeat: -1, defaults: {duration: 2}});
+
+let llcspBack = document.querySelector(".llcsp-illustration-back");
+let llcspSign = document.querySelector(".llcsp-illustration-signature");
+let llcspPen = document.querySelector(".llcsp-illustration-pen");
+
+let signTween = gsap.from(llcspSign, {opacity: 0, paused: true});
+
+
 

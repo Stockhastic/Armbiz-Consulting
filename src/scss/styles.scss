@@ -1201,18 +1201,36 @@
     &-details{
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-around;
         padding-block: 5rem;
+        gap: 4rem;
+        & > ul{ & > li{font-size: 5rem}}
         &__title{
             width: 100%;
             font-family: vars.$mainFontMedium;
             text-align: center;
             margin-bottom: 3rem;
         }
-        
+        & > .service-card--base{
+            max-width: 48%;
+        }
+    }
+    &-process{
+        display: flex; flex-direction: column;
+        gap: 10rem;
+        padding-block: 5rem;
+        &__title{
+            text-align: center;
+        }
+        & > .scheme-container{
+            max-width: 100%;
+        }
+    }
+    &__price-tag{
+        width: 100%;
+        text-align: start;
     }
 }
-
-
 
 
 

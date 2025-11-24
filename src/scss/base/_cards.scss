@@ -146,6 +146,14 @@
     &--autoheight{
         height: auto;
     }
+    &--base{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: vars.$lightColor;
+        border-radius: 2rem;
+    }
 
 
     &__icon{
@@ -214,7 +222,7 @@
         position: relative;
         & > li {
             margin: 0.5rem 0 0.5rem 1.3rem;
-            font-size: vars.$smallFontSize;
+            font-size: vars.$pSize;
             color: vars.$greyColor;
             font-family: vars.$mainFontMedium;
             &::before{
