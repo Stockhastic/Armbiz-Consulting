@@ -171,6 +171,8 @@ const acc = new Accordion(".accordion-container", {
 
 //RESIDENCE-PERMIT ANIMATION
 
+gsap.registerPlugin(ScrollTrigger);
+
 let rpDoc = document.querySelector(".residence-permit__illustration-part-1");
 let rpPrint = document.querySelector(".residence-permit__illustration-part-2");
 let rpStampLowBack = document.querySelector(".residence-permit__illustration-part-3-back");
@@ -222,5 +224,40 @@ let llcspPen = document.querySelector(".llcsp-illustration-pen");
 
 let signTween = gsap.from(llcspSign, {opacity: 0, paused: true});
 
+// ACCOUNTING ANIMATION
 
+let tlAcc = gsap.timeline()
+
+let bgGeometry = document.querySelector(".bg-geometry");
+let bgGeometry2 = document.querySelector(".bg-geometry-2");
+
+gsap.to(bgGeometry, {
+  scrollTrigger: {
+    trigger: bgGeometry,
+    start: "top 90%",
+    end: "900px 5%",
+    // markers: true,
+    scrub: 1.3
+  },
+  x: -2000,
+  y: 500,
+  scale: 0.8,
+  rotate: 360,
+  ease: "power3.inOut",
+})
+
+gsap.to(bgGeometry2, {
+  scrollTrigger: {
+    trigger: bgGeometry2,
+    start: "300px 90%",
+    end: "900px 5%",
+    // markers: true,
+    scrub: 1.3
+  },
+  x: 2000,
+  y: 500,
+  scale: 0.8,
+  rotate: 360,
+  ease: "power3.inOut",
+})
 

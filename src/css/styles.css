@@ -541,8 +541,10 @@ strong, .special-text, .bold-text {
   gap: 2rem;
   flex-direction: column;
   padding: 2rem;
-  background-color: #e7effe;
+  background-color: rgba(255, 255, 255, 0.7411764706);
   border-radius: 2rem;
+  backdrop-filter: blur(12px);
+  border: 1px solid #ffffff;
 }
 .service-card__icon {
   width: 80px;
@@ -1258,6 +1260,8 @@ strong, .special-text, .bold-text {
   border: 1px solid #d7deef;
   border-radius: 2rem;
   box-shadow: 0 8px 30px rgba(5, 8, 13, 0.0666666667);
+  background-color: #fff;
+  z-index: 10;
 }
 .form__title {
   color: #1e2736;
@@ -1660,11 +1664,15 @@ strong, .special-text, .bold-text {
 .accordion-container {
   padding-block: 5rem;
 }
+.accordion-container--bdf-blur > .ac {
+  backdrop-filter: blur(12px);
+}
 
 .ac {
   margin: 1rem 0;
   padding: 2rem;
   border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.7411764706);
   border-color: #d7deef;
 }
 .ac-divider {
@@ -1995,6 +2003,14 @@ strong, .special-text, .bold-text {
   text-align: center;
   margin-bottom: 3rem;
 }
+.accounting-details__text {
+  text-align: justify;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.6117647059);
+  border-radius: 2rem;
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+}
 .accounting-details > .service-card--base {
   max-width: 48%;
 }
@@ -2033,4 +2049,26 @@ strong, .special-text, .bold-text {
   background: radial-gradient(#1596d1, #4740aa);
   border-radius: 2em;
   margin: 1rem 0.5rem;
+}
+
+.bg-geometry {
+  translate: 100% 0;
+  right: 0;
+  position: absolute;
+  height: 350px;
+  min-width: 350px;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, #1a6eff, #60a2ff);
+  z-index: -1;
+}
+
+.bg-geometry-2 {
+  translate: -100% 0;
+  left: 0;
+  position: absolute;
+  height: 350px;
+  min-width: 350px;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, #1a6eff, #60a2ff);
+  z-index: -1;
 }/*# sourceMappingURL=styles.css.map */

@@ -151,8 +151,10 @@
         gap: 2rem;
         flex-direction: column;
         padding: 2rem;
-        background-color: vars.$lightColor;
+        background-color: #ffffffbd;
         border-radius: 2rem;
+        backdrop-filter: blur(12px);
+        border: 1px solid #ffffff;
     }
 
 

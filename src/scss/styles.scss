@@ -369,6 +369,8 @@
     border: 1px solid vars.$borderColor;
     border-radius: 2rem;
     box-shadow: 0 8px 30px #05080d11 ;
+    background-color: #fff;
+    z-index: 10;
 
     &__title {
         color: vars.$darkColor;
@@ -821,11 +823,17 @@
 
 .accordion-container{
     padding-block: 5rem;
+    &--bdf-blur{
+        & > .ac{
+            backdrop-filter: blur(12px);
+        }
+    }
 }
 .ac{
     margin: 1rem 0;
     padding: 2rem;
     border-radius: 2rem;
+    background-color: #ffffffbd;
     border-color: vars.$borderColor;
     &-divider{
         height: 1px;
@@ -1211,6 +1219,15 @@
             text-align: center;
             margin-bottom: 3rem;
         }
+        &__text{
+            text-align:justify; 
+            border: 1px solid #fff;
+                    background-color: #ffffff9c;
+        border-radius: 2rem;
+        backdrop-filter: blur(12px);
+            padding: 2rem;
+
+        }
         & > .service-card--base{
             max-width: 48%;
         }
@@ -1255,5 +1272,36 @@
     );
     border-radius: 2em;
     margin: 1rem 0.5rem;
+}
 
+.bg-geometry{
+    translate: 100% 0;
+    right: 0;
+    position: absolute;
+    height: 350px;
+    min-width: 350px;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        vars.$primaryColor,
+        vars.$secondaryColor
+    );
+    z-index: -1;
+    // backdrop-filter: invert(1);
+}
+
+.bg-geometry-2{
+    translate: -100% 0;
+    left: 0;
+    position: absolute;
+    height: 350px;
+    min-width: 350px;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        vars.$primaryColor,
+        vars.$secondaryColor
+    );
+    z-index: -1;
+    // backdrop-filter: invert(1);
 }
