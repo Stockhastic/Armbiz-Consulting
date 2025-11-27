@@ -519,10 +519,6 @@
 
 
 
-
-
-
-
         "rmcompanies-hero-title": "<span class=\"special-text\">Готовые компании</span> и Филиалы",
         "rmcompanies-hero-subtitle": "Покупая компанию с нами вы получаете ООО с положительной историей и без скрытых долгов. Ознакомится с каталогом предлагаемых компаний вы можете на нашей бесплатной консультации",
         "rmcompanies-hero-cta-button": "Запросить консультацию",
@@ -546,19 +542,6 @@
         "rmcompanies-approach2-title": "Филиал",
         "rmcompanies-approach2-text": "Условия индивидуальны и сильно рознятся от случая к случаю. Все подробности открытия вы можете узнать на нашей бесплатной консультации.",
     
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -682,17 +665,41 @@
         "bankcards-faq-question4-subtitle":"Да, конечно. Вы можете воспользоваться одним из методов, указанных в информации к определенной карте. Обычно всегда доступен межбанковский перевод из любого Российского банка.",
         "bankcards-faq-question5-subtitle":"Вся процедура с момента обращения к нам занимает от 1 рабочего дня и более. Сроки оформления указанны в информации к определенной карте",
     
-        "contact-us-title-bankcards": "Не знаете <br><span class=\"special-text\">Какой банк выбрать?</span>"
+        "contact-us-title-bankcards": "Не знаете <br><span class=\"special-text\">Какой банк выбрать?</span>",
     
     
     
     
+
+
+        "accounting-hero-title":"<span class=\"special-text\">Бухгалтерские</span> услуги",
+        "accounting-hero-subtitle":"Возьмем на себя полное ведение бухгалтерии, поможем разобраться с банками и трудоустройством сотрудников. Освободим вас от скучных цифр и сэкономим нервы",
+        "accounting-hero-cta-button":"Запросить консультацию",
+
+        "accounting-details-title":"Условия и стоимости",
+        "accounting-details-subtitle":"В минимальном пакете обслуживания <span class=\"special-text\" id=\"service-price-accounting\">Текст задается из JS</span>",
+        
+        "accounting-card1-title":"Что входит в услугу?",
+        "accounting-card1-item1":"Ведение отчетностей (Ежемесячная, Ежеквартальная и Годовая)",
+        "accounting-card1-item2":"Текущее делопроизводство",
+        "accounting-card1-item3":"Расчитаем выплаты и подготовим платежки",
+        "accounting-card1-item4":"Бесплатные консультации - поможем разобраться в вопросах кадрового и бухгалтерского учета Армении",
+        "accounting-card1-item5":"Отправка деклараций",
+        "accounting-card1-item6":"Снижение налоговой нагрузки",
+        
+        "accounting-card2-title":"Что потребуется?",
+        "accounting-card2-item1":"Учредительные документы или справка о регистрации ИП",
+        "accounting-card2-item2":"Паспорт директора компании или владельца ИП",
+        "accounting-card2-item3":"Пройти небольшой опрос от наего бухгалтера(адрес места жительства, контактные данные, другие компании в Армении, направление бизнеса, налоговый режим и т.д.)",
+        
+        "accounting-details-text":"Стоимость бухгалтерского обслуживания сильно варьируется. При расчете обслуживания учитывается множество параметров, например: количество сотрудников в вашей компании, количество ежемесячные транзакций, сумма транзакция, направление деятельности бизнеса, страна ведения бизнеса и т.д. Чтобы узнать во сколько обойдется обслуживание именно в вашем случае, <a href=\"#contact-us\"><span class=\"special-text\">воспользуйтесь нашей бесплатной консультацией</span></a>. Наши сотрудники помогут вам выбрать самый оптимальный режим налогообложения.",
     
+        "accounting-scheme-title":"Процесс <span class=\"special-text\">с нами</span>",
     
-    
-    
-    
-    
+        "accounting-scheme-item1":"Мы проводим с вами консультацию и вместе выбираем наиболее подходящий режим налогообложения",
+        "accounting-scheme-item2":"Заключаем  договор",
+        "accounting-scheme-item3":"Подготваливаем все необходимые документы",
+        "accounting-scheme-item4":"Начинаем работу. С этого момента мы ежемесячно высылаем отчетности и контролируем опату налогов"
     
     
     
@@ -931,6 +938,10 @@
 
         "service-card-registration-cta-button": "Learn More",
 
+
+
+
+
         "contact-us-badge": "Contact Us",
         "contact-us-title-mainpage": "Want to <br><span class=\"special-text\">work with us?</span>",
         "contact-us-title-citizenship": "Want to <br><span class=\"special-text\">know more?</span>",
@@ -967,6 +978,10 @@
         "contact-us-form-cta": "Book a Consultation",
         "contact-us-form-policy": "By filling out the form, you agree to our privacy policy. We usually respond to requests within 24 hours.",
 
+
+
+
+
         "footer-underlogo-text": "Premium digital solutions for individual clients and demanding entrepreneurs striving for excellence in corporate services.",
         
         "footer-service-tite": "Services",
@@ -988,6 +1003,9 @@
 
         "footer-rights": "© 2025 Armbiz Consulting. All rights reserved",
         "footer-privacy-policy": "Privacy Policy",
+
+
+
 
         "residence-permit-hero-title": "<span class=\"special-text\">Residence Permit</span> for foreign individuals",
         "residence-permit-hero-subtitle": "Choose the most convenient way for you to obtain a residence permit based on the cost of the approach and the time of receipt, and we will take over all the bureaucracy.",
@@ -1014,6 +1032,10 @@
 
         "faq-title": "<span class=\"special-text\">F</span>requently <span class=\"special-text\">A</span>sked <span class=\"special-text\">Q</span>uestions ",
     
+
+
+
+
         "logistic-badge": "logistics & customs",
 
         "logistics-customs-main-title": "Logistics and<br><span class=\"special-text\">Customs</span>",
@@ -1087,11 +1109,6 @@
         "logistics-customs-scheme-full-item4-text": "We take full responsibility for the entire customs clearance process - from placing the cargo at the customs terminal (temporary storage warehouse, TSW) to the final release and handover of the goods from the TSW, or delivery to the end destination",
 
         "logistics-customs-scheme-full-item5-title": "Satisfied Customer",
-    
-    
-    
-    
-    
     
     
     
@@ -1183,16 +1200,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-        
         "citizenship-hero-title": "Armenian <span class=\"special-text\">Citizenship</span>",
         "citizenship-hero-subtitle": "An Armenian passport provides visa-free entry to more than 60 countries and facilitates access to banks and investments. Our specialists will assess your eligibility, prepare the documents, and guide you through the entire process, minimizing risks and timeframes.",
 
@@ -1217,16 +1224,9 @@
         "citizenship-approach3-text3": "The most balanced option among the three we offer. The longer timeframes are offset by relatively modest investments.",
     
     
-    
-    
 
 
 
-
-
-
-    
-    
         "rmcompanies-hero-title": "<span class=\"special-text\">Ready-Made</span> companies & Branches",
         "rmcompanies-hero-subtitle": "When purchasing a ready-made company with us, you receive an LLC with a positive history and no hidden debts. You can review the catalog of available companies during our free consultation.",
         "rmcompanies-hero-cta-button": "Request a Consultation",
@@ -1250,21 +1250,6 @@
         "rmcompanies-approach2-title": "Branch",
         "rmcompanies-approach2-text": "Conditions are individual and vary significantly from case to case. All the details of the setup can be clarified during our free consultation.",
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1386,38 +1371,42 @@
         "bankcards-faq-question4-subtitle": "Yes, of course. You can use one of the methods listed in the information for a specific card. An interbank transfer from any Russian bank is usually available.",
         "bankcards-faq-question5-subtitle": "The entire procedure, from the moment you contact us, takes from 1 business day or more. The processing times are indicated in the information for each specific card.",
 
-        "contact-us-title-bankcards": "Don’t know <br><span class=\"special-text\">Which bank to choose?</span>"
+        "contact-us-title-bankcards": "Don’t know <br><span class=\"special-text\">Which bank to choose?</span>",
     
     
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        "accounting-hero-title":"<span class=\"special-text\">Accounting</span> services",
+        "accounting-hero-subtitle":"We’ll take full care of your accounting, help you navigate banking and employee onboarding, and free you from boring numbers while saving your nerves.",
+        "accounting-hero-cta-button":"Schedule consultation",
+
+        "accounting-details-title":"Terms and Prices",
+        "accounting-details-subtitle":"Basic service package <span class=\"special-text\" id=\"service-price-accounting\">Текст задается из JS</span>",
         
+        "accounting-card1-title":"What’s included in the service?",
+        "accounting-card1-item1":"Report management (Monthly, Quarterly, and Annual)",
+        "accounting-card1-item2":"Ongoing paperwork management",
+        "accounting-card1-item3":"We’ll calculate payments and prepare payment orders",
+        "accounting-card1-item4":"Free consultations — we’ll help you understand Armenia’s HR and accounting requirements.",
+        "accounting-card1-item5":"Submission of tax declarations",
+        "accounting-card1-item6":"Reducing the tax burden",
+        
+        "accounting-card2-title":"What will be required?",
+        "accounting-card2-item1":"Incorporation documents or a Sole Proprietor registration certificate.",
+        "accounting-card2-item2":"The passport of the company director or the Sole Proprietor",
+        "accounting-card2-item3":"Complete a short questionnaire from our accountant (residential address, contact details, other companies in Armenia, business activity, tax regime, etc.).",
+        
+        "accounting-details-text":"The cost of accounting services varies significantly. Many factors are taken into account when calculating the service fee, such as: the number of employees in your company, the number of monthly transactions, the transaction amount, your line of business, the country where you operate, etc. To find out what the service will cost in your specific case, <a href=\"#contact-us\"><span class=\"special-text\">take advantage of our free consultation</span></a>. Our specialists will help you choose the most optimal tax regime.",
+    
+        "accounting-scheme-title":"The process <span class=\"special-text\">with us</span>",
+    
+        "accounting-scheme-item1":"We hold a consultation with you and together choose the most suitable tax regime.",
+        "accounting-scheme-item2":"We sign a contract.",
+        "accounting-scheme-item3":"We prepare all the required documents.",
+        "accounting-scheme-item4":"We start working. From this point on, we send monthly reports and monitor tax payments."
+    
+
     }
 }

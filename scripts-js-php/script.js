@@ -154,12 +154,16 @@ document.querySelectorAll('.header__lang-switcher-item').forEach(btn => {
   });
 });
 
-const acc = new Accordion(".accordion-container", {
+// Initialize FAQ accordion only when the container exists to avoid runtime errors on pages without it
+const accordionContainer = document.querySelector('.accordion-container');
+if (accordionContainer) {
+  new Accordion('.accordion-container', {
     duration: 300,
     showMultiple: false,
     collapse: true,
-    openOnInit: [0],  
+    openOnInit: [0],
   });
+}
 
 
 
@@ -172,6 +176,8 @@ const acc = new Accordion(".accordion-container", {
 //RESIDENCE-PERMIT ANIMATION
 
 gsap.registerPlugin(ScrollTrigger);
+
+console.log('GSAP illustration init');
 
 let rpDoc = document.querySelector(".residence-permit__illustration-part-1");
 let rpPrint = document.querySelector(".residence-permit__illustration-part-2");
