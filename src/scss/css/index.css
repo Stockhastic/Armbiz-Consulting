@@ -327,6 +327,13 @@ strong, .special-text, .bold-text {
   color: #fff;
   border: 1px solid #1a6eff;
 }
+.btn--white {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1176470588);
+}
+.btn--white:hover {
+  background-color: #fff;
+}
 
 #cursor, #aura {
   position: fixed;
@@ -779,6 +786,10 @@ strong, .special-text, .bold-text {
 .scheme--horizontal > .scheme__line--position3 {
   translate: 22% -30px;
   width: 65%;
+}
+.scheme--horizontal > .scheme__line--position4 {
+  translate: 16% -30px;
+  width: 70%;
 }
 .scheme--bank > .scheme__line {
   height: 90%;

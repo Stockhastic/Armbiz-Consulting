@@ -11,7 +11,10 @@
     
     { "id": "bank-card", "price": "335$", "timeline": { "ru": "от 7 до 14 дней", "en": "from 7 to 14 days" } },
     { "id": "social-card", "price": "75$", "timeline": { "ru": "1 рабочий день", "en": "1 business day" } },
-    { "id": "registration", "price": "300$", "timeline": { "ru": "от 1 до 5 рабочих дней", "en": "from 1 to 5 business days" } },
+
+    { "id": "registration", "price": "300$", "timeline": { "ru": "от 3 до 5 рабочих дней", "en": "from 3 to 5 business days" } },
+    { "id": "registration-prime", "price": "600$", "timeline": { "ru": "в течении нескольких часов", "en": "within a few hours" } },
+    
     { "id": "citizenship", "price": "300$", "timeline": { "ru": "от 90 дней", "en": "from 90 days" } },
     { "id": "citizenship-exclusive", "price": "Утоняйте на консультации", "timeline": { "ru": "от 6 месяцев", "en": "from 6 months" } },
     { "id": "citizenship-business", "price": "1600$", "timeline": { "ru": "от 3 лет", "en": "from 3 years" } }

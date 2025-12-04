@@ -100,6 +100,7 @@
     </header>
 
     <main>
+        <nav class="backer"><a href="#">↑</a></nav>
         <div class="wrapper">
             <!-- Bubble Animation Content -->
             <div class="sphere-container">
@@ -116,8 +117,8 @@
             <section class="hero hero--service">
                 <div class="hero__details">
                     <h2 class="hero__title hero__title--residence" data-i18n="registration-hero-title"><span class="special-text">Прописка</span> в Армении для иностранных граждан</h2>
-                    <p class="hero__subtitle" data-i18n="registration-hero-subtitle">Наши специалисты быстро оформят вам прописку в Армении. Есть возможность экспресс получения прописки в черте Еревана</p>
-                    <a href="#contact-us" class="btn btn--primary" data-i18n="registration-hero-cta-button">Запросить консультацию</a>
+                    <p class="hero__subtitle" data-i18n="registration-hero-subtitle">Наши специалисты быстро оформят вам прописку в Армении. Есть возможность экспресс получения прописки в черте Еревана. Прописка - первый шаг к вашему комфорту в Армении</p>
+                    <a href="#contact-us" class="btn btn--primary" data-i18n="registration-hero-cta-button">Получить прописку</a>
                 </div>
                 <div class="hero__image">
                     <img src="/src/graphics/svg/residence-permit-illustration-1-doc.svg" alt="residence-permit-illustration" class="residence-permit__illustration-part-1">
@@ -128,76 +129,113 @@
                     <img src="/src/graphics/svg/residence-permit-illustration-6-stamphigh-front.svg" alt="residence-permit-illustration" class="residence-permit__illustration-part-4-front">
                 </div>
             </section>
-            
+
+
+            <section class="registration-methods">
+                <article class="service-card service-card--classic">
+                    <header class="service-card__header">
+                        <span id="service-price-registration" class="service-card__price-tag">Текст задается JS 🙊</span>
+                        <span id="service-timeline-registration" class="service-card__timeline-tag">Текст задается JS 🙊</span>
+                        <img class="service-card__icon" src="/src/graphics/svg/service-registrartion-icon.svg" alt="service-card__icon" >
+                        <h3 class="service-card__title" data-i18n="registration-card1-title">Классическая прописка</h3>
+                    </header>
+                    <section class="service-card__details">
+                        <h5 style="color:#434c5b;;" class="service-card__subtitle" data-i18n="registration-card1-subtitle">Услуга оказывается на месте и требует физического присутствия</h5>
+                        <p class="service-card__text" data-i18n="registration-card1-text1">Наше стандартное предложение. В сами выбраете где прописаться, в столице или за её пределами. Прописка в областях рядом с Ереваном обойдется немного дешевле. В процессе оформления потребуется оставить ваш паспорт в местном паспортном столе на срок от 3 до 5 дней. В подавляющем большинстве случаев на 3 дней уже все готово.</p>
+                        <p class="service-card__text" data-i18n="registration-card1-text2"> В отеделении оставляется именно загран паспорт по которому вы влетели в Армению. Важно, чтобы в нем был штамп о пересечении границы.</p>
+
+                    </section>
+                    <footer class="service-card__cta">
+                        <a href="#contact-us" class="btn btn--primary" data-i18n="registration-card1-cta-button">Запросить услугу</a>
+                    </footer>
+                </article>
+
+                <article class="service-card service-card--alternative service-card--autoheight">
+                    <header class="service-card__header">
+                        <span id="service-price-registration-prime" class="service-card__price-tag">Текст задается JS 🙊</span>
+                        <span id="service-timeline-registration-prime" class="service-card__timeline-tag">Текст задается JS 🙊</span>
+                        <img class="service-card__icon" src="/src/graphics/svg/citizenship-icon2.svg" alt="service-card__icon" >
+                        <h3 class="service-card__title" data-i18n="registration-card2-title">Срочная прописка</h3>
+                    </header>
+                    <p class="service-card__text" data-i18n="registration-card2-text1">Наше особое предложение. Самый быстрый и удобный вариант. В данном случае прописка дается в центре Еревана. Мы с вами заранее выбираем удобную вам дату. Весь процесс с момента вашего прилета в Ереван займет на более пары часов.</p>
+                    <p class="service-card__text" data-i18n="registration-card2-text2">Мы берем на себя все заботы и лично привезем вас в паспортный стол вместе с собственником, который пропишет вас.</p>
+
+
+                    <footer class="service-card__cta">
+                        <a href="#contact-us" class="btn btn--secondary btn--white" data-i18n="registration-card2-cta-button">Запросить услугу</a>
+                    </footer>
+                </article>
+            </section>
+
+                        
             <section class="registration-details">
-                <h3 data-i18n="registration-details-title">Процесс прописки с нами</h3>
+                <h3 data-i18n="registration-details-title" class="registration-details__title">Процесс получения прописки с нами</h3>
                 <div class="scheme-container scheme-container--horizontal">
                     <ul class="scheme scheme--horizontal">
-                        <div class="scheme__line"></div>
+                        <div class="scheme__line scheme__line--position4"></div>
                         <li class="scheme__item">
-                            <p class="scheme__item-title">Консультируемся с вами и выбираем удобную для вас дату</p>
+                            <p class="scheme__item-title" data-i18n="registration-details-item1">Мы консультируемся с вами и выбираем удобную вам дату для приезда в Армению. Метод получения и территориальное расположение прописки</p>
                         </li>
                         <li class="scheme__item">
-                            <p class="scheme__item-title">ШАГ 2?</p>
+                            <p class="scheme__item-title" data-i18n="registration-details-item2">Как только вы прилетаете в Ереван мы начинаем процедуру и направляемся с вами в паспортный стол района прописки</p>
                         </li>
                         <li class="scheme__item">
-                            <p class="scheme__item-title">ШАГ 3?????</p>
+                            <p class="scheme__item-title" data-i18n="registration-details-item3">Паспортный стол оформляет вам прописку в выбранном районе</p>
                         </li>
                         <li class="scheme__item">
-                            <p class="scheme__item-title">Вы получаете свой паспорт со штампом</p>
+                            <p class="scheme__item-title" data-i18n="registration-details-item4">Вы получаете свой паспорт со штампом о прописке. Срок нахождения вашего паспорта в паспортном столе зависит от выбора услуги, но не превышает 5 дней.</p>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <!-- <section class="faq">
+            <section class="faq">
                 <h3 data-i18n="faq-title" class="faq__title"><span class="special-text">Ча</span>сто задаваемые <span class="special-text">Во</span>просы</h3>
                 
                 <div class="accordion-container">
                     <div class="ac">
                         <h2 class="ac-header">
-                            <button class="ac-trigger"><span class="faq-header">А можно ли получить ВНЖ другими способами? </span> </button>
+                            <button class="ac-trigger" data-i18n="registration-faq-title1"><span class="faq-header">Можно ли оформить услугу удаленно?</span> </button>
                         </h2>
                         <div class="ac-panel">
                             <div class="ac-divider"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur commodi aperiam, assumenda facere repudiandae dolor autem natus impedit consectetur illum similique sed ab, corrupti, voluptate ullam quae! Temporibus, nulla rem reiciendis ipsum sit voluptates, explicabo, nostrum tempora sed cum ex?</p>
+                            <p data-i18n="registration-faq-answer1">Мы можем подготовить заранее все необходимые документы и запланировать поездки во все инстанции, но на определенном этапе потребуется личное присутствие обладателя паспорта</p>
                         </div>
                     </div>
                     <div class="ac">
                         <h2 class="ac-header">
-                            <button class="ac-trigger"><span class="faq-header">Угабуга?</span></button>
+                            <button class="ac-trigger" data-i18n="registration-faq-title2"><span class="faq-header">В какой паспорт ставится прописка?</span></button>
                         </h2>
                         <div class="ac-panel">
                             <div class="ac-divider"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde temporibus est deserunt voluptatum, hic quisquam facilis alias sit nesciunt quae enim itaque eos quam suscipit eveniet modi dignissimos obcaecati?</p>
+                            <p data-i18n="registration-faq-answer2">Прописка ставится в международный\заграничный паспорт. Важно влетать в Армению именно по заграничному паспорту, а не по внутреннему, так как в нем должен быть штамп о пересечении границы.</p>
                         </div>
                     </div>
                     <div class="ac">
                         <h2 class="ac-header">
-                            <button class="ac-trigger"><span class="faq-header">Я хочу здесь и сейчас, но бесплатно. Можно?</span></button>
+                            <button class="ac-trigger" data-i18n="registration-faq-title3"><span class="faq-header">Что мне дает прописка?</span></button>
                         </h2>
                         <div class="ac-panel">
                             <div class="ac-divider"></div>
-                            <p>Можно губу закатать. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio atque enim accusantium dolores dolor. Tempora dolore et quo error dolorum officia distinctio nihil. Nam corporis illo sint consectetur. Eveniet, nihil?</p>
+                            <p data-i18n="registration-faq-answer3">Как иностранному гражданину, она вам потребуется при открытии банковских счетов или регистрации имущества. Из не очевидного, пока вы прописаны на территории Армении, на вас не действует ограничение по сроку пребывания в стране. На данный момент этот срок составляет  180 дней. С пропиской вы можете забыть об этом ограничении и непрерывно находится на территории Армении 365 дней в году без опасений нарушить срок пребывания</p>
                         </div>
                     </div>
                     <div class="ac">
                         <h2 class="ac-header">
-                            <button class="ac-trigger"><span class="faq-header">Самый глупый вопрос на последок</span></button>
+                            <button class="ac-trigger" data-i18n="registration-faq-title4"><span class="faq-header">Если я хочу прописаться в области, а не в столице, насколько дешевле становится услуга?</span></button>
                         </h2>
                         <div class="ac-panel">
                             <div class="ac-divider"></div>
-                            <p>Не надо</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quo dolor voluptas facilis? Sapiente enim repellat molestias minima ut molestiae ratione officiis, illo ab? Omnis nostrum id aspernatur impedit harum!</p>
+                            <p data-i18n="registration-faq-answer4">Эта возможность доступна при "Классической прописке". Услуга будет стоить дешевле на 50$, но важно помнить об одной детали. Прописка ставится в паспортном столе именного того района\области в которой вы прописываетесь. Если вы выберете прописку запределами Еревана, для оформления придется ехать в паспортный стол места прописки. </p>
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
             <section id="contact-us" class="contact">
                     <div class="contact__details">
                         <span class="contact__badge" data-i18n="contact-us-badge">Связаться с нами</span>
-                        <h2 class="contact__title" data-i18n="contact-us-title-mainpage">Хотите <br><span class="special-text">Работать с нами?</span></h2>
+                        <h2 class="contact__title" data-i18n="registration-contact-title">Хотите <br><span class="special-text">получить прописку сейчас?</span></h2>
                         <p class="contact__text" data-i18n="contact-us-lead">Запишитесь на консультацию к нашим специалистам, чтобы узнать, как мы можем вам помочь. Или свяжитесь с нами напрямую через:</p>
                         <div class="contact__links">
                             <ul class="contact__mails">

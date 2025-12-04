@@ -43,4 +43,11 @@
             border: 1px solid vars.$primaryColor;
         }
     }
+    &--white{
+        color: #fff;
+        background-color: #ffffff1e;
+        &:hover{
+            background-color: #fff;
+        }
+    }
 }

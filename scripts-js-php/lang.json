@@ -699,7 +699,7 @@
         "accounting-scheme-item1":"Мы проводим с вами консультацию и вместе выбираем наиболее подходящий режим налогообложения",
         "accounting-scheme-item2":"Заключаем  договор",
         "accounting-scheme-item3":"Подготваливаем все необходимые документы",
-        "accounting-scheme-item4":"Начинаем работу. С этого момента мы ежемесячно высылаем отчетности и контролируем опату налогов"
+        "accounting-scheme-item4":"Начинаем работу. С этого момента мы ежемесячно высылаем отчетности и контролируем опату налогов",
     
     
     
@@ -712,7 +712,38 @@
     
     
     
-    
+        "registration-hero-title":"<span class=\"special-text\">Прописка</span> в Армении для иностранных граждан",
+        "registration-hero-subtitle":"Наши специалисты быстро оформят вам прописку в Армении. Есть возможность экспресс получения прописки в черте Еревана. Прописка - первый шаг к вашему комфорту в Армении.",
+        "registration-hero-cta-button":"Получить прописку",
+
+        "registration-card1-title":"Классическая прописка",
+        "registration-card1-subtitle":"Услуга оказывается на месте и требует физического присутствия.",
+        "registration-card1-text1":"Наше стандартное предложение. В сами выбраете где прописаться, в столице или за её пределами. Прописка в областях рядом с Ереваном обойдется немного дешевле. В процессе оформления потребуется оставить ваш паспорт в местном паспортном столе на срок от 3 до 5 дней. В подавляющем большинстве случаев на 3 дней уже все готово.",
+        "registration-card1-text2":"В отеделении оставляется именно загран паспорт по которому вы влетели в Армению. Важно, чтобы в нем был штамп о пересечении границы.",
+        "registration-card1-cta-button":"Получить услугу",
+
+        "registration-card2-title":"Срочная прописка",
+        "registration-card2-text1":"Наше особое предложение. Самый быстрый и удобный вариант. В данном случае прописка дается в центре Еревана. Мы с вами заранее выбираем удобную вам дату. Весь процесс с момента вашего прилета в Ереван займет на более пары часов.",
+        "registration-card2-text2":"Мы берем на себя все заботы и лично привезем вас в паспортный стол вместе с собственником, который пропишет вас.",
+        "registration-card2-cta-button":"Получить услугу",
+
+        "registration-details-title":"Процесс получения прописки с нами",
+        "registration-details-item1":"Мы консультируемся с вами и выбираем удобную вам дату для приезда в Армению. Метод получения и территориальное расположение прописки.",
+        "registration-details-item2":"Как только вы прилетаете в Ереван мы начинаем процедуру и направляемся с вами в паспортный стол района прописки.",
+        "registration-details-item3":"Паспортный стол оформляет вам прописку в выбранном районе.",
+        "registration-details-item4":"Вы получаете свой паспорт со штампом о прописке. Срок нахождения вашего паспорта в паспортном столе зависит от выбора услуги, но не превышает 5 дней.",
+
+        "registration-faq-title1":"<span class=\"faq-header\">Можно ли оформить услугу удаленно?</span>",
+        "registration-faq-title2":"<span class=\"faq-header\">В какой паспорт ставится прописка?</span>",
+        "registration-faq-title3":"<span class=\"faq-header\">Что мне дает прописка?</span>",
+        "registration-faq-title4":"<span class=\"faq-header\">Если я хочу прописаться в области, а не в столице, насколько дешевле становится услуга?</span>",
+
+        "registration-faq-answer1":"Мы можем подготовить заранее все необходимые документы и запланировать поездки во все инстанции, но на определенном этапе потребуется личное присутствие обладателя паспорта.",
+        "registration-faq-answer2":"Прописка ставится в международный\\заграничный паспорт. Важно влетать в Армению именно по заграничному паспорту, а не по внутреннему, так как в нем должен быть штамп о пересечении границы.",
+        "registration-faq-answer3":"Как иностранному гражданину, она вам потребуется при открытии банковских счетов или регистрации имущества. Из не очевидного, пока вы прописаны на территории Армении, на вас не действует ограничение по сроку пребывания в стране. На данный момент этот срок составляет  180 дней. С пропиской вы можете забыть об этом ограничении и непрерывно находится на территории Армении 365 дней в году без опасений нарушить срок пребывания.",
+        "registration-faq-answer4":"Эта возможность доступна при \"Классической прописке\". Услуга будет стоить дешевле на 50$, но важно помнить об одной детали. Прописка ставится в паспортном столе именного того района\\области в которой вы прописываетесь. Если вы выберете прописку запределами Еревана, для оформления придется ехать в паспортный стол места прописки.",
+
+        "registration-contact-title":"Хотите<br><span class=\"special-text\">получить прописку сейчас?</span>"
     
     
     
@@ -1405,8 +1436,54 @@
         "accounting-scheme-item1":"We hold a consultation with you and together choose the most suitable tax regime.",
         "accounting-scheme-item2":"We sign a contract.",
         "accounting-scheme-item3":"We prepare all the required documents.",
-        "accounting-scheme-item4":"We start working. From this point on, we send monthly reports and monitor tax payments."
+        "accounting-scheme-item4":"We start working. From this point on, we send monthly reports and monitor tax payments.",
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "registration-hero-title":"<span class=\"special-text\">Registration</span> in Armenia for foreign citizens",
+        "registration-hero-subtitle":"Our specialists will quickly arrange your official registration in Armenia. Express registration is available within Yerevan city limits. Registration is the first step toward feeling settled and comfortable in Armenia.",
+        "registration-hero-cta-button":"Get Registration",
+
+        "registration-card1-title":"Classic Registration",
+        "registration-card1-subtitle":"The service is provided on-site and requires your physical presence.",
+        "registration-card1-text1":"Our standard option. You choose where to register — in the capital or outside it. Registration in regions near Yerevan is slightly cheaper. As part of the process, you will need to leave your passport at the local passport office for 3 to 5 days. In most cases, everything is ready within 3 days.",
+        "registration-card1-text2":"You will leave the same international passport you used to enter Armenia at the office. It is important that it contains the border entry stamp.",
+        "registration-card1-cta-button":"Get Service",
+
+        "registration-card2-title":"Urgent Registration",
+        "registration-card2-text1":"Our special offer — the fastest and most convenient option. In this case, your registration is arranged at an address in central Yerevan. We agree on a date that works for you in advance. From the moment you arrive in Yerevan, the entire process takes no more than a couple of hours.",
+        "registration-card2-text2":"We take care of everything and personally accompany you to the passport office together with the property owner who will register you.",
+        "registration-card2-cta-button":"Get Service",
+
+        "registration-details-title":"The registration process with us",
+        "registration-details-item1":"We consult with you and choose a date that’s convenient for your trip to Armenia, as well as the registration method and the preferred location.",
+        "registration-details-item2":"As soon as you arrive in Yerevan, we begin the process and accompany you to the passport office in the district where you will be registered.",
+        "registration-details-item3":"The passport office completes your registration in the selected district.",
+        "registration-details-item4":"You receive your passport back with the registration stamp. The time your passport remains at the passport office depends on the service option you choose, but it does not exceed 5 days.",
+
+        "registration-faq-title1":"<span class=\"faq-header\">Can the service be arranged remotely?</span>",
+        "registration-faq-title2":"<span class=\"faq-header\">Which passport is the registration stamped in?</span>",
+        "registration-faq-title3":"<span class=\"faq-header\">What does registration give me?</span>",
+        "registration-faq-title4":"<span class=\"faq-header\">If I want to register in a region rather than the capital, how much cheaper is the service?</span>",
+
+        "registration-faq-answer1":"We can prepare all the required documents in advance and schedule visits to all the relevant offices, but at a certain stage the passport holder must be present in person.",
+        "registration-faq-answer2":"The registration is stamped in your international passport. It’s important to enter Armenia using your international passport, not your domestic. Because the passport must contain a border entry stamp.",
+        "registration-faq-answer3":"As a foreign citizen, you will need it when opening bank accounts or registering property. Less obviously, while you are officially registered in Armenia, the standard limit on the length of stay does not apply to you. At the moment, this limit is 180 days. With registration, you can forget about this restriction and stay in Armenia continuously 365 days a year without worrying about overstaying.",
+        "registration-faq-answer4":"This option is available with the “Classic Registration” package. The service will cost $50 less, but there is one important detail to keep in mind: the registration stamp is issued at the passport office of the specific district/region where you are being registered. If you choose registration outside Yerevan, you will need to travel to the passport office in that location to complete the process.",
+
+        "registration-contact-title":"Want to<br><span class=\"special-text\">get registered now?</span>"
     }
 }

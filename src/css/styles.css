@@ -363,6 +363,13 @@ strong, .special-text, .bold-text {
   color: #fff;
   border: 1px solid #1a6eff;
 }
+.btn--white {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1176470588);
+}
+.btn--white:hover {
+  background-color: #fff;
+}
 
 #cursor, #aura {
   position: fixed;
@@ -816,6 +823,10 @@ strong, .special-text, .bold-text {
   translate: 22% -30px;
   width: 65%;
 }
+.scheme--horizontal > .scheme__line--position4 {
+  translate: 16% -30px;
+  width: 70%;
+}
 .scheme--bank > .scheme__line {
   height: 90%;
 }
@@ -1004,6 +1015,33 @@ strong, .special-text, .bold-text {
 
 .divider {
   height: 20px;
+}
+
+main > .backer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  margin: 2rem;
+  background-color: rgba(231, 239, 254, 0.6352941176);
+  text-align: center;
+  padding: 1rem 0;
+}
+main > .backer > a {
+  font-size: 50px;
+  font-weight: 900;
+  color: #1a6eff;
+}
+main > .backer > a:hover {
+  color: #fff;
+}
+main > .backer:hover {
+  background-color: #1a6eff;
+}
+main > .backer:hover > a {
+  color: #fff;
 }
 
 .wrapper, .header {
@@ -2029,6 +2067,24 @@ strong, .special-text, .bold-text {
 .accounting__price-tag {
   width: 100%;
   text-align: start;
+}
+
+.registration-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding-block: 5rem;
+}
+.registration-details > .scheme-container--horizontal {
+  max-width: 100%;
+}
+.registration-details__title {
+  text-align: center;
+}
+.registration-methods {
+  padding-block: 5rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .sandbox {
