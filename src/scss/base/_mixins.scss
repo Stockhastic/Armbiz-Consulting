@@ -1,0 +1,21 @@
+@use "./vars";
+
+// Adaptive base
+
+@mixin mobile{
+    @media (max-width: vars.$mobile) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (max-width: vars.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (max-width: vars.$desktop) {
+        @content;
+    }
+}

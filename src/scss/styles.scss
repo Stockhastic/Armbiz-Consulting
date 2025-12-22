@@ -1,6 +1,7 @@
 @use './base';
 @use "./components";
 @use "./base/vars";
+@use "./base/mixins" as m;
 
 .uikit-block {
     display: flex;
@@ -129,6 +130,7 @@ main {
                 }
         }
     }
+    overflow-x: clip;
 }
 
 
@@ -139,6 +141,10 @@ main {
     &--wided{
         max-width:1800px;
     }
+    @include m.mobile{
+        padding: 0 2rem;
+    }
+
 }
 
 .badge {
@@ -354,6 +360,12 @@ main {
             margin-top: 1rem;
             margin-right: 0.5rem;
         }
+        &--centered{ 
+            & > div{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
     }
 
     &__link{
@@ -387,7 +399,11 @@ main {
             width: 65px;
         }
     }
-
+    &__addresses{
+        & > li{ 
+            margin-top: 1.7rem;
+        }
+    }
 
 }
 // Form
@@ -809,6 +825,7 @@ main {
         justify-content: center;
         & > h5 {
             margin-bottom: 2.6rem;
+            font-size: vars.$pSize;
         }
         & > p {
             margin-bottom: 2.5rem;
@@ -1275,7 +1292,44 @@ main {
         width: 100%;
         text-align: start;
     }
+
+    &-animation{
+        &-pos1{
+            top:750px
+        }
+        &-pos2{
+            top:1550px;
+        }
+    }
 }
+
+.bg-geometry{
+    position: absolute;
+    right: -360px;
+    height: 350px;
+    min-width: 350px;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        vars.$primaryColor,
+        vars.$secondaryColor
+    );
+}
+.bg-geometry-2{
+    translate: -100% 0;
+    left: 0;
+    position: absolute;
+    height: 350px;
+    min-width: 350px;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        vars.$primaryColor,
+        vars.$secondaryColor
+    );
+}
+
+
 
 
 // REGISTRATION
@@ -1321,33 +1375,98 @@ main {
     border-radius: 2em;
     margin: 1rem 0.5rem;
 }
-.bg-geometry{
-    translate: 100% 0;
-    right: 0;
-    position: absolute;
-    height: 350px;
-    min-width: 350px;
-    border-radius: 2rem;
-    background: linear-gradient(
-        45deg,
-        vars.$primaryColor,
-        vars.$secondaryColor
-    );
-    z-index: -1;
-    // backdrop-filter: invert(1);
+
+.bg-animations{
+    height: 10px;
+    width: 100%;
+    position: relative;
+    overflow-x: clip;
+    z-index: -10;
 }
-.bg-geometry-2{
-    translate: -100% 0;
-    left: 0;
-    position: absolute;
-    height: 350px;
-    min-width: 350px;
-    border-radius: 2rem;
-    background: linear-gradient(
-        45deg,
-        vars.$primaryColor,
-        vars.$secondaryColor
-    );
-    z-index: -1;
-    // backdrop-filter: invert(1);
+
+
+//maintenance
+
+.maintenance{
+    &-container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__logo{
+        margin-top: 2rem;
+        width: 200px;
+        display: flex;
+        margin-inline: auto;
+    }
+    &__title{
+        text-align: center;
+        margin: 1rem 0;
+        font-family: vars.$mainFontBold;
+
+        @include m.mobile{
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+    }
+    &__subtitle{
+        text-align: center;
+        margin: 1rem 0;
+
+        @include m.mobile{
+            font-size: 1.4rem;
+
+        }
+    }
+    &__mid{
+        translate: 0 -20%;
+        & > h5{
+            margin-top: 2rem;
+        }
+    }
+    &__end{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__bg-design{
+        position: absolute;
+        z-index: -100;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        &__item{
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(vars.$primaryColor, vars.$secondaryColor 70%);
+            border-radius: 100%;
+            &:nth-child(1) {
+                top: -400px;
+                left: -300px;
+            }
+            &:nth-child(2) {
+                position: absolute;
+                right: -380px;
+                bottom: -380px;;
+                // translate: 30% 30%;
+            }
+        }
+    }
+    &__contact-links{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+        & > ul {
+            background-color: #fff;
+            border: 1px solid vars.$borderColor;
+            padding: 2rem;
+            border-radius: 2rem;
+            & > p{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
 }
+

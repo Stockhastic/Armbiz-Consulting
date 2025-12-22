@@ -854,10 +854,13 @@ strong, .special-text, .bold-text {
   overflow: hidden;
   z-index: -201;
 }
+.sphere-container--maintenance {
+  filter: invert(1);
+}
 .sphere:nth-child(1) {
   width: 220px;
   height: 220px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.4) 0%, rgba(26, 110, 255, 0.2) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float1 24s infinite;
   top: 20%;
   left: 10%;
@@ -865,7 +868,7 @@ strong, .special-text, .bold-text {
 .sphere:nth-child(2) {
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.5) 0%, rgba(26, 110, 255, 0.25) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float2 12s infinite;
   top: 60%;
   left: 70%;
@@ -873,7 +876,7 @@ strong, .special-text, .bold-text {
 .sphere:nth-child(3) {
   width: 40px;
   height: 40px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.35) 0%, rgba(26, 110, 255, 0.15) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float3 15s infinite;
   top: 65%;
   left: 20%;
@@ -882,7 +885,7 @@ strong, .special-text, .bold-text {
 .sphere:nth-child(4) {
   width: 150px;
   height: 150px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.45) 0%, rgba(26, 110, 255, 0.2) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float4 10s infinite;
   top: 30%;
   left: 80%;
@@ -890,7 +893,7 @@ strong, .special-text, .bold-text {
 .sphere:nth-child(5) {
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.4) 0%, rgba(26, 110, 255, 0.25) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float5 18s infinite;
   top: 10%;
   left: 50%;
@@ -898,7 +901,7 @@ strong, .special-text, .bold-text {
 .sphere:nth-child(6) {
   width: 130px;
   height: 130px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.3) 0%, rgba(26, 110, 255, 0.15) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float6 14s infinite;
   top: 50%;
   left: 5%;
@@ -906,7 +909,7 @@ strong, .special-text, .bold-text {
 .sphere:nth-child(7) {
   width: 30px;
   height: 30px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.6) 0%, rgba(26, 110, 255, 0.3) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float7 24s infinite;
   top: 70%;
   left: 85%;
@@ -914,7 +917,7 @@ strong, .special-text, .bold-text {
 .sphere:nth-child(8) {
   width: 390px;
   height: 390px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.35) 0%, rgba(26, 110, 255, 0.2) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float8 38s infinite;
   top: 5%;
   left: 75%;
@@ -1017,6 +1020,9 @@ strong, .special-text, .bold-text {
   height: 20px;
 }
 
+main {
+  overflow-x: clip;
+}
 main > .backer {
   position: fixed;
   right: 0;
@@ -1050,6 +1056,11 @@ main > .backer:hover > a {
 }
 .wrapper--wided {
   max-width: 1800px;
+}
+@media (max-width: 767px) {
+  .wrapper, .header {
+    padding: 0 2rem;
+  }
 }
 
 .badge, .contact__badge, .logistic__badge, .services__badge, .exclusive-offer__badge {
@@ -1262,6 +1273,10 @@ main > .backer:hover > a {
   margin-top: 1rem;
   margin-right: 0.5rem;
 }
+.contact__socials--centered > div {
+  display: flex;
+  justify-content: space-around;
+}
 .contact__link {
   margin: auto 0;
   color: #1e2736;
@@ -1289,6 +1304,9 @@ main > .backer:hover > a {
 }
 .contact__link > img {
   width: 65px;
+}
+.contact__addresses > li {
+  margin-top: 1.7rem;
 }
 
 .form {
@@ -1666,6 +1684,7 @@ main > .backer:hover > a {
 }
 .business-method__details > h5 {
   margin-bottom: 2.6rem;
+  font-size: 1.6rem;
 }
 .business-method__details > p {
   margin-bottom: 2.5rem;
@@ -2068,6 +2087,31 @@ main > .backer:hover > a {
   width: 100%;
   text-align: start;
 }
+.accounting-animation-pos1 {
+  top: 750px;
+}
+.accounting-animation-pos2 {
+  top: 1550px;
+}
+
+.bg-geometry {
+  position: absolute;
+  right: -360px;
+  height: 350px;
+  min-width: 350px;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, #1a6eff, #60a2ff);
+}
+
+.bg-geometry-2 {
+  translate: -100% 0;
+  left: 0;
+  position: absolute;
+  height: 350px;
+  min-width: 350px;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, #1a6eff, #60a2ff);
+}
 
 .registration-details {
   display: flex;
@@ -2107,24 +2151,90 @@ main > .backer:hover > a {
   margin: 1rem 0.5rem;
 }
 
-.bg-geometry {
-  translate: 100% 0;
-  right: 0;
-  position: absolute;
-  height: 350px;
-  min-width: 350px;
-  border-radius: 2rem;
-  background: linear-gradient(45deg, #1a6eff, #60a2ff);
-  z-index: -1;
+.bg-animations {
+  height: 10px;
+  width: 100%;
+  position: relative;
+  overflow-x: clip;
+  z-index: -10;
 }
 
-.bg-geometry-2 {
-  translate: -100% 0;
-  left: 0;
+.maintenance-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.maintenance__logo {
+  margin-top: 2rem;
+  width: 200px;
+  display: flex;
+  margin-inline: auto;
+}
+.maintenance__title {
+  text-align: center;
+  margin: 1rem 0;
+  font-family: "Raleway-Bold";
+}
+@media (max-width: 767px) {
+  .maintenance__title {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+.maintenance__subtitle {
+  text-align: center;
+  margin: 1rem 0;
+}
+@media (max-width: 767px) {
+  .maintenance__subtitle {
+    font-size: 1.4rem;
+  }
+}
+.maintenance__mid {
+  translate: 0 -20%;
+}
+.maintenance__mid > h5 {
+  margin-top: 2rem;
+}
+.maintenance__end {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.maintenance__bg-design {
   position: absolute;
-  height: 350px;
-  min-width: 350px;
+  z-index: -100;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.maintenance__bg-design__item {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(#1a6eff, #60a2ff 70%);
+  border-radius: 100%;
+}
+.maintenance__bg-design__item:nth-child(1) {
+  top: -400px;
+  left: -300px;
+}
+.maintenance__bg-design__item:nth-child(2) {
+  position: absolute;
+  right: -380px;
+  bottom: -380px;
+}
+.maintenance__contact-links {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+.maintenance__contact-links > ul {
+  background-color: #fff;
+  border: 1px solid #d7deef;
+  padding: 2rem;
   border-radius: 2rem;
-  background: linear-gradient(45deg, #1a6eff, #60a2ff);
-  z-index: -1;
+}
+.maintenance__contact-links > ul > p {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=styles.css.map */

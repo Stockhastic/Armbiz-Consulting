@@ -179,12 +179,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 console.log('GSAP illustration init');
 
-let rpDoc = document.querySelector(".residence-permit__illustration-part-1");
-let rpPrint = document.querySelector(".residence-permit__illustration-part-2");
-let rpStampLowBack = document.querySelector(".residence-permit__illustration-part-3-back");
-let rpStampLowFront = document.querySelector(".residence-permit__illustration-part-3-front");
-let rpStampHighBack = document.querySelector(".residence-permit__illustration-part-4-back");
-let rpStampHighFront = document.querySelector(".residence-permit__illustration-part-4-front");
+let rpDoc = document.querySelector(".registration__illustration-part-1");
+let rpPrint = document.querySelector(".registration__illustration-part-2");
+let rpStampLowBack = document.querySelector(".registration__illustration-part-3-back");
+let rpStampLowFront = document.querySelector(".registration__illustration-part-3-front");
+let rpStampHighBack = document.querySelector(".registration__illustration-part-4-back");
+let rpStampHighFront = document.querySelector(".registration__illustration-part-4-front");
 
 let stampTween = gsap.from(rpPrint, {opacity: 0, paused: true});
 
@@ -245,7 +245,7 @@ gsap.to(bgGeometry, {
     // markers: true,
     scrub: 1.3
   },
-  x: -2000,
+  x: -2300,
   y: 500,
   scale: 0.8,
   rotate: 360,

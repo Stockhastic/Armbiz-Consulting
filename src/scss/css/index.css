@@ -14,10 +14,13 @@
   overflow: hidden;
   z-index: -201;
 }
+.sphere-container--maintenance {
+  filter: invert(1);
+}
 .sphere:nth-child(1) {
   width: 220px;
   height: 220px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.4) 0%, rgba(26, 110, 255, 0.2) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float1 24s infinite;
   top: 20%;
   left: 10%;
@@ -25,7 +28,7 @@
 .sphere:nth-child(2) {
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.5) 0%, rgba(26, 110, 255, 0.25) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float2 12s infinite;
   top: 60%;
   left: 70%;
@@ -33,7 +36,7 @@
 .sphere:nth-child(3) {
   width: 40px;
   height: 40px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.35) 0%, rgba(26, 110, 255, 0.15) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float3 15s infinite;
   top: 65%;
   left: 20%;
@@ -42,7 +45,7 @@
 .sphere:nth-child(4) {
   width: 150px;
   height: 150px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.45) 0%, rgba(26, 110, 255, 0.2) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float4 10s infinite;
   top: 30%;
   left: 80%;
@@ -50,7 +53,7 @@
 .sphere:nth-child(5) {
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.4) 0%, rgba(26, 110, 255, 0.25) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float5 18s infinite;
   top: 10%;
   left: 50%;
@@ -58,7 +61,7 @@
 .sphere:nth-child(6) {
   width: 130px;
   height: 130px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.3) 0%, rgba(26, 110, 255, 0.15) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float6 14s infinite;
   top: 50%;
   left: 5%;
@@ -66,7 +69,7 @@
 .sphere:nth-child(7) {
   width: 30px;
   height: 30px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.6) 0%, rgba(26, 110, 255, 0.3) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float7 24s infinite;
   top: 70%;
   left: 85%;
@@ -74,11 +77,14 @@
 .sphere:nth-child(8) {
   width: 390px;
   height: 390px;
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.35) 0%, rgba(26, 110, 255, 0.2) 100%);
+  background: radial-gradient(circle, #60a2ff, rgba(82, 146, 255, 0.3568627451) 100%);
   animation: float8 38s infinite;
   top: 5%;
   left: 75%;
-}/*# sourceMappingURL=index.css.map */frames float3 {
+}/*# sourceMappingURL=index.css.map */late(0, 0) scale(1);
+  }
+}
+@keyframes float3 {
   0% {
     transform: translate(0, 0) rotate(0deg) scale(1);
   }
