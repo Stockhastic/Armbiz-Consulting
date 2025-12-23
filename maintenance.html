@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
 
     <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.css" />
     <script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
@@ -34,6 +37,7 @@
 <body>
     <div id="cursor"></div>
     <div id="aura"></div>
+    <div class="page-fade page-fade--active" aria-hidden="true"></div>
 
     <main>
         <div class="maintenance__bg-design">
@@ -41,12 +45,17 @@
             <div class="maintenance__bg-design__item"></div>
         </div>
         <div class="wrapper">
+            <div class="maintenance__lang-switcher">
+                <button class="header__lang-switcher-item"data-lang="en"><img src="/src/graphics/png/header-lang-en.png" alt="EN"></button>
+                <button class="header__lang-switcher-item"data-lang="ru"><img src="/src/graphics/png/header-lang-ru.png" alt="RU"></button>
+            </div>
             <div class="maintenance-container">
-                <a href="#"><img class="maintenance__logo" src="/src/graphics/svg/logo-v2.svg" alt="logo"></a>
+                <a href="/index.html"><img class="maintenance__logo" src="/src/graphics/svg/logo-v2.svg" alt="logo"></a>
+
                 <div class="maintenance__mid">
-                    <h2 class="maintenance__title">Right now we under <span class="special-text">maintenance</span></h2>
-                    <h4 class="maintenance__subtitle">We are doing our best to complete the technical work as quickly as possible.</h4>
-                    <p class="maintenance__subtitle">In case of any emergency you can always contact with us via messengers, email or phones on weekdays from 10:00 to 18:00 Armenian time </p>
+                    <h2 class="maintenance__title" data-i18n="maintenance-title">Right now we under <span class="special-text">maintenance</span></h2>
+                    <h4 class="maintenance__subtitle" data-i18n="maintenance-subtitle1">We are doing our best to complete the technical work as quickly as possible.</h4>
+                    <p class="maintenance__subtitle" data-i18n="maintenance-subtitle2">In case of any emergency you can always contact with us via messengers, email or phones on weekdays from 10:00 to 18:00 Armenian time</p>
                     <!-- <ul class="maintenance__messengers">
                         <li>
                             <a class="maintenance__messengers-link" href="https://t.me/armbiz_consulting">
@@ -71,9 +80,9 @@
                             <li><a class="contact__link contact__link--rus" href="tel:+79645377228">+7 (964) 5377228</a></li>
                         </ul>
                         <ul class="contact__addresses">
-                            <p class="contact__subtitle">Наши офисы</p>
-                            <li><a class="contact__link contact__link--map" href="https://yandex.com/profile/-/CHhabX0W">Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1</a></li>
-                            <li><a class="contact__link contact__link--map" href="https://yandex.com/maps/-/CHhafJ~T">Россия, Москва, Сибирский проезд 2с2</a></li>
+                            <p class="contact__subtitle" data-i18n="maintenance-address-title">Наши офисы</p>
+                            <li><a class="contact__link contact__link--map" href="https://yandex.com/profile/-/CHhabX0W" data-i18n="maintenance-address-subtitle1">Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1</a></li>
+                            <li><a class="contact__link contact__link--map" href="https://yandex.com/maps/-/CHhafJ~T" data-i18n="maintenance-address-subtitle2">Россия, Москва, Сибирский проезд 2с2</a></li>
                         </ul>
                         <ul class="contact__socials contact__socials--centered ">
                             <p class="contact__subtitle" data-i18n="contact-us-socials">Наши мессенджеры и соц сети</p>
@@ -85,9 +94,8 @@
                         </ul>
                     </div>
                 </div>
-                <p class="maintenance__end">© 2025 Armbiz Consulting - Your success is Our mission</p>    
+                <p class="maintenance__end" data-i18n="maintenance-end-title">© 2025 Армбиз Консалтинг - Ваш успех это Наша миссия</p>    
             </div>
-            
         </div>
     </main>
     

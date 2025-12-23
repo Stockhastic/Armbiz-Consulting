@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
 
     <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.css" />
     <script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
+    <script src="/scripts-js-php/includes.js" defer></script>
+
 
     <link rel="stylesheet" href="/src/css/styles.css">
 
@@ -50,52 +55,9 @@
 <body>
     <div id="cursor"></div>
     <div id="aura"></div>
+    <div class="page-fade page-fade--active" aria-hidden="true"></div>
     
-    <header class="header">
-        <a class="header__logo" href="/index.html">
-            <img src="/src/graphics/png/header-logo.png" alt="logosvgs">
-        </a>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item header__nav-item-services">
-                    <a href="#" class="header__nav-link" data-i18n="header-services">Услуги</a>
-                    <ul class="header__nav-list-services mouse-selectable">
-                        <li class="mouse-selectable"><a href="/pages/services/llc-ie-registration/index.html" data-i18n="header-service-llc-ie">Регистрация ООО и ИП</a></li>
-                        <li class="mouse-selectable"><a href="/pages/services/ready-made-companies/index.html" data-i18n="header-service-ready-made-companies">Готовые компании</a></li>
-                        <li class="mouse-selectable"><a href="/pages/services/citizenship/index.html" data-i18n="header-service-citizenship">Гражданство</a></li>
-                        <li class="mouse-selectable"><a href="/pages/services/residence-permit/index.html" data-i18n="header-service-residence-permit">ВНЖ</a></li>
-                        <li class="mouse-selectable"><a href="/pages/services/registration/index.html" data-i18n="header-service-registration">Прописка</a></li>
-                        <li class="mouse-selectable"><a href="/pages/services/accounting/index.html" data-i18n="header-service-accounting">Бухгалтерские услуги</a></li>
-                        <li class="mouse-selectable"><a href="/pages/services/bank-card/index.html" data-i18n="header-service-bank-card">Банковская карта для физ. лиц</a></li>
-                        <li class="mouse-selectable"><a href="/pages/services/social-card/index.html" data-i18n="header-service-social-card">Социальная карта</a></li>
-                        <li class="mouse-selectable"><a href="/pages/services/logistics/index.html" data-i18n="header-service-logistic">Логистика и Таможня</a></li>
-                    </ul>
-                </li>
-                <li class="header__nav-item">
-                    <a href="/pages/contacts/index.html" class="header__nav-link" data-i18n="header-contacts">Контакты</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="/pages/about-us/index.html" class="header__nav-link"data-i18n="header-aboutus">О нас</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="/pages/services/logistics/index.html" class="header__nav-link" data-i18n="header-logistics">Логистика и таможня</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header__lang mouse-selectable">
-            <img id="header-lang-icon"  src="/src/graphics/png/header-lang-ru.png" alt="lang-icon">
-            <div class="header__lang-switcher">
-                <button class="header__lang-switcher-item header__lang-switcher-item--selected" data-lang="ru">
-                    <img class="header__lang-switcher-icon" src="/src/graphics/png/header-lang-ru.png" alt="lang-switcher-item-rus">
-                    <p class="header__lang-switcher-text">Русский</p>
-                </button>
-                <button class="header__lang-switcher-item" data-lang="en">
-                    <img class="header__lang-switcher-icon" src="/src/graphics/png/header-lang-en.png" alt="lang-switcher-item-en">
-                    <p class="header__lang-switcher-text">English</p>
-                </button>
-            </div>
-        </div>
-    </header>
+    <header id="site-header"></header>
 
     <main>
         <div class="bg-animations">
@@ -297,49 +259,7 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="footer__grid">
-            <section class="footer__brand">
-                <img class="footer__logo" src="/src/graphics/png/footer-logo.png" alt="Footer Logo Image" max-width="280px" height="110px">
-                <p class="footer__logo-caption" data-i18n="footer-underlogo-text">Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг</p>
-            </section>
-            <nav class="footer__services">
-                <p class="footer__title" data-i18n="footer-service-tite">Услуги</p>
-                <ul class="footer__list">
-                    <li class="footer__list-item"><a href="/pages/services/llc-ie-registration/index.html" class="footer__list-link" data-i18n="footer-service-iellc">Регистрация ООО или ИП</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/ready-made-companies/index.html" class="footer__list-link" data-i18n="footer-service-readycompany">Готовые компании</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/residence-permit/index.html" class="footer__list-link" data-i18n="footer-service-residence">ВНЖ</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/citizenship/index.html" class="footer__list-link" data-i18n="footer-service-citizenship">Гражданство</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/registration/index.html" class="footer__list-link" data-i18n="footer-service-registration">Прописка</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/accounting/index.html" class="footer__list-link" data-i18n="footer-service-accounting">Бухгалтерские услуги</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/bank-card/index.html" class="footer__list-link" data-i18n="footer-service-bankcard">Банковская карта для физ.лиц</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/social-card/index.html" class="footer__list-link" data-i18n="footer-service-socialcard">Социальная карта</a></li>
-                    <li class="footer__list-item"><a href="/pages/services/logistics/index.html" class="footer__list-link" data-i18n="footer-service-logistics">Логистика и Таможня</a></li>
-                </ul>
-            </nav>
-            <address class="footer__contacts">
-                <p class="footer__title" data-i18n="footer-contacts-title">Контакты</p>
-                <ul class="footer__list footer__list--contacts">
-                    <li class="footer__list-item footer__list-item--address"><a class="footer__list-link" href="https://yandex.com/profile/-/CHhabX0W" data-i18n="footer-contacts-address1">Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1</a></li>
-                    <li class="footer__list-item footer__list-item--address"><a class="footer__list-link" href="https://yandex.com/maps/-/CHhafJ~T" data-i18n="footer-contacts-address2">Россия, Москва, Сибирский проезд 2с2</a></li>
-                    <li class="footer__list-item footer__list-item--mail"><a class="footer__list-link" href="mailto:co@armbizconsulting.com">co@armbizconsulting.com</a></li>
-                    <li class="footer__list-item footer__list-item--mail"><a class="footer__list-link" href="mailto:armbiz@armbiz.ru">armbiz@armbiz.ru</a></li>
-                    <li class="footer__list-item footer__list-item--phone"><a class="footer__list-link" href="tel:+37444470702" >+ (374) 44 470702</a></li>
-                    <li class="footer__list-item footer__list-item--phone"><a class="footer__list-link" href="tel:+79645377228" >+7 (964) 537 7228</a></li>
-                </ul>
-                <div class="footer__messengers">
-                    <a class="footer__messenger-link" href="https://t.me/armbiz_consulting" ><img src="/src/graphics/svg/telegram-icon.svg" alt="footer-messengers"></a>
-                    <a class="footer__messenger-link" href="https://api.whatsapp.com/send/?app_absent=0&phone=79645377228&text=Здраствуйте%21&type=phone_number" ><img src="/src/graphics/svg/whatsapp-icon.svg" alt="footer-messengers"></a>
-                    <a class="footer__messenger-link" href="https://www.instagram.com/armbizconsulting_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=ig_web_button_share_sheet" ><img src="/src/graphics/svg/instagram-icon.svg" alt="footer-messengers"></a>
-                </div>
-            </address>
-        </div>
-        <div class="footer__divider"></div>
-        <div class="footer__afterline">
-            <p class="footer__copyright" data-i18n="footer-rights">© 2025 Armbiz Consulting. Все права защищены</p>        
-            <a href="/pages/privacy-policy/privacy-policy.pdf" target="_blank" rel="nooperner noreferrer" class="footer__policy" data-i18n="footer-privacy-policy">Политика конфиденциальности</a>
-        </div>    
-    </footer>
+    <footer id="site-footer"></footer>
 
 
     <script src="/scripts-js-php/gsap-public/minified/ScrollTrigger.min.js"></script>

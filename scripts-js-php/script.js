@@ -21,16 +21,20 @@ function animateAura() {
 }
 animateAura();
 
-const interactive = document.querySelectorAll('button, a, input[type="submit"], .mouse-selectable');
-interactive.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-        aura.classList.add('hovered');
-        cursor.classList.add('hidden');
-    });
-    el.addEventListener('mouseleave', () => {
-        aura.classList.remove('hovered');
-        cursor.classList.remove('hidden');
-    });
+const interactiveSelector = 'button, a, input[type="submit"], .mouse-selectable';
+document.addEventListener('pointerover', e => {
+    const target = e.target instanceof Element ? e.target.closest(interactiveSelector) : null;
+    if (!target) return;
+    aura.classList.add('hovered');
+    cursor.classList.add('hidden');
+});
+document.addEventListener('pointerout', e => {
+    const target = e.target instanceof Element ? e.target.closest(interactiveSelector) : null;
+    if (!target) return;
+    const related = e.relatedTarget instanceof Element ? e.relatedTarget.closest(interactiveSelector) : null;
+    if (related === target) return;
+    aura.classList.remove('hovered');
+    cursor.classList.remove('hidden');
 });
 
 document.addEventListener('mousedown', () => {
@@ -40,6 +44,94 @@ document.addEventListener('mousedown', () => {
 document.addEventListener('mouseup', () => {
     aura.classList.remove('clicked');
 });
+
+(() => {
+    const overlay = document.querySelector(".page-fade");
+    if (!overlay) {
+        return;
+    }
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    function isModifiedEvent(event) {
+        return event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0;
+    }
+
+    function shouldIgnoreLink(link, event) {
+        if (event.defaultPrevented || isModifiedEvent(event)) {
+            return true;
+        }
+
+        if (link.hasAttribute("download")) {
+            return true;
+        }
+
+        const target = link.getAttribute("target");
+        if (target && target.toLowerCase() === "_blank") {
+            return true;
+        }
+
+        const href = link.getAttribute("href");
+        if (!href) {
+            return true;
+        }
+
+        if (href.charAt(0) === "#") {
+            return true;
+        }
+
+        const lowered = href.toLowerCase();
+        if (lowered.indexOf("mailto:") === 0 || lowered.indexOf("tel:") === 0 || lowered.indexOf("javascript:") === 0) {
+            return true;
+        }
+
+        try {
+            const url = new URL(link.href, window.location.href);
+            if (
+                url.origin === window.location.origin &&
+                url.pathname === window.location.pathname &&
+                url.search === window.location.search &&
+                url.hash
+            ) {
+                return true;
+            }
+        } catch (error) {
+            return true;
+        }
+
+        return false;
+    }
+
+    function hideOverlay() {
+        overlay.classList.remove("page-fade--active");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        window.setTimeout(hideOverlay, 20);
+    });
+
+    window.addEventListener("pageshow", event => {
+        if (event.persisted) {
+            hideOverlay();
+        }
+    });
+
+    document.addEventListener("click", event => {
+        const link = event.target instanceof Element ? event.target.closest("a") : null;
+        if (!link || shouldIgnoreLink(link, event)) {
+            return;
+        }
+
+        const url = link.href;
+        event.preventDefault();
+        overlay.classList.add("page-fade--active");
+
+        const delay = prefersReducedMotion.matches ? 0 : 260;
+        window.setTimeout(() => {
+            window.location.href = url;
+        }, delay);
+    });
+})();
 
 
 // Цены
@@ -148,10 +240,14 @@ function setLang(lang) {
   updateServicePrices(lang);
 }
 
-document.querySelectorAll('.header__lang-switcher-item').forEach(btn => {
-  btn.addEventListener('click', () => {
-    setLang(btn.getAttribute('data-lang'));
-  });
+document.addEventListener('click', e => {
+  const target = e.target instanceof Element ? e.target.closest('.header__lang-switcher-item') : null;
+  if (!target) return;
+  setLang(target.getAttribute('data-lang'));
+});
+
+document.addEventListener('includes:loaded', () => {
+  setLang(currentLang);
 });
 
 // Initialize FAQ accordion only when the container exists to avoid runtime errors on pages without it

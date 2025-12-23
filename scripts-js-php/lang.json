@@ -272,12 +272,6 @@
 
 
 
-
-
-
-
-
-
         "contact-us-badge": "Связаться с нами",
         "contact-us-title-mainpage": "Хотите <br><span class=\"special-text\">Работать с нами?</span>",
         "contact-us-title-citizenship": "Хотите <br><span class=\"special-text\">знать больше?</span>",
@@ -333,17 +327,8 @@
         "footer-contacts-address1": "Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1",
         "footer-contacts-address2": "Россия, Москва, Сибирский проезд 2с2",
 
-        "footer-rights": "© 2025 Armbiz Consulting. Все права защищены",
+        "footer-rights": "© 2026 Armbiz Consulting. Все права защищены",
         "footer-privacy-policy": "Политика конфиденциальности",
-
-
-
-
-
-
-
-
-
 
 
 
@@ -391,14 +376,6 @@
         "logistics-customs-scheme-full-item4-text": "Берем на себя весь процесс таможенного оформления начиная от размещения груза на таможенном терминале - СВХ и заканчивая непосредственно выпуском и выдачей груза с СВХ или доставкой до конечного адреса",
 
         "logistics-customs-scheme-full-item5-title": "Счастливый клиент",
-
-
-
-
-
-
-
-
 
 
 
@@ -515,10 +492,6 @@
 
 
 
-
-
-
-
         "rmcompanies-hero-title": "<span class=\"special-text\">Готовые компании</span> и Филиалы",
         "rmcompanies-hero-subtitle": "Покупая компанию с нами вы получаете ООО с положительной историей и без скрытых долгов. Ознакомится с каталогом предлагаемых компаний вы можете на нашей бесплатной консультации",
         "rmcompanies-hero-cta-button": "Запросить консультацию",
@@ -542,8 +515,6 @@
         "rmcompanies-approach2-title": "Филиал",
         "rmcompanies-approach2-text": "Условия индивидуальны и сильно рознятся от случая к случаю. Все подробности открытия вы можете узнать на нашей бесплатной консультации.",
     
-
-
 
 
 
@@ -669,8 +640,6 @@
     
     
     
-    
-
 
         "accounting-hero-title":"<span class=\"special-text\">Бухгалтерские</span> услуги",
         "accounting-hero-subtitle":"Возьмем на себя полное ведение бухгалтерии, поможем разобраться с банками и трудоустройством сотрудников. Освободим вас от скучных цифр и сэкономим нервы",
@@ -700,14 +669,6 @@
         "accounting-scheme-item2":"Заключаем  договор",
         "accounting-scheme-item3":"Подготваливаем все необходимые документы",
         "accounting-scheme-item4":"Начинаем работу. С этого момента мы ежемесячно высылаем отчетности и контролируем опату налогов",
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -743,17 +704,57 @@
         "registration-faq-answer3":"Как иностранному гражданину, она вам потребуется при открытии банковских счетов или регистрации имущества. Из не очевидного, пока вы прописаны на территории Армении, на вас не действует ограничение по сроку пребывания в стране. На данный момент этот срок составляет  180 дней. С пропиской вы можете забыть об этом ограничении и непрерывно находится на территории Армении 365 дней в году без опасений нарушить срок пребывания.",
         "registration-faq-answer4":"Эта возможность доступна при \"Классической прописке\". Услуга будет стоить дешевле на 50$, но важно помнить об одной детали. Прописка ставится в паспортном столе именного того района\\области в которой вы прописываетесь. Если вы выберете прописку запределами Еревана, для оформления придется ехать в паспортный стол места прописки.",
 
-        "registration-contact-title":"Хотите<br><span class=\"special-text\">получить прописку сейчас?</span>"
+        "registration-contact-title":"Хотите<br><span class=\"special-text\">получить прописку сейчас?</span>",
     
     
     
     
     
+        "maintenance-title":"В данный момент сайт на <span class=\"special-text\">обслуживаинии</span>",
+        "maintenance-subtitle1":"Мы прилагаем все усилия чтобы закончить технические работы как можно быстрее.",
+        "maintenance-subtitle2":"Вы всегда можете связаться с нами через мессенджеры, электронную почту или по телефону в рабочие дни с 10:00 до 18:00 по армянскому времени ",
     
-    
-    
-    
-    
+        "maintenance-address-title":"Наши офисы",
+        "maintenance-address-subtitle1":"Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1",
+        "maintenance-address-subtitle2":"Россия, Москва, Сибирский проезд 2с2",
+
+        "maintenance-end-title":"© 2026 Армбиз Консалтинг - Ваш успех это Наша миссия"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     },
     "en": {
 
@@ -1032,7 +1033,7 @@
         "footer-contacts-address1": "Armenia, Yerevan, Arabkir, Vagharsh Vagharshyan 12/1",
         "footer-contacts-address2": "Russia, Moscow, Sibirski Proezd 2b2",
 
-        "footer-rights": "© 2025 Armbiz Consulting. All rights reserved",
+        "footer-rights": "© 2026 Armbiz Consulting. All rights reserved",
         "footer-privacy-policy": "Privacy Policy",
 
 
@@ -1408,7 +1409,6 @@
     
     
     
-    
         "accounting-hero-title":"<span class=\"special-text\">Accounting</span> services",
         "accounting-hero-subtitle":"We’ll take full care of your accounting, help you navigate banking and employee onboarding, and free you from boring numbers while saving your nerves.",
         "accounting-hero-cta-button":"Schedule consultation",
@@ -1437,18 +1437,6 @@
         "accounting-scheme-item2":"We sign a contract.",
         "accounting-scheme-item3":"We prepare all the required documents.",
         "accounting-scheme-item4":"We start working. From this point on, we send monthly reports and monitor tax payments.",
-    
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1484,6 +1472,19 @@
         "registration-faq-answer3":"As a foreign citizen, you will need it when opening bank accounts or registering property. Less obviously, while you are officially registered in Armenia, the standard limit on the length of stay does not apply to you. At the moment, this limit is 180 days. With registration, you can forget about this restriction and stay in Armenia continuously 365 days a year without worrying about overstaying.",
         "registration-faq-answer4":"This option is available with the “Classic Registration” package. The service will cost $50 less, but there is one important detail to keep in mind: the registration stamp is issued at the passport office of the specific district/region where you are being registered. If you choose registration outside Yerevan, you will need to travel to the passport office in that location to complete the process.",
 
-        "registration-contact-title":"Want to<br><span class=\"special-text\">get registered now?</span>"
+        "registration-contact-title":"Want to<br><span class=\"special-text\">get registered now?</span>",
+    
+    
+    
+    
+        "maintenance-title":"Right now we under <span class=\"special-text\">maintenance</span>",
+        "maintenance-subtitle1":"We are doing our best to complete the technical work as quickly as possible.",
+        "maintenance-subtitle2":"In case of any emergency you can always contact with us via messengers, email or phones on weekdays from 10:00 to 18:00 Armenian time",
+    
+        "maintenance-address-title":"Our offices",
+        "maintenance-address-subtitle1":"Armenia, Yerevan, Arabkir, Vagharsh Vagharshyan 12/1",
+        "maintenance-address-subtitle2":"Russia, Moscow, Sibirski Proezd 2b2",
+    
+        "maintenance-end-title":"© 2026 Armbiz Consulting - Your success is Our mission"
     }
 }

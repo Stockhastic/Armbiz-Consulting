@@ -3,6 +3,50 @@
 @use "./base/vars";
 @use "./base/mixins" as m;
 
+
+#site-header {
+    min-height: 12rem;
+}
+#site-header,
+#site-footer {
+    visibility: hidden;
+}
+body.includes-ready #site-header,
+body.includes-ready #site-footer {
+    visibility: visible;
+}
+
+.page-fade {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 320ms ease;
+    z-index: 9999;
+}
+
+.js .page-fade.page-fade--active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-fade {
+        transition: none;
+    }
+}
+
+.add-border{
+    border: 1px solid vars.$borderColor;
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+
+
+
+
+
 .uikit-block {
     display: flex;
     flex-direction: column;
@@ -501,8 +545,11 @@ main {
     // outline: 1px solid bisque;
     height: 12rem;
     &__logo{
+        display: flex;
         flex-grow: 1;
         & > img {
+            width: 180px;
+            margin: auto 0;
             max-height: 100%;
         }
     }   
@@ -1464,6 +1511,18 @@ main {
             border-radius: 2rem;
             & > p{
                 margin-bottom: 1rem;
+            }
+        }
+    }
+    &__lang-switcher{
+        right: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        & > button{
+            margin: 1rem;
+            & > img{
+                margin-left: 1rem;
             }
         }
     }

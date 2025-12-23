@@ -923,6 +923,47 @@ strong, .special-text, .bold-text {
   left: 75%;
 }
 
+#site-header {
+  min-height: 12rem;
+}
+
+#site-header,
+#site-footer {
+  visibility: hidden;
+}
+
+body.includes-ready #site-header,
+body.includes-ready #site-footer {
+  visibility: visible;
+}
+
+.page-fade {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 320ms ease;
+  z-index: 9999;
+}
+
+.js .page-fade.page-fade--active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-fade {
+    transition: none;
+  }
+}
+
+.add-border {
+  border: 1px solid #d7deef;
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
 .uikit-block {
   display: flex;
   flex-direction: column;
@@ -1396,9 +1437,12 @@ main > .backer:hover > a {
   height: 12rem;
 }
 .header__logo {
+  display: flex;
   flex-grow: 1;
 }
 .header__logo > img {
+  width: 180px;
+  margin: auto 0;
   max-height: 100%;
 }
 .header__nav-list {
@@ -2237,4 +2281,16 @@ main > .backer:hover > a {
 }
 .maintenance__contact-links > ul > p {
   margin-bottom: 1rem;
+}
+.maintenance__lang-switcher {
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.maintenance__lang-switcher > button {
+  margin: 1rem;
+}
+.maintenance__lang-switcher > button > img {
+  margin-left: 1rem;
 }/*# sourceMappingURL=styles.css.map */

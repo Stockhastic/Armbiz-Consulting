@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
 
     <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.css" />
     <script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
@@ -50,10 +53,11 @@
 <body>
     <div id="cursor"></div>
     <div id="aura"></div>
+    <div class="page-fade page-fade--active" aria-hidden="true"></div>
     
     <header class="header">
         <a class="header__logo" href="/index.html">
-            <img src="/src/graphics/png/header-logo.png" alt="logosvgs">
+            <img src="/src/graphics/svg/logo-v2.svg" alt="logosvgs">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
