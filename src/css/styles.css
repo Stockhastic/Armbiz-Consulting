@@ -927,6 +927,11 @@ strong, .special-text, .bold-text {
   min-height: 12rem;
 }
 
+#site-footer {
+  min-height: 40rem;
+  background-color: #1e2736;
+}
+
 #site-header,
 #site-footer {
   visibility: hidden;
@@ -957,7 +962,6 @@ body.includes-ready #site-footer {
     transition: none;
   }
 }
-
 .add-border {
   border: 1px solid #d7deef;
   border-radius: 2rem;
@@ -1614,22 +1618,22 @@ main > .backer:hover > a {
 .footer__divider {
   background-color: #434c5b;
   height: 1px;
-  width: 1280px;
+  width: 100%;
   margin: 2rem auto;
 }
 .footer__afterline {
-  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  position: relative;
 }
 .footer__copyright {
   font-family: "Raleway-Medium";
   color: #fff;
+  text-align: left;
 }
 .footer__policy {
-  position: absolute;
-  right: 0;
-  top: 0;
   text-decoration: underline;
   color: #fff;
   font-family: "Raleway-Medium";

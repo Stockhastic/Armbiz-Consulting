@@ -7,6 +7,11 @@
 #site-header {
     min-height: 12rem;
 }
+#site-footer {
+    min-height: 40rem;
+    background-color: vars.$darkColor;
+}
+
 #site-header,
 #site-footer {
     visibility: hidden;
@@ -536,6 +541,7 @@ main {
         }
     }
 }
+
 // Header 
 .header{
     position: relative;
@@ -651,6 +657,8 @@ main {
             }
         }
     }
+
+    
 }
 // Footer
 .footer {
@@ -660,6 +668,7 @@ main {
     color: #fff;
     height: 40rem;
     background-color: vars.$darkColor;
+    
     &__grid{
         max-width: 1280px;
         margin: 0 auto;
@@ -685,7 +694,6 @@ main {
         max-width: 50rem;
         align-content: end;
     }
-
     &__list{
         &-item{
             &::before{
@@ -736,27 +744,27 @@ main {
             }
         }
     }
-
     &__divider{
         background-color: vars.$greyColor;
         height: 1px;
-        width: 1280px;
+        width: 100%;
         margin: 2rem auto;
     }
-
     &__afterline{
-        width: 1280px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1280px;
+        width: 100%;
         margin: 0 auto;
-        position: relative;
+        // position: relative;
     }
     &__copyright{
         font-family:vars.$mainFontMedium;
         color: #fff;
+        text-align: left;
     }
     &__policy{
-        position: absolute;
-        right: 0;
-        top: 0;
+        // right: 0;
         text-decoration: underline;
         color:#fff;
         font-family:vars.$mainFontMedium;
