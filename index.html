@@ -59,6 +59,12 @@
         <a class="header__logo" href="/index.html">
             <img src="/src/graphics/svg/logo-v2.svg" alt="logosvgs">
         </a>
+        <button class="header__burger" type="button" aria-label="Open menu" aria-controls="header-menu" aria-expanded="false">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+        <div class="header__menu" id="header-menu" aria-hidden="true">
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item header__nav-item-services">
@@ -99,6 +105,8 @@
                 </button>
             </div>
         </div>
+        </div>
+        <div class="header__menu-backdrop" data-menu-close></div>
     </header>
 
     <main>

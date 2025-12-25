@@ -240,6 +240,101 @@ function setLang(lang) {
   updateServicePrices(lang);
 }
 
+function initHeaderMenu(root = document) {
+  const header = root.querySelector('.header');
+  if (!header) return;
+  if (header.dataset.menuInit === 'true') return;
+
+  const menu = header.querySelector('.header__menu');
+  const burger = header.querySelector('.header__burger');
+  const backdrop = header.querySelector('.header__menu-backdrop');
+
+  if (!menu || !burger || !backdrop) return;
+
+  header.dataset.menuInit = 'true';
+
+  const servicesItem = header.querySelector('.header__nav-item-services');
+  const servicesLink = servicesItem ? servicesItem.querySelector('.header__nav-link') : null;
+  const mobileQuery = window.matchMedia('(max-width: 1023px)');
+
+  const openMenu = () => {
+    header.classList.add('header--menu-open');
+    menu.setAttribute('aria-hidden', 'false');
+    burger.setAttribute('aria-expanded', 'true');
+    burger.setAttribute('aria-label', 'Close menu');
+    document.body.classList.add('menu-open');
+  };
+
+  const closeMenu = () => {
+    header.classList.remove('header--menu-open');
+    menu.setAttribute('aria-hidden', mobileQuery.matches ? 'true' : 'false');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Open menu');
+    document.body.classList.remove('menu-open');
+    if (servicesItem) {
+      servicesItem.classList.remove('is-open');
+    }
+  };
+
+  const toggleMenu = () => {
+    if (header.classList.contains('header--menu-open')) {
+      closeMenu();
+      return;
+    }
+    openMenu();
+  };
+
+  burger.addEventListener('click', toggleMenu);
+  backdrop.addEventListener('click', closeMenu);
+
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (!mobileQuery.matches) return;
+      if (link === servicesLink) return;
+      closeMenu();
+    });
+  });
+
+  if (servicesItem && servicesLink) {
+    servicesLink.addEventListener('click', event => {
+      if (!mobileQuery.matches) return;
+      event.preventDefault();
+      servicesItem.classList.toggle('is-open');
+    });
+  }
+
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    if (!header.classList.contains('header--menu-open')) return;
+    closeMenu();
+  });
+
+  const syncMenuState = () => {
+    if (mobileQuery.matches) {
+      menu.setAttribute(
+        'aria-hidden',
+        header.classList.contains('header--menu-open') ? 'false' : 'true'
+      );
+      return;
+    }
+    header.classList.remove('header--menu-open');
+    menu.setAttribute('aria-hidden', 'false');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Open menu');
+    document.body.classList.remove('menu-open');
+  };
+
+  syncMenuState();
+
+  if (typeof mobileQuery.addEventListener === 'function') {
+    mobileQuery.addEventListener('change', syncMenuState);
+  } else if (typeof mobileQuery.addListener === 'function') {
+    mobileQuery.addListener(syncMenuState);
+  }
+}
+
+initHeaderMenu();
+
 document.addEventListener('click', e => {
   const target = e.target instanceof Element ? e.target.closest('.header__lang-switcher-item') : null;
   if (!target) return;
@@ -248,6 +343,7 @@ document.addEventListener('click', e => {
 
 document.addEventListener('includes:loaded', () => {
   setLang(currentLang);
+  initHeaderMenu();
 });
 
 // Initialize FAQ accordion only when the container exists to avoid runtime errors on pages without it
