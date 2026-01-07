@@ -670,8 +670,19 @@
         "accounting-scheme-item3":"Подготваливаем все необходимые документы",
         "accounting-scheme-item4":"Начинаем работу. С этого момента мы ежемесячно высылаем отчетности и контролируем опату налогов",
     
-    
-    
+        "accounting-faq-question1":"<span class=\"faq-header\">Какие процентные уставки у местных налогов?</span>",
+        "accounting-faq-question2":"<span class=\"faq-header\">Я ИП без сотрудников, сколько будет стоить ежемесячное обслуживание?</span>",
+        "accounting-faq-question3":"<span class=\"faq-header\">Если я работаю с НДС, то какая процентная ставка будет при экспорте?</span>",
+        
+        "accounting-faq-answer1-1":"На сегодняшний день в Армении действуют следующие налоговые ставки:",
+        "accounting-faq-answer1-2":"• Подоходный налог - 20%",
+        "accounting-faq-answer1-3":"• Налог на прибыль - 18%",
+        "accounting-faq-answer1-4":"• НДС - 18%",
+        "accounting-faq-answer2":"Стоимость облуживания всегда зависит от оборота, количества ежемесячных транзакций и многих других факторов. По нашим клиентам в среднем получается от 75$ в месяц для подобных случаев",
+        "accounting-faq-answer3":"При экспорте процентная ставка составляет 0%",
+        
+
+
     
         "registration-hero-title":"<span class=\"special-text\">Прописка</span> в Армении для иностранных граждан",
         "registration-hero-subtitle":"Наши специалисты быстро оформят вам прописку в Армении. Есть возможность экспресс получения прописки в черте Еревана. Прописка - первый шаг к вашему комфорту в Армении.",
@@ -718,15 +729,26 @@
         "maintenance-address-subtitle1":"Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1",
         "maintenance-address-subtitle2":"Россия, Москва, Сибирский проезд 2с2",
 
-        "maintenance-end-title":"© 2026 Армбиз Консалтинг - Ваш успех это Наша миссия"
+        "maintenance-end-title":"© 2026 Армбиз Консалтинг - Ваш успех это Наша миссия",
 
 
 
 
 
 
+        "socialcard-hero-title":"<span class=\"special-text\">Социальная карта</span> для иностранных граждан",
+        "socialcard-hero-subtitle":"Социальная карта в Армении — ключ к финансовым возможностям и государственным сервисам Оформляем социальную карту быстро и без лишних сложностей — получите доступ к банковским счетам, льготам и государственным услугам без бюрократии.",
+        "socialcard-hero-cta-button":"Получить социальную карту",
 
+        "socialcard-faq-question1":"<span class=\"faq-header\">Кому требуется социальная карта?</span>",
+        "socialcard-faq-question2":"<span class=\"faq-header\">Для чего обычно используется социальная карта?</span>",
+        "socialcard-faq-question3":"<span class=\"faq-header\">Какие документы мне понадобятся?</span>",
+        "socialcard-faq-question4":"<span class=\"faq-header\">Возможно ли успеть оформить социальную карту за время отпуска?</span>",
 
+        "socialcard-faq-answer1":"Социальная карта необходима всем, кто планирует жить, работать или вести деятельность на территории Армении.  Если вы планируете долгосрочное пребывание в стране или экономическую активность — оформление социальной карты становится обязательным шагом.",
+        "socialcard-faq-answer2":"В первую очередь социальная карта применяется при взаимодействии с банками, работодателями и государственными структурами. Она используется при открытии счетов, начислении заработной платы, уплате налогов и социальных взносов, а также при получении медицинских и социальных услуг. <br> Фактически, социальная карта связывает человека с государственными и финансовыми системами Армении. Можно вопспринимать её как Армянский аналог СНИЛС ",
+        "socialcard-faq-answer3":"Для оформления вам потребуется лишь паспорт. Обычно используется заграничный паспорт, но если вы гражданин РФ то можете воспользоваться и внутренним паспортом. Использовать можно только тот паспорт в котором стоит штамп о пересечении границы. Оформление по внутреннему паспорту дольше чем по заграничному",
+        "socialcard-faq-answer4":"Да, особенно если вы въезжали в страну по заграничному паспорту. Весь процесс обычно не занимает больше 3-ех дней в данных обстоятельствах."
 
 
 
@@ -1437,8 +1459,17 @@
         "accounting-scheme-item2":"We sign a contract.",
         "accounting-scheme-item3":"We prepare all the required documents.",
         "accounting-scheme-item4":"We start working. From this point on, we send monthly reports and monitor tax payments.",
-
-
+        
+        "accounting-faq-question1":"<span class=\"faq-header\">What are the current local tax rates?</span>",
+        "accounting-faq-question2":"<span class=\"faq-header\">I’m a sole proprietor with no employees—how much will monthly accounting support cost?</span>",
+        "accounting-faq-question3":"<span class=\"faq-header\">If I work with VAT, what VAT rate applies to exports?</span>",
+        
+        "accounting-faq-answer1-1":"As of today, the following tax rates apply in Armenia:",
+        "accounting-faq-answer1-2":"• Personal income tax — 20%",
+        "accounting-faq-answer1-3":"• Corporate income tax — 18%",
+        "accounting-faq-answer1-4":"• VAT — 18%",
+        "accounting-faq-answer2":"The service fee always depends on turnover, the number of monthly transactions, and many other factors. Based on our clients’ experience, the average cost for similar cases starts from $75 per month.",
+        "accounting-faq-answer3":"For exports, the VAT rate is 0%.",
 
 
         "registration-hero-title":"<span class=\"special-text\">Registration</span> in Armenia for foreign citizens",
@@ -1485,6 +1516,27 @@
         "maintenance-address-subtitle1":"Armenia, Yerevan, Arabkir, Vagharsh Vagharshyan 12/1",
         "maintenance-address-subtitle2":"Russia, Moscow, Sibirski Proezd 2b2",
     
-        "maintenance-end-title":"© 2026 Armbiz Consulting - Your success is Our mission"
+        "maintenance-end-title":"© 2026 Armbiz Consulting - Your success is Our mission",
+
+
+
+
+
+
+        "socialcard-hero-title":"<span class=\"special-text\">Social card</span> for foreigners",
+        "socialcard-hero-subtitle":"In Armenia, social card is a key Armenia’s Social Card is your gateway to financial opportunities and public services. We help you obtain your Social Card quickly and seamlessly—so you can access bank accounts, benefits, and government services without red tape.",
+        "socialcard-hero-cta-button":"Obtain Social Card",
+
+        "socialcard-faq-question1":"<span class=\"faq-header\">Who needs a Social Card?</span>",
+        "socialcard-faq-question2":"<span class=\"faq-header\">What is a Social Card typically used for?</span>",
+        "socialcard-faq-question3":"<span class=\"faq-header\">What documents will I need?</span>",
+        "socialcard-faq-question4":"<span class=\"faq-header\">Is it possible to obtain a Social Card during my vacation?</span>",
+
+        "socialcard-faq-answer1":"A Social Card is required for anyone planning to live, work, or conduct activities in Armenia. If you are planning a long-term stay in the country or any economic activity, obtaining a Social Card becomes a mandatory step.",
+        "socialcard-faq-answer2":"A Social Card is primarily used when dealing with banks, employers, and government institutions. It is required for opening bank accounts, receiving salary payments, paying taxes and social contributions, and accessing medical and social services. <br> In practice, a Social Card links a person to Armenia’s government and financial systems. You can think of it as the Armenian equivalent of Russia’s SNILS.",
+        "socialcard-faq-answer3":"To apply, you only need your passport. Usually, an international passport is used, but if you are a citizen of the Russian Federation, you may also use your internal passport. You can only use the passport that contains your border entry stamp. Applying with an internal passport takes longer than with an international passport.",
+        "socialcard-faq-answer4":"Yes—especially if you entered the country using an international passport. In this case, the entire process usually takes no more than 3 days.",
+    
+        "contact-us-title-socialcard":"Want to obtain card<br><span class=\"special-text\">right now?</span>"
     }
 }

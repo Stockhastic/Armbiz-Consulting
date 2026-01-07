@@ -240,6 +240,95 @@ function setLang(lang) {
   updateServicePrices(lang);
 }
 
+function initHeaderMenu() {
+  const header = document.querySelector('.header');
+  if (!header || header.classList.contains('header--menu-ready')) {
+    return;
+  }
+
+  const nav = header.querySelector('.header__nav');
+  const lang = header.querySelector('.header__lang');
+  if (!nav || !lang) {
+    return;
+  }
+
+  header.classList.add('header--menu-ready');
+
+  const burger = document.createElement('button');
+  burger.className = 'header__burger';
+  burger.type = 'button';
+  burger.setAttribute('aria-label', 'Open menu');
+  burger.setAttribute('aria-expanded', 'false');
+  burger.setAttribute('aria-controls', 'header-menu');
+  burger.innerHTML = [
+    '<span class="header__burger-line"></span>',
+    '<span class="header__burger-line"></span>',
+    '<span class="header__burger-line"></span>',
+  ].join('');
+
+  const menu = document.createElement('div');
+  menu.className = 'header__menu';
+  menu.id = 'header-menu';
+  menu.setAttribute('aria-hidden', 'true');
+
+  const panel = document.createElement('div');
+  panel.className = 'header__menu-panel';
+
+  const logo = header.querySelector('.header__logo');
+  if (logo) {
+    logo.insertAdjacentElement('afterend', burger);
+  } else {
+    header.insertBefore(burger, nav);
+  }
+  burger.insertAdjacentElement('afterend', menu);
+  menu.appendChild(panel);
+  panel.appendChild(nav);
+  panel.appendChild(lang);
+
+  const overlay = document.createElement('button');
+  overlay.className = 'header__menu-overlay';
+  overlay.type = 'button';
+  overlay.setAttribute('data-menu-close', '');
+  overlay.setAttribute('aria-label', 'Close menu');
+  header.appendChild(overlay);
+
+  const toggleMenu = (forceOpen) => {
+    const shouldOpen = typeof forceOpen === 'boolean'
+      ? forceOpen
+      : !header.classList.contains('header--menu-open');
+    header.classList.toggle('header--menu-open', shouldOpen);
+    burger.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+    menu.setAttribute('aria-hidden', shouldOpen ? 'false' : 'true');
+    document.body.classList.toggle('menu-open', shouldOpen);
+  };
+
+  burger.addEventListener('click', () => toggleMenu());
+  overlay.addEventListener('click', () => toggleMenu(false));
+  menu.addEventListener('click', event => {
+    const link = event.target instanceof Element ? event.target.closest('a') : null;
+    if (!link) return;
+    toggleMenu(false);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      toggleMenu(false);
+    }
+  });
+
+  const desktopQuery = window.matchMedia('(min-width: 1024px)');
+  const handleDesktopChange = () => {
+    if (desktopQuery.matches) {
+      toggleMenu(false);
+    }
+  };
+  if (typeof desktopQuery.addEventListener === 'function') {
+    desktopQuery.addEventListener('change', handleDesktopChange);
+  } else if (typeof desktopQuery.addListener === 'function') {
+    desktopQuery.addListener(handleDesktopChange);
+  }
+  handleDesktopChange();
+}
+
 document.addEventListener('click', e => {
   const target = e.target instanceof Element ? e.target.closest('.header__lang-switcher-item') : null;
   if (!target) return;
@@ -248,6 +337,7 @@ document.addEventListener('click', e => {
 
 document.addEventListener('includes:loaded', () => {
   setLang(currentLang);
+  initHeaderMenu();
 });
 
 // Initialize FAQ accordion only when the container exists to avoid runtime errors on pages without it
@@ -342,7 +432,7 @@ gsap.to(bgGeometry, {
     scrub: 1.3
   },
   x: -2300,
-  y: 500,
+  y: 300,
   scale: 0.8,
   rotate: 360,
   ease: "power3.inOut",
