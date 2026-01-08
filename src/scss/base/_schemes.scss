@@ -33,6 +33,7 @@
         padding: 2rem;
         margin-bottom: 2.5rem;
         &-title{
+
             font-family: vars.$mainFontSemibold;
             &::before{
                 position: absolute;
@@ -63,6 +64,9 @@
         &--special{
             background-color: vars.$darkColor;
             color: #fff;
+            & > h4{
+                color: #fff;
+            }
         }
     }
     &__line{

@@ -772,6 +772,9 @@ strong, .special-text, .bold-text {
   background-color: #1e2736;
   color: #fff;
 }
+.scheme__item--special > h4 {
+  color: #fff;
+}
 .scheme__line {
   position: absolute;
   width: 3px;
@@ -1069,10 +1072,7 @@ body.menu-open {
   height: 20px;
 }
 
-main {
-  overflow-x: clip;
-}
-main > .backer {
+.backer {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -1081,22 +1081,25 @@ main > .backer {
   border-radius: 100%;
   margin: 2rem;
   background-color: rgba(231, 239, 254, 0.6352941176);
-  text-align: center;
   padding: 1rem 0;
 }
-main > .backer > a {
+.backer > a {
   font-size: 50px;
   font-weight: 900;
   color: #1a6eff;
 }
-main > .backer > a:hover {
-  color: #fff;
+.backer > a > img {
+  display: flex;
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
 }
-main > .backer:hover {
+.backer:hover {
   background-color: #1a6eff;
 }
-main > .backer:hover > a {
-  color: #fff;
+.backer:hover > a > img {
+  filter: brightness(100);
 }
 
 .wrapper, .header {
@@ -2024,20 +2027,11 @@ main > .backer:hover > a {
   border-radius: 2.4rem;
   border: 1px solid #d7deef;
   background-color: #fff;
-  box-shadow: 0 18px 40px rgba(30, 39, 54, 0.08);
   overflow: hidden;
 }
 .sc-details__card > * {
   position: relative;
   z-index: 1;
-}
-.sc-details__card--accent {
-  border-color: rgba(26, 110, 255, 0.25);
-  background: linear-gradient(180deg, #e7effe 0%, #fff 65%);
-  box-shadow: 0 24px 46px rgba(26, 110, 255, 0.12);
-}
-.sc-details__card--accent::after {
-  background: radial-gradient(circle, rgba(26, 110, 255, 0.25), rgba(26, 110, 255, 0));
 }
 .sc-details__card-header {
   display: flex;

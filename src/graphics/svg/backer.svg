@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_17" data-name="Слой 17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a6eff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M49.02,23.52h-6.02v50.81c0,.37-.3.67-.67.67h-4.66c-.37,0-.67-.3-.67-.67V23.52h-6.02c-.26,0-.42-.28-.29-.51l9.02-15.62c.13-.22.45-.22.58,0l9.02,15.62c.13.23-.03.51-.29.51Z"/>
+</svg>

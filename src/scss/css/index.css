@@ -742,6 +742,9 @@ strong, .special-text, .bold-text {
   background-color: #1e2736;
   color: #fff;
 }
+.scheme__item--special > h4 {
+  color: #fff;
+}
 .scheme__line {
   position: absolute;
   width: 3px;

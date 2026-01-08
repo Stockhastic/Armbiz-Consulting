@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Residence_permit" data-name="Residence permit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #139bff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #0032b8;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #96e1fe;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="Shield">
+    <path class="cls-2" d="M74.53,93.53v17.94c0,14.49-8.58,27.62-21.86,33.43l-3.75,1.64-3.75-1.64c-13.27-5.81-21.86-18.94-21.86-33.43v-17.94c12.87,0,25.61-6.15,25.61-6.15,0,0,14.75,6.15,25.61,6.15Z"/>
+    <path class="cls-1" d="M64.88,102.36v11.18c0,9.03-5.34,17.21-13.62,20.83l-2.34,1.02-2.34-1.02c-8.27-3.62-13.62-11.8-13.62-20.83v-11.18c8.02,0,15.96-3.83,15.96-3.83,0,0,9.19,3.83,15.96,3.83Z"/>
+    <polyline class="cls-3" points="41.05 117.67 46.5 124.13 56.79 109.8"/>
+  </g>
+</svg>
