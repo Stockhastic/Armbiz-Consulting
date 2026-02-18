@@ -17,6 +17,9 @@
 .sphere-container--maintenance {
   filter: invert(1);
 }
+.sphere-container--megaZ {
+  z-index: 0;
+}
 .sphere:nth-child(1) {
   width: 220px;
   height: 220px;

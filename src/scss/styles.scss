@@ -1053,6 +1053,26 @@ body.menu-open {
             }
         }
     }
+    &--aboutus{
+        background: linear-gradient(
+            0deg,
+            #DFEDFF,
+            #ffffff
+        ); 
+        padding-block-end: 5rem;
+        & > .service-card{
+            width: 80%;
+            padding: 5rem;
+        }
+
+        & > h4{
+            z-index: 10000;
+        }
+
+        & > h1{
+            z-index: 10000;
+        }
+    }
 
 }
 
@@ -1834,3 +1854,51 @@ body.menu-open {
 
 }
 
+
+// ABOUT-US & STAFF
+
+.staff{
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 5rem;
+    gap: 3rem;
+    background: linear-gradient(
+        180deg,
+        #DFEDFF,
+        #ffffff
+    ); 
+    &__header{
+        width: 100%;
+        text-align: center;
+        font-family: vars.$mainFontSemibold;
+    }
+    &-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 3.5rem;
+        @extend .wrapper;
+    }
+    &-card{
+        width: 290px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        outline: 1px solid vars.$borderColor;
+        padding: 2rem;
+        border-radius: 3rem;
+        background-color: #ffffff7a;
+        &__header{
+            font-family: vars.$mainFontSemibold;
+            text-align: center;    
+        }
+        &__position{
+            text-align: center;
+            font-family: vars.$mainFontMedium;
+        }
+        &__photo{
+            width: 250px;
+            border-radius: 2rem;
+        }
+    }
+}

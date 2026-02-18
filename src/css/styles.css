@@ -860,6 +860,9 @@ strong, .special-text, .bold-text {
 .sphere-container--maintenance {
   filter: invert(1);
 }
+.sphere-container--megaZ {
+  z-index: 0;
+}
 .sphere:nth-child(1) {
   width: 220px;
   height: 220px;
@@ -1102,7 +1105,7 @@ body.menu-open {
   filter: brightness(100);
 }
 
-.wrapper, .header {
+.wrapper, .staff-container, .header {
   margin: 0 auto;
   max-width: 1280px;
 }
@@ -1110,7 +1113,7 @@ body.menu-open {
   max-width: 1800px;
 }
 @media (max-width: 767px) {
-  .wrapper, .header {
+  .wrapper, .staff-container, .header {
     padding: 0 2rem;
   }
 }
@@ -1895,6 +1898,20 @@ body.menu-open {
   font-family: "Raleway-Semibold";
   color: #1e2736;
 }
+.hero--aboutus {
+  background: linear-gradient(0deg, #DFEDFF, #ffffff);
+  padding-block-end: 5rem;
+}
+.hero--aboutus > .service-card {
+  width: 80%;
+  padding: 5rem;
+}
+.hero--aboutus > h4 {
+  z-index: 10000;
+}
+.hero--aboutus > h1 {
+  z-index: 10000;
+}
 
 .hero__title--residence {
   font-family: "Raleway-Semibold";
@@ -2248,7 +2265,7 @@ body.menu-open {
   background: radial-gradient(#e7effe, #ffffff);
   padding-block: 5rem;
 }
-.cards-services > .wrapper, .cards-services > .header {
+.cards-services > .wrapper, .cards-services > .staff-container, .cards-services > .header {
   padding-block: 5rem;
   display: flex;
   justify-content: space-around;
@@ -2575,4 +2592,45 @@ body.menu-open {
 }
 .maintenance__lang-switcher > button > img {
   margin-left: 1rem;
+}
+
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 5rem;
+  gap: 3rem;
+  background: linear-gradient(180deg, #DFEDFF, #ffffff);
+}
+.staff__header {
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway-Semibold";
+}
+.staff-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 3.5rem;
+}
+.staff-card {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  outline: 1px solid #d7deef;
+  padding: 2rem;
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.4784313725);
+}
+.staff-card__header {
+  font-family: "Raleway-Semibold";
+  text-align: center;
+}
+.staff-card__position {
+  text-align: center;
+  font-family: "Raleway-Medium";
+}
+.staff-card__photo {
+  width: 250px;
+  border-radius: 2rem;
 }/*# sourceMappingURL=styles.css.map */
