@@ -343,7 +343,8 @@ body.menu-open {
 .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-block-end: 10rem;
+    padding-block: 10rem;
+    @extend .wrapper;
     &__badge{
         @extend .badge;
         top: 0;
@@ -352,7 +353,7 @@ body.menu-open {
     }
     &__details {
         position: relative;
-        max-width: 600px;;
+        max-width: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -459,6 +460,7 @@ body.menu-open {
             margin-top: 1.7rem;
         }
     }
+
 
 }
 // Form
@@ -1066,11 +1068,11 @@ body.menu-open {
         }
 
         & > h4{
-            z-index: 10000;
+            z-index: 1;
         }
 
         & > h1{
-            z-index: 10000;
+            z-index: 1;
         }
     }
 

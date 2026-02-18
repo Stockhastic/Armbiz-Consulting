@@ -1105,7 +1105,7 @@ body.menu-open {
   filter: brightness(100);
 }
 
-.wrapper, .staff-container, .header {
+.wrapper, .staff-container, .header, .contact {
   margin: 0 auto;
   max-width: 1280px;
 }
@@ -1113,7 +1113,7 @@ body.menu-open {
   max-width: 1800px;
 }
 @media (max-width: 767px) {
-  .wrapper, .staff-container, .header {
+  .wrapper, .staff-container, .header, .contact {
     padding: 0 2rem;
   }
 }
@@ -1262,7 +1262,7 @@ body.menu-open {
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-block-end: 10rem;
+  padding-block: 10rem;
 }
 .contact__badge {
   top: 0;
@@ -1907,10 +1907,10 @@ body.menu-open {
   padding: 5rem;
 }
 .hero--aboutus > h4 {
-  z-index: 10000;
+  z-index: 1;
 }
 .hero--aboutus > h1 {
-  z-index: 10000;
+  z-index: 1;
 }
 
 .hero__title--residence {
@@ -2265,7 +2265,7 @@ body.menu-open {
   background: radial-gradient(#e7effe, #ffffff);
   padding-block: 5rem;
 }
-.cards-services > .wrapper, .cards-services > .staff-container, .cards-services > .header {
+.cards-services > .wrapper, .cards-services > .staff-container, .cards-services > .contact, .cards-services > .header {
   padding-block: 5rem;
   display: flex;
   justify-content: space-around;

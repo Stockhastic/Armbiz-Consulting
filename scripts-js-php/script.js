@@ -366,9 +366,9 @@ let backerTrigger = document.querySelector(".backer-trigger");
 gsap.from(backer, {
   scrollTrigger: {
     trigger: backerTrigger,
-    start: "top 10%",
-    end: "500px 5%",
-    // markers: true,
+    start: "bottom 20%",
+    end: "600px 20%",
+    markers: true,
     scrub: 1.3
   },
   x:100,
