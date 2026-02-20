@@ -349,9 +349,10 @@ body.menu-open {
         @extend .badge;
         top: 0;
         left: 0;
-        translate: 50% 120%;
+        translate: 50% 0%;
     }
     &__details {
+        // outline: 1px solid red;
         position: relative;
         max-width: 600px;
         display: flex;
@@ -1903,4 +1904,96 @@ body.menu-open {
             border-radius: 2rem;
         }
     }
+}
+
+// CONTACTS PAGE
+
+.extra-details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 6rem;
+    &__text{
+        width: 100%;
+        text-align: center;
+    }
+    &__container{
+        // outline: 1px dashed salmon;
+        max-width: 49%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1.5rem;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        &-wrapper{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            // outline: 1px dashed pink;
+            margin: 0 auto;
+        }
+        & > h3, h5{
+            width: 100%;
+            text-align: center;
+        }
+        &-description{
+            max-width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin: auto;
+            // height: 100%;
+        }
+        &--roadtous{
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+            max-width: 100%;
+            padding-bottom: 10rem;
+            & > div{
+                margin: 0;
+            }
+        }
+    }
+    &__iframe{
+        border-radius: 1rem;
+        border: 2px solid vars.$borderColor;
+    }
+    &__map-link{
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        font-size: vars.$h4Size;
+        font-family: vars.$mainFontSemibold;
+        text-align: center;
+        padding: 2rem;
+        transition: 0.23s;
+        border-radius: 1rem;
+        border: 1px solid vars.$borderColor;
+        &:hover{
+            box-shadow: 0 0 6px vars.$secondaryColor;
+            scale: 1.05;
+        }
+    }
+    &__map-image{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+.road-to-office{
+    border-radius: 1rem;
+    border: 2px solid vars.$secondaryColor;
+}
+
+.route-to-office{
+    border-radius: 1rem;
+    border: 2px solid vars.$borderColor;
 }

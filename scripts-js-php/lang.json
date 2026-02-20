@@ -334,7 +334,6 @@
 
 
 
-
         "logistics-customs-hero-title": "<span class=\"special-text\">Логистика</span> и Таможня",
         "logistics-customs-hero-subtitle": "В условиях текущей мировой обстановки компании вынуждены искать альтернативные пути ввоза и вывоза товаров. Многие сталкиваются со сложностями при проведении платежей за приобретаемый товар.",
         "logistics-customs-hero-cta-button": "Запросить консультацию",
@@ -734,7 +733,11 @@
 
 
 
-
+        "social-card-detail1-header":"Процесс оформления",
+        "social-card-detail2-header":"Сопровождение с Armbiz Consulting",
+        "social-card-detail1-desription":"Не смотря на кажущуюся простоту, процедура оформления социальной карты требует коррректной подготовки документов и личного присутствия. На практике у заявителей часто возникают сложности из-за формальных ошибок, несоотвветствия данных или непонимания последовательности действий.",
+        "social-card-detail2-desription1":"Мы не ограничиваемся формальной подачей заявления и помогаем разобраться в требованиях. Проверяем документы и заранее сопровождаем клиента до результата.",
+        "social-card-detail2-desription2":"После получения социальной карты мы также можем проконсультировать по дальнейшим шагам - банковским услугам, трудоустройству или налоговым вопросам.",
 
         "socialcard-hero-title":"<span class=\"special-text\">Социальная карта</span> для иностранных граждан",
         "socialcard-hero-subtitle":"Социальная карта в Армении — ключ к финансовым возможностям и государственным сервисам Оформляем социальную карту быстро и без лишних сложностей — получите доступ к банковским счетам, льготам и государственным услугам без бюрократии.",
@@ -1521,7 +1524,11 @@
 
 
 
-
+        "social-card-detail1-header":"Application process",
+        "social-card-detail2-header":"Support with Armbiz Consulting",
+        "social-card-detail1-desription":"Despite it's apparent simplicity, the process of obtaining a social card requires proper document preparation and personal attendance. In practive, applicants often encounter difficulties due to formal errors, data discrepancies, or a lack of understanding of the required sequence of steps.",
+        "social-card-detail2-desription1":"We do not limit ourselves to the formal submission of the application and assist in clarifying all requirements. We review the documents and provide advance guidance, supporting the client through to the final result.",
+        "social-card-detail2-desription2":"After obtaining the social card, we can also provide consultations on the next steps, including banking services, employment matters, or tax-related issues.",
 
         "socialcard-hero-title":"<span class=\"special-text\">Social card</span> for foreigners",
         "socialcard-hero-subtitle":"In Armenia, social card is a key Armenia’s Social Card is your gateway to financial opportunities and public services. We help you obtain your Social Card quickly and seamlessly—so you can access bank accounts, benefits, and government services without red tape.",

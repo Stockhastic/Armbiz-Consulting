@@ -17,6 +17,9 @@
 .sphere-container--maintenance {
   filter: invert(1);
 }
+.sphere-container--megaZ {
+  z-index: 0;
+}
 .sphere:nth-child(1) {
   width: 220px;
   height: 220px;
@@ -81,10 +84,7 @@
   animation: float8 38s infinite;
   top: 5%;
   left: 75%;
-}/*# sourceMappingURL=index.css.map */late(0, 0) scale(1);
-  }
-}
-@keyframes float3 {
+}/*# sourceMappingURL=index.css.map */3 {
   0% {
     transform: translate(0, 0) rotate(0deg) scale(1);
   }
@@ -351,8 +351,8 @@ strong, .special-text, .bold-text {
 }
 
 #aura {
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   border: 1px solid rgba(26, 110, 255, 0.2823529412);
   background-color: rgba(26, 110, 255, 0.0941176471);
   transition: 0.22s cubic-bezier(0.73, -1.07, 0.15, 1.88) transform, 0.2s cubic-bezier(0.73, -1.07, 0.15, 1.88) opacity;
@@ -368,8 +368,8 @@ strong, .special-text, .bold-text {
 }
 
 #cursor {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background-color: rgba(26, 110, 255, 0.4941176471);
   transition: 0.5s cubic-bezier(0.73, -1.07, 0.15, 1.88) transform, 0.2s cubic-bezier(0.73, -1.07, 0.15, 1.88) opacity;
   box-shadow: 0 0 10px #60a2ff, 0 0 20px #60a2ff, 0 0 30px #60a2ff, 0 0 40px #60a2ff;

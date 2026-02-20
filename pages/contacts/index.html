@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
+
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.css" />
+    <script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
+    <script src="/scripts-js-php/includes.js" defer></script>
+
+
+    <link rel="stylesheet" href="/src/css/styles.css">
+
+    <!-- FAVICON -->
+    <!-- Favicon Standart -->
+    <link rel="icon" type="image/x-icon" href="/src/graphics/favicon.ico">
+
+    <!-- Different devices favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/graphics/png/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/graphics/png/favicon-32x32.png">
+
+    <!-- Chrome-Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/graphics/png/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/src/graphics/png/android-chrome-512x512.png">
+
+    <!-- IOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/graphics/png/apple-touch-icon.png">
+
+    <!-- Android -->
+    <link rel="manifest" href="/src/graphics/site.webmanifest">
+
+    <title>Социальная Карта | Армбиз Консалтинг</title>
+    
+    <!-- OpenGraphics for Thumbnails -->
+    <meta property="og:title" content="Социальная карта в Армении" />
+    <meta property="og:site_name" content="Армбиз Консалтинг" />
+    <meta property="og:description" content="Получите социальную карту РА уже сейчас!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/graphics/png/OpenGraphicstumbnail.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Armbiz Consulting logo" />
+    <meta property="og:locale" content="ru_RU, en_EN" />
+
+    <!-- Twitter Cards  -->
+    <meta name="twitter:title" content="Социальная карта в Армении" />
+    <meta name="twitter:description" content="Получите социальную карту РА уже сейчас!" />
+    <meta name="twitter:image" content="https://armbizconsulting.com/src/graphics/png/OpenGraphicstumbnail.png" />
+    <meta name="twitter:image:alt" content="Armbiz Consulting logo" />
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <div id="aura"></div>
+    <div class="page-fade page-fade--active" aria-hidden="true"></div>
+    <nav class="backer"><a href="#"><img src="/src/graphics/svg/backer.svg" alt=""></a></nav>
+
+    <header id="site-header"></header>
+
+    <main>
+        <div class="wrapper">
+            <div class="backer-trigger"></div>   
+            
+            <h2 style="text-align: center; ">Наши <span class="special-text">контакты</span></h2>
+            
+            <section id="contact-us" class="contact"></section>
+            
+            <section class="extra-details">
+
+                <div class="extra-details__container">
+                    <h3>Как до нас <span class="special-text">добраться?</span></h3>
+                    <p class="extra-details__text">Мы находимся в шаговой доступности от метро Дружба</p>
+                    <iframe class="extra-details__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0cc7441485f290d09cf169b22549bdac0a997668d21585b72d90df6a28587f9a&amp;source=constructor" width="646" height="377" frameborder="0"></iframe>
+                </div>
+
+                <div class="extra-details__container">
+                    <h3>Мы на <span class="special-text">картах</span></h3>   
+                    <p>Найдите нас в удобном вам приложении карт и проложите маршрут до офиса.</p>
+                    <p>Наша компания имеет свою бизнес карточку во всех основных картографических агрегаторах, по иконкам ниже вы можете сразу перейти на неё и сэкономить свое время.</p>
+                    <div class="extra-details__container-wrapper">
+                        <a href="https://yandex.com/maps/-/CPaniQPI" class="extra-details__map-link" target="_blank"><img src="/src/graphics/svg/yandex-maps-logo.svg" alt="Yandex Maps logo" class="extra-details__map-image"> Яндекс Карты</a>
+                        <a href="https://maps.app.goo.gl/FuGRSzYw5ht83XGo7" class="extra-details__map-link" target="_blank"><img src="/src/graphics/svg/google-maps-sign-logo.svg" alt="google Maps logo" class="extra-details__map-image">Карты Гугл</a>
+                        <a href="https://go.2gis.com/FXwyR" class="extra-details__map-link" target="_blank"><img src="/src/graphics/svg/2gis-logo.svg" alt="2GIS Maps logo" class="extra-details__map-image" style="border-radius: 2rem;">2ГИС Ереван</a> 
+                    </div>
+                    <p>График работы офиса и приема клиентов <span class="special-text"> с 10:00 до 18:00</span>. Если вы решили лично придти к нам в офис, настоятельно просим предупредить нас заранее. Нам потребуется убедится, что когда вы придете мы можем обслуживать другого клиента.</p>
+                </div>
+
+                <div class="extra-details__container extra-details__container--roadtous">
+                    <video class="road-to-office" src="/src/files/vid-road-to-us.mp4" width="300px" preload="auto" controls></video>
+                    <div class="extra-details__container-description">
+                        <h3>Не получилось <span class="special-text">найти нас?</span></h3>
+                        <p>Не беспокойтесь. На такие случаи мы специально записали видео, чтобы вы могли максимально легко сориентироваться на месте</p>
+                        <p>Маршрут на видео начинается на улице Вагарша Вагаршяна, напротив здания бизнес-центра где мы находимся и заканчивается дверью нашего офиса. На этаже стоит кодовый замок в коридор. Как подниметесь можете написать нам и сотрудник встретит вас у входа.</p>
+                        <img class="route-to-office" src="/src/graphics/png/route.png" alt="route-to-office" width="300px">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="/scripts-js-php/gsap-public/minified/ScrollTrigger.min.js"></script>
+    <script src="/scripts-js-php/gsap.min.js"></script>
+    <script src="/scripts-js-php/script.js"></script>
+</body>
+
+</html>     
