@@ -1,4 +1,4 @@
-// 1) Курсор
+// CURSOR + AURA
 const aura   = document.getElementById('aura');
 const cursor = document.getElementById('cursor');
 
@@ -134,7 +134,7 @@ document.addEventListener('mouseup', () => {
 })();
 
 
-// Цены
+// PRICES
 fetch('scripts-js-php/service-prices.json')
     .then(r => r.json())
     .then(services => {
@@ -187,7 +187,7 @@ function setLang(lang) {
   currentLang = lang;
   localStorage.setItem('siteLang', lang);
 
-  // Переводим все элементы с data-i18n
+  // translate data-i18n
   // Translate elements with data-i18n (supports [attr]key syntax)
   const applyI18n = (el) => {
     const specRaw = el.getAttribute('data-i18n');
@@ -220,7 +220,7 @@ function setLang(lang) {
   
   document.querySelectorAll('[data-i18n]').forEach(el => applyI18n(el));
 
-  // Меняем иконку языка
+  // LANGUAGE ICON CHANGE
   const langIcon = document.getElementById('header-lang-icon');
   if (langIcon) {
     langIcon.src = lang === 'ru'
@@ -228,7 +228,7 @@ function setLang(lang) {
       : '/src/graphics/png/header-lang-en.png';
   }
 
-  // Обновляем выделение кнопки
+  // BUTTON SELECTION REFRESHER
   document.querySelectorAll('.header__lang-switcher-item')
     .forEach(btn => {
       btn.classList.toggle(
@@ -335,9 +335,52 @@ document.addEventListener('click', e => {
   setLang(target.getAttribute('data-lang'));
 });
 
+let reviewsSwiper = null;
+
+function initReviewsSwiper() {
+  if (reviewsSwiper || typeof Swiper !== 'function') {
+    return;
+  }
+
+  const swiperContainer = document.querySelector('.swiper');
+  if (!swiperContainer) {
+    return;
+  }
+
+  const options = {
+    loop: true,
+  };
+
+  const paginationEl = swiperContainer.querySelector('.swiper-pagination');
+  if (paginationEl) {
+    options.pagination = {
+      el: paginationEl,
+    };
+  }
+
+  const nextEl = swiperContainer.querySelector('.swiper-button-next');
+  const prevEl = swiperContainer.querySelector('.swiper-button-prev');
+  if (nextEl && prevEl) {
+    options.navigation = {
+      nextEl,
+      prevEl,
+    };
+  }
+
+  const scrollbarEl = swiperContainer.querySelector('.swiper-scrollbar');
+  if (scrollbarEl) {
+    options.scrollbar = {
+      el: scrollbarEl,
+    };
+  }
+
+  reviewsSwiper = new Swiper(swiperContainer, options);
+}
+
 document.addEventListener('includes:loaded', () => {
   setLang(currentLang);
   initHeaderMenu();
+  initReviewsSwiper();
 });
 
 // Initialize FAQ accordion only when the container exists to avoid runtime errors on pages without it
@@ -351,6 +394,28 @@ if (accordionContainer) {
   });
 }
 
+//SWIPER INITIALIZATION
+initReviewsSwiper();
+
+// var swiper = new Swiper(".swiper", {
+
+//   loop: true,
+
+//   effect: "coverflow",
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slidesPerView: "auto",
+//   coverflowEffect: {
+//     rotate: 45,
+//     stretch: 0,
+//     depth: 100,
+//     modifier: 1,
+//     slideShadows: true,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+// });
 
 
 /////////////////////////////////////////////////////////////

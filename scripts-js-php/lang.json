@@ -50,10 +50,12 @@
         "services-badge": "Наши услуги",
         "services-title": "Комплексные<br><span class=\"special-text\">Решения для бизнеса</span>",
         "services-subtitle": "Комплекcные корпоративные услуги, разработанные с учетом сложных бизнес-потребностей, с первоклассным сервисоми экспертным руководством",
-        
+
+
+
+
         "service-card-llc-ie-title": "Регистрация ООО или ИП",
-        "service-card-llc-ie-subtitle": "Открываем на месте или удаленно.<br> Возможно открытие под ключ с банковскими счетами.",
-        "service-card-llc-ie-text": "Наша команда экспертов займется всеми аспектами создания компании, от первичной консультации до регистрации. Мы оказываем всестороннюю поддержку.",
+        "service-card-llc-ie-text": "Открываем на месте и удаленно. Возможно открытие под ключ с банковскими счетами. Наша команда экспертов займется всеми вопросами создания компании, от первичной консультации до регистрации. Мы оказываем всестороннюю поддержку.",
         
         "service-card-llc-ie-steps": "Этапы процесса:",
         "service-card-llc-ie-step1": "Консультация",
@@ -62,19 +64,18 @@
         "service-card-llc-ie-step4": "Открытие счетов",
         
         "service-card-llc-ie-features": "Ключевые особености:",
-        "service-card-llc-ie-feature1": "Наша команда подготовит для вас все необходимые документы",
-        "service-card-llc-ie-feature2": "Юридический адрес на территории Еревана",
-        "service-card-llc-ie-feature3": "Регистрация компании в государственном реестре Республики Армения",
-        "service-card-llc-ie-feature4": "Полная поддержка при работе с банками, от консультаций до помощи в открытии расчетных счетов",
-        "service-card-llc-ie-feature5": "Получение социального номера",
-
-        "service-card-llc-ie-benefits": "Преимущества",
-        "service-card-llc-ie-benefit1": "Представим ваши интересы",
-        "service-card-llc-ie-benefit2": "Гибкий подход к вашим требованиям",
-        "service-card-llc-ie-benefit3": "Доступ на международный рынок",
-        "service-card-llc-ie-benefit4": "Возможность полной удаленной регистрации",
+        "service-card-llc-ie-feature1": "Подготовка всех необходимых документов",
+        "service-card-llc-ie-feature2": "Получение социального номера",
+        "service-card-llc-ie-feature3": "Юридический адрес на территории Еревана",
+        "service-card-llc-ie-feature4": "Возможность полной удаленной регистрации",
+        "service-card-llc-ie-feature5": "Регистрация в государственном реестре РА",
+        "service-card-llc-ie-feature6": "Полная поддержка при работе с банками",
+        "service-card-llc-ie-feature7": "Представение ваших интересов во всех инстанциях",
     
         "service-card-llc-ie-cta-button": "Хочу знать больше",
+
+
+
 
         "service-card-to-go-companies-title": "Готовые компании и Филиалы",
         "service-card-to-go-companies-subtitle": "Предварительно созданные предприятия с чистой корпоративной историей для немедленного ведения бизнеса",
@@ -98,6 +99,9 @@
         "service-card-to-go-companies-benefit3": "Мгновенный выход на рынок",
         
         "service-card-to-go-companies-cta-button": "Хочу знать больше",
+
+
+
 
         "service-card-residence-title": "ВНЖ",
         "service-card-residence-subtitle": "Предоставляем комплексный подход в получении ВНЖ для иностранных граждан.",
@@ -279,6 +283,11 @@
 
         "contact-us-mails": "Наши почты",
         "contact-us-phones": "Наши телефоны",
+
+        "contact-us-addresses":"Наши офисы",
+        "contact-us-address1":"Армения, Ереван, Арабкир, Вагарша Вагаршяна 12/1",
+        "contact-us-address2":"Россия, Москва, Сибирский проезд 2с2",
+        
         "contact-us-socials": "Наши мессенджеры и соц сети",
 
         "contact-us-form-name": "Ваше ФИО",
@@ -307,6 +316,22 @@
 
         "contact-us-form-cta": "Запросить консультацию",
         "contact-us-form-policy": "Заполняя форму, вы соглашаетесь с нашими условиями конфиденциальности. Обычно, мы отвечаем на запросы в течении 24 часов.",
+
+        "contact-us-short-title":"Наши <span class=\"special-text\">Контакты<span>",
+
+        "contact-us-short-map1":"<img src=\"/src/graphics/svg/yandex-maps-logo.svg\" alt=\"Yandex Maps logo\" class=\"extra-details__map-image\"> Яндекс Карты",
+        "contact-us-short-map2":"<img src=\"/src/graphics/svg/google-maps-sign-logo.svg\" alt=\"google Maps logo\" class=\"extra-details__map-image\">Карты Гугл",
+        "contact-us-short-map3":"<img src=\"/src/graphics/svg/2gis-logo.svg\" alt=\"2GIS Maps logo\" class=\"extra-details__map-image\" style=\"border-radius: 2rem;\">2ГИС Ереван",
+
+        "contacts-title1":"Как до нас <span class=\"special-text\">добраться?</span>",
+        "contacts-title2":"Не получилось <span class=\"special-text\">найти нас?</span>",
+
+        "cotacts-text1":"Мы находимся в шаговой доступности от метро Дружба. <br> Пешком до нас чуть меньше 1км.",
+        "cotacts-text2":"График работы офиса и приема клиентов <span class=\"special-text\"> с 10:00 до 18:00</span>. Если вы решили лично придти к нам в офис, настоятельно просим предупредить нас заранее.",
+        "cotacts-text3":"Не беспокойтесь. На такие случаи мы специально записали видео, чтобы вы могли максимально легко сориентироваться на месте.",
+        "cotacts-text4":"Маршрут на видео начинается на улице Вагарша Вагаршяна, напротив здания бизнес-центра где мы находимся и заканчивается дверью нашего офиса. На этаже стоит кодовый замок в коридор. Как подниметесь можете написать нам и сотрудник встретит вас у входа.",
+
+
 
         "footer-underlogo-text": "Премиальные цифровые решения для индивидуальных клиентов и требовательных предпринимателей, стремяшихся к совершенству в сфере корпоративных услуг",
         
@@ -751,15 +776,84 @@
         "socialcard-faq-answer1":"Социальная карта необходима всем, кто планирует жить, работать или вести деятельность на территории Армении.  Если вы планируете долгосрочное пребывание в стране или экономическую активность — оформление социальной карты становится обязательным шагом.",
         "socialcard-faq-answer2":"В первую очередь социальная карта применяется при взаимодействии с банками, работодателями и государственными структурами. Она используется при открытии счетов, начислении заработной платы, уплате налогов и социальных взносов, а также при получении медицинских и социальных услуг. <br> Фактически, социальная карта связывает человека с государственными и финансовыми системами Армении. Можно вопспринимать её как Армянский аналог СНИЛС ",
         "socialcard-faq-answer3":"Для оформления вам потребуется лишь паспорт. Обычно используется заграничный паспорт, но если вы гражданин РФ то можете воспользоваться и внутренним паспортом. Использовать можно только тот паспорт в котором стоит штамп о пересечении границы. Оформление по внутреннему паспорту дольше чем по заграничному",
-        "socialcard-faq-answer4":"Да, особенно если вы въезжали в страну по заграничному паспорту. Весь процесс обычно не занимает больше 3-ех дней в данных обстоятельствах."
+        "socialcard-faq-answer4":"Да, особенно если вы въезжали в страну по заграничному паспорту. Весь процесс обычно не занимает больше 3-ех дней в данных обстоятельствах.",
 
 
 
 
+        "aboutus-title1":"Мы <span class=\"special-text\">Armbiz Consulting</span>",
+        "aboutus-subtitle1":"Мы одна из ведущих консалтинговых компаний Армении, специализирующаяся на открытии, сопровождении бизнеса и помощь физлицам",
+        "aboutus-text1":"Наша команда экспертов имеет большой опыт в бизнес-консалтинге в различных областях. Мы предоставляем комплексные услуги, охватывающие все аспекты бизнес-процессов: от соблюдения правовых и нормативных требований до исследования рынка, финансового анализа, логистики и таможенных услуг.",
+        "aboutus-text2":"Наша главная задача в сотрудничестве с вами — достижение ваших целей. Выстраивая долгосрочные отношения с нашими партнерами, мы неразрывно связываем их успех с нашим на протяжении всего нашего пути в Армении.",
+        "aboutus-text3":"Сегодня Армения — отличное место для компаний, желающих расширить свою деятельность. Благодаря своему стратегическому расположению, высококвалифицированной рабочей силе и благоприятной деловой среде Республика Армения является привлекательным вариантом для компаний, стремящихся закрепиться в регионе.",
+        "aboutus-text4":"Выбрав нашу компанию, вы получите уникальный подход, учитывающий все ваши требования. Мы не работаем с клиентами, мы сотрудничаем с партнёрами.",
+
+        "aboutus-title2":"Все это было бы невозможно без <span class=\"special-text\">нашей команды</span>",
+
+        "aboutus-staff1-name":"Ваагн <span class=\"special-text\">Ншанян</span>",
+        "aboutus-staff1-position":"Руководитель компании",
+        
+        "aboutus-staff2-name":"Вардуи <span class=\"special-text\">Махтесян</span>",
+        "aboutus-staff2-position":"Директор по развитию и маркетингу",
+        
+        "aboutus-staff3-name":"Геворк <span class=\"special-text\">Эминян</span>",
+        "aboutus-staff3-position":"Руководитель цифровой инфраструктуры",
+
+        "aboutus-staff4-name":"Сурен <span class=\"special-text\">Бекирски</span>",
+        "aboutus-staff4-position":"Заместитель руководителя по общим вопросам",
+
+        "aboutus-staff5-name":"Марине <span class=\"special-text\">Тароян</span>",
+        "aboutus-staff5-position":"Логист",
+        
+        "aboutus-staff6-name":"Анна <span class=\"special-text\">Агавелян</span>",
+        "aboutus-staff6-position":"Офис менеджер",
+
+        "aboutus-staff7-name":"Серине <span class=\"special-text\">Овсепян</span>",
+        "aboutus-staff7-position":"Офис менеджер",
+
+        "aboutus-staff8-name":"Артем <span class=\"special-text\">Степанян</span>",
+        "aboutus-staff8-position":"Юрист",
+
+        "aboutus-title3":"Финансовый <span class=\"special-text\">отдел</span>",
+
+        "aboutus-staff9-name":"Лусине <span class=\"special-text\">Асланян</span>",
+        "aboutus-staff9-position":"Финансовый директор",
+
+        "aboutus-staff10-name":"Асмик <span class=\"special-text\">Косян</span>",
+        "aboutus-staff10-position":"Главный бухгалтер",
 
 
 
 
+        "reviews-title":"О нашем подходе к работе и результате лучше всего <span class=\"special-text\">расскажут наши клиенты</span>",
+        "reviews-subtitle":"Все отзывы оставлены реальными клиентами. Одни брали у нас услуги удаленно, другие приходили в офис и мы работали с ними на месте. С некоторыми из них мы все ещё продолжаем работу по другим услугам. <br>Убедится в правдивости отзывов вы можете <a href=\"https://yandex.com/maps/-/CPeEIZLA\" target=\"_blank\"><span class=\"special-text\">здесь</span></a>. Там же вы сможете найти и другие отзывы о качестве нашей работы.",
+
+        "review1-name":"Роман К.",
+        "review2-name":"Vladimir Rt.",
+        "review3-name":"Мария К.",
+        "review4-name":"Евгений Уточкин",
+        "review5-name":"Юлия Дементьева",
+        "review6-name":"Тагир Нурхаметов",
+        "review7-name":"Maxim M.",
+        "review8-name":"Елена",
+
+        "review1-date":"<span class=\"special-text\">Отзыв от:</span> 03.11.2025",
+        "review2-date":"<span class=\"special-text\">Отзыв от:</span> 22.01.2025",
+        "review3-date":"<span class=\"special-text\">Отзыв от:</span> 13.02.2026",
+        "review4-date":"<span class=\"special-text\">Отзыв от:</span> 17.10.2025",
+        "review5-date":"<span class=\"special-text\">Отзыв от:</span> 19.11.2024",
+        "review6-date":"<span class=\"special-text\">Отзыв от:</span> 25.07.2025",
+        "review7-date":"<span class=\"special-text\">Отзыв от:</span> 08.10.2024",
+        "review8-date":"<span class=\"special-text\">Отзыв от:</span> 15.09.2025",
+
+        "review1-text":"Помогли в работе с банком, проконсультировали по всем нуждам, легкая коммуникация, было легко договориться по всем возникшим вопросам, полная поддержка во время всего процесса, спасибо за помощь.",
+        "review2-text":"Быстро, качественно, профессионально. Можно доверять и работать с этой компанией. Отзывы полностью оправданы.",
+        "review3-text":"Очень приятные и отзывчивые сотрудники! помогли со всеми вопросами, даже которые не входили в услуги. очень вежливые и приятные в общении, сделали все быстро и качественно, впечатления исключительно положительные!",
+        "review4-text":"Отличный сервис, профессионалы своего дела и просто хорошие люди, с которыми приятно работать. Все требуемые задачи выполнили на 10 баллов, крайне рекомендую.",
+        "review5-text":"Опыт взаимодействия с данной компанией ПОЛОЖИТЕЛЬНЫЙ ! Быстро , оперативно , подробно! Детализация информации 100%. Отзывчивость специалистов 100%. Профессионализм специалистов на высоком уровне . Во время взаимодействия всегда было личное сопровождение (для меня это важно было👆) и всегда на связи в течении всего процесса. Полное доверие и взаимопонимание по всем вопросам , а также все вопросы были решены в нужные сроки и с отличным результатом!!!!РЕКОМЕНДУЮ.",
+        "review6-text":"Спасибо. Помогли открыть ИП и банковский счёт. Приятно иметь с ними дело. Так же помогли разобраться с банковскими тарифами.",
+        "review7-text":"Хочу поделиться своим положительным опытом работы с консалтинговой компанией Армбиз Консалтинг. Обратился к ним с вопросом, требующим быстрой и качественной консультации. Приятно удивил уровень оперативности — специалисты компании очень быстро откликнулись, в кратчайшие сроки предоставили полную консультацию по всем вопросам, с которыми я обратился. Особенно хочу отметить, что консультация была очень подробной, ясной и структурированной.",
+        "review8-text":"Очень понравилось дружелюбие, ответственность и профессионализм. Сотрудничество оказалось не только производительным - всё очень быстро и без сбоев, но и по-настоящему вдохновляющим. Надеюсь, что наше сотрудничество продолжится и в будущем!"
 
 
 
@@ -832,17 +926,17 @@
         "services-badge": "Our services",
         "services-title": "Comperhensive<br><span class=\"special-text\">business solutions</span>",
         "services-subtitle": "Complex corporate services designed for sophisticated business requirements with white-glove service and expert guidance",
-        
+
         "service-card-llc-ie-title": "LLC & SP Registration",
         "service-card-llc-ie-subtitle": "Open on-site and remotely.<br> With the possibility of opening on a turnkey basis with bank accounts.",
         "service-card-llc-ie-text": "Our team of experts handles all aspects of company formation, from initial consultation to final registration. We provide comprehensive support.",
-        
+
         "service-card-llc-ie-steps": "Process Steps:",
         "service-card-llc-ie-step1": "Consultation",
         "service-card-llc-ie-step2": "Documentation",
         "service-card-llc-ie-step3": "Registration",
         "service-card-llc-ie-step4": "Bank account opening",
-        
+
         "service-card-llc-ie-features": "Key Features:",
         "service-card-llc-ie-feature1": "Our team will prepare all the necessary documents for you",
         "service-card-llc-ie-feature2": "Obtaining a legal address in Yerevan",
@@ -855,25 +949,25 @@
         "service-card-llc-ie-benefit2": "Flexible approach to your requirements",
         "service-card-llc-ie-benefit3": "International market access",
         "service-card-llc-ie-benefit4": "Possibility of full remote registration",
-    
+
         "service-card-llc-ie-cta-button": "Learn More",
 
         "service-card-to-go-companies-title": "Ready-made Companies & Branches",
         "service-card-to-go-companies-subtitle": "Pre-established entities with clean corporate history for immediate business operations ",
         "service-card-to-go-companies-text": "Access our portfolio of pre-registered companies across premium jurisdictions. These shelf companies offer immediate operational capability with established corporate history and clean compliance records",
-        
+
         "service-card-to-go-companies-steps": "Process Steps:",
         "service-card-to-go-companies-step1": "Consultation",
         "service-card-to-go-companies-step2": "Choosing of company",
         "service-card-to-go-companies-step3": "Choosing of Founder/Director",
-        
+
         "service-card-to-go-companies-features": "Key Features:",
         "service-card-to-go-companies-feature1": "Director - Resident",
         "service-card-to-go-companies-feature2": "Founder - Resident",
         "service-card-to-go-companies-feature3": "Legal Address",
         "service-card-to-go-companies-feature4": "Opening a current account",
         "service-card-to-go-companies-feature5": "Offered Companies have expirience from 1 to 10 years",
-    
+
         "service-card-to-go-companies-benefits": "Benefits:",
         "service-card-to-go-companies-benefit1": "Banking relationships",
         "service-card-to-go-companies-benefit2": "Reduced setup time",
@@ -998,7 +1092,6 @@
 
 
 
-
         "contact-us-badge": "Contact Us",
         "contact-us-title-mainpage": "Want to <br><span class=\"special-text\">know more?</span>",
         "contact-us-title-citizenship": "Want to <br><span class=\"special-text\">know more?</span>",
@@ -1006,6 +1099,11 @@
 
         "contact-us-mails": "Our mails",
         "contact-us-phones": "Our phones",
+
+        "contact-us-addresses":"Our offices",
+        "contact-us-address1":"Armenia, Yerevan, Arabkir, Vagharsh Vagharshyan 12/1",
+        "contact-us-address2":"Russia, Moscow, Sibirski Proezd 2/2",
+
         "contact-us-socials": "Our messengers & socials",
 
         "contact-us-form-name": "Your Full Name",
@@ -1035,9 +1133,19 @@
         "contact-us-form-cta": "Book a Consultation",
         "contact-us-form-policy": "By filling out the form, you agree to our privacy policy. We usually respond to requests within 24 hours.",
 
+        "contact-us-short-title":"Our <span class=\"special-text\">Contacts<span>",
 
+        "contact-us-short-map1":"<img src=\"/src/graphics/svg/yandex-maps-logo.svg\" alt=\"Yandex Maps logo\" class=\"extra-details__map-image\"> Yandex maps",
+        "contact-us-short-map2":"<img src=\"/src/graphics/svg/google-maps-sign-logo.svg\" alt=\"google Maps logo\" class=\"extra-details__map-image\"> Google Maps",
+        "contact-us-short-map3":"<img src=\"/src/graphics/svg/2gis-logo.svg\" alt=\"2GIS Maps logo\" class=\"extra-details__map-image\" style=\"border-radius: 2rem;\">2GIS Yerevan",
 
+        "contacts-title1":"How to get <span class=\"special-text\">to us?</span>",
+        "contacts-title2":"Can't <span class=\"special-text\">find us?</span>",
 
+        "cotacts-text1":"We're within walking distance of the Barekamutsyun metro station. <br>It's just under 1 km on foot.",
+        "cotacts-text2":"Office hours and client reception are <span class=\"special-text\"> 10:00 to 18:00</span>. If you decide to come to our office in person, we strongly ask that you notify us in advance.",
+        "cotacts-text3":"Don't worry. We've recorded a video specifically for such cases, so you can navigate the site as easily as possible.",
+        "cotacts-text4":"The route in the video starts on Vagharsha Vagharshyan Street, across from the business center where we are located, and ends at our office door. There's a coded lock on the hallway on this floor. When you arrive, you can message us, and a representative will meet you at the entrance.",
 
         "footer-underlogo-text": "Premium digital solutions for individual clients and demanding entrepreneurs striving for excellence in corporate services.",
         
@@ -1088,7 +1196,6 @@
         "residence-permit-work-price": "Price:<span class=\"special-text\" id=\"service-price-residence-work\" data-price-label=\"false\"></span>",
 
         "faq-title": "<span class=\"special-text\">F</span>requently <span class=\"special-text\">A</span>sked <span class=\"special-text\">Q</span>uestions ",
-    
 
 
 
@@ -1131,7 +1238,7 @@
 
         "logistics-customs-workstyle-title": "How do we work?",
         "logistics-customs-workstyle-lead": "A flexible approach - is one of the key aspects of our ideology. We are ready to offer a variety of solutions",
-    
+        
         "logistics-customs-scheme-chain-title": "We will act as an <span class=\"special-text\">intermediary</span> in your supply chain",
 
         "logistics-customs-scheme-chain-item1-title":"Consultation",
@@ -1153,7 +1260,7 @@
         "logistics-customs-scheme-full-title": "Full <span class=\"special-text\">Turnkey</span> implementation",
         "logistics-customs-scheme-full-text1": "With a full turnkey solution, we assume complete responsibility for all procurement and delivery processes, including foreign currency and currency control",
         "logistics-customs-scheme-full-text2": "As a result, you recieve goods fully released for free circulation within the EAEU territory",
-    
+        
         "logistics-customs-scheme-full-item1-title": "Consultation",
 
         "logistics-customs-scheme-full-item2-title": "Organization",
@@ -1166,11 +1273,10 @@
         "logistics-customs-scheme-full-item4-text": "We take full responsibility for the entire customs clearance process - from placing the cargo at the customs terminal (temporary storage warehouse, TSW) to the final release and handover of the goods from the TSW, or delivery to the end destination",
 
         "logistics-customs-scheme-full-item5-title": "Satisfied Customer",
-    
-    
-    
-    
-    
+
+
+
+
         "llc-ie-hero-title": "Open <span class=\"special-text\">LLC</span> or <span class=\"special-text\">SP</span> for you in just <span class=\"special-text\">1 day</span>",
         "llc-ie-hero-subtitle": "We help you select the most suitable tax system and handle all aspects of legal consulting and accounting on your behalf.",
 
@@ -1198,7 +1304,7 @@
         "llc-ie-reason3-text" : "We explain everything in clear, simple terms and remain in touch at every stage of the process. Should any difficulties arise, just drop us a message.",
         "llc-ie-reason4-title": "Security",
         "llc-ie-reason4-text" : "We are result-driven. Full payment is due only after the registration is successfully completed.",
-        
+
         "llc-ie-benefit1-title": "As a result <span class=\"special-text\">you will get:</span>",
         "llc-ie-benefit1-item1": "Certificate of sole proprietorship registration",
         "llc-ie-benefit1-item2": "Legal address for one year",
@@ -1210,7 +1316,7 @@
         "llc-ie-scheme1-step2":"Registration in the state register of Armenia",
         "llc-ie-scheme1-step3":"Registration in local tax authority",
         "llc-ie-scheme1-step4":"Comprehensive support for opening business bank accounts",
-    
+
         "llc-ie-card3-title": "<span class=\"special-text\">LLC</span> remotely",
         "llc-ie-card3-subtitle1": "You will need:",
         "llc-ie-card3-feature1": "Passport (domestic or international)",
@@ -1220,7 +1326,7 @@
         "llc-ie-card3-feature4": "Size of the charter capital",
         "llc-ie-card3-feature5": "Scanned copies of all founders’ passports and the size of their shares",
         "llc-ie-card3-feature6": "Who will be appointed as Director",
-    
+
         "llc-ie-card4-title": "<span class=\"special-text\">LLC</span> on-site",
         "llc-ie-card4-subtitle1": "You will need:",
         "llc-ie-card4-feature1": "Passport (domestic or international)",
@@ -1233,7 +1339,7 @@
         "llc-ie-card4-feature7": "Who will be appointed as Director",
 
         "llc-ie-description-llc-text": "On-site registration is best suited for those who want to establish a company as quickly as possible. Remote registration takes more time. Regardless of the method, the required documents remain the same — only the process and the timeframes differ.я сам процесс открытия и сроки.",
-    
+
         "llc-ie-benefit2-title": "As a result <span class=\"special-text\">you will get:</span>",
         
         "llc-ie-benefit2-item1": "Certificate of LLC incorporation with the company’s charter",
@@ -1251,8 +1357,7 @@
         "llc-ie-scheme3-step1": "We send you all the required documents for signature",
         "llc-ie-scheme3-step2": "You send the signed documents back to us",
         "llc-ie-scheme3-step3": "Upon receiving the documents, we register your LLC within 24 hours",
-        "llc-ie-scheme3-step4": "Comprehensive support for opening business bank accounts",
-        
+        "llc-ie-scheme3-step4": "Comprehensive support for opening business bank accounts",      
 
 
 
@@ -1283,7 +1388,6 @@
     
 
 
-
         "rmcompanies-hero-title": "<span class=\"special-text\">Ready-Made</span> companies & Branches",
         "rmcompanies-hero-subtitle": "When purchasing a ready-made company with us, you receive an LLC with a positive history and no hidden debts. You can review the catalog of available companies during our free consultation.",
         "rmcompanies-hero-cta-button": "Request a Consultation",
@@ -1306,8 +1410,6 @@
     
         "rmcompanies-approach2-title": "Branch",
         "rmcompanies-approach2-text": "Conditions are individual and vary significantly from case to case. All the details of the setup can be clarified during our free consultation.",
-    
-
 
 
 
@@ -1433,7 +1535,6 @@
     
     
     
-    
         "accounting-hero-title":"<span class=\"special-text\">Accounting</span> services",
         "accounting-hero-subtitle":"We’ll take full care of your accounting, help you navigate banking and employee onboarding, and free you from boring numbers while saving your nerves.",
         "accounting-hero-cta-button":"Schedule consultation",
@@ -1473,6 +1574,8 @@
         "accounting-faq-answer1-4":"• VAT — 18%",
         "accounting-faq-answer2":"The service fee always depends on turnover, the number of monthly transactions, and many other factors. Based on our clients’ experience, the average cost for similar cases starts from $75 per month.",
         "accounting-faq-answer3":"For exports, the VAT rate is 0%.",
+
+
 
 
         "registration-hero-title":"<span class=\"special-text\">Registration</span> in Armenia for foreign citizens",
@@ -1544,6 +1647,83 @@
         "socialcard-faq-answer3":"To apply, you only need your passport. Usually, an international passport is used, but if you are a citizen of the Russian Federation, you may also use your internal passport. You can only use the passport that contains your border entry stamp. Applying with an internal passport takes longer than with an international passport.",
         "socialcard-faq-answer4":"Yes—especially if you entered the country using an international passport. In this case, the entire process usually takes no more than 3 days.",
     
-        "contact-us-title-socialcard":"Want to obtain card<br><span class=\"special-text\">right now?</span>"
+        "contact-us-title-socialcard":"Want to obtain card<br><span class=\"special-text\">right now?</span>",
+    
+    
+    
+    
+        "aboutus-title1":"We are <span class=\"special-text\">Armbiz Consulting</span>",
+        "aboutus-subtitle1":"We are one of Armenia’s leading consulting firms, specializing in business formation and ongoing support, as well as assisting individuals.",
+        "aboutus-text1":"Our team of experts has extensive experience in business consulting across a wide range of fields. We provide comprehensive services covering all aspects of business processes—from legal and regulatory compliance to market research, financial analysis, logistics, and customs services.",
+        "aboutus-text2":"Our primary objective in working with you is to help you achieve your goals. By building long-term relationships with our partners, we closely align their success with ours throughout our journey in Armenia.",
+        "aboutus-text3":"Today, Armenia is an excellent destination for companies looking to expand their operations. With its strategic location, highly skilled workforce, and favorable business environment, the Republic of Armenia is an attractive option for businesses seeking to establish a presence in the region.",
+        "aboutus-text4":"By choosing our company, you will receive a tailored approach that takes all your requirements into account. We don’t work with clients—we work with partners.",
+
+        "aboutus-title2":"None of this would be possible without <span class=\"special-text\">Our Team</span>",
+
+        "aboutus-staff1-name":"Vahagn <span class=\"special-text\">Nshanyan</span>",
+        "aboutus-staff1-position":"Company Director",
+        
+        "aboutus-staff2-name":"Varduhi <span class=\"special-text\">Mahtesyan</span>",
+        "aboutus-staff2-position":"Director of Business Development and Marketing",
+        
+        "aboutus-staff3-name":"Gevork <span class=\"special-text\">Eminyan</span>",
+        "aboutus-staff3-position":"Chief Technology Officer",
+
+        "aboutus-staff4-name":"Suren <span class=\"special-text\">Bekirski</span>",
+        "aboutus-staff4-position":"Deputy Director for General Affairs",
+
+        "aboutus-staff5-name":"Marine <span class=\"special-text\">Taroyan</span>",
+        "aboutus-staff5-position":"Logistics Specialist",
+        
+        "aboutus-staff6-name":"Anna <span class=\"special-text\">Aghavelyan</span>",
+        "aboutus-staff6-position":"Office Manager",
+
+        "aboutus-staff7-name":"Serine <span class=\"special-text\">Hovsepyan</span>",
+        "aboutus-staff7-position":"Office Manager",
+
+        "aboutus-staff8-name":"Artem <span class=\"special-text\">Stepanyan</span>",
+        "aboutus-staff8-position":"Lawyer",
+
+        "aboutus-title3":"Financial <span class=\"special-text\">department</span>",
+
+        "aboutus-staff9-name":"Lusine <span class=\"special-text\">Aslanyan</span>",
+        "aboutus-staff9-position":"Financial Officer",
+
+        "aboutus-staff10-name":"Hasmik <span class=\"special-text\">Kosyan</span>",
+        "aboutus-staff10-position":"Chief Accountant",
+
+
+
+
+        "reviews-title":"Our approach to work and results is best described by <span class=\"special-text\">our clients</span>",
+        "reviews-subtitle":"All reviews were left by real clients. Some used our services remotely, while others visited our office and worked with us in person. With some of them, we continue to cooperate on other services. <br>You can verify the authenticity of these reviews <a href=\"https://yandex.com/maps/-/CPeEIZLA\" target=\"_blank\"><span class=\"special-text\">here</span></a>. There you can also find more feedback about the quality of our work.",
+
+        "review1-name":"Roman K.",
+        "review2-name":"Vladimir Rt.",
+        "review3-name":"Maria K.",
+        "review4-name":"Evgeniy Utochkin",
+        "review5-name":"Yulia Dementyeva",
+        "review6-name":"Tagir Nurkhametov",
+        "review7-name":"Maxim M.",
+        "review8-name":"Elena",
+
+        "review1-date":"<span class=\"special-text\">Review from:</span> 03.11.2025",
+        "review2-date":"<span class=\"special-text\">Review from:</span> 22.01.2025",
+        "review3-date":"<span class=\"special-text\">Review from:</span> 13.02.2026",
+        "review4-date":"<span class=\"special-text\">Review from:</span> 17.10.2025",
+        "review5-date":"<span class=\"special-text\">Review from:</span> 19.11.2024",
+        "review6-date":"<span class=\"special-text\">Review from:</span> 25.07.2025",
+        "review7-date":"<span class=\"special-text\">Review from:</span> 08.10.2024",
+        "review8-date":"<span class=\"special-text\">Review from:</span> 15.09.2025",
+
+        "review1-text":"They helped with banking matters, consulted us on all our needs, and communication was easy. It was simple to agree on every question that came up, and we had full support throughout the entire process. Thank you for your help.",
+        "review2-text":"Fast, high-quality, and professional. You can trust and work with this company. The reviews are fully justified.",
+        "review3-text":"Very pleasant and responsive staff! They helped with all our questions, even those outside the service scope. Very polite and easy to communicate with, everything was done quickly and efficiently, and the overall impression is entirely positive!",
+        "review4-text":"Excellent service, true professionals, and simply good people to work with. They completed all required tasks at a top level. Highly recommended.",
+        "review5-text":"My experience with this company was POSITIVE! Fast, responsive, and detailed. Information detail level: 100%. Specialist responsiveness: 100%. Their professionalism is very high. During the entire process, there was always personal support (which was very important for me), and they were always in touch. Full trust and mutual understanding on all issues, and every task was solved on time with an excellent result. RECOMMENDED.",
+        "review6-text":"Thank you. They helped me register as a sole proprietor and open a bank account. It is a pleasure to work with them. They also helped me understand banking tariffs.",
+        "review7-text":"I would like to share my positive experience with Armbiz Consulting. I contacted them with an issue that required a fast and high-quality consultation. I was pleasantly surprised by their responsiveness - the specialists replied very quickly and provided a full consultation on all my questions in the shortest possible time. I especially want to note that the consultation was very detailed, clear, and well-structured.",
+        "review8-text":"I really appreciated the friendliness, responsibility, and professionalism. The cooperation was not only productive - everything was done very quickly and without disruptions - but truly inspiring. I hope our cooperation will continue in the future!"
     }
 }

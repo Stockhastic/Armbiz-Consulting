@@ -1704,6 +1704,18 @@ body.menu-open {
     );
 }
 
+.bg-geometry-cubeBase{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 700px;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        vars.$primaryColor,
+        vars.$secondaryColor
+    );
+}
 
 
 
@@ -1911,19 +1923,19 @@ body.menu-open {
 .extra-details{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 6rem;
+    flex-flow: row wrap;
+    gap: 5rem;
+    padding-block-end: 10rem;
     &__text{
-        width: 100%;
         text-align: center;
     }
     &__container{
         // outline: 1px dashed salmon;
-        max-width: 49%;
+        width: 48%;
         display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        gap: 1.5rem;
+        flex-flow:column wrap;
+        align-items: center;
+        gap: 3rem;
         &-item{
             display: flex;
             flex-direction: column;
@@ -1938,33 +1950,19 @@ body.menu-open {
             margin: 0 auto;
         }
         & > h3, h5{
-            width: 100%;
             text-align: center;
         }
-        &-description{
-            max-width: 48%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
-            margin: auto;
-            // height: 100%;
-        }
-        &--roadtous{
-            justify-content: flex-end;
-            flex-wrap: nowrap;
-            max-width: 100%;
-            padding-bottom: 10rem;
-            & > div{
-                margin: 0;
-            }
+        & > video{
+            border-radius: 1rem;
+            border: 2px solid vars.$primaryColor;  
         }
     }
     &__iframe{
         border-radius: 1rem;
-        border: 2px solid vars.$borderColor;
+        border: 2px solid vars.$primaryColor; 
     }
     &__map-link{
+        background-color: #ffffffcb;
         gap: 2rem;
         display: flex;
         flex-direction: column;
@@ -1975,9 +1973,11 @@ body.menu-open {
         transition: 0.23s;
         border-radius: 1rem;
         border: 1px solid vars.$borderColor;
+        // border: 1px solid #fff;
         &:hover{
-            box-shadow: 0 0 6px vars.$secondaryColor;
+            box-shadow: 0 0 20px vars.$lightColor;
             scale: 1.05;
+            border: 1px solid #fff;
         }
     }
     &__map-image{
@@ -1988,12 +1988,92 @@ body.menu-open {
     }
 }
 
-.road-to-office{
-    border-radius: 1rem;
-    border: 2px solid vars.$secondaryColor;
+// REVIEWS
+
+.reviews{
+    // background: linear-gradient(
+    //     0deg,
+    //     #DFEDFF,
+    //     #fff,
+    //     #fff,
+    //     #DFEDFF
+    // );
+    padding-block: 3rem 10rem;
+    &__title, &__text{
+        text-align:center;
+        margin: 2rem;
+    }
+    &__title{
+        font-family: vars.$mainFontMedium;
+    }
 }
 
-.route-to-office{
-    border-radius: 1rem;
-    border: 2px solid vars.$borderColor;
+// SWIPER
+
+.swiper{
+    height: 35rem;
+    // outline: 2px dashed peachpuff;
+    width: 80%;
+    &-slide{
+        // background-color: vars.$lightColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: vars.$h3Size;
+        font-family: vars.$mainFontRegular;
+        border-radius: 2rem;
+        &__card{
+            background-color: #fff;
+            width: 70%;
+            padding: 2rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            border: 1px solid vars.$borderColor;
+            border-radius: 1.5rem;
+            box-shadow: 0px 0px 15px vars.$lightColor;
+            & > header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                // outline: 1px solid red;
+                gap: 1rem;
+            }
+            &-name{
+                font-family: vars.$mainFontSemibold;
+            }
+            &-date{
+                font-family: vars.$mainFontMedium;
+            }
+            &-stars{
+                left: 0;
+                // outline: 1px solid rgb(136, 160, 49);
+                height: 30px;
+                // width: 80%;
+                content: url(/src/graphics/svg/card-stars.svg);
+            }
+            &-image{
+                width: 100px;
+                height: 100px;
+                margin: 2rem;
+                border-radius: 100%;
+                border: 1px solid vars.$borderColor;
+            }
+            &-text{
+                margin: 1rem 2rem;
+            }
+        }
+    }
+    &-button-next, &-button-prev{
+        // outline: 1px dashed red;
+        // padding: 1rem;
+        // margin: 2rem;
+        border-radius: 100%;
+        transition: 0.33s;
+        &:hover{
+            scale: 1.2;
+            filter: brightness(1.5);
+        }
+    }
 }

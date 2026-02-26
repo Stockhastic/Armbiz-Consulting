@@ -195,6 +195,11 @@
     transform: translate(0, 0) rotate(180deg) scale(1);
   }
 }
+.bg-animation-contactPress {
+  position: absolute;
+  left: 0;
+}
+
 @font-face {
   font-family: "Raleway-Regular";
   src: url(/src/fonts/Raleway-Regular.ttf);
@@ -544,7 +549,7 @@ strong, .special-text, .bold-text {
   font-family: "Raleway-Medium";
 }
 .service-card__subtitle {
-  font-family: "Raleway-Semibold";
+  font-family: "Raleway-Medium";
 }
 .service-card__subtitle--grey {
   min-height: 2lh;
@@ -552,9 +557,7 @@ strong, .special-text, .bold-text {
   color: #434c5b;
 }
 .service-card__text {
-  min-height: 3lh;
-  color: #646d83;
-  font-family: "Raleway-Medium";
+  font-size: 1.8rem;
 }
 .service-card__text--framed {
   background-color: #e7effe;
@@ -607,7 +610,7 @@ strong, .special-text, .bold-text {
 .service-card__benefits > li {
   position: relative;
   margin: 0.5rem 3rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-style: "Raleway-Medium";
 }
 .service-card__benefits > li::before {

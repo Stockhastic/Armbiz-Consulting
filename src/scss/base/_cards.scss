@@ -180,7 +180,7 @@
         font-family: vars.$mainFontMedium;
     } 
     &__subtitle {
-        font-family: vars.$mainFontSemibold;
+        font-family: vars.$mainFontMedium;
         &--grey {
             min-height: 2lh;
             font-family: vars.$mainFontMedium;
@@ -188,9 +188,9 @@
         }
     }
     &__text{
-        min-height: 3lh;
-        color:vars.$lightGreyColor;
-        font-family: vars.$mainFontMedium;
+        // min-height: 3lh;
+        // font-family: vars.$mainFontMedium;
+        font-size: 1.8rem;
         &--framed{
             background-color: vars.$lightColor;
             padding: 2rem;
@@ -243,7 +243,7 @@
         & > li {
             position: relative;
             margin: 0.5rem 3rem;
-            font-size: 1.4rem;
+            font-size: vars.$pSize;
             font-style: vars.$mainFontMedium;
             &::before{
                 left: 0;

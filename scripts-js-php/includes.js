@@ -19,7 +19,15 @@
 
   try {
     await inject("#site-header", "/partials/header.html");
+    await inject("#reviews.reviews", "/partials/reviews.html", {
+      onlyIfEmpty: true,
+      replaceOuter: true
+    });
     await inject("#contact-us.contact", "/partials/contact-us.html", {
+      onlyIfEmpty: true,
+      replaceOuter: true
+    });
+    await inject("#contact-us-short.contact", "/partials/contact-us-short.html", {
       onlyIfEmpty: true,
       replaceOuter: true
     });
