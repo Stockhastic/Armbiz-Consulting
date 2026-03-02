@@ -578,6 +578,9 @@ strong, .special-text, .bold-text {
 .service-card__title {
   font-family: "Raleway-Medium";
 }
+.service-card__description {
+  font-size: 1.8rem;
+}
 .service-card__subtitle {
   font-family: "Raleway-Medium";
 }
@@ -587,7 +590,7 @@ strong, .special-text, .bold-text {
   color: #434c5b;
 }
 .service-card__text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .service-card__text--framed {
   background-color: #e7effe;

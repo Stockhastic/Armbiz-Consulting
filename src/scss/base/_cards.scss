@@ -178,6 +178,9 @@
     }
     &__title{
         font-family: vars.$mainFontMedium;
+    }
+    &__description{
+        font-size: 1.8rem;
     } 
     &__subtitle {
         font-family: vars.$mainFontMedium;
@@ -188,9 +191,7 @@
         }
     }
     &__text{
-        // min-height: 3lh;
-        // font-family: vars.$mainFontMedium;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         &--framed{
             background-color: vars.$lightColor;
             padding: 2rem;
