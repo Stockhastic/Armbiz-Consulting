@@ -196,7 +196,7 @@ body.menu-open {
     &--wided{
         max-width:1800px;
     }
-    @include m.mobile{
+    @include m.tablet{
         padding: 0 2rem;
     }
 
@@ -287,6 +287,77 @@ body.menu-open {
         grid-template-columns:  repeat(auto-fit, minmax(var(--min), 1fr));
         align-items: stretch;
     }
+
+    @include m.tablet{
+        &__title{
+            font-size: 4.6rem;
+            line-height: 1.08;
+            text-wrap: balance;
+        }
+        &__subtitle{
+            font-size: 1.8rem;
+            line-height: 1.35;
+        }
+        &__grid{
+            --min: 100%;
+            gap: 2rem;
+        }
+        .service-card{
+            padding: 2.4rem;
+        }
+    }
+
+    @include m.mobile{
+        padding-block: 7rem;
+        &__header{
+            gap: 2rem;
+        }
+        &__title{
+            font-size: 3.2rem;
+            line-height: 1.12;
+            text-wrap: balance;
+            overflow-wrap: anywhere;
+        }
+        &__subtitle{
+            font-size: 1.6rem;
+            line-height: 1.35;
+        }
+        .service-card{
+            padding: 2rem;
+            gap: 1.6rem;
+        }
+        .service-card__header{
+            gap: 1rem;
+        }
+        .service-card__price-tag,
+        .service-card__timeline-tag{
+            position: static;
+            translate: 0 0;
+            display: inline-flex;
+            max-width: 100%;
+            line-height: 1.25;
+        }
+        .service-card__timeline-tag{
+            margin-top: -0.2rem;
+        }
+        .service-card__icon{
+            width: 64px;
+            padding: 1.2rem;
+            border-radius: 1.2rem;
+        }
+        .service-card__description,
+        .service-card__text,
+        .service-card__steps > li,
+        .service-card__benefits > li{
+            font-size: 1.5rem;
+        }
+        .service-card__benefits > li{
+            margin: 0.4rem 0 0.4rem 2.6rem;
+        }
+        .service-card__benefits > li::before{
+            translate: -2.2rem -2px;
+        }
+    }
 }
 
 // Logistic
@@ -306,8 +377,9 @@ body.menu-open {
     &__kpi{
         display: flex;
         justify-content: center;
+        gap: 2rem;
         &-item{
-            margin: 0 1rem;
+            margin: 0;
             // outline: 1px solid vars.$borderColor;
         }
         &-icon{
@@ -331,20 +403,93 @@ body.menu-open {
     &__cards{
         display: grid;
         grid-template-columns: 0.8fr 1fr;
+        gap: 2rem;
+    }
+    &__container{
+        display: grid;
+        gap: 2rem;
     }
 
     &__badge{
         @extend .badge;
         top: 0;
     }
+
+    .service-card--logistics{
+        margin: 0;
+    }
+
+    @include m.tablet{
+        padding-block: 8rem;
+        &__title{
+            font-size: 4.4rem;
+            line-height: 1.08;
+            text-wrap: balance;
+        }
+        &__kpi{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.6rem;
+            &-item{
+                flex: 1 1 calc(50% - 1.6rem);
+                max-width: calc(50% - 1.6rem);
+            }
+        }
+        &__cards{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @include m.mobile{
+        padding-block: 7rem;
+        gap: 3rem;
+        &__header{
+            gap: 2rem;
+        }
+        &__title{
+            font-size: 3.2rem;
+            line-height: 1.12;
+        }
+        &__lead{
+            font-size: 1.8rem;
+            line-height: 1.3;
+        }
+        &__kpi{
+            gap: 1.2rem;
+            &-item{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+        .service-card{
+            padding: 2rem;
+        }
+        .service-card__title{
+            font-size: 3rem;
+            line-height: 1.15;
+        }
+        .service-card__extras > li{
+            width: 100%;
+        }
+    }
 }
 
 // Contact
 .contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4rem;
+    align-items: start;
     padding-block: 10rem;
     @extend .wrapper;
+    & > .form{
+        width: 100%;
+        min-width: 0;
+    }
+    & > .contact__details:only-child{
+        max-width: none;
+        width: 100%;
+    }
     &__badge{
         @extend .badge;
         top: 0;
@@ -352,21 +497,29 @@ body.menu-open {
         translate: 50% 0%;
     }
     &__details {
-        // outline: 1px solid red;
         position: relative;
         max-width: 600px;
+        width: 100%;
+        min-width: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        position: relative;
         gap:3rem;
+    }
+    &__title{
+        font-family: vars.$mainFontSemibold;
+        line-height: 1.08;
+        text-wrap: balance;
     }
     &__links {
         display: flex;
         flex-wrap: wrap;
         column-gap: 5rem;
+        row-gap: 1.8rem;
         & > ul {
-            margin-bottom: 2.5rem;
+            flex: 1 1 24rem;
+            min-width: 0;
+            margin-bottom: 0;
             & > p {
                 margin-bottom: 1rem;
             }
@@ -374,24 +527,30 @@ body.menu-open {
     }
     &__subtitle{
         font-family: vars.$mainFontSemibold;
+        line-height: 1.25;
     }
     &__text{
         color: vars.$darkColor;
+        line-height: 1.35;
     }
 
     &__mails > li, &__phones > li, &__socials > li{
         font-family: vars.$mainFontRegular;
         font-size: vars.$pSize;
+        min-width: 0;
     }
     &__mails {
         & > li {
             display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
             margin-bottom: 0.5rem;
             color:vars.$darkColor;
             text-decoration: underline;
             &::before{
                 display: block;
-                margin-right: 0.7rem;
+                margin-right: 0;
+                flex: 0 0 30px;
                 width: 30px;
                 content: url(/src/graphics/svg/mail-icon.svg);
             }
@@ -400,12 +559,15 @@ body.menu-open {
     &__phones {
         & > li {
             display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
             margin-bottom: 0.5rem;
             color:vars.$darkColor;
             text-decoration: underline;
             &::before{
                 display: block;
-                margin-right: 0.7rem;
+                margin-right: 0;
+                flex: 0 0 30px;
                 width: 30px;
                 content: url(/src/graphics/svg/phone-icon.svg);
             }
@@ -429,6 +591,10 @@ body.menu-open {
     margin: auto 0;
     color: vars.$darkColor;
     vertical-align: middle;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    line-height: 1.35;
         &--arm{
             &::after{
                 margin-left: 1rem;
@@ -445,6 +611,7 @@ body.menu-open {
             }
         }
         &--map{
+            display: inline;
             font-family: vars.$mainFontMedium;
             &::before{
                 content: url(/src/graphics/png/footer-map-icon.png);                    object-fit: contain;
@@ -458,7 +625,91 @@ body.menu-open {
     }
     &__addresses{
         & > li{ 
-            margin-top: 1.7rem;
+            margin-top: 1.2rem;
+        }
+    }
+    .extra-details__container-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        justify-content: flex-start;
+    }
+    .extra-details__map-link{
+        flex: 1 1 18rem;
+        min-width: 0;
+        font-size: 1.8rem;
+        padding: 1.6rem;
+        gap: 1.2rem;
+    }
+
+    @include m.tablet{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding-block: 8rem;
+        padding-inline: 2rem;
+        &__badge{
+            left: 50%;
+            translate: -50% 0;
+        }
+        &__details{
+            max-width: none;
+            gap: 2.4rem;
+        }
+        &__title{
+            font-size: 4rem;
+            line-height: 1.1;
+        }
+        &__links{
+            column-gap: 2rem;
+            row-gap: 1.2rem;
+            & > ul{
+                flex-basis: calc(50% - 1rem);
+            }
+        }
+        & > .form{
+            max-width: 760px;
+            margin-inline: auto;
+        }
+    }
+
+    @include m.mobile{
+        padding-block: 7rem;
+        gap: 2.4rem;
+        &__title{
+            font-size: 3.2rem;
+            line-height: 1.12;
+        }
+        &__subtitle{
+            font-size: 1.8rem;
+        }
+        &__text{
+            font-size: 1.6rem;
+            line-height: 1.4;
+        }
+        &__links{
+            row-gap: 1rem;
+            & > ul{
+                flex-basis: 100%;
+            }
+        }
+        &__mails > li, &__phones > li, &__socials > li{
+            font-size: 1.5rem;
+        }
+        &__link > img{
+            width: 52px;
+        }
+        .extra-details__container-wrapper{
+            flex-direction: column;
+            width: 100%;
+        }
+        .extra-details__map-link{
+            width: 100%;
+            font-size: 1.6rem;
+            padding: 1.4rem;
+        }
+        .extra-details__map-image{
+            width: 56px;
+            height: 56px;
         }
     }
 
@@ -468,6 +719,8 @@ body.menu-open {
 .form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-width: 0;
     padding: 4rem;
     border: 1px solid vars.$borderColor;
     border-radius: 2rem;
@@ -490,12 +743,15 @@ body.menu-open {
     }
     &__radio {
         margin-bottom: 1rem;
+        display: grid;
+        gap: 0.8rem;
     }
 
 
 
     & > input, & > select, & > textarea {
         font-family: vars.$mainFontSemibold;
+        width: 100%;
         &::placeholder{
             font-family: vars.$mainFontRegular;
         }
@@ -517,18 +773,32 @@ body.menu-open {
         margin-right: 0.5rem;
         font-size: vars.$smallFontSize;
         font-family: vars.$mainFontRegular;
+        line-height: 1.35;
+    }
+    &__radio > label{
+        display: flex;
+        align-items: flex-start;
+        gap: 0.7rem;
+        margin-right: 0;
+    }
+    &__radio > label > input{
+        flex: 0 0 auto;
+        margin-top: 0.2rem;
     }
     & > select {
         padding: 1rem 1.6rem;
         border-radius: 1rem;
         border: 1px solid vars.$borderColor;
         font-family: vars.$mainFontMedium;
+        background-color: #fff;
     }
     & > button {
         padding: 1rem;
         margin: 1rem 0;
         border-radius: 1rem;
         border: 1px solid vars.$primaryColor;
+        width: 100%;
+        text-align: center;
     }
 
     &__spacer{
@@ -537,6 +807,7 @@ body.menu-open {
 
     textarea {
         resize: none;
+        min-height: 18rem;
         border-radius: 1rem;
         border: 1px solid vars.$borderColor;
         padding: 1rem;
@@ -547,6 +818,23 @@ body.menu-open {
         &:not(:placeholder-shown) {
             background-color: vars.$lightColor;
             border-color: vars.$secondaryColor;
+        }
+    }
+
+    @include m.tablet{
+        padding: 3rem;
+    }
+    @include m.mobile{
+        padding: 2.2rem;
+        border-radius: 1.6rem;
+        &__title{
+            line-height: 1.35;
+        }
+        &__spacer{
+            height: 1.4rem;
+        }
+        textarea{
+            min-height: 14rem;
         }
     }
 }

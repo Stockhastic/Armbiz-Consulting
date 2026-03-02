@@ -1118,7 +1118,7 @@ body.menu-open {
 .wrapper--wided {
   max-width: 1800px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .wrapper, .staff-container, .header, .contact {
     padding: 0 2rem;
   }
@@ -1219,6 +1219,77 @@ body.menu-open {
   grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
   align-items: stretch;
 }
+@media (max-width: 1023px) {
+  .services__title {
+    font-size: 4.6rem;
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+  .services__subtitle {
+    font-size: 1.8rem;
+    line-height: 1.35;
+  }
+  .services__grid {
+    --min: 100%;
+    gap: 2rem;
+  }
+  .services .service-card {
+    padding: 2.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .services {
+    padding-block: 7rem;
+  }
+  .services__header {
+    gap: 2rem;
+  }
+  .services__title {
+    font-size: 3.2rem;
+    line-height: 1.12;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+  }
+  .services__subtitle {
+    font-size: 1.6rem;
+    line-height: 1.35;
+  }
+  .services .service-card {
+    padding: 2rem;
+    gap: 1.6rem;
+  }
+  .services .service-card__header {
+    gap: 1rem;
+  }
+  .services .service-card__price-tag,
+  .services .service-card__timeline-tag {
+    position: static;
+    translate: 0 0;
+    display: inline-flex;
+    max-width: 100%;
+    line-height: 1.25;
+  }
+  .services .service-card__timeline-tag {
+    margin-top: -0.2rem;
+  }
+  .services .service-card__icon {
+    width: 64px;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+  }
+  .services .service-card__description,
+  .services .service-card__text,
+  .services .service-card__steps > li,
+  .services .service-card__benefits > li {
+    font-size: 1.5rem;
+  }
+  .services .service-card__benefits > li {
+    margin: 0.4rem 0 0.4rem 2.6rem;
+  }
+  .services .service-card__benefits > li::before {
+    translate: -2.2rem -2px;
+  }
+}
 
 .logistic {
   display: grid;
@@ -1237,9 +1308,10 @@ body.menu-open {
 .logistic__kpi {
   display: flex;
   justify-content: center;
+  gap: 2rem;
 }
 .logistic__kpi-item {
-  margin: 0 1rem;
+  margin: 0;
 }
 .logistic__kpi-icon {
   display: block;
@@ -1260,15 +1332,89 @@ body.menu-open {
 .logistic__cards {
   display: grid;
   grid-template-columns: 0.8fr 1fr;
+  gap: 2rem;
+}
+.logistic__container {
+  display: grid;
+  gap: 2rem;
 }
 .logistic__badge {
   top: 0;
 }
+.logistic .service-card--logistics {
+  margin: 0;
+}
+@media (max-width: 1023px) {
+  .logistic {
+    padding-block: 8rem;
+  }
+  .logistic__title {
+    font-size: 4.4rem;
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+  .logistic__kpi {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+  }
+  .logistic__kpi-item {
+    flex: 1 1 calc(50% - 1.6rem);
+    max-width: calc(50% - 1.6rem);
+  }
+  .logistic__cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .logistic {
+    padding-block: 7rem;
+    gap: 3rem;
+  }
+  .logistic__header {
+    gap: 2rem;
+  }
+  .logistic__title {
+    font-size: 3.2rem;
+    line-height: 1.12;
+  }
+  .logistic__lead {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  .logistic__kpi {
+    gap: 1.2rem;
+  }
+  .logistic__kpi-item {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .logistic .service-card {
+    padding: 2rem;
+  }
+  .logistic .service-card__title {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+  .logistic .service-card__extras > li {
+    width: 100%;
+  }
+}
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 4rem;
+  align-items: start;
   padding-block: 10rem;
+}
+.contact > .form {
+  width: 100%;
+  min-width: 0;
+}
+.contact > .contact__details:only-child {
+  max-width: none;
+  width: 100%;
 }
 .contact__badge {
   top: 0;
@@ -1278,54 +1424,72 @@ body.menu-open {
 .contact__details {
   position: relative;
   max-width: 600px;
+  width: 100%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
   gap: 3rem;
+}
+.contact__title {
+  font-family: "Raleway-Semibold";
+  line-height: 1.08;
+  text-wrap: balance;
 }
 .contact__links {
   display: flex;
   flex-wrap: wrap;
   column-gap: 5rem;
+  row-gap: 1.8rem;
 }
 .contact__links > ul {
-  margin-bottom: 2.5rem;
+  flex: 1 1 24rem;
+  min-width: 0;
+  margin-bottom: 0;
 }
 .contact__links > ul > p {
   margin-bottom: 1rem;
 }
 .contact__subtitle {
   font-family: "Raleway-Semibold";
+  line-height: 1.25;
 }
 .contact__text {
   color: #1e2736;
+  line-height: 1.35;
 }
 .contact__mails > li, .contact__phones > li, .contact__socials > li {
   font-family: "Raleway-Regular";
   font-size: 1.6rem;
+  min-width: 0;
 }
 .contact__mails > li {
   display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
   margin-bottom: 0.5rem;
   color: #1e2736;
   text-decoration: underline;
 }
 .contact__mails > li::before {
   display: block;
-  margin-right: 0.7rem;
+  margin-right: 0;
+  flex: 0 0 30px;
   width: 30px;
   content: url(/src/graphics/svg/mail-icon.svg);
 }
 .contact__phones > li {
   display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
   margin-bottom: 0.5rem;
   color: #1e2736;
   text-decoration: underline;
 }
 .contact__phones > li::before {
   display: block;
-  margin-right: 0.7rem;
+  margin-right: 0;
+  flex: 0 0 30px;
   width: 30px;
   content: url(/src/graphics/svg/phone-icon.svg);
 }
@@ -1342,6 +1506,10 @@ body.menu-open {
   margin: auto 0;
   color: #1e2736;
   vertical-align: middle;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.35;
 }
 .contact__link--arm::after {
   margin-left: 1rem;
@@ -1355,6 +1523,7 @@ body.menu-open {
   content: url(/src/graphics/png/contact-after-tel-rus-icon.png);
 }
 .contact__link--map {
+  display: inline;
   font-family: "Raleway-Medium";
 }
 .contact__link--map::before {
@@ -1367,12 +1536,100 @@ body.menu-open {
   width: 65px;
 }
 .contact__addresses > li {
-  margin-top: 1.7rem;
+  margin-top: 1.2rem;
+}
+.contact .extra-details__container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: flex-start;
+}
+.contact .extra-details__map-link {
+  flex: 1 1 18rem;
+  min-width: 0;
+  font-size: 1.8rem;
+  padding: 1.6rem;
+  gap: 1.2rem;
+}
+@media (max-width: 1023px) {
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-block: 8rem;
+    padding-inline: 2rem;
+  }
+  .contact__badge {
+    left: 50%;
+    translate: -50% 0;
+  }
+  .contact__details {
+    max-width: none;
+    gap: 2.4rem;
+  }
+  .contact__title {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+  .contact__links {
+    column-gap: 2rem;
+    row-gap: 1.2rem;
+  }
+  .contact__links > ul {
+    flex-basis: calc(50% - 1rem);
+  }
+  .contact > .form {
+    max-width: 760px;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 767px) {
+  .contact {
+    padding-block: 7rem;
+    gap: 2.4rem;
+  }
+  .contact__title {
+    font-size: 3.2rem;
+    line-height: 1.12;
+  }
+  .contact__subtitle {
+    font-size: 1.8rem;
+  }
+  .contact__text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .contact__links {
+    row-gap: 1rem;
+  }
+  .contact__links > ul {
+    flex-basis: 100%;
+  }
+  .contact__mails > li, .contact__phones > li, .contact__socials > li {
+    font-size: 1.5rem;
+  }
+  .contact__link > img {
+    width: 52px;
+  }
+  .contact .extra-details__container-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact .extra-details__map-link {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.4rem;
+  }
+  .contact .extra-details__map-image {
+    width: 56px;
+    height: 56px;
+  }
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
   padding: 4rem;
   border: 1px solid #d7deef;
   border-radius: 2rem;
@@ -1395,9 +1652,12 @@ body.menu-open {
 }
 .form__radio {
   margin-bottom: 1rem;
+  display: grid;
+  gap: 0.8rem;
 }
 .form > input, .form > select, .form > textarea {
   font-family: "Raleway-Semibold";
+  width: 100%;
 }
 .form > input::placeholder, .form > select::placeholder, .form > textarea::placeholder {
   font-family: "Raleway-Regular";
@@ -1419,24 +1679,39 @@ body.menu-open {
   margin-right: 0.5rem;
   font-size: 1.4rem;
   font-family: "Raleway-Regular";
+  line-height: 1.35;
+}
+.form__radio > label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-right: 0;
+}
+.form__radio > label > input {
+  flex: 0 0 auto;
+  margin-top: 0.2rem;
 }
 .form > select {
   padding: 1rem 1.6rem;
   border-radius: 1rem;
   border: 1px solid #d7deef;
   font-family: "Raleway-Medium";
+  background-color: #fff;
 }
 .form > button {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 1rem;
   border: 1px solid #1a6eff;
+  width: 100%;
+  text-align: center;
 }
 .form__spacer {
   height: 2rem;
 }
 .form textarea {
   resize: none;
+  min-height: 18rem;
   border-radius: 1rem;
   border: 1px solid #d7deef;
   padding: 1rem;
@@ -1448,6 +1723,26 @@ body.menu-open {
 .form textarea:not(:placeholder-shown) {
   background-color: #e7effe;
   border-color: #60a2ff;
+}
+@media (max-width: 1023px) {
+  .form {
+    padding: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .form {
+    padding: 2.2rem;
+    border-radius: 1.6rem;
+  }
+  .form__title {
+    line-height: 1.35;
+  }
+  .form__spacer {
+    height: 1.4rem;
+  }
+  .form textarea {
+    min-height: 14rem;
+  }
 }
 
 .header {
