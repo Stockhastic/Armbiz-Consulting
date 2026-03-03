@@ -1,4 +1,5 @@
 @use "./vars";
+@use "./mixins" as m;
 
 .service-card {
     // max-width: 1000px;
@@ -21,6 +22,7 @@
         background-color: vars.$white;
         border: 1px solid vars.$borderColor;
         border-radius: 2rem;
+        box-shadow: 0 0 30px vars.$blueShadowColor;
     }
     &--alternative{
         background: linear-gradient(
@@ -180,7 +182,9 @@
         font-family: vars.$mainFontMedium;
     }
     &__description{
-        font-size: 1.8rem;
+        @include m.desktop{
+            font-size: vars.$h6Size;
+        }
     } 
     &__subtitle {
         font-family: vars.$mainFontMedium;
@@ -288,6 +292,7 @@
         font-size: vars.$pSize;
         position: absolute;
         right: 0;
+        text-shadow: 0 2px 40px vars.$lightColor;
     }
     &__price-tag {
         font-family: vars.$mainFontBold;
@@ -298,7 +303,6 @@
         font-family: vars.$mainFontRegular;
         color:vars.$lightGreyColor
     }
-
     &__extras{
         display: flex;
         flex-flow: row wrap;
@@ -323,4 +327,23 @@
         }
     }
 
+    @include m.mobile{
+        &__details{
+            gap: 1rem;
+        }
+        &__steps, &__benefits{
+            & > li{
+                margin: 0;
+                margin-top: 0.5rem;
+                font-size: vars.$pSize * 0.9;
+            }
+        }
+        &__description{
+            text-align: justify;
+        }
+        &__timeline-tag{
+            color:vars.$darkColor;
+            font-family: vars.$mainFontMedium;
+        }
+    }
 }
