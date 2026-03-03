@@ -632,6 +632,7 @@ body.menu-open {
                 flex-basis: 100%;
             }
         }
+        
         .service-card{
             padding: 2rem;
         }
@@ -646,13 +647,6 @@ body.menu-open {
             width: 90%;
             text-align: center;
         }
-        // &__cards{
-        //     & > article{
-        //         & > h3{
-        //             font-size: 1rem;
-        //         }
-        //     }
-        // }
     }
 }
 
@@ -832,6 +826,7 @@ body.menu-open {
         &__badge{
             left: 50%;
             translate: -50% 0;
+            width: 80%;
         }
         &__details{
             max-width: none;

@@ -688,7 +688,6 @@ strong, .special-text, .bold-text {
     gap: 1rem;
   }
   .service-card__steps > li, .service-card__benefits > li {
-    margin: 0;
     margin-top: 0.5rem;
     font-size: 1.44rem;
   }
@@ -698,6 +697,9 @@ strong, .special-text, .bold-text {
   .service-card__timeline-tag {
     color: #1e2736;
     font-family: "Raleway-Medium";
+  }
+  .service-card__extras > li {
+    justify-content: space-around;
   }
 }
 
