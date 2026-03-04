@@ -1048,6 +1048,12 @@ body.menu-open {
 .btn--white:hover {
   background-color: #fff;
 }
+@media (max-width: 767px) {
+  .btn {
+    text-align: center;
+    justify-content: center;
+  }
+}
 
 .add-border {
   border: 1px solid #d7deef;
@@ -2311,6 +2317,11 @@ body.menu-open {
   .hero__title {
     font-size: 5.67rem;
     line-height: 1;
+  }
+}
+@media (max-width: 767px) {
+  .hero__cta > .btn {
+    width: 100%;
   }
 }
 

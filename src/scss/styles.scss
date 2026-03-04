@@ -200,6 +200,11 @@ body.menu-open {
             background-color: #fff;
         }
     }
+    
+    @include m.mobile{
+        text-align: center;
+        justify-content: center;
+    }
 }
 .add-border{
     border: 1px solid vars.$borderColor;
@@ -1550,6 +1555,14 @@ body.menu-open {
             line-height: 1;
             // font-size: vars.$h2Size;
             // font-family: vars.$mainFontMedium;
+        }
+    }
+    @include m.mobile{
+        &__cta{
+            & > .btn{
+                width: 100%;
+
+            }
         }
     }
 
