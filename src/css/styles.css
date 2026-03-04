@@ -850,6 +850,10 @@ strong, .special-text, .bold-text {
   }
 }
 
+.mobile-hide {
+  display: none;
+}
+
 .sphere {
   position: absolute;
   border-radius: 50%;
@@ -3209,13 +3213,14 @@ body.menu-open {
   }
   .swiper-slide__card {
     width: 100%;
+    min-height: 40rem;
   }
   .swiper-slide__card-image, .swiper-slide__card-name, .swiper-slide__card-date, .swiper-slide__card-stars, .swiper-slide__card > header {
     margin: auto;
     text-align: center;
   }
   .swiper-slide__card-text {
-    margin: 2rem 0;
+    margin: 2rem 2rem;
     text-align: justify;
   }
 }/*# sourceMappingURL=styles.css.map */
