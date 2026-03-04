@@ -1,0 +1,15 @@
+@use "../base/mixins" as m;
+
+.footer{
+    &__title{
+        color: #fff;
+    }
+    &__log{
+        height: 110px;
+    }
+    @include m.mobile{
+        &__logo{
+            height:90px;
+        }
+    }
+}

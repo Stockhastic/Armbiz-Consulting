@@ -1,1 +1,11 @@
-/*# sourceMappingURL=footer.css.map */
+.footer__title {
+  color: #fff;
+}
+.footer__log {
+  height: 110px;
+}
+@media (max-width: 767px) {
+  .footer__logo {
+    height: 90px;
+  }
+}/*# sourceMappingURL=footer.css.map */

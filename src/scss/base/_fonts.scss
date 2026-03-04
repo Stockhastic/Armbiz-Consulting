@@ -1,4 +1,5 @@
 @use "./vars";
+@use "./mixins" as m;
 
 // @font-face {
 //     font-family: "Raleway-Regular";
@@ -55,6 +56,22 @@ h5 {
 }
 p, a, button, ol, ul {
     font-size: vars.$pSize;
+}
+
+@include m.mobile{
+    p,a,button,ol,ul{
+        font-size: vars.$pSize * 0.9;
+    }
+    h3{
+        font-size: vars.$h3Size * 0.75;
+    }
+    h2{
+        font-size: vars.$h2Size * 0.50;
+    }
+    h5{
+        font-size: vars.$h5Size * 0.8;
+    }
+
 }
 
 strong, .special-text, .bold-text {

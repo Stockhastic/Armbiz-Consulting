@@ -433,7 +433,7 @@ gsap.from(backer, {
     trigger: backerTrigger,
     start: "bottom 20%",
     end: "600px 20%",
-    markers: true,
+    // markers: true,
     scrub: 1.3
   },
   x:100,

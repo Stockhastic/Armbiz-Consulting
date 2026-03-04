@@ -15,7 +15,7 @@
 }
 
 @mixin desktop{
-    @media (max-width: vars.$desktop) {
+    @media (min-width: vars.$tablet) {
         @content;
     }
 }
