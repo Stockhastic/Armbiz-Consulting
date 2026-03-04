@@ -328,6 +328,12 @@
     }
 
     @include m.mobile{
+        &--glow{
+            gap: 1rem;
+            & > h4{
+                font-size: vars.$pSize;
+            }
+        }
         &__details{
             gap: 1rem;
         }
@@ -348,6 +354,12 @@
         &__extras{
             & > li{
             justify-content: space-around;
+            }
+        }
+        &__features{
+            & > li{
+                font-size: 1.4rem;
+                font-family: vars.$mainFontRegular
             }
         }
     }
