@@ -1,6 +1,6 @@
-/*# sourceMappingURL=index.css.map */r {
-  box-sizing: border-box;
-  cursor: none !important;
+.footer__title {
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */ursor: none !important;
 }
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
@@ -345,6 +345,11 @@ strong, .special-text, .bold-text {
   pointer-events: none;
   z-index: 9999;
   translate: -50% -50%;
+}
+@media (max-width: 767px) {
+  #cursor, #aura {
+    display: none;
+  }
 }
 
 #aura {

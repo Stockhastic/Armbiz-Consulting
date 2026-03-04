@@ -1,4 +1,5 @@
 @use "../base/vars";
+@use "./mixins" as m;
 
 #cursor, #aura {
     position: fixed;
@@ -8,6 +9,10 @@
     
     z-index:9999;
     translate: -50% -50%;
+    
+    @include m.mobile{
+        display: none;
+    }
 }
 
 #aura {
@@ -46,8 +51,6 @@
         0 0 20px rgba(26,110,255,0.3),
         inset 0 0 20px rgba(255,255,255,0.1);
 }
-
-
 
 #cursor {
     width: 7px;

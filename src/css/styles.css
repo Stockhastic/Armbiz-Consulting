@@ -347,6 +347,11 @@ strong, .special-text, .bold-text {
   z-index: 9999;
   translate: -50% -50%;
 }
+@media (max-width: 767px) {
+  #cursor, #aura {
+    display: none;
+  }
+}
 
 #aura {
   width: 32px;
@@ -831,6 +836,18 @@ strong, .special-text, .bold-text {
 .scheme--bank > .scheme__item > .scheme__item-text {
   font-family: "Raleway-Regular";
   color: #434c5b;
+}
+
+.footer__title {
+  color: #fff;
+}
+.footer__log {
+  height: 110px;
+}
+@media (max-width: 767px) {
+  .footer__logo {
+    height: 90px;
+  }
 }
 
 .sphere {
@@ -1434,7 +1451,7 @@ body.menu-open {
 }
 @media (max-width: 767px) {
   .logistic {
-    padding-block: 7rem;
+    padding-block: 7rem 2rem;
     gap: 3rem;
   }
   .logistic__header {
@@ -1454,6 +1471,10 @@ body.menu-open {
   .logistic__kpi-item {
     flex-basis: 100%;
   }
+  .logistic__badge {
+    width: 90%;
+    text-align: center;
+  }
   .logistic .service-card {
     padding: 2rem;
   }
@@ -1462,18 +1483,17 @@ body.menu-open {
   }
   .logistic .service-card__extras > li {
     width: 100%;
+    justify-content: flex-start;
   }
-  .logistic__badge {
-    width: 90%;
-    text-align: center;
+  .logistic .service-card__extras > li > p {
+    margin-left: 1rem;
   }
 }
 
 .contact {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  display: flex;
   gap: 4rem;
-  align-items: start;
+  align-items: center;
   padding-block: 10rem;
 }
 .contact > .form {
@@ -1487,13 +1507,10 @@ body.menu-open {
 .contact__badge {
   top: 0;
   left: 0;
-  translate: 50% 0%;
+  translate: 50% -150%;
 }
 .contact__details {
   position: relative;
-  max-width: 600px;
-  width: 100%;
-  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1506,13 +1523,11 @@ body.menu-open {
 }
 .contact__links {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   column-gap: 5rem;
   row-gap: 1.8rem;
 }
 .contact__links > ul {
-  flex: 1 1 24rem;
-  min-width: 0;
   margin-bottom: 0;
 }
 .contact__links > ul > p {
@@ -1603,6 +1618,9 @@ body.menu-open {
 .contact__link > img {
   width: 65px;
 }
+.contact__addresses {
+  width: 100%;
+}
 .contact__addresses > li {
   margin-top: 1.2rem;
 }
@@ -1653,6 +1671,7 @@ body.menu-open {
 }
 @media (max-width: 767px) {
   .contact {
+    flex-direction: column;
     padding-block: 7rem;
     gap: 2.4rem;
   }
@@ -1664,7 +1683,6 @@ body.menu-open {
     font-size: 1.8rem;
   }
   .contact__text {
-    font-size: 1.6rem;
     line-height: 1.4;
   }
   .contact__links {
@@ -1683,21 +1701,25 @@ body.menu-open {
     flex-direction: column;
     width: 100%;
   }
-  .contact .extra-details__map-link {
+  .contact .extra-details__container-wrapper__map-link {
     width: 100%;
     font-size: 1.6rem;
     padding: 1.4rem;
   }
-  .contact .extra-details__map-image {
+  .contact .extra-details__container-wrapper__map-image {
     width: 56px;
     height: 56px;
+  }
+  .contact__badge {
+    translate: 0 -150%;
+    text-align: center;
   }
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 60%;
   min-width: 0;
   padding: 4rem;
   border: 1px solid #d7deef;

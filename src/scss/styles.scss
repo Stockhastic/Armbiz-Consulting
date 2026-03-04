@@ -201,17 +201,11 @@ body.menu-open {
         }
     }
 }
-
 .add-border{
     border: 1px solid vars.$borderColor;
     border-radius: 2rem;
     padding: 1.5rem;
 }
-
-
-
-
-
 .uikit-block {
     display: flex;
     flex-direction: column;
@@ -300,7 +294,6 @@ body.menu-open {
         }
     }
 }
-
 .alert-text{
     color: red !important;
 }
@@ -421,13 +414,13 @@ body.menu-open {
         column-gap: 4rem;
     }
 }
+
 #main {grid-area: main; min-width: 600px;}
 #tax {grid-area: tax;}
 #transfer {grid-area: transfer;}
 #months {grid-area: months;}
 #reports {grid-area: reports;}
 #cta {grid-area: cta;}
-
 
 // Services
 .services {
@@ -524,12 +517,12 @@ body.menu-open {
                 width: 120px;
                 margin: 0 auto;
             }
-        }
-        .service-card__benefits > li{
-            margin: 0.4rem 0 0.4rem 2.6rem;
-        }
-        .service-card__benefits > li::before{
-            translate: -2.2rem -2px;
+            &__benefits > li{
+                margin: 0.4rem 0 0.4rem 2.6rem;
+                &::before{
+                    translate: -2.2rem -2px;
+                }
+            }
         }
     }
 }
@@ -613,7 +606,7 @@ body.menu-open {
     }
 
     @include m.mobile{
-        padding-block: 7rem;
+        padding-block: 7rem 2rem;
         gap: 3rem;
         &__header{
             gap: 2rem;
@@ -632,30 +625,33 @@ body.menu-open {
                 flex-basis: 100%;
             }
         }
-        
-        .service-card{
-            padding: 2rem;
-        }
-        .service-card__title{
-            // font-size: 1rem;
-            line-height: 1.15;
-        }
-        .service-card__extras > li{
-            width: 100%;
-        }
         &__badge{
             width: 90%;
             text-align: center;
+        }
+        
+        .service-card{
+            padding: 2rem;
+            &__title{
+            // font-size: 1rem;
+            line-height: 1.15;
+            }
+            &__extras > li{
+                width: 100%;
+                justify-content: flex-start;
+                & > p{
+                margin-left: 1rem;
+                }
+            }
         }
     }
 }
 
 // Contact
 .contact {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    display: flex;
     gap: 4rem;
-    align-items: start;
+    align-items: center;
     padding-block: 10rem;
     @extend .wrapper;
     & > .form{
@@ -670,15 +666,13 @@ body.menu-open {
         @extend .badge;
         top: 0;
         left: 0;
-        translate: 50% 0%;
+        translate: 50% -150%;
     }
     &__details {
         position: relative;
-        max-width: 600px;
-        width: 100%;
-        min-width: 0;
         display: flex;
         flex-direction: column;
+
         justify-content: center;
         gap:3rem;
     }
@@ -689,12 +683,10 @@ body.menu-open {
     }
     &__links {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         column-gap: 5rem;
         row-gap: 1.8rem;
         & > ul {
-            flex: 1 1 24rem;
-            min-width: 0;
             margin-bottom: 0;
             & > p {
                 margin-bottom: 1rem;
@@ -800,6 +792,7 @@ body.menu-open {
         }
     }
     &__addresses{
+        width:100%;
         & > li{ 
             margin-top: 1.2rem;
         }
@@ -850,6 +843,7 @@ body.menu-open {
     }
 
     @include m.mobile{
+        flex-direction: column;
         padding-block: 7rem;
         gap: 2.4rem;
         &__title{
@@ -860,7 +854,7 @@ body.menu-open {
             font-size: 1.8rem;
         }
         &__text{
-            font-size: 1.6rem;
+            // font-size: 1.6rem;
             line-height: 1.4;
         }
         &__links{
@@ -878,25 +872,31 @@ body.menu-open {
         .extra-details__container-wrapper{
             flex-direction: column;
             width: 100%;
+            &__map{
+                &-link{
+                    width: 100%;
+                    font-size: 1.6rem;
+                    padding: 1.4rem;
+                }
+                &-image{
+                    width: 56px;
+                    height: 56px;
+                }   
+            }
         }
-        .extra-details__map-link{
-            width: 100%;
-            font-size: 1.6rem;
-            padding: 1.4rem;
-        }
-        .extra-details__map-image{
-            width: 56px;
-            height: 56px;
+        &__badge{
+            translate: 0 -150%;
+            text-align: center;
         }
     }
-
-
 }
+
+
 // Form
 .form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 60%;
     min-width: 0;
     padding: 4rem;
     border: 1px solid vars.$borderColor;
