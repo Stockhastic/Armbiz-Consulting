@@ -1472,6 +1472,7 @@ body.menu-open {
     display: inline-flex;
     line-height: 1.25;
     text-align: center;
+    justify-content: center;
     margin-bottom: 1rem;
   }
   .services .service-card__price-tag {
@@ -2442,7 +2443,7 @@ body.menu-open {
 }
 @media (max-width: 1023px) {
   .hero {
-    padding-block: 5rem;
+    padding-block: 8rem;
   }
   .hero__title {
     font-size: 5.67rem;
