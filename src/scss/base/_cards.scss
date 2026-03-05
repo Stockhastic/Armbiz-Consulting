@@ -172,9 +172,43 @@
         position: relative;
         gap: 1.2rem;
         &--mini{
-            display: flex;
+            display: grid;
+            grid-template-columns: 80px minmax(0, 1fr);
+            grid-template-areas:
+                "price price"
+                "timeline timeline"
+                "icon title";
+            column-gap: 1.2rem;
+            row-gap: 0.6rem;
+            align-items: start;
+
+            & > .service-card__price-tag,
+            & > .service-card__timeline-tag{
+                position: static;
+                right: auto;
+                text-shadow: none;
+                line-height: 1.25;
+            }
+
+            & > .service-card__price-tag{
+                grid-area: price;
+                justify-self: start;
+            }
+
+            & > .service-card__timeline-tag{
+                grid-area: timeline;
+                justify-self: start;
+                translate: none;
+            }
+
+            & > .service-card__icon{
+                grid-area: icon;
+            }
+
             & > .service-card__title{
-                align-self: flex-end;
+                grid-area: title;
+                align-self: center;
+                margin: 0;
             }
         }
     }
@@ -328,6 +362,35 @@
     }
 
     @include m.mobile{
+        &__header{
+            &--mini{
+                grid-template-columns: 64px minmax(0, 1fr);
+                column-gap: 1rem;
+                row-gap: 0.4rem;
+
+                & > .service-card__price-tag,
+                & > .service-card__timeline-tag{
+                    font-size: 1.4rem;
+                }
+
+                & > .service-card__icon{
+                    width: 64px;
+                    padding: 1.4rem;
+                    border-radius: 1.2rem;
+                }
+
+                & > .service-card__title{
+                    line-height: 1.1;
+                }
+            }
+        }
+
+        &--glow{
+            gap: 1rem;
+            & > h4{
+                font-size: vars.$pSize;
+            }
+        }
         &__details{
             gap: 1rem;
         }
@@ -348,6 +411,12 @@
         &__extras{
             & > li{
             justify-content: space-around;
+            }
+        }
+        &__features{
+            & > li{
+                font-size: 1.4rem;
+                font-family: vars.$mainFontRegular
             }
         }
     }
