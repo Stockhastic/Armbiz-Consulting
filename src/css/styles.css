@@ -860,7 +860,7 @@ strong, .special-text, .bold-text {
 }
 .scheme--horizontal > .scheme__line {
   height: 3px;
-  width: 75%;
+  width: 70%;
   translate: 0 0;
 }
 .scheme--horizontal > .scheme__line--position1 {
@@ -868,6 +868,7 @@ strong, .special-text, .bold-text {
 }
 .scheme--horizontal > .scheme__line--position2 {
   translate: 12% -30px;
+  width: 75%;
 }
 .scheme--horizontal > .scheme__line--position3 {
   translate: 22% -30px;
@@ -2385,16 +2386,17 @@ body.menu-open {
 .hero--service {
   padding-block: 10rem;
   display: grid;
-  grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
-  grid-template-rows: max-content auto;
+  grid-template-columns: minmax(0, 45%) minmax(0, 1fr);
+  grid-template-rows: auto auto;
   grid-template-areas: "title image" "details image";
   column-gap: 4rem;
-  row-gap: 1.6rem;
-  align-items: start;
+  row-gap: 2rem;
+  align-items: stretch;
 }
 .hero--service > .hero__title {
   grid-area: title;
   margin: 0;
+  align-self: end;
   text-align: left;
   font-family: "Raleway-Semibold";
   color: #1e2736;
@@ -2422,7 +2424,7 @@ body.menu-open {
 .hero--service > .hero__image {
   grid-area: image;
   width: min(100%, 52rem);
-  justify-self: end;
+  justify-self: center;
   align-self: center;
   margin: 0;
 }
@@ -4023,6 +4025,4 @@ body.menu-open {
     margin: 2rem 2rem;
     text-align: justify;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

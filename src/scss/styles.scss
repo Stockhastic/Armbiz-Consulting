@@ -1502,18 +1502,19 @@ body.menu-open {
     &--service{
         padding-block: 10rem;
         display: grid;
-        grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
-        grid-template-rows: max-content auto;
+        grid-template-columns: minmax(0, 45%) minmax(0, 1fr);
+        grid-template-rows: auto auto;
         grid-template-areas:
             "title image"
             "details image";
         column-gap: 4rem;
-        row-gap: 1.6rem;
-        align-items: start;
+        row-gap: 2rem;
+        align-items: stretch;
 
         & > .hero__title{
             grid-area: title;
             margin: 0;
+            align-self: end;
             text-align: left;
             font-family: vars.$mainFontSemibold;
             color: vars.$darkColor;
@@ -1546,7 +1547,7 @@ body.menu-open {
         & > .hero__image{
             grid-area: image;
             width: min(100%, 52rem);
-            justify-self: end;
+            justify-self: center;
             align-self: center;
             margin: 0;
         }
