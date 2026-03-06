@@ -503,6 +503,11 @@ function markFieldError(form, fieldName, message) {
 
 function collectContactFormPayload(form) {
   const formData = new FormData(form);
+  const params = new URLSearchParams(window.location.search || '');
+  const viewportWidth = Math.max(
+    window.innerWidth || 0,
+    document.documentElement ? document.documentElement.clientWidth || 0 : 0
+  );
 
   return {
     name: String(formData.get('name') || '').trim(),
@@ -510,6 +515,18 @@ function collectContactFormPayload(form) {
     contactCredentials: String(formData.get('feedback-credentials') || '').trim(),
     service: String(formData.get('service') || '').trim(),
     message: String(formData.get('message') || '').trim(),
+    pageTitle: document.title || '',
+    pageUrl: window.location.href,
+    pagePath: window.location.pathname + window.location.search,
+    viewportWidth,
+    browserLanguage: navigator.language || '',
+    userAgent: navigator.userAgent || '',
+    utmTerm: params.get('utm_term') || '',
+    utmSource: params.get('utm_source') || '',
+    utmMedium: params.get('utm_medium') || '',
+    utmCampaign: params.get('utm_campaign') || '',
+    utmContent: params.get('utm_content') || '',
+    at: new Date().toISOString(),
   };
 }
 
