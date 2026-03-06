@@ -31,20 +31,37 @@
             </ul>
         </div>    
     </div>
-        <form action="POST" class="form">
+        <form class="form" method="post" novalidate>
             <p class="form__title" data-i18n="contact-us-form-name">Ваше ФИО</p>
-            <input type="text" name="name" data-i18n="[placeholder]contact-us-form-name-placeholder" placeholder="Иванов Иван Иванович" required>
+            <input
+                type="text"
+                name="name"
+                data-i18n="[placeholder]contact-us-form-name-placeholder"
+                placeholder="Иванов Иван Иванович"
+                minlength="2"
+                maxlength="120"
+                autocomplete="name"
+                required
+            >
             <div class="form__spacer"></div>
             <p class="form__title" data-i18n="contact-us-form-feedback">Как вам будет удобно получить обратную связь?</p>
             <div class="form__radio">
-                <label data-i18n="contact-us-form-feedback-radio1"><input type="radio" name="feedback" value="mail">Почта</label>
+                <label data-i18n="contact-us-form-feedback-radio1"><input type="radio" name="feedback" value="mail" required>Почта</label>
                 <label data-i18n="contact-us-form-feedback-radio2"><input type="radio" name="feedback" value="messenger">Telegram / WhatsApp</label>
                 <label data-i18n="contact-us-form-feedback-radio3"><input type="radio" name="feedback" value="phone"> Прямой звонок</label><br>
             </div>
-            <input type="text" name="feedback-credentials" required data-i18n="[placeholder]contact-us-form-feedback-placeholder" placeholder="Почта, номер телефона или ник в мессенджере">
+            <input
+                type="text"
+                name="feedback-credentials"
+                minlength="3"
+                maxlength="160"
+                required
+                data-i18n="[placeholder]contact-us-form-feedback-placeholder"
+                placeholder="Почта, номер телефона или ник в мессенджере"
+            >
             <div class="form__spacer"></div>
             <p class="form__title" data-i18n="contact-us-form-service-title">В чем вы заинтересованы?</p>
-            <select name="service">
+            <select name="service" required>
                 <option value="llc-ie" data-i18n="contact-us-form-service-option-ie">Регистрация ООО или ИП</option>
                 <option value="ready-company" data-i18n="contact-us-form-service-option-readycompany">Готовые компании</option>
                 <option value="residence" data-i18n="contact-us-form-service-option-residence">ВНЖ</option>
@@ -58,9 +75,10 @@
             </select>
             <div class="form__spacer"></div>
             <p class="form__title" data-i18n="contact-us-form-message-title">Сообщение <span class="italic-text">(не обязательно)</span></p>
-            <textarea name="message" id="message" cols="30" rows="10" data-i18n="[placeholder]contact-us-form-message-placeholder" placeholder="Здравствуйте! Я хотел бы узнать больше о..."></textarea>
+            <textarea name="message" cols="30" rows="10" maxlength="2000" data-i18n="[placeholder]contact-us-form-message-placeholder" placeholder="Здравствуйте! Я хотел бы узнать больше о..."></textarea>
 
             <button type="submit" class="btn--primary" data-i18n="contact-us-form-cta">Запросить консультацию</button>
+            <p class="form__status" aria-live="polite"></p>
             <p class="form__text" data-i18n="contact-us-form-policy">Заполняя форму, вы соглашаетесь с нашими условиями конфиденциальности. Обычно, мы отвечаем на запросы в течение 24 часов.</p>
         </form>
 </section>

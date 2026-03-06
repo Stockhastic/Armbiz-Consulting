@@ -141,8 +141,8 @@ fetch('scripts-js-php/service-prices.json')
     services.forEach(service => {
         const priceEl = document.getElementById(`service-price-${service.id}`);
         const timelineEl = document.getElementById(`service-timeline-${service.id}`);
-        if (priceEl) priceEl.textContent = `Цена начинается от ${service.price}`;
-        if (timelineEl) timelineEl.textContent = `Временные рамки: ${service.timeline}`;
+        if (priceEl) priceEl.textContent = `\u0426\u0435\u043d\u0430 \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442\u0441\u044f \u043e\u0442 ${service.price}`;
+        if (timelineEl) timelineEl.textContent = `\u0412\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u0440\u0430\u043c\u043a\u0438: ${service.timeline}`;
     });
 });
 
@@ -381,6 +381,7 @@ document.addEventListener('includes:loaded', () => {
   setLang(currentLang);
   initHeaderMenu();
   initReviewsSwiper();
+  initContactForms();
 });
 
 // Initialize FAQ accordion only when the container exists to avoid runtime errors on pages without it
@@ -396,6 +397,324 @@ if (accordionContainer) {
 
 //SWIPER INITIALIZATION
 initReviewsSwiper();
+
+const CONTACT_FORM_ENDPOINT = '/api/contact.php';
+const CONTACT_CLICK_TRACK_ENDPOINT = '/api/track-click.php';
+const ALLOWED_CONTACT_METHODS = new Set(['mail', 'messenger', 'phone']);
+const ALLOWED_SERVICES = new Set([
+  'llc-ie',
+  'ready-company',
+  'residence',
+  'citizenship',
+  'accounting',
+  'social-card',
+  'bank-card',
+  'registration',
+  'logistics',
+  'other',
+]);
+const CONTACT_FORM_MESSAGES = {
+  sending: '\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0435\u043c \u0437\u0430\u044f\u0432\u043a\u0443...',
+  genericError: '\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u0437\u0430\u044f\u0432\u043a\u0443. \u041f\u043e\u043f\u0440\u043e\u0431\u0443\u0439\u0442\u0435 \u0435\u0449\u0435 \u0440\u0430\u0437 \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u043f\u043e\u0437\u0436\u0435.',
+};
+const CONTACT_FORM_SUCCESS_CONTENT = {
+  iconPath: '/src/graphics/svg/citizenship-icon1.svg',
+  title: '\u0421\u043f\u0430\u0441\u0438\u0431\u043e. \u0412\u0430\u0448\u0430 \u0437\u0430\u044f\u0432\u043a\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0430!',
+  text: '\u041d\u0430\u0448 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442 \u0441\u0432\u044f\u0436\u0435\u0442\u0441\u044f \u0441 \u0432\u0430\u043c\u0438 \u0432 \u0431\u043b\u0438\u0436\u0430\u0439\u0448\u0435\u0435 \u0432\u0440\u0435\u043c\u044f.',
+};
+
+
+
+function getContactFormStatus(form) {
+  let status = form.querySelector('.form__status');
+  if (status) return status;
+
+  status = document.createElement('p');
+  status.className = 'form__status';
+  status.setAttribute('aria-live', 'polite');
+  form.appendChild(status);
+  return status;
+}
+function getContactFormSuccessPanel(form) {
+  let panel = form.querySelector('.form__success');
+  if (panel) return panel;
+
+  panel = document.createElement('div');
+  panel.className = 'form__success';
+  panel.hidden = true;
+
+  const icon = document.createElement('img');
+  icon.className = 'form__success-icon';
+  icon.src = CONTACT_FORM_SUCCESS_CONTENT.iconPath;
+  icon.alt = '\u0417\u0430\u044f\u0432\u043a\u0430 \u0443\u0441\u043f\u0435\u0448\u043d\u043e \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0430';
+  icon.width = 300;
+  icon.height = 300;
+
+  const title = document.createElement('h3');
+  title.className = 'form__success-title';
+  title.textContent = CONTACT_FORM_SUCCESS_CONTENT.title;
+
+  const text = document.createElement('p');
+  text.className = 'form__success-text';
+  text.textContent = CONTACT_FORM_SUCCESS_CONTENT.text;
+
+  panel.append(icon, title, text);
+  form.appendChild(panel);
+  return panel;
+}
+
+function setContactFormStatus(form, type, text) {
+  const status = getContactFormStatus(form);
+  status.classList.remove(
+    'form__status--info',
+    'form__status--success',
+    'form__status--error',
+    'form__status--visible'
+  );
+
+  if (!text) {
+    status.textContent = '';
+    return;
+  }
+
+  status.textContent = text;
+  status.classList.add(`form__status--${type}`, 'form__status--visible');
+}
+
+function clearFormFieldState(form) {
+  form.querySelectorAll('.form__field--invalid').forEach(field => {
+    field.classList.remove('form__field--invalid');
+  });
+
+  form.querySelectorAll('input, select, textarea').forEach(field => {
+    field.setCustomValidity('');
+  });
+}
+
+function markFieldError(form, fieldName, message) {
+  const fields = form.querySelectorAll(`[name="${fieldName}"]`);
+  if (!fields.length) return;
+
+  fields.forEach((field, index) => {
+    field.classList.add('form__field--invalid');
+    field.setCustomValidity(index === 0 ? message : '');
+  });
+}
+
+function collectContactFormPayload(form) {
+  const formData = new FormData(form);
+
+  return {
+    name: String(formData.get('name') || '').trim(),
+    preferredContactMethod: String(formData.get('feedback') || '').trim(),
+    contactCredentials: String(formData.get('feedback-credentials') || '').trim(),
+    service: String(formData.get('service') || '').trim(),
+    message: String(formData.get('message') || '').trim(),
+  };
+}
+
+function validateContactPayload(payload) {
+  const errors = {};
+
+  if (payload.name.length < 2 || payload.name.length > 120) {
+    errors.name = '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0438\u043c\u044f \u0438\u043b\u0438 \u043d\u0438\u043a \u043e\u0442 2 \u0434\u043e 120 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.';
+  }
+
+  if (!ALLOWED_CONTACT_METHODS.has(payload.preferredContactMethod)) {
+    errors.feedback = '\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0438\u0442\u0430\u0435\u043c\u044b\u0439 \u0441\u043f\u043e\u0441\u043e\u0431 \u0441\u0432\u044f\u0437\u0438.';
+  }
+
+  if (payload.contactCredentials.length < 3 || payload.contactCredentials.length > 160) {
+    errors['feedback-credentials'] = '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043a\u043e\u043d\u0442\u0430\u043a\u0442 \u0434\u043b\u044f \u0441\u0432\u044f\u0437\u0438 \u043e\u0442 3 \u0434\u043e 160 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.';
+  }
+
+  if (!ALLOWED_SERVICES.has(payload.service)) {
+    errors.service = '\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0443\u0441\u043b\u0443\u0433\u0443 \u0438\u0437 \u0441\u043f\u0438\u0441\u043a\u0430.';
+  }
+
+  if (payload.message.length > 2000) {
+    errors.message = '\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 \u043d\u0435 \u0434\u043e\u043b\u0436\u043d\u043e \u043f\u0440\u0435\u0432\u044b\u0448\u0430\u0442\u044c 2000 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.';
+  }
+
+  return errors;
+}
+
+async function sendContactPayload(payload) {
+  const response = await fetch(CONTACT_FORM_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify(payload),
+  });
+
+  let data = null;
+  try {
+    data = await response.json();
+  } catch (error) {
+    data = null;
+  }
+
+  if (!response.ok) {
+    const serverMessage = data && typeof data.error === 'string' ? data.error : null;
+    throw new Error(serverMessage || CONTACT_FORM_MESSAGES.genericError);
+  }
+}
+
+async function handleContactFormSubmit(event) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  if (!(form instanceof HTMLFormElement)) return;
+  if (form.classList.contains('form--submitted')) return;
+
+  clearFormFieldState(form);
+
+  const payload = collectContactFormPayload(form);
+  const errors = validateContactPayload(payload);
+
+  if (Object.keys(errors).length) {
+    Object.entries(errors).forEach(([fieldName, message]) => {
+      markFieldError(form, fieldName, message);
+    });
+    form.reportValidity();
+    setContactFormStatus(form, 'error', '\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u043f\u043e\u043b\u0435\u0439 \u0444\u043e\u0440\u043c\u044b.');
+    return;
+  }
+
+  setContactFormStatus(form, 'info', CONTACT_FORM_MESSAGES.sending);
+
+  const submitButton = form.querySelector('button[type="submit"]');
+  if (submitButton) submitButton.disabled = true;
+
+  try {
+    await sendContactPayload(payload);
+    setContactFormStatus(form, 'success', '');
+    form.reset();
+    const successPanel = getContactFormSuccessPanel(form);
+    successPanel.hidden = false;
+    form.classList.add('form--submitted');
+  } catch (error) {
+    const message = error instanceof Error && error.message
+      ? error.message
+      : CONTACT_FORM_MESSAGES.genericError;
+    setContactFormStatus(form, 'error', message);
+  } finally {
+    if (submitButton) submitButton.disabled = false;
+  }
+}
+
+function initContactForms() {
+  document.querySelectorAll('form.form').forEach(form => {
+    if (form.dataset.contactFormReady === 'true') return;
+    form.dataset.contactFormReady = 'true';
+    getContactFormSuccessPanel(form);
+    form.addEventListener('submit', handleContactFormSubmit);
+  });
+}
+
+function getContactClickType(href) {
+  const normalized = String(href || '').toLowerCase();
+  if (!normalized) return null;
+  if (normalized.indexOf('tel:') === 0) return 'phone';
+  if (normalized.indexOf('mailto:') === 0) return 'email';
+
+  if (
+    normalized.indexOf('https://t.me/') === 0 ||
+    normalized.indexOf('http://t.me/') === 0 ||
+    normalized.indexOf('https://telegram.me/') === 0 ||
+    normalized.indexOf('http://telegram.me/') === 0 ||
+    normalized.indexOf('web.telegram.org') !== -1
+  ) {
+    return 'telegram';
+  }
+
+  if (
+    normalized.indexOf('https://wa.me/') === 0 ||
+    normalized.indexOf('http://wa.me/') === 0 ||
+    normalized.indexOf('api.whatsapp.com') !== -1 ||
+    normalized.indexOf('whatsapp.com') !== -1
+  ) {
+    return 'whatsapp';
+  }
+
+  if (
+    normalized.indexOf('instagram.com') !== -1 ||
+    normalized.indexOf('instagr.am') !== -1
+  ) {
+    return 'instagram';
+  }
+  if (
+    normalized.indexOf('yandex.com/maps') !== -1 ||
+    normalized.indexOf('yandex.com/profile') !== -1 ||
+    normalized.indexOf('yandex.ru/maps') !== -1 ||
+    normalized.indexOf('maps.app.goo.gl') !== -1 ||
+    normalized.indexOf('google.com/maps') !== -1 ||
+    normalized.indexOf('go.2gis.com') !== -1 ||
+    normalized.indexOf('2gis.') !== -1
+  ) {
+    return 'map';
+  }
+  return null;
+}
+
+function sendContactClickEvent(payload) {
+  const body = JSON.stringify(payload);
+  if (navigator.sendBeacon) {
+    const blob = new Blob([body], { type: 'application/json' });
+    navigator.sendBeacon(CONTACT_CLICK_TRACK_ENDPOINT, blob);
+    return;
+  }
+
+  fetch(CONTACT_CLICK_TRACK_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body,
+    keepalive: true,
+  }).catch(() => {});
+}
+
+function initContactClickTracking() {
+  if (window.__contactClickTrackingReady) return;
+  window.__contactClickTrackingReady = true;
+
+  document.addEventListener('click', event => {
+    const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+    if (!link) return;
+
+    const href = link.getAttribute('href') || '';
+    const clickType = getContactClickType(href);
+    if (!clickType) return;
+
+    const params = new URLSearchParams(window.location.search || '');
+    const viewportWidth = Math.max(
+      window.innerWidth || 0,
+      document.documentElement ? document.documentElement.clientWidth || 0 : 0
+    );
+    sendContactClickEvent({
+      eventType: clickType,
+      href: link.href || href,
+      pageTitle: document.title || '',
+      pageUrl: window.location.href,
+      pagePath: window.location.pathname + window.location.search,
+      viewportWidth,
+      browserLanguage: navigator.language || '',
+      userAgent: navigator.userAgent || '',
+      utmTerm: params.get('utm_term') || '',
+      utmSource: params.get('utm_source') || '',
+      utmMedium: params.get('utm_medium') || '',
+      utmCampaign: params.get('utm_campaign') || '',
+      utmContent: params.get('utm_content') || '',
+      at: new Date().toISOString(),
+    });
+  });
+}
+
+initContactForms();
+initContactClickTracking();
 
 // var swiper = new Swiper(".swiper", {
 

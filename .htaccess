@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# Canonical host: always redirect www -> non-www
+RewriteCond %{HTTP_HOST} ^www\.armbiz\.biz$ [NC]
+RewriteRule ^ https://armbiz.biz%{REQUEST_URI} [R=301,L]
+
+# Toggle maintenance mode by creating/removing /maintenance.enable
+RewriteCond %{DOCUMENT_ROOT}/maintenance.enable -f
+RewriteCond %{REQUEST_URI} !^/maintenance\.html$ [NC]
+RewriteCond %{REQUEST_URI} !^/src/ [NC]
+RewriteCond %{REQUEST_URI} !^/scripts-js-php/ [NC]
+RewriteCond %{REQUEST_URI} !^/partials/ [NC]
+RewriteCond %{REQUEST_URI} !^/favicon\.ico$ [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/ [NC]
+RewriteRule ^ - [R=503,L]
+
+ErrorDocument 503 /maintenance.html
+
+<IfModule mod_headers.c>
+    Header always set Retry-After "3600"
+</IfModule>
