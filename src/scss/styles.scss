@@ -514,6 +514,7 @@ body.menu-open {
                 display: inline-flex;
                 line-height: 1.25;
                 text-align: center;
+                justify-content: center;
                 margin-bottom: 1rem;
             }
             &__price-tag{
@@ -1574,7 +1575,7 @@ body.menu-open {
     }
 
     @include m.tablet{
-        padding-block: 5rem;
+        padding-block: 8rem;
         
         &__title{
             font-size: vars.$h1Size * 0.7;
