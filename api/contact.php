@@ -9,6 +9,38 @@ function json_response(int $status, array $body): void {
     exit;
 }
 
+function send_telegram_message(string $botToken, string $chatId, string $text): bool {
+    if ($botToken === '' || $chatId === '' || $text === '') {
+        return false;
+    }
+
+    $url = 'https://api.telegram.org/bot' . $botToken . '/sendMessage';
+
+    $ch = curl_init($url);
+    curl_setopt_array($ch, [
+        CURLOPT_POST => true,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT => 15,
+        CURLOPT_POSTFIELDS => http_build_query([
+            'chat_id' => $chatId,
+            'text' => $text,
+            'parse_mode' => 'HTML',
+            'disable_web_page_preview' => true,
+        ]),
+    ]);
+
+    $responseBody = curl_exec($ch);
+    if ($responseBody === false) {
+        curl_close($ch);
+        return false;
+    }
+
+    $httpCode = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    return $httpCode >= 200 && $httpCode < 300;
+}
+
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     json_response(405, ['error' => 'Method not allowed']);
 }
@@ -91,6 +123,8 @@ $config = require $secretPath;
 $apiKey = (string)($config['resend_api_key'] ?? '');
 $to = (string)($config['contact_to'] ?? '');
 $from = (string)($config['contact_from'] ?? '');
+$telegramBotToken = (string)($config['telegram_bot_token'] ?? '');
+$telegramChatId = (string)($config['telegram_chat_id'] ?? '');
 
 if ($apiKey === '' || $to === '' || $from === '') {
     json_response(500, ['error' => 'Server config is invalid']);
@@ -227,6 +261,20 @@ $decoded = json_decode($responseBody, true);
 if ($httpCode < 200 || $httpCode >= 300) {
     $msg = is_array($decoded) && isset($decoded['message']) ? (string) $decoded['message'] : 'Resend error';
     json_response(502, ['error' => $msg]);
+}
+
+if ($telegramBotToken !== '' && $telegramChatId !== '') {
+    $tgEsc = static fn(string $v): string => htmlspecialchars($v, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+    $telegramMessage = implode("\n", [
+        '<b>Новая заявка с сайта</b>',
+        '<b>Клиент:</b> ' . $tgEsc($name),
+        '<b>Метод связи:</b> ' . $tgEsc($contactMethodLabel),
+        '<b>Контакты:</b> ' . $tgEsc($contactCredentials),
+        '<b>Услуга:</b> ' . $tgEsc($serviceLabel),
+        '<b>Дата:</b> ' . $tgEsc($submittedAt),
+        '<b>Сообщение:</b> ' . $tgEsc($message !== '' ? $message : 'Клиент не оставил сообщение.'),
+    ]);
+    send_telegram_message($telegramBotToken, $telegramChatId, $telegramMessage);
 }
 
 json_response(200, ['ok' => true]);

@@ -1417,6 +1417,11 @@ body.menu-open {
   grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
   align-items: stretch;
 }
+@media (min-width: 1024px) {
+  .services .service-card__icon {
+    order: -1;
+  }
+}
 @media (max-width: 1023px) {
   .services__title {
     font-size: 4.6rem;
@@ -1649,6 +1654,19 @@ body.menu-open {
 }
 .contact__links > ul > p {
   margin-bottom: 1rem;
+}
+.contact__links--maintenance {
+  column-gap: 1rem;
+  justify-content: space-between;
+}
+.contact__links--maintenance > ul {
+  border: 1px solid #d7deef;
+  height: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.contact__links--maintenance > .contact__addresses {
+  width: 35%;
 }
 .contact__subtitle {
   font-family: "Raleway-Semibold";
@@ -3771,12 +3789,14 @@ body.menu-open {
 }
 
 .maintenance-container {
+  outline: 2px dashed salmon;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .maintenance__logo {
+  align-self: flex-start;
   margin-top: 2rem;
   width: 200px;
   display: flex;
@@ -3801,9 +3821,6 @@ body.menu-open {
   .maintenance__subtitle {
     font-size: 1.4rem;
   }
-}
-.maintenance__mid {
-  translate: 0 -20%;
 }
 .maintenance__mid > h5 {
   margin-top: 2rem;
@@ -3860,6 +3877,10 @@ body.menu-open {
 }
 .maintenance__lang-switcher > button > img {
   margin-left: 1rem;
+}
+
+.sassafras {
+  padding: 2rem 0 0 0;
 }
 
 .staff {

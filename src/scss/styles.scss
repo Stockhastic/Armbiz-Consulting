@@ -458,6 +458,12 @@ body.menu-open {
         align-items: stretch;
     }
 
+    @media (min-width: 1024px){
+        .service-card__icon{
+            order: -1;
+        }
+    }
+
     @include m.tablet{
         &__title{
             font-size: 4.6rem;
@@ -698,6 +704,19 @@ body.menu-open {
             margin-bottom: 0;
             & > p {
                 margin-bottom: 1rem;
+            }
+        }
+        &--maintenance{
+            column-gap: 1rem;
+            justify-content: space-between;
+            & > ul{
+                border: 1px solid vars.$borderColor;
+                height: auto;
+                padding: 2rem;
+                border-radius: 2rem;
+            }
+            & > .contact__addresses{
+                width: 35%;
             }
         }
     }
@@ -3116,12 +3135,14 @@ body.menu-open {
 
 .maintenance{
     &-container{
+        outline: 2px dashed salmon;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     &__logo{
+        align-self: flex-start;
         margin-top: 2rem;
         width: 200px;
         display: flex;
@@ -3147,7 +3168,6 @@ body.menu-open {
         }
     }
     &__mid{
-        translate: 0 -20%;
         & > h5{
             margin-top: 2rem;
         }
@@ -3206,7 +3226,9 @@ body.menu-open {
             }
         }
     }
-
+}
+.sassafras{
+    padding: 2rem 0 0 0;
 }
 
 

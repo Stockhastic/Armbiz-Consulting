@@ -399,6 +399,7 @@ if (accordionContainer) {
 initReviewsSwiper();
 
 const CONTACT_FORM_ENDPOINT = '/api/contact.php';
+const CONTACT_CLICK_TRACK_ENDPOINT = '/api/track-click.php';
 const ALLOWED_CONTACT_METHODS = new Set(['mail', 'messenger', 'phone']);
 const ALLOWED_SERVICES = new Set([
   'llc-ie',
@@ -612,7 +613,108 @@ function initContactForms() {
   });
 }
 
+function getContactClickType(href) {
+  const normalized = String(href || '').toLowerCase();
+  if (!normalized) return null;
+  if (normalized.indexOf('tel:') === 0) return 'phone';
+  if (normalized.indexOf('mailto:') === 0) return 'email';
+
+  if (
+    normalized.indexOf('https://t.me/') === 0 ||
+    normalized.indexOf('http://t.me/') === 0 ||
+    normalized.indexOf('https://telegram.me/') === 0 ||
+    normalized.indexOf('http://telegram.me/') === 0 ||
+    normalized.indexOf('web.telegram.org') !== -1
+  ) {
+    return 'telegram';
+  }
+
+  if (
+    normalized.indexOf('https://wa.me/') === 0 ||
+    normalized.indexOf('http://wa.me/') === 0 ||
+    normalized.indexOf('api.whatsapp.com') !== -1 ||
+    normalized.indexOf('whatsapp.com') !== -1
+  ) {
+    return 'whatsapp';
+  }
+
+  if (
+    normalized.indexOf('instagram.com') !== -1 ||
+    normalized.indexOf('instagr.am') !== -1
+  ) {
+    return 'instagram';
+  }
+  if (
+    normalized.indexOf('yandex.com/maps') !== -1 ||
+    normalized.indexOf('yandex.com/profile') !== -1 ||
+    normalized.indexOf('yandex.ru/maps') !== -1 ||
+    normalized.indexOf('maps.app.goo.gl') !== -1 ||
+    normalized.indexOf('google.com/maps') !== -1 ||
+    normalized.indexOf('go.2gis.com') !== -1 ||
+    normalized.indexOf('2gis.') !== -1
+  ) {
+    return 'map';
+  }
+  return null;
+}
+
+function sendContactClickEvent(payload) {
+  const body = JSON.stringify(payload);
+  if (navigator.sendBeacon) {
+    const blob = new Blob([body], { type: 'application/json' });
+    navigator.sendBeacon(CONTACT_CLICK_TRACK_ENDPOINT, blob);
+    return;
+  }
+
+  fetch(CONTACT_CLICK_TRACK_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body,
+    keepalive: true,
+  }).catch(() => {});
+}
+
+function initContactClickTracking() {
+  if (window.__contactClickTrackingReady) return;
+  window.__contactClickTrackingReady = true;
+
+  document.addEventListener('click', event => {
+    const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+    if (!link) return;
+
+    const href = link.getAttribute('href') || '';
+    const clickType = getContactClickType(href);
+    if (!clickType) return;
+
+    const params = new URLSearchParams(window.location.search || '');
+    const viewportWidth = Math.max(
+      window.innerWidth || 0,
+      document.documentElement ? document.documentElement.clientWidth || 0 : 0
+    );
+    sendContactClickEvent({
+      eventType: clickType,
+      href: link.href || href,
+      pageTitle: document.title || '',
+      pageUrl: window.location.href,
+      pagePath: window.location.pathname + window.location.search,
+      viewportWidth,
+      browserLanguage: navigator.language || '',
+      userAgent: navigator.userAgent || '',
+      utmTerm: params.get('utm_term') || '',
+      utmSource: params.get('utm_source') || '',
+      utmMedium: params.get('utm_medium') || '',
+      utmCampaign: params.get('utm_campaign') || '',
+      utmContent: params.get('utm_content') || '',
+      at: new Date().toISOString(),
+    });
+  });
+}
+
 initContactForms();
+initContactClickTracking();
 
 // var swiper = new Swiper(".swiper", {
 
