@@ -913,6 +913,51 @@ body.menu-open {
     background-color: #fff;
     z-index: 10;
 
+    &--submitted {
+        min-height: 640px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        & > :not(.form__success) {
+            display: none !important;
+        }
+    }
+    &__success {
+        display: none;
+        width: 100%;
+        min-height: 520px;
+        margin: auto;
+        padding: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1.4rem;
+    }
+    &--submitted > .form__success {
+        display: flex;
+    }
+    &__success-icon {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+    &__success-title {
+        color: vars.$darkColor;
+        font-family: vars.$mainFontSemibold;
+        font-size: 3rem;
+        line-height: 1.25;
+        max-width: 80%;
+    }
+    &__success-text {
+        color: vars.$greyColor;
+        font-family: vars.$mainFontMedium;
+        font-size: 1.8rem;
+        line-height: 1.45;
+        max-width: 80%;
+    }
+
     &__title {
         color: vars.$darkColor;
         font-size: vars.$smallFontSize;
@@ -925,6 +970,30 @@ body.menu-open {
         color: vars.$greyColor;
         text-align: center;
         padding-top: 1rem;
+    }
+    &__status {
+        margin-top: 0.8rem;
+        min-height: 1.6rem;
+        font-size: 1.2rem;
+        font-family: vars.$mainFontMedium;
+        line-height: 1.35;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity vars.$fastAnimation ease;
+
+        &--visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        &--info {
+            color: vars.$greyColor;
+        }
+        &--success {
+            color: #1f8d4d;
+        }
+        &--error {
+            color: #c23232;
+        }
     }
     &__radio {
         margin-bottom: 1rem;
@@ -952,6 +1021,14 @@ body.menu-open {
             background-color: vars.$lightColor;
             border-color: vars.$secondaryColor;
         }
+    }
+    &__field--invalid {
+        border-color: #d84747 !important;
+        box-shadow: 0 0 0 1px #d8474740;
+    }
+    input[type="radio"].form__field--invalid {
+        outline: 1px solid #d84747;
+        outline-offset: 1px;
     }
     & > label, &__radio > label {
         border-color: vars.$borderColor;
@@ -1012,6 +1089,25 @@ body.menu-open {
     @include m.mobile{
         margin: 0;
         border-radius: 1.6rem;
+        &--submitted {
+            min-height: 560px;
+        }
+        &__success {
+            min-height: 460px;
+        }
+        &__success-icon {
+            width: 300px;
+            height: 300px;
+            max-width: 100%;
+        }
+        &__success-title {
+            font-size: 2.4rem;
+            max-width: 100%;
+        }
+        &__success-text {
+            font-size: 1.6rem;
+            max-width: 100%;
+        }
         &__title{
             line-height: 1.35;
         }
