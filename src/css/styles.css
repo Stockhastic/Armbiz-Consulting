@@ -773,6 +773,11 @@ strong, .special-text, .bold-text {
 .scheme-container--horizontal > .scheme-container__title {
   margin: 4rem 0 8rem;
 }
+@media (max-width: 767px) {
+  .scheme-container--horizontal > .scheme-container__title {
+    margin: 2rem 0;
+  }
+}
 .scheme-container__title {
   text-align: center;
   font-family: "Raleway-Semibold";
@@ -898,8 +903,8 @@ strong, .special-text, .bold-text {
     max-width: 100%;
     overflow-x: hidden;
   }
-  .scheme-container--horizontal > .scheme-container__title {
-    margin: 3rem 0 3.6rem;
+  .scheme__item-text {
+    text-align: justify;
   }
   .scheme--horizontal {
     display: block;
@@ -909,7 +914,6 @@ strong, .special-text, .bold-text {
   }
   .scheme--horizontal > .scheme__item {
     margin: 0 0 1rem 8rem;
-    padding: 2rem;
     border: 1px solid #d7deef;
     border-radius: 1.5em;
     background-color: #fff;
@@ -2554,6 +2558,21 @@ body.menu-open {
 .hero--aboutus > h1 {
   z-index: 1;
 }
+@media (max-width: 767px) {
+  .hero--aboutus > .hero__title {
+    width: 90%;
+    font-size: 3.6rem;
+  }
+  .hero--aboutus > .hero__subtitle {
+    width: 90%;
+    font-size: 1.6rem;
+  }
+  .hero--aboutus > .service-card--base {
+    padding: 2rem;
+    width: 90%;
+    text-align: justify;
+  }
+}
 @media (max-width: 1023px) {
   .hero {
     padding-block: 8rem;
@@ -2599,19 +2618,17 @@ body.menu-open {
     padding-block: 4rem;
     gap: 2.4rem;
   }
-  .hero--service > .hero__title {
-    font-size: 3.6rem;
-    line-height: 1.08;
-    text-wrap: balance;
-  }
   .hero--service > .hero__details {
     gap: 2rem;
     padding-block-end: 0;
   }
-  .hero--service > .hero__details > .hero__subtitle {
+  .hero--service > .hero__title {
+    font-size: 3.6rem;
+  }
+  .hero--service > .hero__subtitle {
     line-height: 1.45;
   }
-  .hero--service > .hero__details > .btn {
+  .hero--service > .hero > .btn {
     width: 100%;
   }
   .hero--service > .hero__image {
@@ -3078,7 +3095,9 @@ body.menu-open {
     gap: 1.4rem;
   }
   .llc-details__description-text {
+    margin: 2rem 0;
     line-height: 1.4;
+    text-align: justify;
   }
   .llc-details__description-title {
     margin-bottom: 1.2rem;
@@ -3922,6 +3941,14 @@ body.menu-open {
 .staff-card__photo {
   width: 250px;
   border-radius: 2rem;
+}
+@media (max-width: 767px) {
+  .staff__header {
+    font-size: 2.4rem;
+  }
+  .staff-container {
+    padding: 0;
+  }
 }
 
 .extra-details {

@@ -1,5 +1,5 @@
 @use "./vars";
-
+@use "./mixins" as m;
 
 .scheme{
     position: relative;
@@ -11,6 +11,9 @@
             width: 100%;
             & > .scheme-container__title{
                 margin: 4rem 0 8rem;
+                @include m.mobile{
+                    margin: 2rem 0;
+                }
             }
         }
         &__title{
@@ -33,7 +36,6 @@
         padding: 2rem;
         margin-bottom: 2.5rem;
         &-title{
-
             font-family: vars.$mainFontSemibold;
             &::before{
                 position: absolute;
@@ -144,18 +146,20 @@
     }
 }
 
-@media (max-width: vars.$mobile) {
-    .scheme-container {
-        max-width: 100%;
-    }
-
-    .scheme-container--horizontal {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-
-        & > .scheme-container__title {
-            margin: 3rem 0 3.6rem;
+@include m.mobile {
+    .scheme{
+        &-container {
+            max-width: 100%;
+            &--horizontal {
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+        }
+        &__item{
+            &-text{
+                text-align: justify;
+            }
         }
     }
 
@@ -164,15 +168,13 @@
         width: 100%;
         max-width: 100%;
         padding: 0;
-
         & > .scheme__item {
             margin: 0 0 1rem 8rem;
-            padding: 2rem;
+            // padding: 2rem;
             border: 1px solid vars.$borderColor;
             border-radius: 1.5em;
             background-color: vars.$white;
             min-width: 0;
-
             &::before {
                 top: 50%;
                 left: 0;
@@ -180,7 +182,6 @@
                 // padding: 1.5rem 1.6rem;
                 font-size: vars.$h5Size;
             }
-
             & > p {
                 font-family: vars.$mainFontMedium;
                 overflow-wrap: anywhere;

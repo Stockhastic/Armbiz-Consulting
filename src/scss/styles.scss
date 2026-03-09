@@ -1679,13 +1679,28 @@ body.menu-open {
             width: 80%;
             padding: 5rem;
         }
-
         & > h4{
             z-index: 1;
         }
-
         & > h1{
             z-index: 1;
+        }
+        @include m.mobile{ 
+            & > .hero{
+                &__title{
+                    width: 90%;
+                    font-size: vars.$h3Size;
+                }
+                &__subtitle{
+                    width: 90%;
+                    font-size: vars.$pSize;
+                }
+            }
+            & > .service-card--base{
+                padding: 2rem;
+                width: 90%;
+                text-align: justify;
+            }
         }
     }
 
@@ -1748,17 +1763,15 @@ body.menu-open {
             padding-block: 4rem;
             gap: 2.4rem;
 
-            & > .hero__title{
-                font-size: vars.$h3Size;
-                line-height: 1.08;
-                text-wrap: balance;
-            }
-
-            & > .hero__details{
-                gap: 2rem;
-                padding-block-end: 0;
-
-                & > .hero__subtitle{
+            & > .hero{
+                &__details{
+                    gap: 2rem;
+                    padding-block-end: 0;
+                }
+                &__title{
+                    font-size: vars.$h3Size;
+                }
+                &__subtitle{
                     line-height: 1.45;
                 }
 
@@ -2281,7 +2294,9 @@ body.menu-open {
             gap: 1.4rem;
 
             &-text{
+                margin: 2rem 0;
                 line-height: 1.4;
+                text-align: justify;
             }
 
             &-title{
@@ -3276,6 +3291,14 @@ body.menu-open {
         &__photo{
             width: 250px;
             border-radius: 2rem;
+        }
+    }
+    @include m.mobile{
+        &__header{
+            font-size: vars.$h4Size;
+        }
+        &-container{
+            padding: 0;
         }
     }
 }
