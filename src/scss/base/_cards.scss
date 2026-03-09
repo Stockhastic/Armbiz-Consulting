@@ -172,44 +172,34 @@
         position: relative;
         gap: 1.2rem;
         &--mini{
-            display: grid;
-            grid-template-columns: 80px minmax(0, 1fr);
-            grid-template-areas:
-                "price price"
-                "timeline timeline"
-                "icon title";
-            column-gap: 1.2rem;
-            row-gap: 0.6rem;
-            align-items: start;
+            display: flex;
+            align-items: end;
+            gap: 1.2rem;
+            min-height: 8rem;
+            // padding-top: 3.2rem;
 
             & > .service-card__price-tag,
             & > .service-card__timeline-tag{
-                position: static;
-                right: auto;
-                text-shadow: none;
-                line-height: 1.25;
+                position: absolute;
+                right: 0;
+                text-align: right;
             }
 
             & > .service-card__price-tag{
-                grid-area: price;
-                justify-self: start;
+                top: 0;
             }
 
             & > .service-card__timeline-tag{
-                grid-area: timeline;
-                justify-self: start;
+                top: 2rem;
                 translate: none;
             }
 
-            & > .service-card__icon{
-                grid-area: icon;
-            }
-
             & > .service-card__title{
-                grid-area: title;
-                align-self: center;
                 margin: 0;
+                font-size: vars.$h4Size;
             }
+            
+
         }
     }
     &__title{
@@ -229,7 +219,7 @@
         }
     }
     &__text{
-        font-size: 1.6rem;
+        // font-size: 1.6rem;
         &--framed{
             background-color: vars.$lightColor;
             padding: 2rem;
@@ -290,6 +280,10 @@
                 position: absolute;
                 content: url(/src/graphics/svg/benefit-icon.svg);
                 width: 18px;
+            }
+            @include m.mobile{
+                text-align: justify;
+                margin: 0.5rem 1rem 0.5rem 2.5rem;
             }
         }
         &--residence{
@@ -361,9 +355,59 @@
         }
     }
 
+    @include m.tablet{
+        &__header{
+            &--mini{
+                display: grid;
+                grid-template-columns: 72px minmax(0, 1fr);
+                grid-template-areas:
+                    "price price"
+                    "timeline timeline"
+                    "icon title";
+                column-gap: 1.2rem;
+                row-gap: 0.6rem;
+                align-items: start;
+                min-height: auto;
+                padding-top: 0;
+
+                & > .service-card__price-tag,
+                & > .service-card__timeline-tag{
+                    position: static;
+                    right: auto;
+                    text-align: left;
+                    text-shadow: none;
+                    line-height: 1.25;
+                }
+
+                & > .service-card__price-tag{
+                    grid-area: price;
+                    justify-self: start;
+                }
+
+                & > .service-card__timeline-tag{
+                    grid-area: timeline;
+                    justify-self: start;
+                    top: auto;
+                    translate: none;
+                }
+
+                & > .service-card__icon{
+                    grid-area: icon;
+                }
+
+                & > .service-card__title{
+                    grid-area: title;
+                    align-self: center;
+                    min-width: 0;
+                }
+            }
+        }
+    }
+
     @include m.mobile{
         &__header{
             &--mini{
+                display: grid;
                 grid-template-columns: 64px minmax(0, 1fr);
                 column-gap: 1rem;
                 row-gap: 0.4rem;
@@ -383,6 +427,10 @@
                     line-height: 1.1;
                 }
             }
+        }
+
+        &--base{
+            padding: 0;
         }
 
         &--glow{
@@ -418,6 +466,9 @@
                 font-size: 1.4rem;
                 font-family: vars.$mainFontRegular
             }
+        }
+        &__title{
+            font-size: 2rem;
         }
     }
 }

@@ -1656,11 +1656,34 @@ body.menu-open {
                 width: 100%;
             }
         }
+        &--aboutus{
+            & > .hero{
+                &__title{
+                    font-size: vars.$h3Size;
+                }
+                &__subtitle{
+                    font-size: vars.$pSize;
+                    // line-height: 1.1;
+                }
+            }
+            & > .service-card--base{
+                padding: 2rem;
+                width: 100%;
+            }
+        }
     }
 
 }
 
 // RESIDENCE PERMIT PAGE //
+
+.residence-permit__UNQ{
+    padding: 3rem 0;
+    @include m.mobile{
+        padding-top: 0;
+        font-size: vars.$h5Size;
+    }
+}
 
 .hero__title--residence{
     font-family: vars.$mainFontSemibold;
@@ -1852,6 +1875,10 @@ body.menu-open {
                 line-height: 1.4;
             }
         }
+
+        &__title{
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -1941,7 +1968,7 @@ body.menu-open {
     &__card-index{
         width: 44px;
         height: 44px;
-        border-radius: 50%;
+        border-radius: 100%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -1979,9 +2006,7 @@ body.menu-open {
             gap: 1.2rem;
         }
         &__card-index{
-            width: 38px;
-            height: 38px;
-            font-size: 1.3rem;
+            display: none;
         }
     }
 }
@@ -2028,6 +2053,7 @@ body.menu-open {
 
         &__lead{
             margin-bottom: 2.6rem;
+            font-size: vars.$pSize;
         }
 
         &__approaches{
@@ -2420,6 +2446,7 @@ body.menu-open {
         }
 
         &__cards{
+            margin-top: 2rem;
             gap: 1.4rem;
             & > .service-card{
                 padding: 2rem;
@@ -2794,6 +2821,12 @@ body.menu-open {
         }
         & > .service-card--base{
             max-width: 48%;
+            @include m.mobile{
+                max-width: 100%;
+            }
+        }
+        @include m.mobile{
+            gap: 1rem;
         }
     }
     &-process{
@@ -2805,6 +2838,10 @@ body.menu-open {
         }
         & > .scheme-container{
             max-width: 100%;
+        }
+        @include m.mobile{
+            gap: 3rem;
+            padding-block-start: 1rem;
         }
     }
     &__price-tag{
@@ -2818,6 +2855,18 @@ body.menu-open {
         }
         &-pos2{
             top:1550px;
+        }
+    }
+    @include m.mobile{
+        &__price-tag{
+            text-align: center;
+            text-shadow: 0 0 4px vars.$lightColor;
+            font-size: vars.$h5Size;
+        }
+        &-details{
+            &__title{
+                margin: 0 0 1rem 0;
+            }
         }
     }
 }
@@ -3116,6 +3165,17 @@ body.menu-open {
 
 // ABOUT-US & STAFF
 
+.about-us-page{
+    @include m.mobile{
+        & > .hero--aboutus,
+        & > .staff,
+        & > .reviews,
+        & > .contact{
+            padding-inline: 2rem;
+        }
+    }
+}
+
 .staff{
     display: flex;
     flex-wrap: wrap;
@@ -3137,6 +3197,7 @@ body.menu-open {
         justify-content: space-around;
         gap: 3.5rem;
         @extend .wrapper;
+        padding: 0;
     }
     &-card{
         width: 290px;
@@ -3158,6 +3219,28 @@ body.menu-open {
         &__photo{
             width: 250px;
             border-radius: 2rem;
+        }
+    }
+
+    @include m.mobile{
+        gap: 2rem;
+        padding-block: 3rem;
+
+        &-container{
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        &-card{
+            width: 100%;
+            max-width: 29rem;
+            padding: 1.6rem;
+
+            &__photo{
+                width: 100%;
+                max-width: 25rem;
+                align-self: center;
+            }
         }
     }
 }
@@ -3204,6 +3287,9 @@ body.menu-open {
     &__iframe{
         border-radius: 1rem;
         border: 2px solid vars.$primaryColor; 
+        width: 100%;
+        height: 337px;
+
     }
     &__map-link{
         background-color: #ffffffcb;
@@ -3244,9 +3330,9 @@ body.menu-open {
             }
         }
 
-        &__iframe{
-            min-height: 34rem;
-        }
+        // &__iframe{
+        //     min-height: 34rem;
+        // }
 
         &__map-link{
             font-size: 2rem;
@@ -3275,7 +3361,7 @@ body.menu-open {
         }
 
         &__iframe{
-            min-height: 28rem;
+            height: 20rem;
         }
 
         &__map-link{

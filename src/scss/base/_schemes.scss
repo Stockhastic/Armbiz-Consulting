@@ -149,6 +149,48 @@
         max-width: 100%;
     }
 
+    .scheme:not(.scheme--horizontal) {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+
+        & > .scheme__item {
+            margin: 0 0 1rem 8rem;
+            min-width: 0;
+
+            &::before {
+                top: 50%;
+                left: 0;
+                translate: -135% -50%;
+                font-size: vars.$h5Size;
+            }
+        }
+
+        & > .scheme__item > .scheme__item-title {
+            font-size: 2rem;
+            overflow-wrap: anywhere;
+
+            &::before {
+                top: 50%;
+                left: 0;
+                translate: -84% -50%;
+            }
+        }
+
+        & > .scheme__item > .scheme__item-text {
+            overflow-wrap: anywhere;
+        }
+
+        & > .scheme__line {
+            width: 3px;
+            height: auto;
+            left: 34px;
+            top: 6rem;
+            bottom: 5.8rem;
+            translate: 0 0;
+        }
+    }
+
     .scheme-container--horizontal {
         width: 100%;
         max-width: 100%;
@@ -182,6 +224,7 @@
             }
 
             & > p {
+                font-size: 2rem;
                 font-family: vars.$mainFontMedium;
                 overflow-wrap: anywhere;
 
