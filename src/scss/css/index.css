@@ -814,6 +814,11 @@ strong, .special-text, .bold-text {
 .scheme-container--horizontal > .scheme-container__title {
   margin: 4rem 0 8rem;
 }
+@media (max-width: 767px) {
+  .scheme-container--horizontal > .scheme-container__title {
+    margin: 2rem 0;
+  }
+}
 .scheme-container__title {
   text-align: center;
   font-family: "Raleway-Semibold";
@@ -974,8 +979,8 @@ strong, .special-text, .bold-text {
     max-width: 100%;
     overflow-x: hidden;
   }
-  .scheme-container--horizontal > .scheme-container__title {
-    margin: 3rem 0 3.6rem;
+  .scheme__item-text {
+    text-align: justify;
   }
   .scheme--horizontal {
     display: block;
@@ -985,7 +990,6 @@ strong, .special-text, .bold-text {
   }
   .scheme--horizontal > .scheme__item {
     margin: 0 0 1rem 8rem;
-    padding: 2rem;
     border: 1px solid #d7deef;
     border-radius: 1.5em;
     background-color: #fff;
