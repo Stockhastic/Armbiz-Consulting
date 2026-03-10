@@ -213,6 +213,15 @@
         "residence-permit-work-thesis1": "Условия индивидуальны для каждого клиента. Чтобы ознакомиться с ними воспользуйтесь нашей бесплатной консультацией. Наши специалисты с радостью помогут вам разобраться во всех особенностях процесса",
         "residence-permit-work-price": "Стоимость услуги: <span class=\"special-text\" id=\"service-price-residence-work\" data-price-label=\"false\"></span>",
     
+        "residence-permit-faq-question1":"<span class=\"faq-header\">Личное присутствие обязательно для подачи на ВНЖ?</span>",
+        "residence-permit-faq-question2":"<span class=\"faq-header\">Как производится подача документов?</span>",
+        "residence-permit-faq-question3":"<span class=\"faq-header\">Какие документы мне понадобятся?</span>",
+
+        "residence-permit-faq-answer1":"Обычно, это не представляется возможным, но есть некоторые оговорки. При наличии у вас местных Социальной карты, есть возможность полностью удаленного оформления через трудоустройство. Если вы находитесь на территории Армении скорее всего этот документ у вас уже есть и мы можем начать процесс получения ВНЖ. Тем же, кто ни разу не был в Армении и не оформлял себе соц. карту, удаленно подать на ВНЖ не получится.",
+        "residence-permit-faq-answer2":"Мы подготавливаем весь пакет документов предварительно фикисруем дату для подачи. Обычно сроки рассмотрения ВНЖ составляют до 90 дней.",
+        "residence-permit-faq-answer3-1":"<span class=\"semibold-text\"> Для оформления через бизнес вам потребуется:</span> Заграничный паспорт, Социальная карта, Медицинская справка, Оригиналы уставных документов.",
+        "residence-permit-faq-answer3-2":"<span class=\"semibold-text\"> Для оформления через трудострово вам потребуется:</span> Заграничный паспорт, Социальная карта, Банковская карта или Расчетный счет",
+
         "faq-title": "<span class=\"special-text\">Ча</span>сто задаваемые <span class=\"special-text\">Во</span>просы",
     
         "logistic-badge": "логистика и таможня",
@@ -461,6 +470,18 @@
         "llc-ie-scheme3-step3": "По факту получения документов мы открываем вам ООО в течение 24 часов",
         "llc-ie-scheme3-step4": "Полное сопровождение вас по открытию банковских расчетных счетов",
     
+        "llc-ie-faq-question1": "<span class=\"faq-header\">Можно ли открыть ООО польностью удаленно?</span>",
+        "llc-ie-faq-question2": "",
+        "llc-ie-faq-question3": "",
+        "llc-ie-faq-question4": "",
+        
+        "llc-ie-faq-answer1": "Если учредитель и директор являются гражданами РФ – то \"под ключ\" открыть ООО не получится. На этапе получения соц. номера и открытия банковских счетов пристутствие Директора обязательно.",
+        "llc-ie-faq-answer2": "",
+        "llc-ie-faq-answer3": "",
+        "llc-ie-faq-answer4": "",
+
+
+
         "citizenship-hero-title": "<span class=\"special-text\">Гражданство</span> Армении",
         "citizenship-hero-subtitle": "Армянский паспорт обеспечивает безвизовый въезд в более 60 стран и упрощает доступ к банкам и инвестициям. Наши специалисты оценят шансы, подготовят документы и сопроводят процесс под ключ, минимизируя риски и сроки.",
         
@@ -512,7 +533,15 @@
         "rmcompanies-approach2-title": "Филиал",
         "rmcompanies-approach2-text": "Условия индивидуальны и сильно разнятся от случая к случаю. Все подробности открытия вы можете узнать на нашей бесплатной консультации.",
     
-
+        "rmcompanies-faq-question1":"<span class=\"faq-header\">Для готовых компаний счета уже открыты или их нужно открывать? </span>",
+        "rmcompanies-faq-question2":"<span class=\"faq-header\">Можем ли мы получить историю всех транзакции интересующей нас компании?</span>",
+        "rmcompanies-faq-question3":"<span class=\"faq-header\">Может ли быть так, чтобы готовая компания не вела деятельность?</span>",
+        "rmcompanies-faq-question4":"<span class=\"faq-header\">Есть ли у вас компания, которая активно вела деятельность в последние годы?</span>",
+        
+        "rmcompanies-faq-answer1":"Есть компании, для которых уже открыты счета, однако при необходимости мы также можем открыть счета в тех банках, которые вы предпочитаете.",
+        "rmcompanies-faq-answer2":"Да, конечно, все транзакции по компании можно предоставить.",
+        "rmcompanies-faq-answer3":"Да, у нас есть такие компании, которые ранее не вели деятельность.",
+        "rmcompanies-faq-answer4":"Да, у нас есть компании, которые активно вели деятельность в последние годы.",
 
 
 
@@ -1141,6 +1170,16 @@
         "residence-permit-work-thesis1": "The conditions are tailored individually for each client. To learn more, take advantage of our free consultation. Our specialists will be happy to help you understand all the details of the process",
         "residence-permit-work-price": "Price:<span class=\"special-text\" id=\"service-price-residence-work\" data-price-label=\"false\"></span>",
 
+        "residence-permit-faq-question1":"<span class=\"faq-header\">Is personal presence required to apply for a residence permit?</span>",
+        "residence-permit-faq-question2":"<span class=\"faq-header\">How are the documents submitted?</span>",
+        "residence-permit-faq-question3":"<span class=\"faq-header\">What documents will I need?</span>",
+
+        "residence-permit-faq-answer1":"Usually, this is not possible, but there are some exceptions. If you already have a local social card, it is possible to complete the entire process remotely through employment. If you are already in Armenia, you most likely already have this document, and we can begin the residence permit application process. However, if you have never been to Armenia and have not obtained a social card, it will not be possible to apply for a residence permit remotely.",
+        "residence-permit-faq-answer2":"We prepare the full set of documents and schedule the submission date in advance. The residence permit application is usually reviewed within up to 90 days.",
+        "residence-permit-faq-answer3-1":"<span class=\"semibold-text\"> For application through business you will need:</span> Passport, Social Card, Medical Certificate, Original corporate documents.",
+        "residence-permit-faq-answer3-2":"<span class=\"semibold-text\"> For application through employment you will need:</span> Passport, Social Card, Bank Card or Settlement Account",
+
+
         "faq-title": "<span class=\"special-text\">F</span>requently <span class=\"special-text\">A</span>sked <span class=\"special-text\">Q</span>uestions ",
 
 
@@ -1356,6 +1395,16 @@
     
         "rmcompanies-approach2-title": "Branch",
         "rmcompanies-approach2-text": "Conditions are individual and vary significantly from case to case. All the details of the setup can be clarified during our free consultation.",
+
+        "rmcompanies-faq-question1":"<span class=\"faq-header\">Do Ready-made companies already have bank accounts, or do they need to be opened?</span>",
+        "rmcompanies-faq-question2":"<span class=\"faq-header\">Can we obtain the full transaction history of the company we are interested in?</span>",
+        "rmcompanies-faq-question3":"<span class=\"faq-header\">Is it possible for a ready-made company to have no prior business activity?</span>",
+        "rmcompanies-faq-question4":"<span class=\"faq-header\">Do you have a company that has been actively operating in recent years?</span>",
+        
+        "rmcompanies-faq-answer1":"Some companies already have bank accounts opened, but if necessary, we can also open accounts with the banks you prefer.",
+        "rmcompanies-faq-answer2":"Yes, of course. The full transaction history of the company can be provided.",
+        "rmcompanies-faq-answer3":"Yes, we do have companies that have not previously conducted any business activity.",
+        "rmcompanies-faq-answer4":"Yes, we have companies that have been actively operating in recent years.",
 
 
 
