@@ -176,61 +176,61 @@ $html = <<<HTML
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;background-color:#eef4ff;">
     <tr>
         <td align="center">
-          <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;max-width:600px;background-color:#ffffff;border:1px solid #d7deef;border-radius:18px;overflow:hidden;">
+            <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;max-width:600px;background-color:#ffffff;border:1px solid #d7deef;border-radius:18px;overflow:hidden;">
             <tr>
-              <td style="padding:24px 28px;background:linear-gradient(135deg,#1a6eff 0%,#60a2ff 100%);">
+            <td style="padding:24px 28px;background:linear-gradient(135deg,#1a6eff 0%,#60a2ff 100%);">
                 <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.3;color:#e7effe;letter-spacing:0.8px;text-transform:uppercase;">Armbiz Consulting</div>
                 <h1 style="margin:8px 0 6px 0;font-family:Arial,Helvetica,sans-serif;font-size:24px;line-height:1.25;color:#ffffff;">Новая заявка с сайта Armbiz Consulting</h1>
                 <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#dbe8ff;">armbiz.biz</p>
-              </td>
-            </tr>
+            </td>
+        </tr>
 
-            <tr>
-              <td style="padding:24px 28px 8px 28px;">
+        <tr>
+            <td style="padding:24px 28px 8px 28px;">
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-                  <tr>
-                    <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Клиент‚</td>
-                    <td style="padding:10px 0;border-bottom:1px solid #d7deef;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeName}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Обратная связь</td>
-                    <td style="padding:10px 0;border-bottom:1px solid #d7deef;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeContactMethod}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Контактные данные</td>
-                    <td style="padding:10px 0;border-bottom:1px solid #d7deef;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeContactCredentials}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Интересует услуга</td>
-                    <td style="padding:10px 0;border-bottom:1px solid #d7deef;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeService}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:10px 0;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Дата и время обращения (Asia/Yerevan)</td>
-                    <td style="padding:10px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeSubmittedAt}</td>
-                  </tr>
+                    <tr>
+                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Клиент‚</td>
+                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeName}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Обратная связь</td>
+                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeContactMethod}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Контактные данные</td>
+                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeContactCredentials}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Интересует услуга</td>
+                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeService}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 0;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Дата и время обращения (Asia/Yerevan)</td>
+                        <td style="padding:10px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeSubmittedAt}</td>
+                    </tr>
                 </table>
-              </td>
-            </tr>
+            </td>
+        </tr>
 
-            <tr>
-              <td style="padding:0 28px 20px 28px;">
+        <tr>
+            <td style="padding:0 28px 20px 28px;">
                 <div style="border:1px solid #d7deef;border-radius:12px;background-color:#f7f9ff;padding:16px 18px;">
-                  <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;margin-bottom:8px;">Обращение</div>
-                  <div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#1e2736;">{$safeMessage}</div>
+                    <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;margin-bottom:8px;">Обращение</div>
+                    <div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#1e2736;">{$safeMessage}</div>
                 </div>
-              </td>
-            </tr>
+            </td>
+        </tr>
 
-            <tr>
-              <td style="padding:14px 28px;border-top:1px solid #d7deef;background-color:#f8fbff;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:#646d83;text-align:center;">
-                Ð­Ñ‚Ð¾ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¿Ð¸ÑÑŒÐ¼Ð¾ Ñ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ð·Ð°ÑÐ²ÐºÐ¸  Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ armbiz.biz
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+        <tr>
+            <td style="padding:14px 28px;border-top:1px solid #d7deef;background-color:#f8fbff;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:#646d83;text-align:center;">
+                Данные заполненной формы с сайта armbiz.biz
+            </td>
+        </tr>
     </table>
-  </body>
+    </td>
+    </tr>
+    </table>
+    </body>
 </html>
 HTML;
 
