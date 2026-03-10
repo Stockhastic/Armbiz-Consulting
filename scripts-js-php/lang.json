@@ -198,6 +198,12 @@
         "residence-permit-business-benefit4": "Помощь в получении медицинской справки",
         "residence-permit-business-benefit5": "Сопровождение по банкам",
     
+        "residence-permit-work-benefit1":"Оформление социальной карты",
+        "residence-permit-work-benefit2":"Нотариальный перевод документов",
+        "residence-permit-work-benefit3":"Оформление трудового договора",
+        "residence-permit-work-benefit4":"Подготовка всех необходимых документов для подачи и получения ВНЖ",
+
+
         "residence-permit-work-title": "<span class=\"special-text\">ВНЖ трудовое</span>",
         "residence-permit-business-detail1": "На сегодняшний день - <span class=\"bold-text\">самый популярный</span> способ получения <span class=\"special-text\">ВНЖ</span> для иностранного гражданина в РА",
         "residence-permit-business-detail2": "Процесс получения через ведение своего бизнеса(ИП или ООО) является самым дорогим подходом, но в то же время самым быстрым и доступным большинству",
@@ -1121,6 +1127,11 @@
         "residence-permit-business-benefit4": "Assistance in obtaining a medical certificate",
         "residence-permit-business-benefit5": "Banking support",
     
+        "residence-permit-work-benefit1":"Social card obtaining",
+        "residence-permit-work-benefit2":"Notarization of documents",
+        "residence-permit-work-benefit3":"Employment contract",
+        "residence-permit-work-benefit4":"Full assistance in preparing all necessary documents for applying and obtaining a residence permit",
+
         "residence-permit-work-title": "<span class=\"special-text\">Residence Permit by work</span>",
         "residence-permit-business-detail1": "Today - <span class=\"bold-text\">most popular</span> way of obtain <span class=\"special-text\">Residence Permit</span> for foreign citizen in RA",
         "residence-permit-business-detail2": "The process of obtaining by running your own business (SP or LLC) is the most expensive approach, but at the same time the fastest and most accessible to majority",

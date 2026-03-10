@@ -180,6 +180,7 @@ body.menu-open {
         border: 1px solid vars.$borderColor;
         color: vars.$darkColor;
         font-family: vars.$mainFontSemibold;
+        background-color: #ffffffce;
         &:hover{
             color: vars.$primaryColor;
             box-shadow: 0 0 14px vars.$primaryTransparentColor;
@@ -192,7 +193,9 @@ body.menu-open {
         }
         @include m.tablet{
             text-align: center;
+            justify-content: center;
             margin: 1rem 0;
+            width: 100%;
         }
     }
     &--white{
@@ -368,6 +371,9 @@ body.menu-open {
     }
     @include m.tablet{
         padding: 0 2rem;
+    }
+    @include m.desktop{
+        padding: 0 3rem;
     }
 
 }
@@ -661,8 +667,9 @@ body.menu-open {
     display: flex;
     gap: 4rem;
     align-items: center;
-    padding-block: 10rem;
     @extend .wrapper;
+    padding: 0;
+    padding-block-end: 10rem;
     & > .form{
         width: 100%;
     }
@@ -1735,6 +1742,7 @@ body.menu-open {
         }
     }
     &__details{
+        height: 100%;
         width: min(100%, 560px);
         min-width: 0;
         display: flex;
@@ -1819,7 +1827,10 @@ body.menu-open {
     }
     &__details{
         display: flex;
-        justify-content: end;
+        justify-content: center;
+        align-items: flex-start;
+        padding-block: 3rem;
+        gap: 2rem;
     }
     &__spacer{
         margin: 3rem;
@@ -1829,7 +1840,7 @@ body.menu-open {
         }
         &--right{
             max-width: 560px;
-            margin-right: 0;
+            margin: 0;
         }
         & > h5 {
             text-align: end;
