@@ -42,12 +42,20 @@ $slowAnimation: 0.33s;
 
 // Font
 
-$mainFontRegular:"Raleway-Regular";
-$mainFontMedium:"Raleway-Medium";
-$mainFontSemibold:"Raleway-Semibold";
-$mainFontBold:"Raleway-Bold";
-$mainFontItalic:"Raleway-Regular-Italic";
-$mainFontLight:"Raleway-Light";
+$mainFontFamily: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+$mainFontWeightLight: 300;
+$mainFontWeightRegular: 400;
+$mainFontWeightMedium: 500;
+$mainFontWeightSemibold: 600;
+$mainFontWeightBold: 700;
+
+// Backward-compatible aliases while styles are migrated to a single family + explicit weights.
+$mainFontRegular: $mainFontFamily;
+$mainFontMedium: $mainFontFamily;
+$mainFontSemibold: $mainFontFamily;
+$mainFontBold: $mainFontFamily;
+$mainFontItalic: $mainFontFamily;
+$mainFontLight: $mainFontFamily;
 
 // Bubbles
 $bubbleOneColor: #60a2ff;

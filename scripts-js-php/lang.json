@@ -227,10 +227,10 @@
         "logistic-badge": "логистика и таможня",
 
         "logistics-customs-main-title": "Логистика и <br><span class=\"special-text\">Таможенные услуги</span>",
-        "logistics-customs-main-lead": "Импорт, Экспорт и платежи зарубеж в современных реалиях",
+        "logistics-customs-main-lead": "Импорт, Экспорт и Платежи за рубеж в современных реалиях",
 
         "logistics-customs-main-kpi1": "Клиентов по всему миру",
-        "logistics-customs-main-kpi2": "Стран с которыми мы<br> работаем",
+        "logistics-customs-main-kpi2": "Стран, с которыми мы<br> работаем",
         "logistics-customs-main-kpi3": "Оформленных документов",
         "logistics-customs-main-kpi4": "Подготовленных<br> таможенных оформлений",
 
@@ -238,7 +238,7 @@
         "logistics-customs-main-card1-text1": "Полное сопровождение",
         "logistics-customs-main-card1-text2": "Оформление импортных деклараций из третьих стран",
         "logistics-customs-main-card1-text3": "Получение разрешений и сертификации",
-        "logistics-customs-main-card1-text4": "Расчет таможенной и государственной пошлин и НДС по ТН ВЭД кодам",
+        "logistics-customs-main-card1-text4": "Расчет таможенных и государственных пошлин и НДС по кодам ТН ВЭД",
         "logistics-customs-main-card1-text5": "Предварительная проверка документов",
         
         "logistics-customs-main-card2-title": "Экспорт <span class=\"special-text\">Товаров</span>",
@@ -254,9 +254,20 @@
         "logistics-customs-card3-text6": "Таможенное оформление и Логистика",
         "logistic-custom-main-card3-cta": "Узнать больше",
 
-
-
-
+        "logistics-customs-faq-question1":"<span class=\"faq-header\">Из каких стран вы импортируете товары?</span>",
+        "logistics-customs-faq-question2":"<span class=\"faq-header\">Какие документы необходимы для импорта?</span>",
+        "logistics-customs-faq-question3":"<span class=\"faq-header\">Как узнать заранее сколько будут стоить услуга?</span>",
+        "logistics-customs-faq-question4":"<span class=\"faq-header\">В Армении работает ре-экспорт?</span>",
+        
+        "logistics-customs-faq-answer1":"Мы импортируем товары из европейских стран. Доставка может осуществляться как наземным транспортом, так и воздушным — в зависимости от того, какой вариант вам будет удобнее. По прибытии груза в Ереван мы также предоставляем брокерские услуги для оформления всех таможенных процедур.",
+        "logistics-customs-faq-answer2-1":"Для импорта товаров обычно требуется несколько основных документов. Правильная оргназиация перевозки и прохождение таможенных процедур требует наличия:",
+        "logistics-customs-faq-answer2-2":"1. Инвойса",
+        "logistics-customs-faq-answer2-3":"2. Упаковочного Листа (Packing List). Документ со всеми основными данными: вес брутто, нетто, размеры упаковки, содержимое и т.д.",
+        "logistics-customs-faq-answer2-4":"3. Основной транспортный документ. CMR накладная - для перевозок наземным транспортом или Авианакладная(Air Waybill) для перевозок воздушным транспортом.",
+        "logistics-customs-faq-answer3":"Чтобы мы смогли подсчитать стоимость услуг нам необходимо получить основную информацию о грузе. Например, нам важно знать какой именно товар вы планриуете импортировать, из какой страны будет отправка, общий вес и объем груза. Естественно на стоимости влияет способ доставки, наземный или воздушный. Желаетельно предоставить инвойс или примерное описание товара, чтобы можно было определеить код товара и рассчитать возможные таможенные платежи. На основе этой информации мы уже можем сделать предварительный расчет стоимости перевозки, логистических услуг и брокерского оформления. В предварительном расчете будет указана стоимость достаки, наших услуг, услуг брокера и таможенного оформления в Ереване. Это позволит вам заранее понимать общий бюджет и выбрать наиболее удобный и выгодный вариант доставки.",
+        "logistics-customs-faq-answer4-1":"Обычно, без фактического завоза товара в Армению цепочку построить нельзя, но из этого правила есть исключение. Если в Армении отправкой занимается местная компания с историей перевозок в которых товар уже завозился на территорию Армении и её учредитель - Гражданин РА, он может отправлять товар не завозя его в Армению. Мы готовы предложить несколько вариантов взаимодействия.",
+        "logistics-customs-faq-answer4-2":"Вы можете приобрести себе такую <a href=\"/pages/services/ready-made-companies/index.html\" class=\"special-text\">готовую компанию</a> с местным учредителем. Мы можем выступить медиатором между вами и одной из наших компаний партнеров которые уже занимаются перевозками не территории Армении. Выбор подхода индивидуален и разнится от случая к случаю, самый лучший способ узнать что нижно именно вам - связаться с нами.",
+        
 
         "contact-us-badge": "Связаться с нами",
         "contact-us-title-mainpage": "Хотите <br><span class=\"special-text\">Знать больше?</span>",
@@ -470,7 +481,7 @@
         "llc-ie-scheme3-step3": "По факту получения документов мы открываем вам ООО в течение 24 часов",
         "llc-ie-scheme3-step4": "Полное сопровождение вас по открытию банковских расчетных счетов",
     
-        "llc-ie-faq-question1": "<span class=\"faq-header\">Можно ли открыть ООО польностью удаленно?</span>",
+        "llc-ie-faq-question1": "<span class=\"faq-header\">Можно ли открыть ООО полностью удаленно?</span>",
         "llc-ie-faq-question2": "",
         "llc-ie-faq-question3": "",
         "llc-ie-faq-question4": "",
@@ -1188,7 +1199,7 @@
         "logistic-badge": "logistics & customs",
 
         "logistics-customs-main-title": "Logistics and<br><span class=\"special-text\">Customs</span>",
-        "logistics-customs-main-lead": "Import, Export and payments abroad in modern realities",
+        "logistics-customs-main-lead": "Import, Export and Payments abroad in modern realities",
 
         "logistics-customs-main-kpi1": "Client all over the world",
         "logistics-customs-main-kpi2": "Countires we work<br> with",
@@ -1214,6 +1225,20 @@
         "logistics-customs-card3-text5": "Documentation & Certification",
         "logistics-customs-card3-text6": "Customs Clearance and Logistics",
         "logistic-custom-main-card3-cta": "Learn More",
+
+        "logistics-customs-faq-question1":"<span class=\"faq-header\">Which countries do you import goods from?</span>",
+        "logistics-customs-faq-question2":"<span class=\"faq-header\">What documents are required for import?</span>",
+        "logistics-customs-faq-question3":"<span class=\"faq-header\">How can I find out in advance how much the service will cost?</span>",
+        "logistics-customs-faq-question4":"<span class=\"faq-header\">Is re-export possible in Armenia?</span>",
+        
+        "logistics-customs-faq-answer1":"We import goods from European countries. Delivery can be arranged either by land or by air, depending on which option is more convenient for you. Once the cargo arrives in Yerevan, we also provide customs brokerage services to handle all customs clearance procedures.",
+        "logistics-customs-faq-answer2-1":"Several key documents are usually required to import goods. Proper organization of transportation and completion of customs procedures typically require the following:",
+        "logistics-customs-faq-answer2-2":"1. Invoice",
+        "logistics-customs-faq-answer2-3":"2. Packing List. A document containing all key details: gross and net weight, package dimensions, contents, etc.",
+        "logistics-customs-faq-answer2-4":"3. Primary transport document. A CMR consignment note for road transport or an Air Waybill for air freight.",
+        "logistics-customs-faq-answer3":"To estimate the cost of our services, we need the basic information about the cargo. For example, it is important for us to know what product you plan to import, from which country it will be shipped, as well as the total weight and volume of the cargo. Naturally, the delivery method also affects the price, whether it is by land or by air. It is advisable to provide an invoice or at least a rough description of the goods so that we can identify the HS code and estimate potential customs duties. Based on this information, we can prepare a preliminary cost estimate for transportation, logistics services, and customs brokerage. The estimate will include the cost of delivery, our services, brokerage fees, and customs clearance in Yerevan. This allows you to understand the overall budget in advance and choose the most convenient and cost-effective delivery option.",
+        "logistics-customs-faq-answer4-1":"Usually, it is not possible to build such a supply chain without physically bringing the goods into Armenia, but there is an exception. If the shipment is arranged in Armenia by a local company with a shipping history in which the goods have already been imported into Armenia, and its founder is a citizen of the Republic of Armenia, that company may ship the goods without bringing them into Armenia again. We can offer several ways to structure this cooperation.",
+        "logistics-customs-faq-answer4-2":"You can purchase such a <a href=\"/pages/services/ready-made-companies/index.html\" class=\"special-text\">ready-made company</a> with a local founder. We can also act as a mediator between you and one of our partner companies that already handle shipments outside Armenia. The right approach depends on the specifics of your case, and the best way to find out which option suits you is to contact us.",
 
         "contact-us-form-badge": "Связаться с нами",
 

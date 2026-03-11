@@ -18,7 +18,8 @@
         }
         &__title{
             text-align: center;
-            font-family: vars.$mainFontSemibold;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightSemibold;
             margin-bottom: 5rem;
         }
         &__text{
@@ -36,7 +37,8 @@
         padding: 2rem;
         margin-bottom: 2.5rem;
         &-title{
-            font-family: vars.$mainFontSemibold;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightSemibold;
             &::before{
                 position: absolute;
                 content: url(/src/graphics/svg/scheme-point.svg);
@@ -46,14 +48,16 @@
             }
         }
         &-text{
-            font-family: vars.$mainFontMedium;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightMedium;
             margin-top: 1.5rem;
         }
 
         &::before{
             background-color: vars.$primaryColor;
             font-size: vars.$h4Size;
-            font-family: vars.$mainFontSemibold;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightSemibold;
             content: counter(item);
             translate: -170% -30%;
             color: #fff;
@@ -224,7 +228,8 @@
             }
             & > p {
                 font-size: 2rem;
-                font-family: vars.$mainFontMedium;
+                font-family: vars.$mainFontFamily;
+                font-weight: vars.$mainFontWeightMedium;
                 overflow-wrap: anywhere;
 
                 &::before {
