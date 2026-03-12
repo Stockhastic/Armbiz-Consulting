@@ -1,43 +1,46 @@
 @use "./vars";
 @use "./mixins" as m;
 
-// @font-face {
-//     font-family: "Raleway-Regular";
-//     font-weight: 400;
-//     src: 
-//     // url("/src/fonts/FONT_NAME.woff2") format(woff2),
-//     // url("/src/fonts/FONT_NAME.woff") format(woff),
-//     url("/src/fonts/Raleway-Regular.ttf")
-// }
-
 @font-face {
-    font-family: "Raleway-Regular";
+    font-family: "Raleway";
     src: url('/src/fonts/Raleway-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: vars.$mainFontWeightRegular;
     font-display: swap;
 }
 @font-face {
-    font-family: "Raleway-Medium";
+    font-family: "Raleway";
     src: url('/src/fonts/Raleway-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: vars.$mainFontWeightMedium;
     font-display: swap;
 }
 @font-face {
-    font-family: "Raleway-Semibold";
+    font-family: "Raleway";
     src: url('/src/fonts/Raleway-SemiBold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: vars.$mainFontWeightSemibold;
     font-display: swap;
 }
 @font-face {
-    font-family: "Raleway-Bold";
+    font-family: "Raleway";
     src: url('/src/fonts/Raleway-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: vars.$mainFontWeightBold;
     font-display: swap;
 }
 @font-face {
-    font-family: "Raleway-Regular-Italic";
+    font-family: "Raleway";
     src: url('/src/fonts/Raleway-Italic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: vars.$mainFontWeightRegular;
     font-display: swap;
 }
 @font-face {
-    font-family: "Raleway-Light";
+    font-family: "Raleway";
     src: url('/src/fonts/Raleway-Light.woff2') format('woff2');
+    font-style: normal;
+    font-weight: vars.$mainFontWeightLight;
     font-display: swap;
 }
 
@@ -81,16 +84,19 @@ p, a, button, ol, ul {
 }
 
 strong, .special-text, .bold-text {
-    font-family: vars.$mainFontBold;
+    font-family: vars.$mainFontFamily;
+    font-weight: vars.$mainFontWeightBold;
     font-size: 1em;
 }
 
 .medium-text {
-    font-family: vars.$mainFontMedium;
+    font-family: vars.$mainFontFamily;
+    font-weight: vars.$mainFontWeightMedium;
     font-size: 1em;
 }
 .semibold-text {
-    font-family: vars.$mainFontSemibold;
+    font-family: vars.$mainFontFamily;
+    font-weight: vars.$mainFontWeightSemibold;
     font-size: 1em;
 }
 
@@ -111,11 +117,14 @@ strong, .special-text, .bold-text {
 }
 
 .italic-text{
-    font-family: vars.$mainFontItalic;
+    font-family: vars.$mainFontFamily;
+    font-style: italic;
+    font-weight: vars.$mainFontWeightRegular;
     font-size: 1em;
 }
 
 .bold-text{
-    font-family: vars.$mainFontBold;
+    font-family: vars.$mainFontFamily;
+    font-weight: vars.$mainFontWeightBold;
     font-size: 1em;
 }

@@ -11,7 +11,8 @@
     &__numlist{
         & > li{
             color:vars.$greyColor;
-            font-family: vars.$mainFontMedium;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightMedium;
             margin-top: 0;
             font-size: 1.6rem;
             margin-left: 2rem;
@@ -41,7 +42,8 @@
             }
         }
         & > p {
-            font-family: vars.$mainFontLight;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightLight;
             color: #fff;
         }
     }
@@ -53,10 +55,12 @@
 
         & > .service-card__title{
             margin-top: 2rem;
-            font-family: vars.$mainFontBold;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightBold;
         }
         & > .service-card__subtitle{
-            font-family: vars.$mainFontMedium;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightMedium;
             font-size: 1.4rem;
             color: vars.$greyColor;
         }
@@ -142,7 +146,8 @@
         margin-right: 4rem;
         & > h4{
             font-size: 18px;
-            font-family: vars.$mainFontMedium;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightMedium;
         }
     }
     &--autoheight{
@@ -203,18 +208,22 @@
         }
     }
     &__title{
-        font-family: vars.$mainFontMedium;
+        font-family: vars.$mainFontFamily;
+        font-weight: vars.$mainFontWeightMedium;
     }
     &__description{
+        line-height: 1.25;
         @include m.desktop{
             font-size: vars.$h6Size;
         }
     } 
     &__subtitle {
-        font-family: vars.$mainFontMedium;
+        font-family: vars.$mainFontFamily;
+        font-weight: vars.$mainFontWeightMedium;
         &--grey {
             min-height: 2lh;
-            font-family: vars.$mainFontMedium;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightMedium;
             color: vars.$greyColor;
         }
     }
@@ -240,7 +249,8 @@
         list-style-position: inside;
         & > li{
             font-size: vars.$pSize;
-            font-family: vars.$mainFontSemibold;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightSemibold;
             background-color: vars.$lightColor;
             color: vars.$primaryColor;
             padding: 0.5rem 1.5rem;
@@ -255,7 +265,8 @@
             margin: 0.5rem 0 0.5rem 1.3rem;
             font-size: vars.$pSize;
             color: vars.$greyColor;
-            font-family: vars.$mainFontMedium;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightMedium;
             &::before{
                 transform: translateY(-20%);
                 left: 0;
@@ -273,7 +284,8 @@
             position: relative;
             margin: 0.5rem 3rem;
             font-size: vars.$pSize;
-            font-style: vars.$mainFontMedium;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightMedium;
             &::before{
                 left: 0;
                 translate: -2.5rem -2px;
@@ -322,7 +334,8 @@
         text-shadow: 0 2px 40px vars.$lightColor;
     }
     &__price-tag {
-        font-family: vars.$mainFontBold;
+        font-family: vars.$mainFontFamily;
+        font-weight: vars.$mainFontWeightBold;
         color:vars.$primaryColor
     }
     &__timeline-tag{
@@ -348,7 +361,8 @@
             }
             & > p { 
                 margin-left: 0.5rem;
-                font-family: vars.$mainFontSemibold
+                font-family: vars.$mainFontFamily;
+                font-weight: vars.$mainFontWeightSemibold;
             }
         }
     }
@@ -452,7 +466,8 @@
         }
         &__timeline-tag{
             color:vars.$darkColor;
-            font-family: vars.$mainFontMedium;
+            font-family: vars.$mainFontFamily;
+            font-weight: vars.$mainFontWeightMedium;
         }
         &__extras{
             & > li{

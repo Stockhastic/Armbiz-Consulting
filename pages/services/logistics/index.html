@@ -12,6 +12,9 @@
     <script src="/scripts-js-php/includes.js" defer></script>
 
 
+    <link rel="preload" href="/src/fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/src/fonts/Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/src/fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/src/css/styles.css">
     <!-- FAVICON -->
     <!-- Favicon Standart -->
@@ -158,29 +161,47 @@
                 <div class="accordion-container">
                     <div class="ac">
                         <h2 class="ac-header">
-                            <button class="ac-trigger"><span class="faq-header">Вопрос 1</span></button>
+                            <button class="ac-trigger" data-i18n="logistics-customs-faq-question1"><span class="faq-header">Из каких стран вы импортируете товары?</span></button>
                         </h2>
                         <div class="ac-panel">
                             <div class="ac-divider"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim commodi perferendis ipsa ducimus neque alias iste sint, ratione, ipsam nisi eaque aliquid fugit nobis animi id eligendi, aut nemo velit.</p>
+                            <p data-i18n="logistics-customs-faq-answer1">Мы импортируем товары из европейских стран. Доставка может осуществляться как наземным транспортом, так и воздушным — в зависимости от того, какой вариант вам будет удобнее. По прибытии груза в Ереван мы также предоставляем брокерские услуги для оформления всех таможенных процедур.</p>
                         </div>
                     </div>
                     <div class="ac">
                         <h2 class="ac-header">
-                            <button class="ac-trigger"><span class="faq-header">Вопрос 2</span></button>
+                            <button class="ac-trigger" data-i18n="logistics-customs-faq-question2"><span class="faq-header">Какие документы необходимы для импорта?</span></button>
                         </h2>
                         <div class="ac-panel">
                             <div class="ac-divider"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim commodi perferendis ipsa ducimus neque alias iste sint, ratione, ipsam nisi eaque aliquid fugit nobis animi id eligendi, aut nemo velit.</p>
+                            <p data-i18n="logistics-customs-faq-answer2-1">Для импорта товаров обычно требуется несколько основных документов. Правильная организация перевозки и прохождение таможенных процедур требует наличия:</p>
+                            <p data-i18n="logistics-customs-faq-answer2-2">1. Инвойса</p>
+                            <p data-i18n="logistics-customs-faq-answer2-3">2. Упаковочного Листа (Packing List). Документ со всеми основными данными: вес брутто, нетто, размеры упаковки, содержимое и т.д.</p>
+                            <p data-i18n="logistics-customs-faq-answer2-4">3. Основной транспортный документ. CMR накладная - для перевозок наземным транспортом или Авианакладная(Air Waybill) для перевозок воздушным транспортом.</p>
                         </div>
                     </div>
                     <div class="ac">
                         <h2 class="ac-header">
-                            <button class="ac-trigger"><span class="faq-header">Вопрос 3</span></button>
+                            <button class="ac-trigger" data-i18n="logistics-customs-faq-question3"><span class="faq-header">Как узнать заранее, сколько будет стоить услуга?</span></button>
                         </h2>
                         <div class="ac-panel">
                             <div class="ac-divider"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim commodi perferendis ipsa ducimus neque alias iste sint, ratione, ipsam nisi eaque aliquid fugit nobis animi id eligendi, aut nemo velit.</p>
+                            <p data-i18n="logistics-customs-faq-answer3">Чтобы мы смогли подсчитать стоимость услуг, нам необходимо получить основную информацию о грузе.
+                                Например, нам важно знать, какой именно товар вы планируете импортировать, из какой страны будет отправка, общий вес и объем груза.
+                                Естественно, на стоимости влияет способ доставки: наземный или воздушный. Желательно предоставить инвойс или примерное описание товара, чтобы можно было определить код товара и рассчитать возможные таможенные платежи.
+                                На основе этой информации мы уже можем сделать предварительный расчет стоимости перевозки, логистических услуг и брокерского оформления. 
+                                В предварительном расчете будет указана стоимость доставки, наших услуг, услуг брокера и таможенного оформления в Ереване.
+                                Это позволит вам заранее понимать общий бюджет и выбрать наиболее удобный и выгодный вариант доставки.</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button class="ac-trigger" data-i18n="logistics-customs-faq-question4"><span class="faq-header">В Армении работает ре-экспорт?</span></button>
+                        </h2>
+                        <div class="ac-panel">
+                            <div class="ac-divider"></div>
+                            <p data-i18n="logistics-customs-faq-answer4-1">Обычно, без фактического завоза товара в Армению цепочку построить нельзя, но из этого правила есть исключение. Если в Армении отправкой занимается местная компания с историей перевозок в которых товар уже завозился на территорию Армении и её учредитель - Гражданин РА, он может отправлять товар не завозя его в Армению. Мы готовы предложить несколько вариантов взаимодействия.</p>
+                            <p data-i18n="logistics-customs-faq-answer4-2">Вы можете приобрести себе такую <a href="/pages/services/ready-made-companies/index.html" class="special-text">готовую компанию</a> с местным учредителем. Мы можем выступить медиатором между вами и одной из наших компаний-партнеров, которые уже занимаются перевозками на территории Армении. Выбор подхода индивидуален и разнится от случая к случаю; самый лучший способ узнать, что нужно именно вам, - связаться с нами.</p>
                         </div>
                     </div>
                 </div>

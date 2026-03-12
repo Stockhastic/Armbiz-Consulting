@@ -377,9 +377,17 @@ function initReviewsSwiper() {
   reviewsSwiper = new Swiper(swiperContainer, options);
 }
 
-document.addEventListener('includes:loaded', () => {
+function initInjectedHeader() {
   setLang(currentLang);
   initHeaderMenu();
+}
+
+document.addEventListener('includes:header-loaded', () => {
+  initInjectedHeader();
+});
+
+document.addEventListener('includes:loaded', () => {
+  initInjectedHeader();
   initReviewsSwiper();
   initContactForms();
 });
