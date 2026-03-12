@@ -16,6 +16,6 @@
     { "id": "registration-prime", "price": "600$", "timeline": { "ru": "несколько часов", "en": "within a few hours" } },
     
     { "id": "citizenship", "price": "300$", "timeline": { "ru": "от 90 дней", "en": "from 90 days" } },
-    { "id": "citizenship-exclusive", "price": "Утоняйте на консультации", "timeline": { "ru": "от 6 месяцев", "en": "from 6 months" } },
+    { "id": "citizenship-exclusive", "price": "Уточняйте на консультации", "timeline": { "ru": "от 6 месяцев", "en": "from 6 months" } },
     { "id": "citizenship-business", "price": "1600$", "timeline": { "ru": "от 3 лет", "en": "from 3 years" } }
 ]

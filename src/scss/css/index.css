@@ -235,37 +235,49 @@ a {
 }
 
 @font-face {
-  font-family: "Raleway-Regular";
+  font-family: "Raleway";
   src: url("/src/fonts/Raleway-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
   font-display: swap;
 }
 @font-face {
-  font-family: "Raleway-Medium";
+  font-family: "Raleway";
   src: url("/src/fonts/Raleway-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
   font-display: swap;
 }
 @font-face {
-  font-family: "Raleway-Semibold";
+  font-family: "Raleway";
   src: url("/src/fonts/Raleway-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
   font-display: swap;
 }
 @font-face {
-  font-family: "Raleway-Bold";
+  font-family: "Raleway";
   src: url("/src/fonts/Raleway-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
 }
 @font-face {
-  font-family: "Raleway-Regular-Italic";
+  font-family: "Raleway";
   src: url("/src/fonts/Raleway-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
   font-display: swap;
 }
 @font-face {
-  font-family: "Raleway-Light";
+  font-family: "Raleway";
   src: url("/src/fonts/Raleway-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
   font-display: swap;
 }
 h1, h2, h3, h4, h5, p, a, button, ul, ol {
-  font-family: "Raleway-Regular";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 h1 {
@@ -307,17 +319,20 @@ p, a, button, ol, ul {
   }
 }
 strong, .special-text, .bold-text {
-  font-family: "Raleway-Bold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
   font-size: 1em;
 }
 
 .medium-text {
-  font-family: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
   font-size: 1em;
 }
 
 .semibold-text {
-  font-family: "Raleway-Semibold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
   font-size: 1em;
 }
 
@@ -340,12 +355,15 @@ strong, .special-text, .bold-text {
 }
 
 .italic-text {
-  font-family: "Raleway-Regular-Italic";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
   font-size: 1em;
 }
 
 .bold-text {
-  font-family: "Raleway-Bold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
   font-size: 1em;
 }
 
@@ -408,7 +426,8 @@ strong, .special-text, .bold-text {
 }
 .service-card__numlist > li {
   color: #434c5b;
-  font-family: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
   margin-top: 0;
   font-size: 1.6rem;
   margin-left: 2rem;
@@ -434,7 +453,8 @@ strong, .special-text, .bold-text {
   background-color: #60a2ff;
 }
 .service-card--alternative > p {
-  font-family: "Raleway-Light";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 300;
   color: #fff;
 }
 .service-card--mini {
@@ -444,10 +464,12 @@ strong, .special-text, .bold-text {
 }
 .service-card--mini > .service-card__title {
   margin-top: 2rem;
-  font-family: "Raleway-Bold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
 }
 .service-card--mini > .service-card__subtitle {
-  font-family: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
   font-size: 1.4rem;
   color: #434c5b;
 }
@@ -500,7 +522,7 @@ strong, .special-text, .bold-text {
   background-color: #104299;
 }
 .service-card--dark-exclusive > .service-card__text {
-  font-family: "Raleway-Regular";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   min-height: 1lh;
 }
 .service-card--logistics, .service-card--glow {
@@ -522,7 +544,8 @@ strong, .special-text, .bold-text {
 }
 .service-card--glow > h4 {
   font-size: 18px;
-  font-family: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
 }
 .service-card--autoheight {
   height: auto;
@@ -571,7 +594,11 @@ strong, .special-text, .bold-text {
   font-size: 2.4rem;
 }
 .service-card__title {
-  font-family: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
+}
+.service-card__description {
+  line-height: 1.25;
 }
 @media (min-width: 1023px) {
   .service-card__description {
@@ -579,11 +606,13 @@ strong, .special-text, .bold-text {
   }
 }
 .service-card__subtitle {
-  font-family: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
 }
 .service-card__subtitle--grey {
   min-height: 2lh;
-  font-family: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
   color: #434c5b;
 }
 .service-card__text--framed {
@@ -605,7 +634,8 @@ strong, .special-text, .bold-text {
 }
 .service-card__steps > li {
   font-size: 1.6rem;
-  font-family: "Raleway-Semibold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
   background-color: #e7effe;
   color: #1a6eff;
   padding: 0.5rem 1.5rem;
@@ -620,7 +650,8 @@ strong, .special-text, .bold-text {
   margin: 0.5rem 0 0.5rem 1.3rem;
   font-size: 1.6rem;
   color: #434c5b;
-  font-family: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
 }
 .service-card__features > li::before {
   transform: translateY(-20%);
@@ -638,7 +669,8 @@ strong, .special-text, .bold-text {
   position: relative;
   margin: 0.5rem 3rem;
   font-size: 1.6rem;
-  font-style: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
 }
 .service-card__benefits > li::before {
   left: 0;
@@ -687,12 +719,13 @@ strong, .special-text, .bold-text {
   text-shadow: 0 2px 40px #e7effe;
 }
 .service-card__price-tag {
-  font-family: "Raleway-Bold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
   color: #1a6eff;
 }
 .service-card__timeline-tag {
   translate: 0 100%;
-  font-family: "Raleway-Regular";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   color: #646d83;
 }
 .service-card__extras {
@@ -715,7 +748,8 @@ strong, .special-text, .bold-text {
 }
 .service-card__extras > li > p {
   margin-left: 0.5rem;
-  font-family: "Raleway-Semibold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
 }
 @media (max-width: 1023px) {
   .service-card__header--mini {
@@ -793,14 +827,15 @@ strong, .special-text, .bold-text {
   }
   .service-card__timeline-tag {
     color: #1e2736;
-    font-family: "Raleway-Medium";
+    font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
   }
   .service-card__extras > li {
     justify-content: space-around;
   }
   .service-card__features > li {
     font-size: 1.4rem;
-    font-family: "Raleway-Regular";
+    font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   }
   .service-card__title {
     font-size: 2rem;
@@ -827,7 +862,8 @@ strong, .special-text, .bold-text {
 }
 .scheme-container__title {
   text-align: center;
-  font-family: "Raleway-Semibold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
   margin-bottom: 5rem;
 }
 .scheme-container__text {
@@ -843,7 +879,8 @@ strong, .special-text, .bold-text {
   margin-bottom: 2.5rem;
 }
 .scheme__item-title {
-  font-family: "Raleway-Semibold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
 }
 .scheme__item-title::before {
   position: absolute;
@@ -853,13 +890,15 @@ strong, .special-text, .bold-text {
   translate: -84% 0;
 }
 .scheme__item-text {
-  font-family: "Raleway-Medium";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
   margin-top: 1.5rem;
 }
 .scheme__item::before {
   background-color: #1a6eff;
   font-size: 2.4rem;
-  font-family: "Raleway-Semibold";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
   content: counter(item);
   translate: -170% -30%;
   color: #fff;
@@ -937,7 +976,7 @@ strong, .special-text, .bold-text {
   font-size: 2rem;
 }
 .scheme--bank > .scheme__item > .scheme__item-text {
-  font-family: "Raleway-Regular";
+  font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   color: #434c5b;
 }
 
@@ -1009,7 +1048,8 @@ strong, .special-text, .bold-text {
   }
   .scheme--horizontal > .scheme__item > p {
     font-size: 2rem;
-    font-family: "Raleway-Medium";
+    font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
     overflow-wrap: anywhere;
   }
   .scheme--horizontal > .scheme__item > p::before {

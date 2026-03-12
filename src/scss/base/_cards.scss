@@ -212,6 +212,7 @@
         font-weight: vars.$mainFontWeightMedium;
     }
     &__description{
+        line-height: 1.25;
         @include m.desktop{
             font-size: vars.$h6Size;
         }

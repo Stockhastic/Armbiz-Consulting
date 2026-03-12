@@ -96,7 +96,7 @@ $serviceLabels = [
     'citizenship' => 'Гражданство',
     'accounting' => 'Бухгалтерские услуги',
     'social-card' => 'Социальная карта',
-    'bank-card' => 'Банковская карта для физ лица',
+    'bank-card' => 'Банковская карта для физлица',
     'registration' => 'Прописка',
     'logistics' => 'Логистика и Таможня',
     'other' => 'Другое',
@@ -189,7 +189,7 @@ $html = <<<HTML
             <td style="padding:24px 28px 8px 28px;">
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
                     <tr>
-                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Клиент‚</td>
+                        <td style="padding:10px 0;border-bottom:1px solid #d7deef;width:190px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.4;color:#646d83;vertical-align:top;">Клиент</td>
                         <td style="padding:10px 0;border-bottom:1px solid #d7deef;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.4;color:#1e2736;vertical-align:top;">{$safeName}</td>
                     </tr>
                     <tr>
