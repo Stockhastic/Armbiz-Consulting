@@ -1640,6 +1640,7 @@ body.menu-open {
   }
   .services .service-card__benefits > li {
     margin: 0.4rem 0 0.4rem 2.6rem;
+    line-height: 1.3;
   }
   .services .service-card__benefits > li::before {
     translate: -2.2rem -2px;
@@ -2008,7 +2009,7 @@ body.menu-open {
     text-align: center;
   }
   .contact__details {
-    width: 95%;
+    width: 100%;
   }
 }
 
@@ -3237,6 +3238,36 @@ body.menu-open {
 .ie-scheme > .scheme-container__title {
   text-align: center;
 }
+@media (min-width: 768px) {
+  .ie-scheme .scheme--horizontal {
+    --ie-scheme-gap: 2rem;
+    --ie-scheme-step-marker-offset: 8rem;
+    --ie-scheme-step-marker-size: 5.4rem;
+    --ie-scheme-line-thickness: 0.3rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--ie-scheme-gap);
+  }
+  .ie-scheme .scheme--horizontal > .scheme__item {
+    min-width: 0;
+    margin: 0;
+    height: 100%;
+  }
+  .ie-scheme .scheme--horizontal > .scheme__item > .scheme__item-title {
+    overflow-wrap: anywhere;
+  }
+  .ie-scheme .scheme--horizontal > .scheme__line {
+    top: calc(-1 * var(--ie-scheme-step-marker-offset) + var(--ie-scheme-step-marker-size) / 2 - var(--ie-scheme-line-thickness) / 2);
+    left: calc(12.5% - var(--ie-scheme-gap) * 0.375);
+    right: calc(12.5% - var(--ie-scheme-gap) * 0.375);
+    width: auto;
+    height: var(--ie-scheme-line-thickness);
+  }
+  .ie-scheme .scheme--horizontal > .scheme__line--position1 {
+    translate: 0 10px;
+  }
+}
 @media (max-width: 767px) {
   .ie-scheme {
     padding-block: 2rem;
@@ -3844,6 +3875,7 @@ body.menu-open {
   border-radius: 2rem;
   backdrop-filter: blur(12px);
   padding: 2rem;
+  line-height: 1.33;
 }
 .accounting-details > .service-card--base {
   max-width: 48%;

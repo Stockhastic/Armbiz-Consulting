@@ -482,14 +482,17 @@
         "llc-ie-scheme3-step4": "Полное сопровождение вас по открытию банковских расчетных счетов",
     
         "llc-ie-faq-question1": "<span class=\"faq-header\">Можно ли открыть ООО полностью удаленно?</span>",
-        "llc-ie-faq-question2": "",
-        "llc-ie-faq-question3": "",
-        "llc-ie-faq-question4": "",
+        "llc-ie-faq-question2": "<span class=\"faq-header\">Можно ли открыть банковский счет для ИП удаленно?</span>",
+        "llc-ie-faq-question3": "<span class=\"faq-header\">Что будет с моим юридическим адресом через год?</span>",
+        "llc-ie-faq-question4": "<span class=\"faq-header\">Потребуется ли мне армянский номер?</span>",
         
-        "llc-ie-faq-answer1": "Если учредитель и директор являются гражданами РФ, то \"под ключ\" открыть ООО не получится. На этапе получения соц. номера и открытия банковских счетов присутствие директора обязательно.",
-        "llc-ie-faq-answer2": "",
-        "llc-ie-faq-answer3": "",
-        "llc-ie-faq-answer4": "",
+        "llc-ie-faq-answer1": "Если учредитель и директор являются гражданами РФ, то открыть ООО \"под ключ\" не получится. На этапе получения социального номера и открытия банковских счетов присутствие директора обязательно.",
+        "llc-ie-faq-answer2": "Да, это возможно. Удаленное открытие предлагают банки Ardshinbank и IDBank. Если счет открывается в IDBank, потребуется нотариально заверенная доверенность. Банк предоставляет форму доверенности, а мы подготовим её для вас. В данном случае от вас потребуется только заверить документ у нотариуса и отправить его нам почтовой службой.",
+        "llc-ie-faq-answer3": "Через год после оформления ИП, когда истекает срок бесплатного пользования юридическим адресом, начинает взиматься установленная плата за его продление. Стоимость можно уточнить у нашего менеджера.",
+        "llc-ie-faq-answer4-1": "Да, армянский номер телефона необходим. Мы решаем этот вопрос следующим образом:",
+        "llc-ie-faq-answer4-2": "1. Сначала местный номер оформляется на имя нашего сотрудника.",
+        "llc-ie-faq-answer4-3": "2. Затем мы проходим процесс открытия юридического лица.",
+        "llc-ie-faq-answer4-4": "3. Когда вам будет удобно, мы переоформим номер на вас. Это можно сделать на месте, если вы планируете приехать в Ереван, или удаленно по нотариальной доверенности. Доверенность мы подготовим, от вас потребуется только заверить её и отправить нам по почте.",
 
 
 
@@ -1369,7 +1372,19 @@
         "llc-ie-scheme3-step3": "Upon receiving the documents, we register your LLC within 24 hours",
         "llc-ie-scheme3-step4": "Comprehensive support for opening business bank accounts",      
 
-
+        
+        "llc-ie-faq-question1": "<span class=\"faq-header\">Can an LLC be registered entirely remotely?</span>",
+        "llc-ie-faq-question2": "<span class=\"faq-header\">Is it possible to open a bank account for a sole proprietor remotely?</span>",
+        "llc-ie-faq-question3": "<span class=\"faq-header\">What will happen to my legal address after a year?</span>",
+        "llc-ie-faq-question4": "<span class=\"faq-header\">Will I need an Armenian phone number?</span>",
+        
+        "llc-ie-faq-answer1": "If the founder and director are citizens of the Russian Federation, turnkey LLC registration is not possible. The director must be present in person to obtain a social number and open bank accounts.",
+        "llc-ie-faq-answer2": "Yes, it is possible. Remote account opening is available with Ardshinbank and IDBank. If the account is opened with IDBank, a notarized power of attorney is required. The bank provides the power of attorney template, and we will prepare it for you. In this case, you only need to have the document notarized and send it to us by mail.",
+        "llc-ie-faq-answer3": "One year after registering as a sole proprietor, when the free period for using the legal address expires, a standard fee is charged for its renewal. You can check the cost with our manager.",
+        "llc-ie-faq-answer4-1": "Yes, an Armenian phone number is required. We handle this issue as follows:",
+        "llc-ie-faq-answer4-2": "1. First, a local number is issued in the name of our employee.",
+        "llc-ie-faq-answer4-3": "2. We then go through the legal entity registration process.",
+        "llc-ie-faq-answer4-4": "3. Whenever it is convenient for you, we re-register the number in your name. This can be done in person if you plan to come to Yerevan, or remotely using a notarized power of attorney. We will prepare the power of attorney; you will only need to have it notarized and send it to us by mail.",
 
 
         "citizenship-hero-title": "Armenian <span class=\"special-text\">Citizenship</span>",
