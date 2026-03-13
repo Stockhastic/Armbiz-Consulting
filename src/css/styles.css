@@ -2007,6 +2007,9 @@ body.menu-open {
     translate: 0 -150%;
     text-align: center;
   }
+  .contact__details {
+    width: 95%;
+  }
 }
 
 .form {
