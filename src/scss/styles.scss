@@ -1667,6 +1667,11 @@ body.menu-open {
             width: 100%;
             height: 100%;
         }
+
+        &--registration{
+            aspect-ratio: 380.4 / 288.4;
+            height: auto;
+        }
     }
 
     &--service{
@@ -1810,6 +1815,10 @@ body.menu-open {
                 justify-self: center;
                 width: min(100%, 42rem);
                 height: clamp(20rem, 62vw, 30rem);
+            }
+
+            & > .hero__image--registration{
+                height: auto;
             }
         }
     }
