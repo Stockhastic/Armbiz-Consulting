@@ -80,16 +80,16 @@ a {
     transform: translate(0, 0) rotate(0deg);
   }
   20% {
-    transform: translate(100px, -80px) rotate(36deg);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 100px), calc(var(--sphere-motion-scale, 1) * -80px)) rotate(36deg);
   }
   40% {
-    transform: translate(-60px, 100px) rotate(72deg);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -60px), calc(var(--sphere-motion-scale, 1) * 100px)) rotate(72deg);
   }
   60% {
-    transform: translate(120px, 60px) rotate(108deg);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 120px), calc(var(--sphere-motion-scale, 1) * 60px)) rotate(108deg);
   }
   80% {
-    transform: translate(-40px, -100px) rotate(144deg);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -40px), calc(var(--sphere-motion-scale, 1) * -100px)) rotate(144deg);
   }
   100% {
     transform: translate(0, 0) rotate(180deg);
@@ -100,19 +100,19 @@ a {
     transform: translate(0, 0) scale(1);
   }
   16% {
-    transform: translate(-80px, -60px) scale(1.1);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -80px), calc(var(--sphere-motion-scale, 1) * -60px)) scale(1.1);
   }
   32% {
-    transform: translate(60px, -100px) scale(0.9);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 60px), calc(var(--sphere-motion-scale, 1) * -100px)) scale(0.9);
   }
   48% {
-    transform: translate(-120px, 80px) scale(1.05);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -120px), calc(var(--sphere-motion-scale, 1) * 80px)) scale(1.05);
   }
   64% {
-    transform: translate(100px, 90px) scale(0.95);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 100px), calc(var(--sphere-motion-scale, 1) * 90px)) scale(0.95);
   }
   80% {
-    transform: translate(0, -60px) scale(1);
+    transform: translate(0, calc(var(--sphere-motion-scale, 1) * -60px)) scale(1);
   }
   100% {
     transform: translate(0, 0) scale(1);
@@ -123,13 +123,13 @@ a {
     transform: translate(0, 0) rotate(0deg) scale(1);
   }
   25% {
-    transform: translate(80px, -120px) rotate(45deg) scale(1.1);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 80px), calc(var(--sphere-motion-scale, 1) * -120px)) rotate(45deg) scale(1.1);
   }
   50% {
-    transform: translate(-100px, -80px) rotate(90deg) scale(0.9);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -100px), calc(var(--sphere-motion-scale, 1) * -80px)) rotate(90deg) scale(0.9);
   }
   75% {
-    transform: translate(40px, 60px) rotate(135deg) scale(1);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 40px), calc(var(--sphere-motion-scale, 1) * 60px)) rotate(135deg) scale(1);
   }
   100% {
     transform: translate(0, 0) rotate(180deg) scale(1);
@@ -140,13 +140,13 @@ a {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(-120px, 100px);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -120px), calc(var(--sphere-motion-scale, 1) * 100px));
   }
   50% {
-    transform: translate(80px, -80px);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 80px), calc(var(--sphere-motion-scale, 1) * -80px));
   }
   75% {
-    transform: translate(-40px, 120px);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -40px), calc(var(--sphere-motion-scale, 1) * 120px));
   }
   100% {
     transform: translate(0, 0);
@@ -157,16 +157,16 @@ a {
     transform: translate(0, 0) rotate(0deg);
   }
   20% {
-    transform: translate(-80px, 120px) rotate(36deg);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -80px), calc(var(--sphere-motion-scale, 1) * 120px)) rotate(36deg);
   }
   40% {
-    transform: translate(100px, 40px) rotate(72deg);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 100px), calc(var(--sphere-motion-scale, 1) * 40px)) rotate(72deg);
   }
   60% {
-    transform: translate(-120px, -80px) rotate(108deg);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -120px), calc(var(--sphere-motion-scale, 1) * -80px)) rotate(108deg);
   }
   80% {
-    transform: translate(60px, -60px) rotate(144deg);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 60px), calc(var(--sphere-motion-scale, 1) * -60px)) rotate(144deg);
   }
   100% {
     transform: translate(0, 0) rotate(180deg);
@@ -177,13 +177,13 @@ a {
     transform: translate(0, 0) scale(1);
   }
   30% {
-    transform: translate(160px, -100px) scale(1.15);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 160px), calc(var(--sphere-motion-scale, 1) * -100px)) scale(1.15);
   }
   60% {
-    transform: translate(-80px, 120px) scale(0.85);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -80px), calc(var(--sphere-motion-scale, 1) * 120px)) scale(0.85);
   }
   80% {
-    transform: translate(80px, -40px) scale(1);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 80px), calc(var(--sphere-motion-scale, 1) * -40px)) scale(1);
   }
   100% {
     transform: translate(0, 0) scale(1);
@@ -194,13 +194,13 @@ a {
     transform: translate(0, 0);
   }
   28% {
-    transform: translate(-100px, -120px);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -100px), calc(var(--sphere-motion-scale, 1) * -120px));
   }
   56% {
-    transform: translate(60px, 80px);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 60px), calc(var(--sphere-motion-scale, 1) * 80px));
   }
   80% {
-    transform: translate(-120px, 40px);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -120px), calc(var(--sphere-motion-scale, 1) * 40px));
   }
   100% {
     transform: translate(0, 0);
@@ -211,19 +211,19 @@ a {
     transform: translate(0, 0) rotate(0deg) scale(1);
   }
   16% {
-    transform: translate(80px, 100px) rotate(30deg) scale(1.08);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 80px), calc(var(--sphere-motion-scale, 1) * 100px)) rotate(30deg) scale(1.08);
   }
   32% {
-    transform: translate(-120px, 60px) rotate(60deg) scale(0.92);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -120px), calc(var(--sphere-motion-scale, 1) * 60px)) rotate(60deg) scale(0.92);
   }
   48% {
-    transform: translate(140px, -80px) rotate(90deg) scale(1.05);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * 140px), calc(var(--sphere-motion-scale, 1) * -80px)) rotate(90deg) scale(1.05);
   }
   64% {
-    transform: translate(-60px, -120px) rotate(120deg) scale(0.95);
+    transform: translate(calc(var(--sphere-motion-scale, 1) * -60px), calc(var(--sphere-motion-scale, 1) * -120px)) rotate(120deg) scale(0.95);
   }
   80% {
-    transform: translate(0, 80px) rotate(150deg) scale(1);
+    transform: translate(0, calc(var(--sphere-motion-scale, 1) * 80px)) rotate(150deg) scale(1);
   }
   100% {
     transform: translate(0, 0) rotate(180deg) scale(1);
@@ -1000,7 +1000,7 @@ strong, .special-text, .bold-text {
     font-size: 2rem;
   }
   .scheme:not(.scheme--horizontal) > .scheme__item > .scheme__item-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     overflow-wrap: anywhere;
   }
   .scheme:not(.scheme--horizontal) > .scheme__item > .scheme__item-title::before {
@@ -1046,13 +1046,13 @@ strong, .special-text, .bold-text {
     translate: -135% -50%;
     font-size: 2rem;
   }
-  .scheme--horizontal > .scheme__item > p {
-    font-size: 2rem;
+  .scheme--horizontal > .scheme__item > .scheme__item-title {
+    font-size: 1.6rem;
     font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     font-weight: 500;
     overflow-wrap: anywhere;
   }
-  .scheme--horizontal > .scheme__item > p::before {
+  .scheme--horizontal > .scheme__item > .scheme__item-title::before {
     top: 50%;
     left: 0;
     rotate: 0deg;
@@ -1069,5 +1069,8 @@ strong, .special-text, .bold-text {
   .scheme--horizontal > .scheme__line--position1, .scheme--horizontal > .scheme__line--position2, .scheme--horizontal > .scheme__line--position3, .scheme--horizontal > .scheme__line--position4 {
     width: 3px;
     translate: 0 0;
+  }
+  .scheme:not(.scheme--horizontal).scheme--bank > .scheme__line {
+    bottom: 8.3rem;
   }
 }/*# sourceMappingURL=index.css.map */

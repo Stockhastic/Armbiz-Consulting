@@ -9,12 +9,19 @@
 }
 
 .sphere {
+    --sphere-size-scale: 1;
+    --sphere-motion-scale: 1;
+    --sphere-duration-scale: 1;
+    --sphere-opacity: 1;
     position: absolute;
     border-radius: 50%;
-    // filter: blur(12px);
+    opacity: var(--sphere-opacity);
+    pointer-events: none;
+    will-change: transform;
     animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-duration: calc(var(--sphere-base-duration, 20s) * var(--sphere-duration-scale));
     &-container {
         position: absolute;
         top: 0;
@@ -32,72 +39,153 @@
     }
 
     &:nth-child(1) {
-        width: 220px;
-        height: 220px;
+        --sphere-base-duration: 24s;
+        width: calc(220px * var(--sphere-size-scale));
+        height: calc(220px * var(--sphere-size-scale));
         background: radial-gradient(circle, vars.$bubbleOneColor, vars.$bubbleTwoColor 100%);
-        animation: float1 24s infinite;
+        animation-name: float1;
         top: 20%;
         left: 10%;
     }
     &:nth-child(2) {
-        width: 120px;
-        height: 120px;
+        --sphere-base-duration: 12s;
+        width: calc(120px * var(--sphere-size-scale));
+        height: calc(120px * var(--sphere-size-scale));
         background: radial-gradient(circle, vars.$bubbleOneColor, vars.$bubbleTwoColor 100%);
-        animation: float2 12s infinite;
+        animation-name: float2;
         top: 60%;
         left: 70%;
     }
     &:nth-child(3) {
-        width: 40px;
-        height: 40px;
+        --sphere-base-duration: 15s;
+        width: calc(40px * var(--sphere-size-scale));
+        height: calc(40px * var(--sphere-size-scale));
         background: radial-gradient(circle, vars.$bubbleOneColor, vars.$bubbleTwoColor 100%);
-        animation: float3 15s infinite;
+        animation-name: float3;
         top: 65%;
         left: 20%;
         z-index: -999999;
     }
     &:nth-child(4) {
-        width: 150px;
-        height: 150px;
+        --sphere-base-duration: 10s;
+        width: calc(150px * var(--sphere-size-scale));
+        height: calc(150px * var(--sphere-size-scale));
         background: radial-gradient(circle, vars.$bubbleOneColor, vars.$bubbleTwoColor 100%);
-        animation: float4 10s infinite;
+        animation-name: float4;
         top: 30%;
         left: 80%;
     }
     &:nth-child(5) {
-        width: 100px;
-        height: 100px;
+        --sphere-base-duration: 18s;
+        width: calc(100px * var(--sphere-size-scale));
+        height: calc(100px * var(--sphere-size-scale));
         background: radial-gradient(circle, vars.$bubbleOneColor, vars.$bubbleTwoColor 100%);
-        animation: float5 18s infinite;
+        animation-name: float5;
         top: 10%;
         left: 50%;
     }
     &:nth-child(6) {
-        width: 130px;
-        height: 130px;
+        --sphere-base-duration: 14s;
+        width: calc(130px * var(--sphere-size-scale));
+        height: calc(130px * var(--sphere-size-scale));
         background: radial-gradient(circle, vars.$bubbleOneColor, vars.$bubbleTwoColor 100%);
-        animation: float6 14s infinite;
+        animation-name: float6;
         top: 50%;
         left: 5%;
     }
     &:nth-child(7) {
-        width: 30px;
-        height: 30px;
+        --sphere-base-duration: 24s;
+        width: calc(30px * var(--sphere-size-scale));
+        height: calc(30px * var(--sphere-size-scale));
         background: radial-gradient(circle, vars.$bubbleOneColor, vars.$bubbleTwoColor 100%);
-        animation: float7 24s infinite;
+        animation-name: float7;
         top: 70%;
         left: 85%;
     }
     &:nth-child(8) {
-        width: 390px;
-        height: 390px;
+        --sphere-base-duration: 38s;
+        width: calc(390px * var(--sphere-size-scale));
+        height: calc(390px * var(--sphere-size-scale));
         background: radial-gradient(circle, vars.$bubbleOneColor, vars.$bubbleTwoColor 100%);
-        animation: float8 38s infinite;
+        animation-name: float8;
         top: 5%;
         left: 75%;
     }
+    @include m.tablet{
+        --sphere-size-scale: 0.72;
+        --sphere-motion-scale: 0.52;
+        --sphere-duration-scale: 1.18;
+        --sphere-opacity: 0.72;
+        &:nth-child(1){
+            top: 16%;
+            left: 2%;
+        }
+        &:nth-child(2){
+            top: 62%;
+            left: 68%;
+        }
+        &:nth-child(3){
+            top: 70%;
+            left: 24%;
+        }
+        &:nth-child(4){
+            top: 28%;
+            left: 74%;
+        }
+        &:nth-child(5){
+            top: 8%;
+            left: 48%;
+        }
+        &:nth-child(6){
+            top: 52%;
+            left: -1%;
+        }
+        &:nth-child(7){
+            top: 74%;
+            left: 80%;
+        }
+        &:nth-child(8){
+            top: -2%;
+            left: 62%;
+        }
+    }
     @include m.mobile{
-        display: none;
+        --sphere-size-scale: 0.48;
+        --sphere-motion-scale: 0.32;
+        --sphere-duration-scale: 1.35;
+        --sphere-opacity: 0.58;
+        &:nth-child(1){
+            top: 14%;
+            left: -6%;
+        }
+        &:nth-child(2){
+            top: 64%;
+            left: 66%;
+        }
+        &:nth-child(3){
+            top: 73%;
+            left: 16%;
+        }
+        &:nth-child(4){
+            top: 26%;
+            left: 74%;
+        }
+        &:nth-child(5){
+            top: 7%;
+            left: 44%;
+        }
+        &:nth-child(6){
+            top: 54%;
+            left: -6%;
+        }
+        &:nth-child(7){
+            top: 80%;
+            left: 72%;
+        }
+        &:nth-child(8){
+            top: -1%;
+            left: 52%;
+        }
     }
 }
 
@@ -1340,6 +1428,12 @@ body.menu-open {
         display: flex;
         align-items: center;
     }
+    &__menu-close{
+        display: none;
+    }
+    &__menu-close-line{
+        display: block;
+    }
     &__menu-overlay{
         display: none;
     }
@@ -1363,7 +1457,7 @@ body.menu-open {
             transform: translateX(0);
         }
         .header__menu-overlay{
-            // opacity: 1;
+            opacity: 1;
             pointer-events: auto;
         }
     }
@@ -1400,6 +1494,35 @@ body.menu-open {
             overflow-y: auto;
             z-index: 1003;
         }
+        &__menu-close{
+            display: inline-flex;
+            position: absolute;
+            top: 2.4rem;
+            right: 2.4rem;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border: 1px solid vars.$borderColor;
+            border-radius: 1.2rem;
+            background-color: #fff;
+            cursor: pointer;
+            z-index: 1;
+        }
+        &__menu-close-line{
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: vars.$darkColor;
+            border-radius: 2px;
+            &:first-child{
+                transform: rotate(45deg);
+            }
+            &:last-child{
+                transform: rotate(-45deg);
+            }
+        }
         &__menu-overlay{
             display: block;
             position: fixed;
@@ -1419,30 +1542,80 @@ body.menu-open {
             height: auto;
             flex-direction: column;
             align-items: flex-start;
+            gap: 0.4rem;
         }
         &__menu .header__nav-item{
             margin: 0;
             width: 100%;
         }
         &__menu .header__nav-link{
-            padding: 0.6rem 0;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            min-height: 4.8rem;
+            padding: 1rem 1.2rem;
+            border-radius: 1.2rem;
+            line-height: 1.35;
+        }
+        &__menu .header__nav-item-services > .header__nav-link{
+            justify-content: space-between;
+            gap: 1.2rem;
+            &::after{
+                content: '';
+                flex-shrink: 0;
+                width: 1rem;
+                height: 1rem;
+                margin-left: auto;
+                border-right: 2px solid currentColor;
+                border-bottom: 2px solid currentColor;
+                transform: rotate(45deg) translateY(-0.2rem);
+                transition: transform vars.$normalAnimation ease;
+            }
         }
         &__menu .header__nav-list-services{
             display: block;
             position: static;
             right: auto;
             transform: none;
-            padding: 0.6rem 0 0 1.6rem;
+            padding: 0 0 0 0.6rem;
             background-color: transparent;
             border: none;
+            max-height: 0;
+            margin-top: 0;
+            opacity: 0;
+            overflow: hidden;
+            pointer-events: none;
+            transition: max-height vars.$slowAnimation ease, opacity vars.$normalAnimation ease, margin-top vars.$normalAnimation ease;
+        }
+        &__menu .header__nav-list-services > li + li{
+            margin-top: 0.4rem;
         }
         &__menu .header__nav-list-services > li{
             text-align: left;
-            width: auto;
+            width: 100%;
         }
         &__menu .header__nav-list-services > li > a{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            min-height: 4.8rem;
+            padding: 1rem 1.2rem;
             white-space: normal;
+            line-height: 1.35;
+            border-radius: 1.2rem;
+            background-color: rgba(26, 110, 255, 0.08);
+        }
+        &__menu .header__nav-item-services--expanded > .header__nav-link{
+            margin-bottom: 0.2rem;
+            &::after{
+                transform: rotate(-135deg) translateY(0.2rem);
+            }
+        }
+        &__menu .header__nav-item-services--expanded > .header__nav-list-services{
+            max-height: 80rem;
+            margin-top: 0.2rem;
+            opacity: 1;
+            pointer-events: auto;
         }
         &__menu .header__lang{
             margin: 1.2rem 0 0;

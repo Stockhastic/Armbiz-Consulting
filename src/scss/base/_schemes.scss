@@ -156,6 +156,8 @@
     }
 
     .scheme:not(.scheme--horizontal) {
+        --scheme-mobile-line-top: 6rem;
+        --scheme-mobile-line-bottom: 5.8rem;
         width: 100%;
         max-width: 100%;
         padding: 0;
@@ -173,7 +175,7 @@
         }
 
         & > .scheme__item > .scheme__item-title {
-            font-size: 2rem;
+            font-size: vars.$pSize;
             overflow-wrap: anywhere;
 
             &::before {
@@ -191,8 +193,8 @@
             width: 3px;
             height: auto;
             left: 34px;
-            top: 6rem;
-            bottom: 5.8rem;
+            top: var(--scheme-mobile-line-top);
+            bottom: var(--scheme-mobile-line-bottom);
             translate: 0 0;
         }
     }
@@ -226,8 +228,8 @@
                 // padding: 1.5rem 1.6rem;
                 font-size: vars.$h5Size;
             }
-            & > p {
-                font-size: 2rem;
+            & > .scheme__item-title {
+                font-size: vars.$pSize;
                 font-family: vars.$mainFontFamily;
                 font-weight: vars.$mainFontWeightMedium;
                 overflow-wrap: anywhere;
@@ -257,5 +259,10 @@
                 translate: 0 0;
             }
         }
+    }
+
+    .scheme:not(.scheme--horizontal).scheme--bank {
+        --scheme-mobile-line-top: 8rem;
+        --scheme-mobile-line-bottom: 8.3rem;
     }
 }

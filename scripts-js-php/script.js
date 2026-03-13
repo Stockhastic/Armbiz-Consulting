@@ -252,6 +252,11 @@ function initHeaderMenu() {
     return;
   }
 
+  const servicesItem = nav.querySelector('.header__nav-item-services');
+  const servicesTrigger = servicesItem ? servicesItem.querySelector('.header__nav-link') : null;
+  const servicesList = servicesItem ? servicesItem.querySelector('.header__nav-list-services') : null;
+  const desktopQuery = window.matchMedia('(min-width: 1024px)');
+
   header.classList.add('header--menu-ready');
 
   const burger = document.createElement('button');
@@ -282,6 +287,18 @@ function initHeaderMenu() {
   }
   burger.insertAdjacentElement('afterend', menu);
   menu.appendChild(panel);
+
+  const closeButton = document.createElement('button');
+  closeButton.className = 'header__menu-close';
+  closeButton.type = 'button';
+  closeButton.setAttribute('data-menu-close', '');
+  closeButton.setAttribute('aria-label', 'Close menu');
+  closeButton.innerHTML = [
+    '<span class="header__menu-close-line"></span>',
+    '<span class="header__menu-close-line"></span>',
+  ].join('');
+
+  panel.appendChild(closeButton);
   panel.appendChild(nav);
   panel.appendChild(lang);
 
@@ -292,6 +309,39 @@ function initHeaderMenu() {
   overlay.setAttribute('aria-label', 'Close menu');
   header.appendChild(overlay);
 
+  const setServicesExpanded = expanded => {
+    if (!servicesItem || !servicesTrigger || !servicesList || desktopQuery.matches) {
+      return;
+    }
+
+    servicesItem.classList.toggle('header__nav-item-services--expanded', expanded);
+    servicesTrigger.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    servicesList.setAttribute('aria-hidden', expanded ? 'false' : 'true');
+  };
+
+  const syncServicesAccordion = () => {
+    if (!servicesItem || !servicesTrigger || !servicesList) {
+      return;
+    }
+
+    if (desktopQuery.matches) {
+      servicesItem.classList.remove('header__nav-item-services--expanded');
+      servicesTrigger.removeAttribute('role');
+      servicesTrigger.removeAttribute('aria-expanded');
+      servicesTrigger.removeAttribute('aria-controls');
+      servicesList.removeAttribute('aria-hidden');
+      return;
+    }
+
+    if (!servicesList.id) {
+      servicesList.id = 'header-services-menu';
+    }
+
+    servicesTrigger.setAttribute('role', 'button');
+    servicesTrigger.setAttribute('aria-controls', servicesList.id);
+    setServicesExpanded(servicesItem.classList.contains('header__nav-item-services--expanded'));
+  };
+
   const toggleMenu = (forceOpen) => {
     const shouldOpen = typeof forceOpen === 'boolean'
       ? forceOpen
@@ -300,14 +350,40 @@ function initHeaderMenu() {
     burger.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
     menu.setAttribute('aria-hidden', shouldOpen ? 'false' : 'true');
     document.body.classList.toggle('menu-open', shouldOpen);
+
+    if (!shouldOpen) {
+      setServicesExpanded(false);
+    }
   };
 
   burger.addEventListener('click', () => toggleMenu());
   overlay.addEventListener('click', () => toggleMenu(false));
   menu.addEventListener('click', event => {
-    const link = event.target instanceof Element ? event.target.closest('a') : null;
-    if (!link) return;
-    toggleMenu(false);
+    const target = event.target instanceof Element ? event.target : null;
+    if (!target) {
+      return;
+    }
+
+    if (target.closest('[data-menu-close]')) {
+      toggleMenu(false);
+      return;
+    }
+
+    if (!target.closest('.header__menu-panel')) {
+      toggleMenu(false);
+      return;
+    }
+
+    const link = target.closest('a');
+    if (link && link === servicesTrigger && !desktopQuery.matches) {
+      event.preventDefault();
+      setServicesExpanded(!servicesItem.classList.contains('header__nav-item-services--expanded'));
+      return;
+    }
+
+    if (link) {
+      toggleMenu(false);
+    }
   });
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
@@ -315,8 +391,8 @@ function initHeaderMenu() {
     }
   });
 
-  const desktopQuery = window.matchMedia('(min-width: 1024px)');
   const handleDesktopChange = () => {
+    syncServicesAccordion();
     if (desktopQuery.matches) {
       toggleMenu(false);
     }
