@@ -482,8 +482,11 @@ if (accordionContainer) {
 //SWIPER INITIALIZATION
 initReviewsSwiper();
 
+//FORM
 const CONTACT_FORM_ENDPOINT = '/api/contact.php';
 const CONTACT_CLICK_TRACK_ENDPOINT = '/api/track-click.php';
+const YANDEX_METRIKA_COUNTER_ID = 107278711;
+const CONTACT_FORM_SUCCESS_GOAL = 'contact_form_success';
 const ALLOWED_CONTACT_METHODS = new Set(['mail', 'messenger', 'phone']);
 const ALLOWED_SERVICES = new Set([
   'llc-ie',
@@ -545,6 +548,12 @@ function isValidMessengerContact(value) {
     isKnownMessengerLink(value) ||
     isValidMessengerHandle(value)
   );
+}
+
+function reachYandexMetrikaGoal(goalName, params = {}) {
+  if (typeof window === 'undefined' || typeof window.ym !== 'function') return;
+
+  window.ym(YANDEX_METRIKA_COUNTER_ID, 'reachGoal', goalName, params);
 }
 
 function getContactCredentialsError(preferredContactMethod, contactCredentials) {
@@ -848,6 +857,12 @@ async function handleContactFormSubmit(event) {
 
   try {
     await sendContactPayload(payload);
+    reachYandexMetrikaGoal(CONTACT_FORM_SUCCESS_GOAL, {
+      form: form.getAttribute('action') || 'contact-form',
+      service: payload.service,
+      preferredContactMethod: payload.preferredContactMethod,
+      pagePath: payload.pagePath,
+    });
     setContactFormStatus(form, 'success', '');
     form.reset();
     const successPanel = getContactFormSuccessPanel(form);
