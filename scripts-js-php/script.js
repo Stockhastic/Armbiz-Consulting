@@ -507,6 +507,148 @@ const CONTACT_FORM_SUCCESS_CONTENT = {
   text: '\u041d\u0430\u0448 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442 \u0441\u0432\u044f\u0436\u0435\u0442\u0441\u044f \u0441 \u0432\u0430\u043c\u0438 \u0432 \u0431\u043b\u0438\u0436\u0430\u0439\u0448\u0435\u0435 \u0432\u0440\u0435\u043c\u044f.',
 };
 
+function normalizeWhitespace(value) {
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function hasLetter(value) {
+  return /\p{L}/u.test(String(value || ''));
+}
+
+function isValidContactName(value) {
+  return /^[\p{L}\p{M}\s'.-]+$/u.test(String(value || ''));
+}
+
+function isValidEmailContact(value) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i.test(String(value || '').trim());
+}
+
+function isValidPhoneContact(value) {
+  const normalizedValue = String(value || '').trim();
+  if (!normalizedValue || !/^\+?[\d\s().-]+$/.test(normalizedValue)) return false;
+
+  const digitsOnly = normalizedValue.replace(/\D/g, '');
+  return digitsOnly.length >= 8 && digitsOnly.length <= 15;
+}
+
+function isKnownMessengerLink(value) {
+  return /^(https?:\/\/)?(t\.me|telegram\.me|wa\.me|api\.whatsapp\.com)\//i.test(String(value || '').trim());
+}
+
+function isValidMessengerHandle(value) {
+  return /^@?(?=.*[A-Za-z])[A-Za-z0-9._-]{3,64}$/i.test(String(value || '').trim());
+}
+
+function isValidMessengerContact(value) {
+  return (
+    isValidPhoneContact(value) ||
+    isKnownMessengerLink(value) ||
+    isValidMessengerHandle(value)
+  );
+}
+
+function getContactCredentialsError(preferredContactMethod, contactCredentials) {
+  const normalizedCredentials = String(contactCredentials || '').trim();
+
+  if (!normalizedCredentials) {
+    return '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043a\u043e\u043d\u0442\u0430\u043a\u0442 \u0434\u043b\u044f \u0441\u0432\u044f\u0437\u0438.';
+  }
+
+  if (normalizedCredentials.length > 160) {
+    return '\u041a\u043e\u043d\u0442\u0430\u043a\u0442 \u0434\u043b\u044f \u0441\u0432\u044f\u0437\u0438 \u043d\u0435 \u0434\u043e\u043b\u0436\u0435\u043d \u043f\u0440\u0435\u0432\u044b\u0448\u0430\u0442\u044c 160 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.';
+  }
+
+  if (!preferredContactMethod) {
+    if (normalizedCredentials.length < 3) {
+      return '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043a\u043e\u043d\u0442\u0430\u043a\u0442 \u0434\u043b\u044f \u0441\u0432\u044f\u0437\u0438 \u043e\u0442 3 \u0434\u043e 160 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.';
+    }
+    return null;
+  }
+
+  if (preferredContactMethod === 'mail' && !isValidEmailContact(normalizedCredentials)) {
+    return '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u044b\u0439 email \u0434\u043b\u044f \u043e\u0431\u0440\u0430\u0442\u043d\u043e\u0439 \u0441\u0432\u044f\u0437\u0438.';
+  }
+
+  if (preferredContactMethod === 'phone' && !isValidPhoneContact(normalizedCredentials)) {
+    return '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430 \u0434\u043b\u044f \u043e\u0431\u0440\u0430\u0442\u043d\u043e\u0439 \u0441\u0432\u044f\u0437\u0438.';
+  }
+
+  if (preferredContactMethod === 'messenger' && !isValidMessengerContact(normalizedCredentials)) {
+    return '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 Telegram / WhatsApp: @username, \u0441\u0441\u044b\u043b\u043a\u0443 \u0438\u043b\u0438 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430.';
+  }
+
+  if (normalizedCredentials.length < 3) {
+    return '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043a\u043e\u043d\u0442\u0430\u043a\u0442 \u0434\u043b\u044f \u0441\u0432\u044f\u0437\u0438 \u043e\u0442 3 \u0434\u043e 160 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.';
+  }
+
+  return null;
+}
+
+function clearContactFieldError(form, fieldName) {
+  if (!fieldName) return;
+
+  form.querySelectorAll(`[name="${fieldName}"]`).forEach(field => {
+    field.classList.remove('form__field--invalid');
+    field.setCustomValidity('');
+    field.removeAttribute('aria-invalid');
+  });
+}
+
+function syncContactCredentialsField(form) {
+  const credentialsField = form.querySelector('[name="feedback-credentials"]');
+  if (!(credentialsField instanceof HTMLInputElement)) return;
+
+  const selectedMethod = form.querySelector('input[name="feedback"]:checked');
+  const preferredContactMethod = selectedMethod instanceof HTMLInputElement ? selectedMethod.value : '';
+
+  credentialsField.spellcheck = false;
+
+  if (preferredContactMethod === 'mail') {
+    credentialsField.inputMode = 'email';
+    credentialsField.autocomplete = 'email';
+    return;
+  }
+
+  if (preferredContactMethod === 'phone') {
+    credentialsField.inputMode = 'tel';
+    credentialsField.autocomplete = 'tel';
+    return;
+  }
+
+  credentialsField.inputMode = 'text';
+  credentialsField.autocomplete = preferredContactMethod === 'messenger' ? 'off' : 'on';
+}
+
+function applyContactFormErrors(form, errors) {
+  Object.entries(errors).forEach(([fieldName, message]) => {
+    markFieldError(form, fieldName, message);
+  });
+
+  form.reportValidity();
+  setContactFormStatus(form, 'error', '\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u043f\u043e\u043b\u0435\u0439 \u0444\u043e\u0440\u043c\u044b.');
+}
+
+function handleContactFormFieldInteraction(event) {
+  const field = event.target;
+  if (
+    !(field instanceof HTMLInputElement) &&
+    !(field instanceof HTMLSelectElement) &&
+    !(field instanceof HTMLTextAreaElement)
+  ) {
+    return;
+  }
+
+  const form = field.form;
+  if (!(form instanceof HTMLFormElement)) return;
+
+  clearContactFieldError(form, field.name);
+
+  if (field.name === 'feedback') {
+    syncContactCredentialsField(form);
+    clearContactFieldError(form, 'feedback-credentials');
+  }
+}
+
 
 
 function getContactFormStatus(form) {
@@ -568,10 +710,12 @@ function setContactFormStatus(form, type, text) {
 function clearFormFieldState(form) {
   form.querySelectorAll('.form__field--invalid').forEach(field => {
     field.classList.remove('form__field--invalid');
+    field.removeAttribute('aria-invalid');
   });
 
   form.querySelectorAll('input, select, textarea').forEach(field => {
     field.setCustomValidity('');
+    field.removeAttribute('aria-invalid');
   });
 }
 
@@ -582,6 +726,7 @@ function markFieldError(form, fieldName, message) {
   fields.forEach((field, index) => {
     field.classList.add('form__field--invalid');
     field.setCustomValidity(index === 0 ? message : '');
+    field.setAttribute('aria-invalid', 'true');
   });
 }
 
@@ -594,7 +739,7 @@ function collectContactFormPayload(form) {
   );
 
   return {
-    name: String(formData.get('name') || '').trim(),
+    name: normalizeWhitespace(formData.get('name') || ''),
     preferredContactMethod: String(formData.get('feedback') || '').trim(),
     contactCredentials: String(formData.get('feedback-credentials') || '').trim(),
     service: String(formData.get('service') || '').trim(),
@@ -619,14 +764,20 @@ function validateContactPayload(payload) {
 
   if (payload.name.length < 2 || payload.name.length > 120) {
     errors.name = '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0438\u043c\u044f \u0438\u043b\u0438 \u043d\u0438\u043a \u043e\u0442 2 \u0434\u043e 120 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.';
+  } else if (!hasLetter(payload.name) || !isValidContactName(payload.name)) {
+    errors.name = '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0438\u043c\u044f \u0431\u0443\u043a\u0432\u0430\u043c\u0438. \u041c\u043e\u0436\u043d\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c \u043f\u0440\u043e\u0431\u0435\u043b, \u0442\u043e\u0447\u043a\u0443, \u0434\u0435\u0444\u0438\u0441 \u0438 \u0430\u043f\u043e\u0441\u0442\u0440\u043e\u0444.';
   }
 
   if (!ALLOWED_CONTACT_METHODS.has(payload.preferredContactMethod)) {
     errors.feedback = '\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0438\u0442\u0430\u0435\u043c\u044b\u0439 \u0441\u043f\u043e\u0441\u043e\u0431 \u0441\u0432\u044f\u0437\u0438.';
   }
 
-  if (payload.contactCredentials.length < 3 || payload.contactCredentials.length > 160) {
-    errors['feedback-credentials'] = '\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043a\u043e\u043d\u0442\u0430\u043a\u0442 \u0434\u043b\u044f \u0441\u0432\u044f\u0437\u0438 \u043e\u0442 3 \u0434\u043e 160 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.';
+  const credentialsError = getContactCredentialsError(
+    payload.preferredContactMethod,
+    payload.contactCredentials
+  );
+  if (credentialsError) {
+    errors['feedback-credentials'] = credentialsError;
   }
 
   if (!ALLOWED_SERVICES.has(payload.service)) {
@@ -658,8 +809,13 @@ async function sendContactPayload(payload) {
   }
 
   if (!response.ok) {
+    const fieldErrors = data && typeof data.fields === 'object' && data.fields ? data.fields : null;
     const serverMessage = data && typeof data.error === 'string' ? data.error : null;
-    throw new Error(serverMessage || CONTACT_FORM_MESSAGES.genericError);
+    const error = new Error(serverMessage || CONTACT_FORM_MESSAGES.genericError);
+    if (fieldErrors) {
+      error.fieldErrors = fieldErrors;
+    }
+    throw error;
   }
 }
 
@@ -670,16 +826,18 @@ async function handleContactFormSubmit(event) {
   if (form.classList.contains('form--submitted')) return;
 
   clearFormFieldState(form);
+  syncContactCredentialsField(form);
 
   const payload = collectContactFormPayload(form);
   const errors = validateContactPayload(payload);
 
+  const nameField = form.querySelector('[name="name"]');
+  if (nameField instanceof HTMLInputElement) {
+    nameField.value = payload.name;
+  }
+
   if (Object.keys(errors).length) {
-    Object.entries(errors).forEach(([fieldName, message]) => {
-      markFieldError(form, fieldName, message);
-    });
-    form.reportValidity();
-    setContactFormStatus(form, 'error', '\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u043f\u043e\u043b\u0435\u0439 \u0444\u043e\u0440\u043c\u044b.');
+    applyContactFormErrors(form, errors);
     return;
   }
 
@@ -696,6 +854,11 @@ async function handleContactFormSubmit(event) {
     successPanel.hidden = false;
     form.classList.add('form--submitted');
   } catch (error) {
+    if (error instanceof Error && error.fieldErrors && typeof error.fieldErrors === 'object') {
+      applyContactFormErrors(form, error.fieldErrors);
+      return;
+    }
+
     const message = error instanceof Error && error.message
       ? error.message
       : CONTACT_FORM_MESSAGES.genericError;
@@ -709,7 +872,11 @@ function initContactForms() {
   document.querySelectorAll('form.form').forEach(form => {
     if (form.dataset.contactFormReady === 'true') return;
     form.dataset.contactFormReady = 'true';
+    form.noValidate = true;
     getContactFormSuccessPanel(form);
+    syncContactCredentialsField(form);
+    form.addEventListener('input', handleContactFormFieldInteraction);
+    form.addEventListener('change', handleContactFormFieldInteraction);
     form.addEventListener('submit', handleContactFormSubmit);
   });
 }

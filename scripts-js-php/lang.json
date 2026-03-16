@@ -293,6 +293,7 @@
         "contact-us-form-feedback-placeholder": "Почта, номер телефона или ник в мессенджере",
 
         "contact-us-form-service-title": "В чем вы заинтересованы?",
+        "contact-us-form-service-option-placeholder": "Выберите услугу",
         "contact-us-form-service-option-ie": "Регистрация ООО или ИП",
         "contact-us-form-service-option-readycompany": "Готовые компании",
         "contact-us-form-service-option-residence": "ВНЖ",
@@ -1100,6 +1101,7 @@
         "contact-us-form-feedback-placeholder": "Email, phone number, or messenger ID",
 
         "contact-us-form-service-title": "What are you interested in?",
+        "contact-us-form-service-option-placeholder": "Choose a service",
         "contact-us-form-service-option-ie": "SP or LLC registration",
         "contact-us-form-service-option-readycompany": "Ready-made companies",
         "contact-us-form-service-option-residence": "Residence Permit",

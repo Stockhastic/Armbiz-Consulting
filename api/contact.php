@@ -41,6 +41,85 @@ function send_telegram_message(string $botToken, string $chatId, string $text): 
     return $httpCode >= 200 && $httpCode < 300;
 }
 
+function normalize_whitespace(string $value): string {
+    $normalized = preg_replace('/\s+/u', ' ', $value);
+    return trim($normalized ?? '');
+}
+
+function has_letters(string $value): bool {
+    return preg_match('/\p{L}/u', $value) === 1;
+}
+
+function is_valid_contact_name(string $value): bool {
+    return preg_match("/^[\p{L}\p{M}\s'.-]+$/u", $value) === 1;
+}
+
+function is_valid_email_contact(string $value): bool {
+    return filter_var($value, FILTER_VALIDATE_EMAIL) !== false;
+}
+
+function is_valid_phone_contact(string $value): bool {
+    if ($value === '' || preg_match('/^\+?[\d\s().-]+$/', $value) !== 1) {
+        return false;
+    }
+
+    $digitsOnly = preg_replace('/\D+/', '', $value);
+    $digitCount = strlen($digitsOnly ?? '');
+
+    return $digitCount >= 8 && $digitCount <= 15;
+}
+
+function is_valid_messenger_contact(string $value): bool {
+    if ($value === '') {
+        return false;
+    }
+
+    if (is_valid_phone_contact($value)) {
+        return true;
+    }
+
+    if (preg_match('/^(https?:\/\/)?(t\.me|telegram\.me|wa\.me|api\.whatsapp\.com)\//i', $value) === 1) {
+        return true;
+    }
+
+    return preg_match('/^@?(?=.*[A-Za-z])[A-Za-z0-9._-]{3,64}$/', $value) === 1;
+}
+
+function get_contact_credentials_error(string $preferredContactMethod, string $contactCredentials): ?string {
+    if ($contactCredentials === '') {
+        return 'Укажите контакт для связи.';
+    }
+
+    if (mb_strlen($contactCredentials) > 160) {
+        return 'Контакт для связи не должен превышать 160 символов';
+    }
+
+    if ($preferredContactMethod === '') {
+        if (mb_strlen($contactCredentials) < 3) {
+            return 'Укажите контакт для связи от 3 до 160 символов';
+        }
+        return null;
+    }
+
+    if ($preferredContactMethod === 'mail' && !is_valid_email_contact($contactCredentials)) {
+        return 'Укажите корректный email для обратной связи';
+    }
+
+    if ($preferredContactMethod === 'phone' && !is_valid_phone_contact($contactCredentials)) {
+        return 'Укажите корректный номер телефона для обратной связи';
+    }
+
+    if ($preferredContactMethod === 'messenger' && !is_valid_messenger_contact($contactCredentials)) {
+        return 'Укажите Telegram / WhatsApp: @username, ссылку или номер телефона';
+    }
+
+    if (mb_strlen($contactCredentials) < 3) {
+        return 'Укажите контакт для связи от 3 до 160 символов';
+    }
+
+    return null;
+}
+
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     json_response(405, ['error' => 'Method not allowed']);
 }
@@ -52,7 +131,7 @@ if (!is_array($data)) {
     json_response(400, ['error' => 'Invalid JSON']);
 }
 
-$name = trim((string)($data['name'] ?? ''));
+$name = normalize_whitespace((string)($data['name'] ?? ''));
 $preferredContactMethod = trim((string)($data['preferredContactMethod'] ?? ''));
 $contactCredentials = trim((string)($data['contactCredentials'] ?? ''));
 $service = trim((string)($data['service'] ?? ''));
@@ -105,13 +184,19 @@ $serviceLabels = [
 $errors = [];
 
 if (mb_strlen($name) < 2 || mb_strlen($name) > 120) {
-    $errors['name'] = 'Укажите ФИО или ник от 2 до 120 символов';
+    $errors['name'] = 'Укажите имя или ник от 2 до 120 символов';
+} elseif (!has_letters($name) || !is_valid_contact_name($name)) {
+    $errors['name'] = 'Укажите имя буквами. Можно использовать пробел, точку, дефис и апостроф';
 }
 if (!in_array($preferredContactMethod, $allowedMethods, true)) {
-    $errors['preferredContactMethod'] = 'Выберите удобный для вас способ связи';
+    $errors['feedback'] = 'Выберите удобный для вас способ связи';
 }
-if (mb_strlen($contactCredentials) < 3 || mb_strlen($contactCredentials) > 160) {
-    $errors['contactCredentials'] = 'Укажите контакт для связи от 3 до 160 символов';
+$contactCredentialsError = get_contact_credentials_error(
+    in_array($preferredContactMethod, $allowedMethods, true) ? $preferredContactMethod : '',
+    $contactCredentials
+);
+if ($contactCredentialsError !== null) {
+    $errors['feedback-credentials'] = $contactCredentialsError;
 }
 if (!in_array($service, $allowedServices, true)) {
     $errors['service'] = 'Выберите услугу из списка';
@@ -121,7 +206,7 @@ if (mb_strlen($message) > 2000) {
 }
 
 if ($errors) {
-    json_response(422, ['error' => 'Validation failed', 'fields' => $errors]);
+    json_response(422, ['error' => 'Проверьте заполнение полей формы.', 'fields' => $errors]);
 }
 
 $homeDir = $_SERVER['HOME'] ?? dirname(__DIR__, 3);
@@ -242,7 +327,7 @@ $payload = [
     'text' => $plainText,
 ];
 
-if ($preferredContactMethod === 'mail' && filter_var($contactCredentials, FILTER_VALIDATE_EMAIL)) {
+if ($preferredContactMethod === 'mail' && is_valid_email_contact($contactCredentials)) {
     $payload['reply_to'] = $contactCredentials;
 }
 

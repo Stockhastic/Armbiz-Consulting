@@ -551,20 +551,21 @@
                         </ul>
                     </div>    
                 </div>
-                <form action="POST" class="form">
+                <form class="form" method="post" novalidate>
                     <p class="form__title">Ваше ФИО</p>
-                    <input type="text" name="name" placeholder="Иванов Иван Иванович" required>
+                    <input type="text" name="name" placeholder="Иванов Иван Иванович" minlength="2" maxlength="120" autocomplete="name" required>
                     <div class="form__spacer"></div>
                     <p class="form__title">Как вам будет удобно получить обратную связь?</p>
                     <div class="form__radio">
-                        <label><input type="radio" name="feedback" value="mail">Почта</label>
-                        <label><input type="radio" name="feedback" value="messanger">Telegram / WhatsApp</label>
+                        <label><input type="radio" name="feedback" value="mail" required>Почта</label>
+                        <label><input type="radio" name="feedback" value="messenger">Telegram / WhatsApp</label>
                         <label><input type="radio" name="feedback" value="phone"> Прямой звонок</label><br>
                     </div>
-                    <input type="text" name="feedback-credentials" required placeholder="Почта, номер телефона или ник в мессенджере">
+                    <input type="text" name="feedback-credentials" minlength="3" maxlength="160" required placeholder="Почта, номер телефона или ник в мессенджере">
                     <div class="form__spacer"></div>
                     <p class="form__title">В чем вы заинтересованы?</p>
-                    <select name="service">
+                    <select name="service" required>
+                        <option value="" selected disabled>Выберите услугу</option>
                         <option value="llc-ie">Регистрация ООО или ИП</option>
                         <option value="ready-company">Готовые компании</option>
                         <option value="residence">ВНЖ</option>
@@ -573,13 +574,15 @@
                         <option value="social-card">Социальная Карта</option>
                         <option value="bank-card">Банковские карты для физ.лиц</option>
                         <option value="registration">Прописка</option>
+                        <option value="logistics">Логистика и Таможня</option>
                         <option value="other">Другое</option>
                     </select>
                     <div class="form__spacer"></div>
                     <p class="form__title">Сообщение <span class="italic-text">(не обязательно)</span></p>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Здравствуйте! Я хотел бы узнать больше о..."></textarea>
-                
+                    <textarea name="message" id="message" cols="30" rows="10" maxlength="2000" placeholder="Здравствуйте! Я хотел бы узнать больше о..."></textarea>
+                 
                     <button type="submit" class="btn--primary">Запросить консультацию</button>
+                    <p class="form__status" aria-live="polite"></p>
                     <p class="form__text">Заполняя форму, вы соглашаетесь с нашими условиями конфиденциальности. Обычно, мы отвечаем на запросы в течение 24 часов.</p>
                 </form>
             </section>
