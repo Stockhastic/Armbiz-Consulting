@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Logistics" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #0032b8;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #0087ff;
+      }
+    </style>
+  </defs>
+  <g id="box-stamp">
+    <ellipse class="cls-2" cx="218.86" cy="209.21" rx="15.36" ry="8.89"/>
+    <line class="cls-1" x1="214.1" y1="207.04" x2="214.6" y2="211.38"/>
+    <line class="cls-1" x1="225.9" y1="209.08" x2="214.6" y2="211.38"/>
+  </g>
+</svg>

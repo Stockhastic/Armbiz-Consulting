@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Logistics" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00b6ff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #0032b8;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #9fddff;
+      }
+    </style>
+  </defs>
+  <g id="box-big">
+    <polygon class="cls-1" points="217.92 271.29 172.21 245.4 172.21 210.38 217.92 236.28 217.92 271.29"/>
+    <polygon class="cls-4" points="262.75 245.4 217.92 271.29 217.92 236.28 262.75 210.38 262.75 245.4"/>
+    <polygon class="cls-3" points="217.92 236.41 172.21 210.52 217.05 184.49 262.75 210.38 217.92 236.41"/>
+    <line class="cls-2" x1="195.82" y1="223.89" x2="240.33" y2="197.68"/>
+  </g>
+  <g id="box-small">
+    <polygon class="cls-4" points="282.09 271.81 309.89 256.06 309.89 234.76 282.09 250.51 282.09 271.81"/>
+    <polygon class="cls-1" points="254.81 256.06 282.09 271.81 282.09 250.51 254.81 234.76 254.81 256.06"/>
+    <polygon class="cls-3" points="282.09 250.59 309.89 234.84 282.61 219.01 254.81 234.76 282.09 250.59"/>
+    <line class="cls-2" x1="295.53" y1="242.98" x2="268.45" y2="227.04"/>
+  </g>
+</svg>
