@@ -1841,7 +1841,8 @@ body.menu-open {
             height: 100%;
         }
 
-        &--registration{
+        &--registration,
+        &--logistics{
             aspect-ratio: 380.4 / 288.4;
             height: auto;
         }
@@ -1990,7 +1991,8 @@ body.menu-open {
                 height: clamp(20rem, 62vw, 30rem);
             }
 
-            & > .hero__image--registration{
+            & > .hero__image--registration,
+            & > .hero__image--logistics{
                 height: auto;
             }
         }
