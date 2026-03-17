@@ -19,8 +19,8 @@
     </style>
   </defs>
   <g id="box-stamp">
-    <ellipse class="cls-2" cx="222.21" cy="209.21" rx="16.22" ry="9.38"/>
-    <line class="cls-1" x1="217.18" y1="206.92" x2="217.71" y2="211.5"/>
-    <line class="cls-1" x1="229.64" y1="209.07" x2="217.71" y2="211.5"/>
+    <ellipse class="cls-2" cx="218.86" cy="209.21" rx="15.36" ry="8.89"/>
+    <line class="cls-1" x1="214.1" y1="207.04" x2="214.6" y2="211.38"/>
+    <line class="cls-1" x1="225.9" y1="209.08" x2="214.6" y2="211.38"/>
   </g>
 </svg>
