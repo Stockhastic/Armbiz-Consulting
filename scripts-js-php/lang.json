@@ -97,11 +97,11 @@
         "service-card-residence-text": "Предоставляем комплексный подход в получении ВНЖ для иностранных граждан. Пройдите сложный путь релокации с нашей командой. Мы оказываем комплексную поддержку в вопросах резидентства в Армении",
 
         "service-card-residence-step1": "Консультация",
-        "service-card-residence-step2": "Выбор подхода",
+        "service-card-residence-step2": "Выбор способа",
         "service-card-residence-step3": "Подача документов",
         "service-card-residence-step4": "Назначение даты",
     
-        "service-card-residence-benefit1": "Подберите удобный вам метод получения",
+        "service-card-residence-benefit1": "Подберите удобный вам способ получения",
         "service-card-residence-benefit2": "В комплекте социальная карта ",
         "service-card-residence-benefit4": "Нотариальное заверение и перевод документов",
         "service-card-residence-benefit3": "Полная документальная поддержка",
@@ -263,10 +263,10 @@
         "logistics-customs-faq-answer2-1":"Для импорта товаров обычно требуется несколько основных документов. Правильная организация перевозки и прохождение таможенных процедур требует наличия:",
         "logistics-customs-faq-answer2-2":"1. Инвойса",
         "logistics-customs-faq-answer2-3":"2. Упаковочного Листа (Packing List). Документ со всеми основными данными: вес брутто, нетто, размеры упаковки, содержимое и т.д.",
-        "logistics-customs-faq-answer2-4":"3. Основной транспортный документ. CMR накладная - для перевозок наземным транспортом или Авианакладная(Air Waybill) для перевозок воздушным транспортом.",
+        "logistics-customs-faq-answer2-4":"3. Основной транспортный документ. CMR накладная - для перевозок наземным транспортом или Авианакладная (Air Waybill) для перевозок воздушным транспортом.",
         "logistics-customs-faq-answer3":"Чтобы мы смогли подсчитать стоимость услуг, нам необходимо получить основную информацию о грузе. Например, нам важно знать, какой именно товар вы планируете импортировать, из какой страны будет отправка, общий вес и объем груза. Естественно, на стоимости влияет способ доставки: наземный или воздушный. Желательно предоставить инвойс или примерное описание товара, чтобы можно было определить код товара и рассчитать возможные таможенные платежи. На основе этой информации мы уже можем сделать предварительный расчет стоимости перевозки, логистических услуг и брокерского оформления. В предварительном расчете будет указана стоимость доставки, наших услуг, услуг брокера и таможенного оформления в Ереване. Это позволит вам заранее понимать общий бюджет и выбрать наиболее удобный и выгодный вариант доставки.",
         "logistics-customs-faq-answer4-1":"Обычно без фактического завоза товара в Армению цепочку построить нельзя, но из этого правила есть исключение. Если в Армении отправкой занимается местная компания с историей перевозок, в которых товар уже завозился на территорию Армении, и ее учредитель - гражданин РА, он может отправлять товар, не завозя его в Армению. Мы готовы предложить несколько вариантов взаимодействия.",
-        "logistics-customs-faq-answer4-2":"Вы можете приобрести себе такую <a href=\"/pages/services/ready-made-companies/index.html\" class=\"special-text\">готовую компанию</a> с местным учредителем. Мы можем выступить медиатором между вами и одной из наших компаний-партнеров, которые уже занимаются перевозками на территории Армении. Выбор подхода индивидуален и разнится от случая к случаю; самый лучший способ узнать, что нужно именно вам, - связаться с нами.",
+        "logistics-customs-faq-answer4-2":"Вы можете приобрести себе такую <a href=\"/pages/services/ready-made-companies/index.html\" class=\"special-text\">готовую компанию</a> с местным учредителем. Мы можем выступить медиатором между вами и одной из наших компаний-партнеров, которые уже занимаются перевозками на территории Армении. Выбор подхода индивидуален и разнится от случая к случаю. Самый лучший способ узнать, что нужно именно вам — связаться с нами.",
         
 
         "contact-us-badge": "Связаться с нами",
@@ -894,7 +894,7 @@
     },
     "en": {
 
-        "service-price-label": "Price starts with",
+        "service-price-label": "Price from:",
         "service-timeline-label": "Timeline:",
 
         "header-services": "Sevices",
@@ -994,7 +994,7 @@
         "service-card-residence-step3": "Document Submission",
         "service-card-residence-step4": "Appointment Scheduling",
     
-        "service-card-residence-benefit1": "Choose the method that is most convenient for you",
+        "service-card-residence-benefit1": "Choose the approach that is most convenient for you",
         "service-card-residence-benefit2": "Social card included",
         "service-card-residence-benefit4": "Notarized certification and translation of documents",
         "service-card-residence-benefit3": "Full document support",
@@ -1248,7 +1248,7 @@
         "contact-us-form-badge": "Связаться с нами",
 
         "logistics-customs-hero-title": "<span class=\"special-text\">Logistics</span> & Customs",
-        "logistics-customs-hero-subtitle": "Given's today's global circumstances, companies are looking for alternative ways to handle imports and exports. However, many face challenges whhen processing payments for their purchases",
+        "logistics-customs-hero-subtitle": "Given's today's global circumstances, companies are looking for alternative ways to handle imports and exports. However, many face challenges when processing payments for their purchases",
         "logistics-customs-hero-cta-button": "Schedule Consultation",
 
         "logistics-customs-workstyle-title": "How do we work?",
