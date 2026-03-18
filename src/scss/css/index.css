@@ -985,6 +985,8 @@ strong, .special-text, .bold-text {
     max-width: 100%;
   }
   .scheme:not(.scheme--horizontal) {
+    --scheme-mobile-line-top: 6rem;
+    --scheme-mobile-line-bottom: 5.8rem;
     width: 100%;
     max-width: 100%;
     padding: 0;
@@ -1015,8 +1017,8 @@ strong, .special-text, .bold-text {
     width: 3px;
     height: auto;
     left: 34px;
-    top: 6rem;
-    bottom: 5.8rem;
+    top: var(--scheme-mobile-line-top);
+    bottom: var(--scheme-mobile-line-bottom);
     translate: 0 0;
   }
   .scheme-container--horizontal {
@@ -1070,7 +1072,8 @@ strong, .special-text, .bold-text {
     width: 3px;
     translate: 0 0;
   }
-  .scheme:not(.scheme--horizontal).scheme--bank > .scheme__line {
-    bottom: 8.3rem;
+  .scheme:not(.scheme--horizontal).scheme--bank {
+    --scheme-mobile-line-top: 8rem;
+    --scheme-mobile-line-bottom: 8.3rem;
   }
 }/*# sourceMappingURL=index.css.map */

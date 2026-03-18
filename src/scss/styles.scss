@@ -456,6 +456,15 @@ body.menu-open {
                 }
             }
         }
+        @include m.mobile{
+            margin-right: 2.5rem;
+            height: 70px;width: 70px;
+            & > a{
+                & >img{
+                height: 47px;width: 47px;
+                }
+            }
+        }
     }
 
 
