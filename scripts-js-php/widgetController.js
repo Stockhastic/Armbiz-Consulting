@@ -9,7 +9,8 @@
                         width: '70px',
                         height: '70px',
                         'border-radius': '100%',
-                        background: '#1a6eff',
+                        background: 'linear-gradient(45deg, #1a6eff, #60a2ff)',
+                        'box-shadow': '0 0 10px #9cc0ff',
                     }
                 },
                 popup: {
