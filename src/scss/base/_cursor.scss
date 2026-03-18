@@ -7,7 +7,7 @@
     user-select: none;
     pointer-events: none;
     
-    z-index:9999;
+    z-index: 2147483647;
     translate: -50% -50%;
     
     @include m.mobile{

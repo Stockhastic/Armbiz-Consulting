@@ -368,7 +368,7 @@ strong, .special-text, .bold-text {
   border-radius: 100%;
   user-select: none;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 2147483647;
   translate: -50% -50%;
 }
 @media (max-width: 767px) {
@@ -4685,4 +4685,8 @@ body.menu-open {
     margin: 2rem 2rem;
     text-align: justify;
   }
+}
+
+.b24u-chat-button {
+  border: 2px solid red;
 }/*# sourceMappingURL=styles.css.map */
