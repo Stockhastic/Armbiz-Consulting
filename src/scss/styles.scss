@@ -414,10 +414,10 @@ body.menu-open {
         position: fixed;
         right: 0;
         bottom: 0;
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
         border-radius: 100%;
-        margin: 2rem;
+        margin: 2.5rem;
         background-color: #e7effea2;;
         padding: 1rem 0;
 
@@ -428,8 +428,8 @@ body.menu-open {
             & > img{
                 display: flex;
                 margin : auto;
-                height: 60px;
-                width: 60px;
+                height: 50px;
+                width: 50px;
                 // outline: 1px solid red;
                 border-radius: 100%;
             }

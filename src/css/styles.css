@@ -1505,10 +1505,10 @@ body.menu-open {
   position: fixed;
   right: 0;
   bottom: 0;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   border-radius: 100%;
-  margin: 2rem;
+  margin: 2.5rem;
   background-color: rgba(231, 239, 254, 0.6352941176);
   padding: 1rem 0;
 }
@@ -1520,8 +1520,8 @@ body.menu-open {
 .backer > a > img {
   display: flex;
   margin: auto;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 100%;
 }
 .backer:hover {
