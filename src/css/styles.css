@@ -1068,6 +1068,10 @@ strong, .special-text, .bold-text {
     width: 3px;
     translate: 0 0;
   }
+  .scheme--horizontal > .scheme__line--position2 {
+    height: 80%;
+    translate: 0 -10%;
+  }
   .scheme:not(.scheme--horizontal).scheme--bank {
     --scheme-mobile-line-top: 8rem;
     --scheme-mobile-line-bottom: 8.3rem;
