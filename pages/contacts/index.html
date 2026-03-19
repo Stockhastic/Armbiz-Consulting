@@ -95,9 +95,8 @@
             </div>
 
             <section id="contact-us-short" class="contact contact--shorted">
-                <div class="contact__details">
+                <div class="contact__details" data-anim="fade-left" data-anim-duration="1.3"> 
                     <h2 class="contact__title" data-i18n="contact-us-short-title">Наши <span class="special-text">Контакты</span></h2>
-                    <!-- <p class="contact__text" data-i18n="contact-us-lead">Запишитесь на консультацию к нашим специалистам, чтобы узнать, как мы можем вам помочь. Или свяжитесь с нами напрямую через:</p> -->
                     <div class="extra-details__container-wrapper">
                         <a href="https://yandex.com/maps/-/CPaniQPI" class="extra-details__map-link" target="_blank" data-i18n="contact-us-short-map1"><img src="/src/graphics/svg/yandex-maps-logo.svg" alt="Yandex Maps logo" class="extra-details__map-image"> Яндекс Карты</a>
                         <a href="https://maps.app.goo.gl/FuGRSzYw5ht83XGo7" class="extra-details__map-link" target="_blank" data-i18n="contact-us-short-map2"><img src="/src/graphics/svg/google-maps-sign-logo.svg" alt="google Maps logo" class="extra-details__map-image">Карты Гугл</a>
@@ -127,7 +126,7 @@
                         </ul>
                     </div>    
                 </div>
-                    <form class="form" method="post" novalidate>
+                    <form class="form" method="post" novalidate data-anim="fade-right" data-anim-duration="1.3">
                         <p class="form__title" data-i18n="contact-us-form-name">Ваше ФИО</p>
                         <input
                             type="text"
@@ -181,7 +180,7 @@
             </section>
 
             <section class="extra-details">
-                <div class="extra-details__container">
+                <div class="extra-details__container" data-anim="fade-left" data-anim-start="top 70%">
                     <h3 data-i18n="contacts-title1">Как до нас <span class="special-text">добраться?</span></h3>
                     <p class="extra-details__text" data-i18n="contacts-text1">Мы находимся в шаговой доступности от метро Дружба. <br>
                         Пешком до нас чуть меньше 1км.</p>
@@ -189,7 +188,7 @@
                     <p class="extra-details__text" data-i18n="contacts-text2">График работы офиса и приема клиентов <span class="special-text"> с 10:00 до 18:00</span>. Если вы решили лично прийти к нам в офис, настоятельно просим предупредить нас заранее.</p>
                 </div>
 
-                <div class="extra-details__container">
+                <div class="extra-details__container" data-anim="fade-right" data-anim-start="top 70%">
                     <h3 data-i18n="contacts-title2">Не получилось <span class="special-text">найти нас?</span></h3>
                     <p data-i18n="contacts-text3">Не беспокойтесь. На такие случаи мы специально записали видео, чтобы вы могли максимально легко сориентироваться на месте.</p>
                     <!-- <video src="/src/files/vid-road-to-us-vert.mp4" width="350px" preload="auto" controls></video> -->
@@ -206,9 +205,10 @@
 
     <script src="/scripts-js-php/gsap-public/minified/ScrollTrigger.min.js"></script>
     <script src="/scripts-js-php/gsap.min.js"></script>
+    <script src="/scripts-js-php/gsap-anim-base.js"></script>
     <script src="/scripts-js-php/script.js"></script>
-    <script src="https://i.b24u.ru/armbiz.biz" defer onload="if (window.B24U) { B24U.init(); }"></script>
     <script src="/scripts-js-php/widgetController.js"></script>
+    <script src="/scripts-js-php/b24uLoader.js"></script>
 </body>
 
 </html>     

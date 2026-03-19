@@ -1332,7 +1332,7 @@ body.menu-open {
   font-size: 1.8rem;
 }
 .btn--primary {
-  transition: ease-in-out 0.24s;
+  transition: background-color ease-in-out 0.24s, color ease-in-out 0.24s, box-shadow ease-in-out 0.24s, border-color ease-in-out 0.24s;
   background-color: #1a6eff;
   color: #fff;
   font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
@@ -1344,7 +1344,7 @@ body.menu-open {
   box-shadow: 0 0 14px rgba(82, 146, 255, 0.3568627451);
 }
 .btn--primary:active {
-  transition: 0.012s;
+  transition-duration: 0.012s;
   background-color: #fff;
   color: #1a6eff;
   box-shadow: inset 0 0 4px rgba(119, 156, 211, 0.3);
@@ -1356,7 +1356,7 @@ body.menu-open {
   }
 }
 .btn--secondary {
-  transition: ease-in-out 0.24s;
+  transition: background-color ease-in-out 0.24s, color ease-in-out 0.24s, box-shadow ease-in-out 0.24s, border-color ease-in-out 0.24s;
   border: 1px solid #d7deef;
   color: #1e2736;
   font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
@@ -1368,7 +1368,7 @@ body.menu-open {
   box-shadow: 0 0 14px rgba(82, 146, 255, 0.3568627451);
 }
 .btn--secondary:active {
-  transition: 0.012s;
+  transition-duration: 0.012s;
   background-color: #1a6eff;
   color: #fff;
   border: 1px solid #1a6eff;

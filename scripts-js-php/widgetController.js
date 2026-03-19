@@ -3,6 +3,7 @@
                 button: {
                     selector: '[data-chat-widget-b24u="button"]',
                     className: 'b24u-chat-button',
+                    visibleClassName: 'b24u-chat-button--visible',
                     styles: {
                         bottom: '11rem',
                         right: '2.5rem',
@@ -11,6 +12,7 @@
                         'border-radius': '100%',
                         background: 'linear-gradient(45deg, #1a6eff, #60a2ff)',
                         'box-shadow': '0 0 10px #9cc0ff',
+                        transition: 'opacity 920ms cubic-bezier(0.22, 1, 0.36, 1), translate 920ms cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s'
                     }
                 },
                 popup: {
@@ -33,10 +35,51 @@
                     className: 'b24u-chat-content'
                 }
             };
+            const animatedElements = new WeakSet();
+
+            function injectAppearanceStyles() {
+                if (document.getElementById('b24u-widget-controller-styles')) {
+                    return;
+                }
+
+                const styleElement = document.createElement('style');
+                styleElement.id = 'b24u-widget-controller-styles';
+                styleElement.textContent = `
+                    [data-chat-widget-b24u="button"] {
+                        opacity: 0 !important;
+                        visibility: hidden !important;
+                        pointer-events: none !important;
+                        translate: 0 18px !important;
+                    }
+
+                    [data-chat-widget-b24u="button"].b24u-chat-button--visible {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        pointer-events: auto !important;
+                        translate: 0 0 !important;
+                    }
+                `;
+
+                document.head.appendChild(styleElement);
+            }
 
             function applyImportantStyles(element, styles = {}) {
                 Object.entries(styles).forEach(([property, value]) => {
                     element.style.setProperty(property, value, 'important');
+                });
+            }
+
+            function revealElement(element, visibleClassName) {
+                if (!element || !visibleClassName || animatedElements.has(element)) {
+                    return;
+                }
+
+                animatedElements.add(element);
+
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        element.classList.add(visibleClassName);
+                    });
                 });
             }
 
@@ -65,8 +108,12 @@
                     applyImportantStyles(element, config.styles);
                 });
 
+                revealElement(button, widgetConfig.button.visibleClassName);
+
                 return true;
             }
+
+            injectAppearanceStyles();
 
             const bodyObserver = new MutationObserver(() => {
                 if (applyWidgetStyles()) {
