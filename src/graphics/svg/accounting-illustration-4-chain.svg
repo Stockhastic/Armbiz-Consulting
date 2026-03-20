@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laptop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #59abff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: #0362e1;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="chain">
+    <ellipse class="cls-1" cx="117.58" cy="106.34" rx="2.26" ry="1.67" transform="translate(-39.69 126.37) rotate(-49.38)"/>
+    <ellipse class="cls-1" cx="137.31" cy="109.29" rx="2.19" ry="1.61" transform="translate(-35.04 142.37) rotate(-49.38)"/>
+    <ellipse class="cls-1" cx="178.17" cy="76.86" rx="2.23" ry="1.64" transform="translate(3.84 162.07) rotate(-49.38)"/>
+    <ellipse class="cls-1" cx="155.96" cy="95.05" rx="2.23" ry="1.64" transform="translate(-17.72 151.56) rotate(-49.38)"/>
+    <line class="cls-2" x1="123.01" y1="106.34" x2="131.8" y2="108.28"/>
+    <line class="cls-2" x1="160.39" y1="90.94" x2="172.33" y2="79.56"/>
+    <line class="cls-2" x1="142.07" y1="106.34" x2="151.03" y2="99.06"/>
+  </g>
+</svg>

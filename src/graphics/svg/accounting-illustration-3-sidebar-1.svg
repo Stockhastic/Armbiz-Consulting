@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laptop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #59abff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="sidelines">
+    <line class="cls-1" x1="65.02" y1="100.81" x2="95.95" y2="92.12"/>
+    <line class="cls-1" x1="65.02" y1="108.66" x2="95.95" y2="99.96"/>
+    <line class="cls-1" x1="65.02" y1="116.19" x2="95.95" y2="107.5"/>
+    <line class="cls-1" x1="65.02" y1="123.77" x2="83.95" y2="118.45"/>
+    <line class="cls-1" x1="65.02" y1="155.5" x2="83.95" y2="150.18"/>
+    <line class="cls-1" x1="65.02" y1="162.19" x2="83.95" y2="156.87"/>
+    <line class="cls-1" x1="65.02" y1="131.61" x2="90.25" y2="124.52"/>
+    <line class="cls-1" x1="65.02" y1="139.15" x2="80.49" y2="134.8"/>
+  </g>
+</svg>

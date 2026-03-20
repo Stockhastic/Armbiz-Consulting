@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laptop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #59abff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #59abff;
+        stroke: #0032b8;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="graph">
+    <polyline class="cls-2" points="150.09 121.59 150.09 106.43 163.71 102.36 163.71 121.59"/>
+  </g>
+  <g id="chain">
+    <ellipse class="cls-1" cx="156.44" cy="95.76" rx="2.23" ry="1.64" transform="translate(-18.09 152.17) rotate(-49.38)"/>
+  </g>
+</svg>
