@@ -92,10 +92,10 @@
             </div>
 
             <section class="hero hero--service">
-                    <h2 class="hero__title" data-i18n="citizenship-hero-title"><span class="special-text">Гражданство</span> Армении</h2>
+                    <h2 class="hero__title" data-i18n="citizenship-hero-title" data-anim="fade-left" data-anim-delay="0.1"><span class="special-text">Гражданство</span> Армении</h2>
                 <div class="hero__details">
-                    <p class="hero__subtitle" data-i18n="citizenship-hero-subtitle">Армянский паспорт обеспечивает безвизовый въезд в более 60 стран и упрощает доступ к банкам и инвестициям. Наши специалисты оценят шансы, подготовят документы и сопроводят процесс под ключ, минимизируя риски и сроки.</p>
-                    <a href="#contact-us" class="btn btn--primary" data-i18n="residence-permit-hero-cta-button">Запросить консультацию</a>
+                    <p class="hero__subtitle" data-i18n="citizenship-hero-subtitle" data-anim="fade-left" data-anim-delay="0.2">Армянский паспорт обеспечивает безвизовый въезд в более 60 стран и упрощает доступ к банкам и инвестициям. Наши специалисты оценят шансы, подготовят документы и сопроводят процесс под ключ, минимизируя риски и сроки.</p>
+                    <a href="#contact-us" class="btn btn--primary" data-i18n="residence-permit-hero-cta-button" data-anim="fade-left" data-anim-delay="0.3">Запросить консультацию</a>
                 </div>
                 <div class="hero__image">
                     <img src="/src/graphics/svg/citizenship-illustration.svg" alt="Citizenship illustration here">
@@ -105,7 +105,7 @@
 
             <section class="citizenship-approaches">
                 <div class="citizenship-approaches__cards">
-                    <article class="service-card service-card--classic">
+                    <article class="service-card service-card--classic" data-anim="fade-left">
                         <header class="service-card__header">
                             <span class="service-card__price-tag" id="service-price-citizenship">Текст задается JS 🙊</span>
                             <span class="service-card__timeline-tag" id="service-timeline-citizenship">Текст задается JS 🙊</span>
@@ -115,7 +115,7 @@
                         <p class="service-card__text" data-i18n="citizenship-approach1-text1">Самый удобный и надежный вариант для тех у кого есть армянские корни и родственники с гражданством Армении. Сроки и стоимости разнятся от случая к случаю.</p>
                         <p class="service-card__text" data-i18n="citizenship-approach1-text2">Потребуется лишь предоставить документ подтверждающий вашу принадлежность. Например свидетельство о рождении</p>
                     </article>
-                    <article class="service-card service-card--alternative">
+                    <article class="service-card service-card--alternative" data-anim="fade-up">
                         <header class="service-card__header">
                             <span class="service-card__price-tag" data-i18n="citizenship-approach2-price" >Стоимость уточняйте на консультации</span>
                             <span class="service-card__timeline-tag" id="service-timeline-citizenship-exclusive">Текст задается JS 🙊</span>
@@ -125,7 +125,7 @@
                         <p class="service-card__text" data-i18n="citizenship-approach2-text">Экспресс получение, особые условия и индивидуальный подход. Подробнее об условиях на нашей консультации.</p>
                     </article>
                 </div>
-                <div class="citizenship-approaches__cards citizenship-approaches__cards--fullheight ">
+                <div class="citizenship-approaches__cards citizenship-approaches__cards--fullheight" data-anim="fade-right">
                     <div class="service-card service-card--classic">
                         <header class="service-card__header">
                             <span class="service-card__price-tag" id="service-price-citizenship-business">Текст задается JS 🙊</span>
@@ -154,7 +154,10 @@
     <footer id="site-footer"></footer>
     <script src="/scripts-js-php/gsap-public/minified/ScrollTrigger.min.js"></script>
     <script src="/scripts-js-php/gsap.min.js"></script>
+    <script src="/scripts-js-php/gsap-anim-base.js"></script>
     <script src="/scripts-js-php/script.js"></script>
+    <script src="/scripts-js-php/widgetController.js"></script>
+    <script src="/scripts-js-php/b24uLoader.js"></script>
 </body>
 
 </html>

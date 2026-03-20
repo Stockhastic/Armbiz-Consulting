@@ -372,7 +372,7 @@ strong, .special-text, .bold-text {
   border-radius: 100%;
   user-select: none;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 2147483647;
   translate: -50% -50%;
 }
 @media (max-width: 767px) {
@@ -1068,6 +1068,10 @@ strong, .special-text, .bold-text {
   .scheme--horizontal > .scheme__line--position1, .scheme--horizontal > .scheme__line--position2, .scheme--horizontal > .scheme__line--position3, .scheme--horizontal > .scheme__line--position4 {
     width: 3px;
     translate: 0 0;
+  }
+  .scheme--horizontal > .scheme__line--position2 {
+    height: 80%;
+    translate: 0 -10%;
   }
   .scheme:not(.scheme--horizontal).scheme--bank {
     --scheme-mobile-line-top: 8rem;

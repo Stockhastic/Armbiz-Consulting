@@ -244,7 +244,11 @@ body.menu-open {
     font-size: 1.8rem;
 
     &--primary{
-        transition:ease-in-out vars.$normalAnimation;
+        transition:
+            background-color ease-in-out vars.$normalAnimation,
+            color ease-in-out vars.$normalAnimation,
+            box-shadow ease-in-out vars.$normalAnimation,
+            border-color ease-in-out vars.$normalAnimation;
         background-color: vars.$primaryColor;
         color: vars.$white;
         font-family: vars.$mainFontFamily;
@@ -255,7 +259,7 @@ body.menu-open {
             box-shadow: 0 0 14px vars.$primaryTransparentColor;
         }
         &:active {
-            transition: vars.$fastestAnimation;
+            transition-duration: vars.$fastestAnimation;
             background-color: vars.$white;
             color: vars.$primaryColor;
             box-shadow: inset 0 0 4px rgba(119, 156, 211, 0.3);
@@ -266,7 +270,11 @@ body.menu-open {
         }
     }
     &--secondary{
-        transition:ease-in-out vars.$normalAnimation;
+        transition:
+            background-color ease-in-out vars.$normalAnimation,
+            color ease-in-out vars.$normalAnimation,
+            box-shadow ease-in-out vars.$normalAnimation,
+            border-color ease-in-out vars.$normalAnimation;
         border: 1px solid vars.$borderColor;
         color: vars.$darkColor;
         font-family: vars.$mainFontFamily;
@@ -277,7 +285,7 @@ body.menu-open {
             box-shadow: 0 0 14px vars.$primaryTransparentColor;
         }
         &:active {
-            transition: vars.$fastestAnimation;
+            transition-duration: vars.$fastestAnimation;
             background-color: vars.$primaryColor;
             color: vars.$white;
             border: 1px solid vars.$primaryColor;
@@ -414,10 +422,10 @@ body.menu-open {
         position: fixed;
         right: 0;
         bottom: 0;
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
         border-radius: 100%;
-        margin: 2rem;
+        margin: 2.5rem;
         background-color: #e7effea2;;
         padding: 1rem 0;
 
@@ -428,8 +436,8 @@ body.menu-open {
             & > img{
                 display: flex;
                 margin : auto;
-                height: 60px;
-                width: 60px;
+                height: 50px;
+                width: 50px;
                 // outline: 1px solid red;
                 border-radius: 100%;
             }
@@ -453,6 +461,15 @@ body.menu-open {
                 & > img{
                     height: 40px;
                     width: 40px;
+                }
+            }
+        }
+        @include m.mobile{
+            margin-right: 2.5rem;
+            height: 70px;width: 70px;
+            & > a{
+                & >img{
+                height: 47px;width: 47px;
                 }
             }
         }

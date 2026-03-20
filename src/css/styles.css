@@ -368,7 +368,7 @@ strong, .special-text, .bold-text {
   border-radius: 100%;
   user-select: none;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 2147483647;
   translate: -50% -50%;
 }
 @media (max-width: 767px) {
@@ -1065,6 +1065,10 @@ strong, .special-text, .bold-text {
     width: 3px;
     translate: 0 0;
   }
+  .scheme--horizontal > .scheme__line--position2 {
+    height: 80%;
+    translate: 0 -10%;
+  }
   .scheme:not(.scheme--horizontal).scheme--bank {
     --scheme-mobile-line-top: 8rem;
     --scheme-mobile-line-bottom: 8.3rem;
@@ -1325,7 +1329,7 @@ body.menu-open {
   font-size: 1.8rem;
 }
 .btn--primary {
-  transition: ease-in-out 0.24s;
+  transition: background-color ease-in-out 0.24s, color ease-in-out 0.24s, box-shadow ease-in-out 0.24s, border-color ease-in-out 0.24s;
   background-color: #1a6eff;
   color: #fff;
   font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
@@ -1337,7 +1341,7 @@ body.menu-open {
   box-shadow: 0 0 14px rgba(82, 146, 255, 0.3568627451);
 }
 .btn--primary:active {
-  transition: 0.012s;
+  transition-duration: 0.012s;
   background-color: #fff;
   color: #1a6eff;
   box-shadow: inset 0 0 4px rgba(119, 156, 211, 0.3);
@@ -1349,7 +1353,7 @@ body.menu-open {
   }
 }
 .btn--secondary {
-  transition: ease-in-out 0.24s;
+  transition: background-color ease-in-out 0.24s, color ease-in-out 0.24s, box-shadow ease-in-out 0.24s, border-color ease-in-out 0.24s;
   border: 1px solid #d7deef;
   color: #1e2736;
   font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
@@ -1361,7 +1365,7 @@ body.menu-open {
   box-shadow: 0 0 14px rgba(82, 146, 255, 0.3568627451);
 }
 .btn--secondary:active {
-  transition: 0.012s;
+  transition-duration: 0.012s;
   background-color: #1a6eff;
   color: #fff;
   border: 1px solid #1a6eff;
@@ -1502,10 +1506,10 @@ body.menu-open {
   position: fixed;
   right: 0;
   bottom: 0;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   border-radius: 100%;
-  margin: 2rem;
+  margin: 2.5rem;
   background-color: rgba(231, 239, 254, 0.6352941176);
   padding: 1rem 0;
 }
@@ -1517,8 +1521,8 @@ body.menu-open {
 .backer > a > img {
   display: flex;
   margin: auto;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 100%;
 }
 .backer:hover {
@@ -1536,6 +1540,17 @@ body.menu-open {
   .backer > a > img {
     height: 40px;
     width: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .backer {
+    margin-right: 2.5rem;
+    height: 70px;
+    width: 70px;
+  }
+  .backer > a > img {
+    height: 47px;
+    width: 47px;
   }
 }
 

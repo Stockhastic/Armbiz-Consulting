@@ -238,6 +238,9 @@ function setLang(lang) {
     });
 
   updateServicePrices(lang);
+  document.dispatchEvent(new CustomEvent('i18n:updated', {
+    detail: { lang }
+  }));
 }
 
 function initHeaderMenu() {
