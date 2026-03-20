@@ -802,9 +802,6 @@ strong, .special-text, .bold-text {
   .service-card__header--mini > .service-card__title {
     line-height: 1.1;
   }
-  .service-card--base {
-    padding: 0;
-  }
   .service-card--glow {
     gap: 1rem;
   }
@@ -2866,7 +2863,7 @@ body.menu-open {
 }
 .hero__image > img {
   position: absolute;
-  top: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
 }
@@ -2955,6 +2952,13 @@ body.menu-open {
     padding-block: 15rem;
   }
 }
+@media (max-width: 1439px) {
+  .hero--service > .hero__image--accounting {
+    width: min(100%, 40rem);
+    height: auto;
+    aspect-ratio: 380.44/288.44;
+  }
+}
 @media (max-width: 1023px) {
   .hero {
     padding-block: 8rem;
@@ -2989,10 +2993,14 @@ body.menu-open {
   .hero--service > .hero__image {
     justify-self: center;
     width: min(100%, 42rem);
-    height: clamp(20rem, 62vw, 30rem);
+    height: auto;
+    aspect-ratio: 380.44/288.44;
   }
   .hero--service > .hero__image--registration, .hero--service > .hero__image--logistics {
     height: auto;
+  }
+  .hero--service > .hero__image--accounting {
+    width: min(100%, 38rem);
   }
 }
 @media (max-width: 767px) {
@@ -3018,6 +3026,9 @@ body.menu-open {
   }
   .hero--service > .hero__image {
     width: 100%;
+  }
+  .hero--service > .hero__image--accounting {
+    width: min(100%, 28rem);
   }
   .hero--aboutus > .hero__title {
     font-size: 3.6rem;
@@ -4688,5 +4699,43 @@ body.menu-open {
   .swiper-slide__card-text {
     margin: 2rem 2rem;
     text-align: justify;
+  }
+}
+
+.accounting-illustration__part-2 {
+  position: absolute;
+}
+
+.accounting-illustration__part-6-mask {
+  --accounting-sidebar-clip-y: 0.5rem;
+  --accounting-sidebar-clip-tilt: 15rem;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  clip-path: polygon(0 calc(var(--accounting-sidebar-clip-y) + var(--accounting-sidebar-clip-tilt)), 100% var(--accounting-sidebar-clip-y), 100% 30%, 0 66.5%);
+}
+.accounting-illustration__part-6-mask > .accounting-illustration__part-6 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1439px) {
+  .accounting-illustration__part-6-mask {
+    --accounting-sidebar-clip-y: 0.35rem;
+    --accounting-sidebar-clip-tilt: clamp(6rem, 14vw, 11rem);
+  }
+}
+@media (max-width: 1023px) {
+  .accounting-illustration__part-6-mask {
+    --accounting-sidebar-clip-y: 3rem;
+    --accounting-sidebar-clip-tilt: clamp(4.5rem, 18vw, 8rem);
+  }
+}
+@media (max-width: 767px) {
+  .accounting-illustration__part-6-mask {
+    --accounting-sidebar-clip-y: 2.3rem;
+    --accounting-sidebar-clip-tilt: clamp(3.5rem, 24vw, 6rem);
   }
 }/*# sourceMappingURL=styles.css.map */

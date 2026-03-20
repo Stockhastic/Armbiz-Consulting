@@ -1853,7 +1853,7 @@ body.menu-open {
         & > img{
             // outline: 1px solid red;
             position: absolute;
-            top: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
         }
@@ -1962,6 +1962,16 @@ body.menu-open {
         }
     }
 
+    @media (max-width: 1439px){
+        &--service{
+            & > .hero__image--accounting{
+                width: min(100%, 40rem);
+                height: auto;
+                aspect-ratio: 380.44 / 288.44;
+            }
+        }
+    }
+
     @include m.tablet{
         padding-block: 8rem;
         
@@ -2005,12 +2015,17 @@ body.menu-open {
             & > .hero__image{
                 justify-self: center;
                 width: min(100%, 42rem);
-                height: clamp(20rem, 62vw, 30rem);
+                height: auto;
+                aspect-ratio: 380.44 / 288.44;
             }
 
             & > .hero__image--registration,
             & > .hero__image--logistics{
                 height: auto;
+            }
+
+            & > .hero__image--accounting{
+                width: min(100%, 38rem);
             }
         }
     }
@@ -2045,6 +2060,10 @@ body.menu-open {
 
             & > .hero__image{
                 width: 100%;
+            }
+
+            & > .hero__image--accounting{
+                width: min(100%, 28rem);
             }
         }
         &--aboutus{
@@ -3959,5 +3978,52 @@ body.menu-open {
                 }
             }
         }
+    }
+}
+
+.accounting-illustration__part-2{
+    position: absolute;
+}
+
+.accounting-illustration__part-6-mask{
+    --accounting-sidebar-clip-y: 0.5rem;
+    --accounting-sidebar-clip-tilt: 15rem;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    // border: 1px solid red;
+    clip-path: polygon(
+        0 calc(var(--accounting-sidebar-clip-y) + var(--accounting-sidebar-clip-tilt)),
+        100% var(--accounting-sidebar-clip-y),
+        100% 30%,
+        0 66.5%
+    );
+
+    & > .accounting-illustration__part-6{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1439px){
+    .accounting-illustration__part-6-mask{
+        --accounting-sidebar-clip-y: 0.35rem;
+        --accounting-sidebar-clip-tilt: clamp(6rem, 14vw, 11rem);
+    }
+}
+
+@include m.tablet{
+    .accounting-illustration__part-6-mask{
+        --accounting-sidebar-clip-y: 3rem;
+        --accounting-sidebar-clip-tilt: clamp(4.5rem, 18vw, 8rem);
+    }
+}
+
+@include m.mobile{
+    .accounting-illustration__part-6-mask{
+        --accounting-sidebar-clip-y: 2.3rem;
+        --accounting-sidebar-clip-tilt: clamp(3.5rem, 24vw, 6rem);
     }
 }

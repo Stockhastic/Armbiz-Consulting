@@ -806,9 +806,6 @@ strong, .special-text, .bold-text {
   .service-card__header--mini > .service-card__title {
     line-height: 1.1;
   }
-  .service-card--base {
-    padding: 0;
-  }
   .service-card--glow {
     gap: 1rem;
   }
