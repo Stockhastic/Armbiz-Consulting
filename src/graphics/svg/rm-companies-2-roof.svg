@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ready-Made_Companies" data-name="Ready-Made Companies" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #66acff;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #3fc6ff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #0032b8;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        fill: #96e1fe;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="LLC">
+    <g>
+      <polygon class="cls-4" points="144.89 110.15 100.13 87.16 100.13 49.66 144.89 72.65 144.89 110.15"/>
+      <polygon class="cls-3" points="144.89 72.65 100.13 49.66 144.89 26.68 189.65 49.66 144.89 72.65"/>
+      <polygon class="cls-3" points="144.89 110.15 189.65 87.39 189.65 49.89 144.89 72.87 144.89 110.15"/>
+    </g>
+  </g>
+  <polygon class="cls-2" points="126.74 90.72 134 94.49 134 77.55 126.74 73.79 126.74 90.72"/>
+  <polygon class="cls-2" points="109.81 82.26 117.07 86.02 117.07 69.08 109.81 65.32 109.81 82.26"/>
+  <polygon class="cls-2" points="163.03 91.22 155.78 94.98 155.78 78.04 163.03 74.28 163.03 91.22"/>
+  <polygon class="cls-2" points="179.97 82.75 172.71 86.51 172.71 69.58 179.97 65.81 179.97 82.75"/>
+  <g>
+    <path class="cls-1" d="M126.7,51.46l10.72,5.39,5.52-2.8,3.22,1.62-8.57,4.35-13.94-7.01,3.05-1.55Z"/>
+    <path class="cls-1" d="M136.07,46.7l10.72,5.39,5.52-2.8,3.22,1.62-8.57,4.35-13.94-7.01,3.05-1.55Z"/>
+    <path class="cls-1" d="M162.05,47.82c-4.64,2.35-7.23,2.22-12.98-.67s-6.02-4.2-1.39-6.55,7-2.32,11.85.15l-3.2,1.62c-2.72-1.4-3.29-1.42-5.61-.24-2.34,1.19-2.19,1.53,1.54,3.4,3.73,1.88,4.41,1.95,6.75.77s2.28-1.46-.53-2.85l3.2-1.62c4.93,2.45,5.01,3.65.38,6Z"/>
+  </g>
+</svg>

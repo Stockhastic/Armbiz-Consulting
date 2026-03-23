@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ready-Made_Companies" data-name="Ready-Made Companies" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #59abff;
+        stroke: #0032b8;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="189.65" y1="49.66" x2="145.49" y2="22.44"/>
+  <line class="cls-1" x1="101.34" y1="49.66" x2="144.28" y2="22.44"/>
+  <line class="cls-1" x1="144.89" y1="21.84" x2="144.89" y2="72.65"/>
+</svg>

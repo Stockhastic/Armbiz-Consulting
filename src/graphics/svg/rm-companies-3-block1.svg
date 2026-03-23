@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ready-Made_Companies" data-name="Ready-Made Companies" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #0032b8;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #96e1fe;
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        fill: #59abff;
+      }
+    </style>
+  </defs>
+  <g id="LLC">
+    <g>
+      <polygon class="cls-2" points="104.21 253.37 69.57 235.59 69.57 184.8 104.21 202.58 104.21 253.37"/>
+      <polygon class="cls-1" points="104.21 202.58 69.57 184.8 104.21 167.01 138.84 184.8 104.21 202.58"/>
+      <polygon class="cls-1" points="104.21 253.37 138.84 235.76 138.84 184.97 104.21 202.75 104.21 253.37"/>
+    </g>
+  </g>
+  <g>
+    <polygon class="cls-3" points="132.32 205.97 132.32 227.49 112.7 237.48 112.7 210.5 126.86 203.29 132.32 205.97"/>
+    <g>
+      <line class="cls-3" x1="116.38" y1="219.67" x2="128.64" y2="213.42"/>
+      <line class="cls-3" x1="116.38" y1="223.35" x2="128.64" y2="217.1"/>
+      <line class="cls-3" x1="116.38" y1="227.03" x2="128.64" y2="220.78"/>
+    </g>
+  </g>
+</svg>
