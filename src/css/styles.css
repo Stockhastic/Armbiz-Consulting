@@ -2887,6 +2887,10 @@ body.menu-open {
 .hero--with-spheres > .sphere-container:not(.sphere-container--megaZ) {
   z-index: -1;
 }
+.hero--home-spheres > .sphere-container {
+  top: -12rem;
+  height: calc(100% + 12rem);
+}
 .hero--service-spheres > .sphere-container {
   top: -12rem;
   left: 50%;

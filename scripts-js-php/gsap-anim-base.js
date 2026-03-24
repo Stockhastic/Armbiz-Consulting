@@ -36,6 +36,8 @@
     const animationStates = new WeakMap();
     let smootherScriptPromise = null;
     let bodyClassObserver = null;
+    let anchorNavigationBound = false;
+    let initialHashSyncDone = false;
 
     function parseNumber(value, fallback) {
         const parsedValue = Number.parseFloat(value);
@@ -400,6 +402,172 @@
         requestAnimationFrame(() => ScrollTrigger.refresh());
     }
 
+    function isModifiedPrimaryClick(event) {
+        return event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0;
+    }
+
+    function getSamePageHash(link) {
+        const rawHref = link.getAttribute("href");
+        if (!rawHref || link.hasAttribute("download")) {
+            return "";
+        }
+
+        const target = link.getAttribute("target");
+        if (target && target.toLowerCase() === "_blank") {
+            return "";
+        }
+
+        try {
+            const url = new URL(link.href, window.location.href);
+            const isSamePage = url.origin === window.location.origin
+                && url.pathname === window.location.pathname
+                && url.search === window.location.search;
+
+            if (!isSamePage) {
+                return "";
+            }
+
+            if (rawHref.charAt(0) === "#") {
+                return rawHref === "#" ? "#" : url.hash || rawHref;
+            }
+
+            return url.hash || "";
+        } catch (error) {
+            return rawHref.charAt(0) === "#" ? rawHref : "";
+        }
+    }
+
+    function decodeHashValue(hash) {
+        try {
+            return decodeURIComponent(hash.slice(1));
+        } catch (error) {
+            return hash.slice(1);
+        }
+    }
+
+    function findHashTarget(hash) {
+        if (!hash || hash === "#") {
+            return null;
+        }
+
+        const targetId = decodeHashValue(hash);
+        return document.getElementById(targetId)
+            || document.getElementsByName(targetId)[0]
+            || null;
+    }
+
+    function updateBrowserHash(hash, replace = false) {
+        const nextUrl = hash && hash !== "#"
+            ? `${window.location.pathname}${window.location.search}${hash}`
+            : `${window.location.pathname}${window.location.search}`;
+        const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+
+        if (nextUrl === currentUrl || !window.history) {
+            return;
+        }
+
+        const method = replace ? "replaceState" : "pushState";
+        if (typeof window.history[method] === "function") {
+            window.history[method](null, "", nextUrl);
+        }
+    }
+
+    function scrollToHash(hash, {
+        animate = !prefersReducedMotion.matches,
+        updateHistory = false,
+        replaceHistory = false
+    } = {}) {
+        const smoother = typeof window.ScrollSmoother !== "undefined"
+            ? window.ScrollSmoother.get()
+            : null;
+
+        if (hash === "#") {
+            if (smoother) {
+                smoother.scrollTo(0, animate);
+            } else {
+                window.scrollTo({
+                    top: 0,
+                    behavior: animate ? "smooth" : "auto"
+                });
+            }
+
+            if (updateHistory) {
+                updateBrowserHash("", replaceHistory);
+            }
+
+            return true;
+        }
+
+        const target = findHashTarget(hash);
+        if (!target) {
+            return false;
+        }
+
+        if (smoother) {
+            smoother.scrollTo(target, animate);
+        } else {
+            target.scrollIntoView({
+                behavior: animate ? "smooth" : "auto",
+                block: "start"
+            });
+        }
+
+        if (updateHistory) {
+            updateBrowserHash(hash, replaceHistory || window.location.hash === hash);
+        }
+
+        return true;
+    }
+
+    function handleSamePageAnchorClick(event) {
+        const link = event.target instanceof Element
+            ? event.target.closest("a[href]")
+            : null;
+        if (!link || event.defaultPrevented || isModifiedPrimaryClick(event)) {
+            return;
+        }
+
+        const hash = getSamePageHash(link);
+        if (!hash) {
+            return;
+        }
+
+        if (!scrollToHash(hash, {
+            animate: !prefersReducedMotion.matches,
+            updateHistory: true
+        })) {
+            return;
+        }
+
+        event.preventDefault();
+    }
+
+    function handleHashChange() {
+        const hash = window.location.hash || "#";
+        if (scrollToHash(hash, {
+            animate: false,
+            updateHistory: false
+        })) {
+            initialHashSyncDone = true;
+        }
+    }
+
+    function syncInitialHashNavigation() {
+        if (initialHashSyncDone || !window.location.hash) {
+            return;
+        }
+
+        requestAnimationFrame(() => {
+            if (scrollToHash(window.location.hash, {
+                animate: false,
+                updateHistory: false,
+                replaceHistory: true
+            })) {
+                initialHashSyncDone = true;
+            }
+        });
+    }
+
     function syncSmootherPauseState() {
         if (typeof window.ScrollSmoother === "undefined") {
             return;
@@ -429,6 +597,16 @@
         });
     }
 
+    function ensureAnchorNavigation() {
+        if (anchorNavigationBound) {
+            return;
+        }
+
+        document.addEventListener("click", handleSamePageAnchorClick);
+        window.addEventListener("hashchange", handleHashChange);
+        anchorNavigationBound = true;
+    }
+
     async function updateSmoother() {
         normalizeHeroSpheres();
 
@@ -439,6 +617,7 @@
 
             teardownSmoothStructure();
             requestAnimationFrame(() => ScrollTrigger.refresh());
+            syncInitialHashNavigation();
             return;
         }
 
@@ -482,9 +661,11 @@
         ensureBodyClassObserver();
         syncSmootherPauseState();
         refreshSmoother();
+        syncInitialHashNavigation();
     }
 
     function initPageFeatures() {
+        ensureAnchorNavigation();
         normalizeHeroSpheres();
         refreshReveal();
         updateSmoother();
