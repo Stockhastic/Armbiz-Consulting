@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Social_Card" data-name="Social Card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0362e1;
+        stroke: #0032b8;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #59abff;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="272.98 141.56 254.37 137.94 257.94 119.32 276.55 122.94 272.98 141.56"/>
+  <polygon class="cls-2" points="280.08 122.49 282.39 126.12 267.17 136.41 261.73 128.91 265.39 126.07 268.59 130.26 280.08 122.49"/>
+</svg>
