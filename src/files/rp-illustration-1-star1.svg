@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Residence_permit" data-name="Residence permit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.4 13.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #59abff;
+        opacity: .39;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Stars">
+    <path class="cls-1" d="M6.7.12l.86,2.72c.49,1.54,1.71,2.74,3.25,3.2l2.59.78-2.59.78c-1.55.47-2.76,1.67-3.25,3.2l-.86,2.72-.86-2.72c-.49-1.54-1.71-2.74-3.25-3.2L0,6.83l2.59-.78c1.55-.47,2.76-1.67,3.25-3.2L6.7.12Z"/>
+  </g>
+</svg>

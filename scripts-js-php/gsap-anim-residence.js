@@ -1,22 +1,53 @@
-const resDoc = document.querySelector(".residence-permit__illustration-part-2");
-const resShield = document.querySelector(".residence-permit__illustration-part-2");
+const rpStar1 = document.querySelector(".rp-illustration-star1");
+const rpStar2 = document.querySelector(".rp-illustration-star2");
+const rpStar3 = document.querySelector(".rp-illustration-star3");
+const rpStar4 = document.querySelector(".rp-illustration-star4");
+const rpStar5 = document.querySelector(".rp-illustration-star5");
+const rpStar6 = document.querySelector(".rp-illustration-star6");
+const rpStar7 = document.querySelector(".rp-illustration-star7");
+const rpStar8 = document.querySelector(".rp-illustration-star8");
 
-const resStar1 = document.querySelector(".residence-permit__illustration-part-5-1");
-const resStar2 = document.querySelector(".residence-permit__illustration-part-5-2");
-const resStar3 = document.querySelector(".residence-permit__illustration-part-5-3");
-const resStar4 = document.querySelector(".residence-permit__illustration-part-5-4");
-const resStar5 = document.querySelector(".residence-permit__illustration-part-5-5");
-const resStar6 = document.querySelector(".residence-permit__illustration-part-5-6");
-const resStar7 = document.querySelector(".residence-permit__illustration-part-5-7");
-const resStar8 = document.querySelector(".residence-permit__illustration-part-5-8");
+const rpCard = document.querySelector(".rp-illustration-card");
 
+const rpFinger = document.querySelector(".rp-illustration-finger");
+const rpGeotag = document.querySelector(".rp-illustration-geotag");
+const rpShield = document.querySelector(".rp-illustration-shield");
+const rpCity = document.querySelector(".rp-illustration-city");
 
-gsap.set(resDoc, {y: 30})
+let tlRp = gsap.timeline({repeat: -1, defaults: {duration: 10 }});
 
-let tlRes = gsap.timeline({repeat:-1});
+tlRp.from(rpStar1, {rotate: -360, ease: "power3.inOut"}, 0);
+tlRp.from(rpStar2, {rotate: -360, ease: "power1.inOut"}, 0);
+tlRp.from(rpStar3, {rotate: -360, ease: "none"}, 0);
+tlRp.from(rpStar4, {rotate: -360, ease: "power1.inOut"}, 0);
+tlRp.from(rpStar5, {rotate: -360, ease: "power3.inOut"}, 0);
+tlRp.from(rpStar6, {rotate: -360, ease: "none"}, 0);
+tlRp.from(rpStar7, {rotate: -360, ease: "none"}, 0);
+tlRp.from(rpStar8, {rotate: -360, ease: "power2.inOut"}, 0);
 
-tlRes.to(resDoc, {y: -30, ease: "power2.inOut", duration:6}, 1);
-tlRes.to(resDoc, {y: 30, ease: "power1.inOut",duration: 6});
+tlRp.to(rpStar1, {rotate: 360, ease: "power3.inOut"}, 10);
+tlRp.to(rpStar2, {rotate: 360, ease: "power1.inOut"}, 10);
+tlRp.to(rpStar3, {rotate: 360, ease: "none"}, 10);
+tlRp.to(rpStar4, {rotate: 360, ease: "power1.inOut"}, 10);
+tlRp.to(rpStar5, {rotate: 360, ease: "power3.inOut"}, 10);
+tlRp.to(rpStar6, {rotate: 360, ease: "none"}, 10);
+tlRp.to(rpStar7, {rotate: 360, ease: "none"}, 10);
+tlRp.to(rpStar8, {rotate: 360, ease: "power2.inOut"}, 10);
+
+tlRp.from(rpCard, {yPercent:-7, duration: 5, ease: "none"}, 0);
+tlRp.to(rpCard, {yPercent:7, duration: 5, ease: "power2.out"}, 5);
+tlRp.to(rpCard, {yPercent:0, duration: 5, ease: "none"}, 10);
+tlRp.to(rpCard, {yPercent:-7, duration: 5, ease: "none"}, 15);
+
+tlRp.from(rpGeotag, {opacity:0, scale: 0.5, ease: "circ.out", duration: 2.5}, 5);
+tlRp.from(rpFinger, {opacity:0, scale: 0.5, ease: "circ.out", duration: 2.5}, 5);
+tlRp.from(rpShield, {opacity:0, scale: 0.5, ease: "circ.out", duration: 2.5}, 5);
+tlRp.from(rpCity, {opacity:0, scale: 0.5, ease: "circ.out", duration: 2.5}, 5);
+
+tlRp.to(rpGeotag, {opacity:0, scale: 0.5, ease: "circ.inOut", duration: 2.5}, 12.5);
+tlRp.to(rpFinger, {opacity:0, scale: 0.5, ease: "circ.inOut", duration: 2.5}, 12.5);
+tlRp.to(rpShield, {opacity:0, scale: 0.5, ease: "circ.inOut", duration: 2.5}, 12.5);
+tlRp.to(rpCity, {opacity:0, scale: 0.5, ease: "circ.inOut", duration: 2.5}, 12.5);
 
 
 

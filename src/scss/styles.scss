@@ -2063,6 +2063,7 @@ body.menu-open {
                 width: min(100%, 42rem);
                 height: auto;
                 aspect-ratio: 380.44 / 288.44;
+                overflow: hidden;
             }
 
             & > .hero__image--registration,

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Residence_permit" data-name="Residence permit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #0032b8;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #d4dcff;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #0032b8;
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #59abff;
+      }
+    </style>
+  </defs>
+  <g id="City">
+    <g>
+      <rect class="cls-2" x="300.5" y="229.59" width="13.13" height="26.76"/>
+      <polygon class="cls-1" points="303.11 218.11 303.11 256.35 275.8 256.35 275.8 244.18 285.09 244.18 285.09 218.11 303.11 218.11"/>
+      <polygon class="cls-1" points="331.52 205.14 331.52 256.36 323.74 256.36 323.74 256.35 309.68 256.35 309.68 205.14 331.52 205.14"/>
+      <rect class="cls-5" x="314.87" y="210.79" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="322.27" y="210.79" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="288.64" y="223.67" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="295.32" y="223.67" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="288.64" y="233.57" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="295.32" y="233.57" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="288.64" y="243.47" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="295.32" y="243.47" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="314.87" y="222.89" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="322.27" y="222.89" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="314.87" y="235.83" width="4.05" height="7.32"/>
+      <rect class="cls-4" x="280.78" y="249.03" width="4.05" height="7.32"/>
+      <rect class="cls-5" x="322.27" y="235.83" width="4.05" height="7.32"/>
+      <rect class="cls-4" x="314.87" y="250" width="11.44" height="6.36"/>
+    </g>
+    <line class="cls-3" x1="21.62" y1="91.34" x2="21.62" y2="106.64"/>
+  </g>
+</svg>
