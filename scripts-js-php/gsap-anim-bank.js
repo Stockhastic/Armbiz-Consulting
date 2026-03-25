@@ -15,7 +15,7 @@ const bcLineReveal = {
 
 let tlBc = gsap.timeline({repeat: -1, defaults: {duration: 2}});
 
-tlBc.from(bcEarth, {opacity: 0, y: 30});
+tlBc.from(bcEarth, {opacity: 0, y: 30}, 1);
 
 tlBc.from(bcCard, {opacity: 0, y: -30});
 

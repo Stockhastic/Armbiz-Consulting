@@ -4769,12 +4769,4 @@ body.menu-open {
     --accounting-sidebar-clip-y: 2.3rem;
     --accounting-sidebar-clip-tilt: clamp(3.5rem, 24vw, 6rem);
   }
-}
-.bankcard-bgAnimation-shape {
-  translate: 0% 500px;
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  background: linear-gradient(320deg, #1a6eff, #60a2ff);
-  border-radius: 2rem;
 }/*# sourceMappingURL=styles.css.map */

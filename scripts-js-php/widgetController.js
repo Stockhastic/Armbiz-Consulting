@@ -19,8 +19,8 @@
                     selector: '[data-chat-widget-b24u="popup"]',
                     className: 'b24u-chat-popup',
                     styles: {
-                        bottom: '120px',
-                        right: '24px',
+                        bottom: '11rem',
+                        right: '11rem',
                         width: '340px',
                         'border-radius': '24px',
                         overflow: 'hidden'
