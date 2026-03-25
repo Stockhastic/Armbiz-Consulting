@@ -837,6 +837,9 @@ strong, .special-text, .bold-text {
   .service-card__title {
     font-size: 2rem;
   }
+  .service-card__benefits--residence {
+    width: 90%;
+  }
 }
 
 .scheme {

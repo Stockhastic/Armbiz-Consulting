@@ -481,5 +481,10 @@
         &__title{
             font-size: 2rem;
         }
+        &__benefits{
+            &--residence{
+                width: 90%;
+            }
+        }
     }
 }
