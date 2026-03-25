@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Bank_Card" data-name="Bank Card" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0362e1;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #0032b8;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        fill: #139bff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4px;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#3668cc" flood-opacity=".6"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Shield" class="cls-4">
+    <path class="cls-2" d="M61.71,126.88v15.07c0,12.18-7.2,23.2-18.36,28.08l-3.15,1.38-3.15-1.38c-11.15-4.88-18.36-15.91-18.36-28.08v-15.07c10.81,0,21.52-5.17,21.52-5.17,0,0,12.39,5.17,21.52,5.17Z"/>
+    <path class="cls-1" d="M53.61,134.3v9.39c0,7.59-4.49,14.46-11.44,17.5l-1.96.86-1.96-.86c-6.95-3.04-11.44-9.91-11.44-17.5v-9.39c6.74,0,13.41-3.22,13.41-3.22,0,0,7.72,3.22,13.41,3.22Z"/>
+    <polyline class="cls-3" points="33.59 147.16 38.17 152.58 46.81 140.55"/>
+  </g>
+</svg>

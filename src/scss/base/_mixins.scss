@@ -19,3 +19,14 @@
         @content;
     }
 }
+
+@mixin createSquare($w, $h, $br){
+    width: $w;
+    height: $h;
+    background: linear-gradient(
+        320deg,
+        vars.$primaryColor,
+        vars.$secondaryColor
+    );
+    border-radius: $br;
+}

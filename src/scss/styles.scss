@@ -1894,6 +1894,13 @@ body.menu-open {
         }
     }
 
+    &--aboutus-spheres{
+        & > .sphere-container{
+            top: -12rem;
+            height: calc(100% + 12rem);
+        }
+    }
+
     &--service-spheres{
         & > .sphere-container{
             top: -12rem;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Bank_Card" data-name="Bank Card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #0032b8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 0 0 4.9 4.9;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M96.87,232.63s.89.09,2.49.21"/>
+  <path class="cls-2" d="M104.25,233.13c11.77.52,35.39.45,54.27-6.76,21.82-8.32,79.29-43.15,95.34-52.98"/>
+  <path class="cls-1" d="M255.95,172.11c1.37-.84,2.12-1.31,2.12-1.31"/>
+</svg>

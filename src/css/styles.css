@@ -2891,6 +2891,10 @@ body.menu-open {
   top: -12rem;
   height: calc(100% + 12rem);
 }
+.hero--aboutus-spheres > .sphere-container {
+  top: -12rem;
+  height: calc(100% + 12rem);
+}
 .hero--service-spheres > .sphere-container {
   top: -12rem;
   left: 50%;
@@ -4765,4 +4769,12 @@ body.menu-open {
     --accounting-sidebar-clip-y: 2.3rem;
     --accounting-sidebar-clip-tilt: clamp(3.5rem, 24vw, 6rem);
   }
+}
+.bankcard-bgAnimation-shape {
+  translate: 0% 500px;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(320deg, #1a6eff, #60a2ff);
+  border-radius: 2rem;
 }/*# sourceMappingURL=styles.css.map */

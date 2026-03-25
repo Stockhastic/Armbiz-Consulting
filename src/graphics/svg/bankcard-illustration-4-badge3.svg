@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Bank_Card" data-name="Bank Card" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        fill: #139bff;
+        stroke: #0032b8;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #0362e1;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #0032b8;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#3668cc" flood-opacity=".6"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Lock" class="cls-1">
+    <path class="cls-2" d="M79.5,227.23v22.89c0,2.19-1.77,3.97-3.96,3.97h-33.56c-2.19,0-3.96-1.78-3.96-3.97v-22.89c0-2.19,1.77-3.97,3.96-3.97h33.56c2.19,0,3.96,1.78,3.96,3.97Z"/>
+    <path class="cls-2" d="M73.31,223.26h-6.13c0-8.05-.2-13.85-8.41-13.85s-8.41,5.21-8.41,13.85h-6.13c0-8.03,0-19.99,14.55-19.99s14.55,11.96,14.55,19.99Z"/>
+    <g>
+      <path class="cls-3" d="M57.05,246.64l-.03-6.83c0-.36-.19-.69-.5-.87-1.36-.78-2.2-2.24-2.2-3.8,0-2.45,1.99-4.44,4.44-4.44s4.44,1.99,4.44,4.44c0,1.57-.84,3.02-2.2,3.8-.31.18-.5.51-.5.87v6.79l-.04.04h-3.41Z"/>
+      <path class="cls-4" d="M58.76,231.71c1.9,0,3.44,1.54,3.44,3.44,0,1.23-.63,2.32-1.7,2.93-.62.36-1,1.02-1,1.73v5.83h-1.48v-5.83c0-.72-.38-1.38-1-1.73-1.06-.61-1.7-1.71-1.7-2.93,0-1.9,1.54-3.44,3.44-3.44M58.76,229.71c-3,0-5.44,2.44-5.44,5.44,0,2,1.08,3.74,2.7,4.67v6.79c0,.57.46,1.04,1.03,1.04h3.41c.58,0,1.04-.47,1.04-1.04v-6.79c1.62-.93,2.7-2.67,2.7-4.67,0-3-2.44-5.44-5.44-5.44h0Z"/>
+    </g>
+  </g>
+</svg>
