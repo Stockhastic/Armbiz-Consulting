@@ -234,6 +234,81 @@ a {
   left: 0;
 }
 
+.js [data-anim]:not([data-anim-ready]) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.reveal-content-wrapper {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-align: inherit;
+  white-space: inherit;
+  word-break: inherit;
+  overflow-wrap: inherit;
+  text-wrap: inherit;
+}
+
+.reveal-target {
+  --reveal-translate-x: 0px;
+  --reveal-translate-y: 0px;
+  --reveal-duration: 0.8s;
+  --reveal-delay: 0.1s;
+  --reveal-ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --reveal-visibility-delay: calc(var(--reveal-duration) + var(--reveal-delay));
+  transition: opacity var(--reveal-duration) var(--reveal-ease) var(--reveal-delay), transform var(--reveal-duration) var(--reveal-ease) var(--reveal-delay), visibility 0s linear var(--reveal-visibility-delay);
+}
+
+.reveal-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate3d(var(--reveal-translate-x), var(--reveal-translate-y), 0);
+  --reveal-visibility-delay: calc(var(--reveal-duration) + var(--reveal-delay));
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate3d(0, 0, 0);
+  --reveal-visibility-delay: 0s;
+  will-change: auto;
+}
+
+.reveal-direction-fade-up {
+  --reveal-translate-y: 60px;
+}
+
+.reveal-direction-fade-down {
+  --reveal-translate-y: -60px;
+}
+
+.reveal-direction-fade-left {
+  --reveal-translate-x: -60px;
+}
+
+.reveal-direction-fade-right {
+  --reveal-translate-x: 60px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-target {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+}
 @font-face {
   font-family: "Raleway";
   src: url("/src/fonts/Raleway-Regular.woff2") format("woff2");

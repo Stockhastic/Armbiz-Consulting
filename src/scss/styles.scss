@@ -245,6 +245,9 @@ body.menu-open {
 
     &--primary{
         transition:
+            opacity var(--reveal-duration, 0s) var(--reveal-ease, ease) var(--reveal-delay, 0s),
+            transform var(--reveal-duration, 0s) var(--reveal-ease, ease) var(--reveal-delay, 0s),
+            visibility 0s linear var(--reveal-visibility-delay, 0s),
             background-color ease-in-out vars.$normalAnimation,
             color ease-in-out vars.$normalAnimation,
             box-shadow ease-in-out vars.$normalAnimation,
@@ -271,6 +274,9 @@ body.menu-open {
     }
     &--secondary{
         transition:
+            opacity var(--reveal-duration, 0s) var(--reveal-ease, ease) var(--reveal-delay, 0s),
+            transform var(--reveal-duration, 0s) var(--reveal-ease, ease) var(--reveal-delay, 0s),
+            visibility 0s linear var(--reveal-visibility-delay, 0s),
             background-color ease-in-out vars.$normalAnimation,
             color ease-in-out vars.$normalAnimation,
             box-shadow ease-in-out vars.$normalAnimation,

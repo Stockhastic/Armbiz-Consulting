@@ -1,16 +1,25 @@
 (() => {
-    if (typeof window.gsap === "undefined" || typeof window.ScrollTrigger === "undefined") {
-        return;
+    function hasGsapScrollSupport() {
+        return typeof window.gsap !== "undefined" && typeof window.ScrollTrigger !== "undefined";
     }
 
-    gsap.registerPlugin(ScrollTrigger);
+    function ensureGsapScrollSupport() {
+        if (!hasGsapScrollSupport()) {
+            return false;
+        }
+
+        window.gsap.registerPlugin(window.ScrollTrigger);
+        return true;
+    }
+
+    ensureGsapScrollSupport();
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const compactViewport = window.matchMedia("(max-width: 1023px)");
     const desktopViewport = window.matchMedia("(min-width: 1024px)");
     const DEFAULT_DURATION = 0.8;
     const DEFAULT_DELAY = 0.1;
-    const DEFAULT_EASE = "power2.out";
+    const DEFAULT_EASE = "cubic-bezier(0.215, 0.61, 0.355, 1)";
     const DEFAULT_START = "top 93%";
     const CONTENT_WRAPPER_SELECTOR = ".scheme__item-title";
     const SMOOTHER_SCRIPT_SRC = "/scripts-js-php/gsap-public/minified/ScrollSmoother.min.js";
@@ -26,18 +35,44 @@
     // data-anim-once="false"
 
     const PRESETS = {
-        "fade-up": {autoAlpha: 0, y: 60},
-        "fade-down": {autoAlpha: 0, y: -60},
-        "fade-left": {autoAlpha: 0, x: -60},
-        "fade-right": {autoAlpha: 0, x: 60},
-        reveal: {autoAlpha: 0}
+        "fade-up": {x: 0, y: 60},
+        "fade-down": {x: 0, y: -60},
+        "fade-left": {x: -60, y: 0},
+        "fade-right": {x: 60, y: 0},
+        reveal: {x: 0, y: 0}
+    };
+
+    const EASE_MAPPINGS = {
+        none: "linear",
+        linear: "linear",
+        "power1.out": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        "power2.out": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+        "power3.out": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "power4.out": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "power1.inout": "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+        "power2.inout": "cubic-bezier(0.645, 0.045, 0.355, 1)",
+        "power3.inout": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "power4.inout": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "circ.out": "cubic-bezier(0, 0.55, 0.45, 1)",
+        "circ.inout": "cubic-bezier(0.85, 0, 0.15, 1)",
+        ease: "ease",
+        "ease-in": "ease-in",
+        "ease-out": "ease-out",
+        "ease-in-out": "ease-in-out"
     };
 
     const animationStates = new WeakMap();
+    const revealObserverPool = new Map();
+    const revealStyleRegistries = {
+        duration: new Map(),
+        delay: new Map(),
+        ease: new Map()
+    };
     let smootherScriptPromise = null;
     let bodyClassObserver = null;
     let anchorNavigationBound = false;
     let initialHashSyncDone = false;
+    let revealConfigStyleElement = null;
 
     function parseNumber(value, fallback) {
         const parsedValue = Number.parseFloat(value);
@@ -89,19 +124,7 @@
 
         const wrapper = document.createElement("span");
         wrapper.dataset.animContent = "true";
-        wrapper.style.display = "block";
-        wrapper.style.width = "100%";
-        wrapper.style.maxWidth = "100%";
-        wrapper.style.font = "inherit";
-        wrapper.style.color = "inherit";
-        wrapper.style.lineHeight = "inherit";
-        wrapper.style.letterSpacing = "inherit";
-        wrapper.style.textTransform = "inherit";
-        wrapper.style.textAlign = "inherit";
-        wrapper.style.whiteSpace = "inherit";
-        wrapper.style.wordBreak = "inherit";
-        wrapper.style.overflowWrap = "inherit";
-        wrapper.style.textWrap = "inherit";
+        wrapper.className = "reveal-content-wrapper";
 
         while (el.firstChild) {
             wrapper.appendChild(el.firstChild);
@@ -112,11 +135,123 @@
         return wrapper;
     }
 
+    function formatSecondsValue(value, fallback) {
+        const normalizedValue = Math.max(0, parseNumber(value, fallback));
+        return `${normalizedValue.toFixed(3).replace(/\.?0+$/, "")}s`;
+    }
+
+    function resolveCssEase(rawEase) {
+        const parsedEase = parseString(rawEase, "");
+        if (!parsedEase) {
+            return DEFAULT_EASE;
+        }
+
+        return EASE_MAPPINGS[parsedEase.toLowerCase()] || parsedEase;
+    }
+
+    function sanitizeClassSegment(value) {
+        return String(value)
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "")
+            || "default";
+    }
+
+    function ensureRevealConfigStyleSheet() {
+        if (revealConfigStyleElement) {
+            return revealConfigStyleElement.sheet;
+        }
+
+        revealConfigStyleElement = document.createElement("style");
+        revealConfigStyleElement.id = "reveal-config-styles";
+        document.head.appendChild(revealConfigStyleElement);
+
+        return revealConfigStyleElement.sheet;
+    }
+
+    function ensureRevealConfigClass(type, value) {
+        const registry = revealStyleRegistries[type];
+        if (registry.has(value)) {
+            return registry.get(value);
+        }
+
+        const className = `reveal-${type}-${registry.size + 1}-${sanitizeClassSegment(value)}`;
+        const sheet = ensureRevealConfigStyleSheet();
+        sheet.insertRule(`.${className}{--reveal-${type}:${value};}`, sheet.cssRules.length);
+        registry.set(value, className);
+
+        return className;
+    }
+
+    function resolveRevealRootMargin(start) {
+        const parsedStart = parseString(start, DEFAULT_START);
+        const match = /^top\s+(-?\d+(?:\.\d+)?)%$/i.exec(parsedStart);
+        if (!match) {
+            return "0px 0px -7% 0px";
+        }
+
+        const viewportPercent = Math.min(100, Math.max(0, Number.parseFloat(match[1])));
+        return `0px 0px -${100 - viewportPercent}% 0px`;
+    }
+
+    function getRevealObserver(start, once) {
+        if (typeof window.IntersectionObserver === "undefined") {
+            return null;
+        }
+
+        const rootMargin = resolveRevealRootMargin(start);
+        const observerKey = `${rootMargin}|${once ? "once" : "repeat"}`;
+        if (revealObserverPool.has(observerKey)) {
+            return revealObserverPool.get(observerKey);
+        }
+
+        const observer = new IntersectionObserver((entries, currentObserver) => {
+            entries.forEach((entry) => {
+                const state = animationStates.get(entry.target);
+                if (!state) {
+                    return;
+                }
+
+                if (entry.isIntersecting) {
+                    state.animationTarget.classList.add("reveal-visible");
+                    entry.target.dataset.animVisible = "true";
+
+                    if (state.once) {
+                        currentObserver.unobserve(entry.target);
+                        state.observer = null;
+                    }
+
+                    return;
+                }
+
+                if (!state.once) {
+                    state.animationTarget.classList.remove("reveal-visible");
+                    delete entry.target.dataset.animVisible;
+                }
+            });
+        }, {
+            root: null,
+            rootMargin,
+            threshold: 0
+        });
+
+        revealObserverPool.set(observerKey, observer);
+        return observer;
+    }
+
     function cleanupAnimation(el) {
         const state = animationStates.get(el);
         if (state) {
-            state.tween.scrollTrigger?.kill();
-            state.tween.kill();
+            state.observer?.unobserve(el);
+            state.animationTarget.classList.remove(
+                "reveal-target",
+                "reveal-hidden",
+                "reveal-visible",
+                state.presetClass,
+                state.durationClass,
+                state.delayClass,
+                state.easeClass
+            );
             animationStates.delete(el);
         }
 
@@ -130,6 +265,7 @@
         }
 
         delete el.dataset.animReady;
+        delete el.dataset.animVisible;
     }
 
     function resetReveal(root = document) {
@@ -139,46 +275,65 @@
     }
 
     function initReveal(root = document) {
-        if (prefersReducedMotion.matches) {
-            return;
-        }
+        const canAnimate = !prefersReducedMotion.matches && typeof window.IntersectionObserver !== "undefined";
 
         getAnimationTargets(root).forEach((el) => {
             const presetName = resolvePresetName(el.dataset.anim);
-            const preset = PRESETS[presetName] || PRESETS["fade-up"];
-            const duration = parseNumber(el.dataset.animDuration, DEFAULT_DURATION);
-            const delay = parseNumber(el.dataset.animDelay, DEFAULT_DELAY);
-            const ease = parseString(el.dataset.animEase, DEFAULT_EASE);
-            const start = parseString(el.dataset.animStart, DEFAULT_START);
+            const resolvedPresetName = PRESETS[presetName] ? presetName : "fade-up";
+            const durationClass = ensureRevealConfigClass("duration", formatSecondsValue(el.dataset.animDuration, DEFAULT_DURATION));
+            const delayClass = ensureRevealConfigClass("delay", formatSecondsValue(el.dataset.animDelay, DEFAULT_DELAY));
+            const easeClass = ensureRevealConfigClass("ease", resolveCssEase(el.dataset.animEase));
             const once = el.dataset.animOnce !== "false";
-            const animationTarget = shouldAnimateContentWrapper(el)
+            const animationTarget = canAnimate && shouldAnimateContentWrapper(el)
                 ? ensureAnimationWrapper(el)
                 : el;
+            const presetClass = `reveal-direction-${resolvedPresetName}`;
 
+            animationTarget.classList.add(
+                "reveal-target",
+                "reveal-hidden",
+                presetClass,
+                durationClass,
+                delayClass,
+                easeClass
+            );
             el.dataset.animReady = "true";
 
-            const tween = gsap.fromTo(animationTarget, preset, {
-                autoAlpha: 1,
-                x: 0,
-                y: 0,
-                duration,
-                delay,
-                ease,
-                scrollTrigger: {
-                    trigger: el,
-                    start,
-                    once,
-                    toggleActions: once ? "play none none none" : "play none none reverse"
-                }
-            });
+            const state = {
+                animationTarget,
+                observer: null,
+                once,
+                presetClass,
+                durationClass,
+                delayClass,
+                easeClass
+            };
+            animationStates.set(el, state);
 
-            animationStates.set(el, {tween});
+            if (!canAnimate) {
+                animationTarget.classList.add("reveal-visible");
+                el.dataset.animVisible = "true";
+                return;
+            }
+
+            const observer = getRevealObserver(el.dataset.animStart, once);
+            if (!observer) {
+                animationTarget.classList.add("reveal-visible");
+                el.dataset.animVisible = "true";
+                return;
+            }
+
+            state.observer = observer;
+            observer.observe(el);
         });
     }
 
     function refreshReveal(root = document) {
         initReveal(root);
-        requestAnimationFrame(() => ScrollTrigger.refresh());
+
+        if (hasGsapScrollSupport()) {
+            requestAnimationFrame(() => window.ScrollTrigger.refresh());
+        }
     }
 
     function getHeaderElement() {
@@ -388,8 +543,12 @@
     }
 
     function refreshSmoother() {
+        if (!ensureGsapScrollSupport()) {
+            return;
+        }
+
         if (typeof window.ScrollSmoother === "undefined") {
-            requestAnimationFrame(() => ScrollTrigger.refresh());
+            requestAnimationFrame(() => window.ScrollTrigger.refresh());
             return;
         }
 
@@ -399,7 +558,7 @@
             return;
         }
 
-        requestAnimationFrame(() => ScrollTrigger.refresh());
+        requestAnimationFrame(() => window.ScrollTrigger.refresh());
     }
 
     function isModifiedPrimaryClick(event) {
@@ -610,13 +769,18 @@
     async function updateSmoother() {
         normalizeHeroSpheres();
 
+        if (!ensureGsapScrollSupport()) {
+            syncInitialHashNavigation();
+            return;
+        }
+
         if (!shouldUseSmoother()) {
             if (typeof window.ScrollSmoother !== "undefined") {
                 window.ScrollSmoother.get()?.kill();
             }
 
             teardownSmoothStructure();
-            requestAnimationFrame(() => ScrollTrigger.refresh());
+            requestAnimationFrame(() => window.ScrollTrigger.refresh());
             syncInitialHashNavigation();
             return;
         }
@@ -628,11 +792,11 @@
             || typeof window.ScrollSmoother === "undefined"
             || !shouldUseSmoother()
         ) {
-            requestAnimationFrame(() => ScrollTrigger.refresh());
+            requestAnimationFrame(() => window.ScrollTrigger.refresh());
             return;
         }
 
-        gsap.registerPlugin(ScrollTrigger, ScrollSmootherPlugin);
+        window.gsap.registerPlugin(window.ScrollTrigger, ScrollSmootherPlugin);
 
         const structure = ensureSmoothStructure();
         if (!structure) {

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Citizenship" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_8);
+        stroke-width: 0px;
+      }
+    </style>
+    <radialGradient id="_Безымянный_градиент_8" data-name="Безымянный градиент 8" cx="190.22" cy="144.22" fx="190.22" fy="144.22" r="112.62" gradientTransform="translate(6.01 -7.6) rotate(2.32)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#60a2ff"/>
+      <stop offset=".11" stop-color="#62a3ff" stop-opacity=".98"/>
+      <stop offset=".23" stop-color="#6ba8ff" stop-opacity=".93"/>
+      <stop offset=".36" stop-color="#79b1ff" stop-opacity=".84"/>
+      <stop offset=".5" stop-color="#8dbcff" stop-opacity=".71"/>
+      <stop offset=".64" stop-color="#a7cbff" stop-opacity=".55"/>
+      <stop offset=".78" stop-color="#c6ddff" stop-opacity=".36"/>
+      <stop offset=".93" stop-color="#eaf3ff" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <polygon class="cls-1" points="141.66 254.96 146.6 186.09 77.58 188.19 129.78 142.98 79.48 95.66 148.36 100.6 146.25 31.58 191.46 83.78 238.78 33.48 233.84 102.36 302.86 100.25 250.67 145.46 300.96 192.78 232.09 187.84 234.19 256.86 188.98 204.67 141.66 254.96"/>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Citizenship" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 380.44 288.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_8);
+        stroke-width: 0px;
+      }
+    </style>
+    <radialGradient id="_Безымянный_градиент_8" data-name="Безымянный градиент 8" cx="190.22" cy="144.22" fx="190.22" fy="144.22" r="144.22" gradientTransform="translate(-24.91) scale(1.13 1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#60a2ff"/>
+      <stop offset=".11" stop-color="#62a3ff" stop-opacity=".98"/>
+      <stop offset=".23" stop-color="#6ba8ff" stop-opacity=".93"/>
+      <stop offset=".36" stop-color="#79b1ff" stop-opacity=".84"/>
+      <stop offset=".5" stop-color="#8dbcff" stop-opacity=".71"/>
+      <stop offset=".64" stop-color="#a7cbff" stop-opacity=".55"/>
+      <stop offset=".78" stop-color="#c6ddff" stop-opacity=".36"/>
+      <stop offset=".93" stop-color="#eaf3ff" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="_Слой_17" data-name="Слой 17">
+    <polygon class="cls-1" points="190.22 0 205.34 115.16 305.56 42.24 226.72 132.18 353.33 144.22 226.72 156.26 305.56 246.2 205.34 173.29 190.22 288.44 175.1 173.29 74.89 246.2 153.73 156.26 27.11 144.22 153.73 132.18 74.89 42.24 175.1 115.16 190.22 0"/>
+  </g>
+</svg>
