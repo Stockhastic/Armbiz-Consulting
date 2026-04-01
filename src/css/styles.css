@@ -4431,6 +4431,10 @@ body.menu-open {
   z-index: -10;
 }
 
+.bg-animations--home {
+  height: 0;
+}
+
 .maintenance-container {
   height: 100vh;
   display: flex;
