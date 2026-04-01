@@ -210,6 +210,17 @@
     &__title{
         font-family: vars.$mainFontFamily;
         font-weight: vars.$mainFontWeightMedium;
+        &--link{
+            // outline: 1px solid red;
+            justify-self: start;
+            transition: vars.$normalAnimation;
+            font-size: vars.$h3Size;
+            &:hover{
+                color: vars.$primaryColor;
+                translate: 5px 0;
+                text-shadow: 0 0 10px vars.$primaryTransparentColor;
+            }
+        }
     }
     &__description{
         line-height: 1.25;

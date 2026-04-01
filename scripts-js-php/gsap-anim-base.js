@@ -853,8 +853,6 @@
     });
 
     document.addEventListener("i18n:updated", () => {
-        resetReveal();
-        refreshReveal();
         refreshSmoother();
     });
 

@@ -668,6 +668,16 @@ strong, .special-text, .bold-text {
   font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   font-weight: 500;
 }
+.service-card__title--link {
+  justify-self: start;
+  transition: 0.24s;
+  font-size: 3.6rem;
+}
+.service-card__title--link:hover {
+  color: #1a6eff;
+  translate: 5px 0;
+  text-shadow: 0 0 10px rgba(82, 146, 255, 0.3568627451);
+}
 .service-card__description {
   line-height: 1.25;
 }
@@ -4848,4 +4858,30 @@ body.menu-open {
     --accounting-sidebar-clip-y: 2.3rem;
     --accounting-sidebar-clip-tilt: clamp(3.5rem, 24vw, 6rem);
   }
+}
+.main-bg-animation-shape1 {
+  position: absolute;
+  translate: -100% 4100px;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(320deg, #1a6eff, #60a2ff);
+  border-radius: 2rem;
+}
+.main-bg-animation-shape2 {
+  position: absolute;
+  right: 0;
+  translate: 100% 4500px;
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(320deg, #1a6eff, #60a2ff);
+  border-radius: 100%;
+}
+.main-bg-animation-shape3 {
+  position: absolute;
+  left: 0;
+  translate: -100% 4300px;
+  width: 230px;
+  height: 230px;
+  background: linear-gradient(320deg, #1a6eff, #60a2ff);
+  border-radius: 2rem;
 }/*# sourceMappingURL=styles.css.map */

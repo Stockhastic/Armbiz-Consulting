@@ -150,12 +150,92 @@ let translations = {};
 let currentLang = localStorage.getItem('siteLang') || 'ru';
 let servicePrices = [];
 
+function getTranslationScope(root = document) {
+  const scope = root && typeof root.querySelectorAll === 'function' ? root : document;
+  const elements = [];
+
+  if (scope instanceof Element && scope.matches('[data-i18n]')) {
+    elements.push(scope);
+  }
+
+  elements.push(...scope.querySelectorAll('[data-i18n]'));
+  return elements;
+}
+
+function getI18nContentTarget(el) {
+  return el.querySelector('[data-anim-content="true"]') || el;
+}
+
+function applyI18nToElement(el, lang) {
+  const specRaw = el.getAttribute('data-i18n');
+  const t = translations[lang];
+  if (!specRaw || !t) return;
+
+  const specs = specRaw.split(';').map(s => s.trim()).filter(Boolean);
+  const contentTarget = getI18nContentTarget(el);
+
+  specs.forEach(spec => {
+    const m = spec.match(/^\[([^\]]+)\](.+)$/);
+    if (m) {
+      const attr = m[1].trim();
+      const key = m[2].trim();
+      const val = t[key];
+      if (val == null) return;
+
+      if (attr.toLowerCase() === 'html') {
+        contentTarget.innerHTML = val;
+      } else if (attr.toLowerCase() === 'text') {
+        contentTarget.textContent = val;
+      } else {
+        el.setAttribute(attr, val);
+      }
+    } else {
+      const key = spec;
+      const val = t[key];
+      if (val == null) return;
+      contentTarget.innerHTML = val;
+    }
+  });
+}
+
+function applyTranslations(lang, root = document) {
+  if (!translations[lang]) return false;
+  getTranslationScope(root).forEach(el => applyI18nToElement(el, lang));
+  return true;
+}
+
+function syncLanguageUi(lang) {
+  const langIcon = document.getElementById('header-lang-icon');
+  if (langIcon) {
+    langIcon.src = lang === 'ru'
+      ? '/src/graphics/png/header-lang-ru.png'
+      : '/src/graphics/png/header-lang-en.png';
+  }
+
+  document.querySelectorAll('.header__lang-switcher-item')
+    .forEach(btn => {
+      btn.classList.toggle(
+        'header__lang-switcher-item--selected',
+        btn.getAttribute('data-lang') === lang
+      );
+    });
+}
+
+function applyCurrentLanguage(root = document) {
+  if (!applyTranslations(currentLang, root)) {
+    return false;
+  }
+
+  syncLanguageUi(currentLang);
+  updateServicePrices(currentLang);
+  return true;
+}
+
 fetch('/scripts-js-php/lang.json')
   .then(r => r.json())
   .then(data => {
     translations = data;
     setLang(currentLang);
-    updateServicePrices(currentLang);
   });
 
 fetch('/scripts-js-php/service-prices.json')
@@ -184,63 +264,16 @@ function updateServicePrices(lang) {
 }
 
 function setLang(lang) {
+  const previousLang = currentLang;
   currentLang = lang;
   localStorage.setItem('siteLang', lang);
+  if (!applyCurrentLanguage()) return;
 
-  // translate data-i18n
-  // Translate elements with data-i18n (supports [attr]key syntax)
-  const applyI18n = (el) => {
-    const specRaw = el.getAttribute('data-i18n');
-    if (!specRaw) return;
-    const specs = specRaw.split(';').map(s => s.trim()).filter(Boolean);
-    const t = translations[lang];
-    if (!t) return;
-    specs.forEach(spec => {
-      const m = spec.match(/^\[([^\]]+)\](.+)$/);
-      if (m) {
-        const attr = m[1].trim();
-        const key = m[2].trim();
-        const val = t[key];
-        if (val == null) return;
-        if (attr.toLowerCase() === 'html') {
-          el.innerHTML = val;
-        } else if (attr.toLowerCase() === 'text') {
-          el.textContent = val;
-        } else {
-          el.setAttribute(attr, val);
-        }
-      } else {
-        const key = spec;
-        const val = t[key];
-        if (val == null) return;
-        el.innerHTML = val;
-      }
-    });
-  };
-  
-  document.querySelectorAll('[data-i18n]').forEach(el => applyI18n(el));
-
-  // LANGUAGE ICON CHANGE
-  const langIcon = document.getElementById('header-lang-icon');
-  if (langIcon) {
-    langIcon.src = lang === 'ru'
-      ? '/src/graphics/png/header-lang-ru.png'
-      : '/src/graphics/png/header-lang-en.png';
+  if (previousLang !== lang) {
+    document.dispatchEvent(new CustomEvent('i18n:updated', {
+      detail: { lang }
+    }));
   }
-
-  // BUTTON SELECTION REFRESHER
-  document.querySelectorAll('.header__lang-switcher-item')
-    .forEach(btn => {
-      btn.classList.toggle(
-        'header__lang-switcher-item--selected',
-        btn.getAttribute('data-lang') === lang
-      );
-    });
-
-  updateServicePrices(lang);
-  document.dispatchEvent(new CustomEvent('i18n:updated', {
-    detail: { lang }
-  }));
 }
 
 function initHeaderMenu() {
@@ -457,7 +490,7 @@ function initReviewsSwiper() {
 }
 
 function initInjectedHeader() {
-  setLang(currentLang);
+  applyCurrentLanguage(document.getElementById('site-header') || document);
   initHeaderMenu();
 }
 
@@ -466,7 +499,8 @@ document.addEventListener('includes:header-loaded', () => {
 });
 
 document.addEventListener('includes:loaded', () => {
-  initInjectedHeader();
+  applyCurrentLanguage();
+  initHeaderMenu();
   initReviewsSwiper();
   initContactForms();
 });

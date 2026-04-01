@@ -672,6 +672,16 @@ strong, .special-text, .bold-text {
   font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   font-weight: 500;
 }
+.service-card__title--link {
+  justify-self: start;
+  transition: 0.24s;
+  font-size: 3.6rem;
+}
+.service-card__title--link:hover {
+  color: #1a6eff;
+  translate: 5px 0;
+  text-shadow: 0 0 10px rgba(82, 146, 255, 0.3568627451);
+}
 .service-card__description {
   line-height: 1.25;
 }

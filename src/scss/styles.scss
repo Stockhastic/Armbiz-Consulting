@@ -4080,3 +4080,26 @@ body.menu-open {
         --accounting-sidebar-clip-tilt: clamp(3.5rem, 24vw, 6rem);
     }
 }
+
+// BG ANIMS
+// Main page
+
+.main-bg-animation-shape{
+    &1{
+        position: absolute;
+        translate: -100% 4100px;
+        @include m.createSquare(250px,250px, 2rem);
+    };
+    &2{
+        position: absolute;
+        right: 0;
+        translate: 100% 4500px;
+        @include m.createSquare(280px,280px, 100%);
+    };
+    &3{
+        position: absolute;
+        left: 0;
+        translate: -100% 4300px;
+        @include m.createSquare(230px, 230px, 2rem);
+    };
+}
