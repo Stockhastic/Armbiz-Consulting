@@ -30,3 +30,14 @@
     );
     border-radius: $br;
 }
+
+@mixin createCircle($size){
+    width: $size;
+    height: $size;
+    background: linear-gradient(
+        320deg,
+        vars.$primaryColor 50%,
+        vars.$secondaryColor 80%
+    );
+    border-radius: 100%;
+}

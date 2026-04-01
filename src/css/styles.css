@@ -2447,6 +2447,10 @@ body.menu-open {
   width: 180px;
   margin: auto 0;
   max-height: 100%;
+  transition: 0.24s;
+}
+.header__logo > img:hover {
+  transform: translateX(10px);
 }
 .header__nav-list {
   height: 100%;
@@ -4873,7 +4877,7 @@ body.menu-open {
   translate: 100% 4500px;
   width: 280px;
   height: 280px;
-  background: linear-gradient(320deg, #1a6eff, #60a2ff);
+  background: linear-gradient(320deg, #1a6eff 50%, #60a2ff 80%);
   border-radius: 100%;
 }
 .main-bg-animation-shape3 {
