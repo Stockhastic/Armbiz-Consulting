@@ -601,6 +601,7 @@ strong, .special-text, .bold-text {
   min-height: 1lh;
 }
 .service-card--logistics, .service-card--glow {
+  background-color: #fff;
   border: 1px solid #d7deef;
   height: auto;
   border-radius: 2rem;
